@@ -13,8 +13,8 @@ Used technologies:
 * HTML5
 * SCSS
 
-## Live :star2:
-
+## Live :star2:  
+* https://goldipl.github.io/DreamTEXwebsite/   
 
 ## Screenshots
 * Desktop version :desktop_computer:   
