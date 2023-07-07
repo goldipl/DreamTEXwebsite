@@ -4,4 +4,24 @@ body {
   box-sizing: border-box;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+}
+
+#nav .top-nav {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+}
+#nav .top-nav .logo-left-container {
+  display: flex;
+}
+#nav .top-nav .logo-left-container .flag-lang-container {
+  display: flex;
+}
+#nav .top-nav .searchbar-right-container {
+  display: flex;
+}
+
+body {
+  width: 1200px;
+  margin: 0 auto;
 }/*# sourceMappingURL=main.css.map */

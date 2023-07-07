@@ -1,0 +1,16 @@
+#nav {
+    .top-nav {
+        display: flex;
+        justify-content: space-between;
+        height: 60px;
+        .logo-left-container {
+            display: flex;
+            .flag-lang-container {
+                display: flex;
+            }
+        }
+        .searchbar-right-container {
+            display: flex;
+        }
+    }
+}
