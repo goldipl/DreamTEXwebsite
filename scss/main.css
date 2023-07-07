@@ -21,6 +21,42 @@ body {
   display: flex;
 }
 
+#swiper .swiper {
+  position: relative;
+  left: calc((100vw - 1200px) / 2 * -1);
+  width: 100vw;
+}
+#swiper .swiper .swiper-slide img {
+  width: 100vw;
+}
+#swiper .swiper .swiper-button-prev {
+  position: absolute;
+  top: 50%;
+  left: calc((100vw - 1200px) / 2);
+}
+#swiper .swiper .swiper-button-prev::after {
+  background: url("./../assets/icons/swiper_arrow.svg");
+  height: 46px;
+  width: 26px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+#swiper .swiper .swiper-button-next {
+  position: absolute;
+  top: 50%;
+  right: calc((100vw - 1200px) / 2);
+}
+#swiper .swiper .swiper-button-next::after {
+  background: url("./../assets/icons/swiper_arrow.svg");
+  transform: rotate(180deg);
+  height: 46px;
+  width: 26px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-size: 0;
+}
+
 body {
   width: 1200px;
   margin: 0 auto;
