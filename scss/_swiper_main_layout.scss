@@ -3,6 +3,7 @@
         position: relative;
         left: calc(((100vw - 1200px)/2)*(-1));
         width: 100vw;
+        height: 420px;
         .swiper-slide {
             img {
                 width: 100vw;
@@ -33,6 +34,23 @@
                 background-size: cover;
                 background-repeat: no-repeat;
                 font-size: 0;
+            }
+        }
+        .swiper-pagination {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            .swiper-pagination-bullet {
+                box-sizing: border-box;
+                width: 12px;
+                height: 12px;
+                border: 2px solid #707070;
+                background: #FFFFFF;
+                opacity: 1;
+                &-active {
+                    background: #2CB5FF;
+                    border: 2px solid #2CB5FF;
+                }
             }
         }
     }
