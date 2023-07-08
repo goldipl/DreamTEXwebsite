@@ -3,23 +3,197 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
 
 #nav .top-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   height: 60px;
 }
 #nav .top-nav .logo-left-container {
   display: flex;
 }
-#nav .top-nav .logo-left-container .flag-lang-container {
-  display: flex;
-}
 #nav .top-nav .searchbar-right-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav .top-nav .searchbar-right-container .flag-lang-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#nav .top-nav .searchbar-right-container .flag-lang-container a {
+  display: flex;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707070;
+  height: 36px;
+  width: auto;
+}
+#nav .top-nav .searchbar-right-container .searchbar-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 24px;
+}
+#nav .top-nav .searchbar-right-container .searchbar-container #searchQueryInput {
+  box-sizing: border-box;
+  width: 235px;
+  height: 36px;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  padding-left: 16px;
+  background-color: #EFEFEF;
+}
+#nav .top-nav .searchbar-right-container .searchbar-container #searchQueryInput:focus {
+  outline: 1px solid #2CB5FF;
+}
+#nav .top-nav .searchbar-right-container .searchbar-container #searchQuerySubmit {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-left: 24px;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon img {
+  height: 30px;
+  width: auto;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon-text p {
+  margin: 0;
+  font-size: 12px;
+  line-height: 14px;
+  color: #707070;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container:hover a.logo-text-header-link .header-icon img {
+  filter: invert(46%) sepia(95%) saturate(414%) hue-rotate(172deg) brightness(86%) contrast(106%);
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container:hover a.logo-text-header-link .header-icon-text p {
+  color: #2E81E1;
+  text-decoration: underline;
+}
+#nav .bottom-nav {
+  display: flex;
+  background: linear-gradient(90deg, #1C2F82, #2E81E1);
+  margin-left: calc((100vw - 1200px) / 2 * -1);
+  width: 100vw;
+  height: 48px;
+}
+#nav .bottom-nav .bottom-nav-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  margin: 0;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links {
+  color: #FFFFFF;
+  list-style: none;
+  padding: 14px 12px;
+  width: -moz-max-content;
+  width: max-content;
+  cursor: pointer;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist {
+  position: relative;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items {
+  display: none;
+  position: absolute;
+  top: 14px;
+  left: -12px;
+  background: linear-gradient(0deg, #1C2F82 1%, #2CB5FF 100%);
+  flex-direction: column;
+  list-style: none;
+  z-index: 99;
+  padding: 0;
+  border-radius: 0 10px 10px 10px;
+  padding: 8px 0;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: auto;
+  min-width: 200px;
+  text-transform: uppercase;
+  padding-left: 56px;
+  height: 42px;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a:hover {
+  color: #1C2F82;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 4px;
+  left: 8px;
+  background: url("./../assets/icons/t-shirts.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links:hover {
+  background-color: #2CB5FF;
+  border-radius: 10px 10px 0 0;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links:hover ul.sublist-items {
+  display: flex;
+}
+#nav .bottom-nav .bottom-nav-container .right-bottom-nav {
+  display: flex;
+  flex-direction: row;
+}
+#nav .bottom-nav .bottom-nav-container .right-bottom-nav ul.right-bottom-nav-elements-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+#nav .bottom-nav .bottom-nav-container .right-bottom-nav ul.right-bottom-nav-elements-container .right-nav-links {
+  color: #FFFFFF;
+  padding: 14px 12px;
+  width: -moz-max-content;
+  width: max-content;
+  text-decoration: none;
+  list-style: none;
+}
+#nav .bottom-nav .bottom-nav-container .right-bottom-nav ul.right-bottom-nav-elements-container .right-nav-links:hover {
+  background-color: #2CB5FF;
+  border-radius: 10px;
 }
 
 #swiper .swiper {
