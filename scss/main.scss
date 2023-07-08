@@ -2,6 +2,7 @@
 @import 'reset';
 @import 'nav';
 @import 'swiper_main_layout';
+@import 'sections_main_layout';
 @import 'footer';
 
 body {
@@ -9,4 +10,15 @@ body {
     width: 1200px;
     margin: 0 auto;
     color: #3E3E3E;
+}
+
+section {
+    margin-bottom: 36px;
+    h1.title {
+        font-size: 36px;
+        line-height: 43px;
+        font-weight: 300;
+        color: #707070;
+        margin-bottom: 12px;
+    }
 }
