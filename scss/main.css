@@ -90,7 +90,7 @@ body {
   filter: invert(46%) sepia(95%) saturate(414%) hue-rotate(172deg) brightness(86%) contrast(106%);
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container:hover a.logo-text-header-link .header-icon-text p {
-  color: #2E81E1;
+  color: #2CB5FF;
   text-decoration: underline;
 }
 #nav .bottom-nav {
