@@ -6,10 +6,23 @@
 @import 'footer';
 
 body {
+    position: relative;
     font-family: 'Roboto', sans-serif;
     width: 1200px;
     margin: 0 auto;
     color: #3E3E3E;
+}
+
+body.menu-hover::after {
+    position: absolute;
+    background: #000000ad;
+    content: '';
+    display: block;
+    top: 108px;
+    left: calc(((100vw - 1200px)/2)*(-1));
+    width: 100vw;
+    height: 100%;
+    z-index: 999;
 }
 
 section {

@@ -123,6 +123,7 @@
                         cursor: pointer;
                         .bottom-nav-sublist {
                             position: relative;
+                            z-index: 99999;
                             ul.sublist-items {
                                 display: none;
                                 position: absolute;
