@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamTex - Strona główna</title>
+    <link rel="stylesheet" href="./css/swiper-bundle.css"/>
+    <link rel="stylesheet" href="./scss/main.css">
+</head>
+<body class="main">
+    <header>
+        <nav id="nav">
+            <div class="top-nav">
+                <div class="logo-left-container">
+                    <a href="./index.html">
+                        <img src="./assets/img/logo/Dreamtex_25lat_logo.png" alt="Logo" width="194" height="60">
+                    </a>
+                </div>
+                <div class="searchbar-right-container">
+                    <div class="flag-lang-container">
+                        <a href="">
+                            <div class="flag-logo">
+                                    <img src="./assets/icons/flag_polish.svg" alt="flag">
+                            </div>
+                            <div class="flag-text">
+                                <p>pl</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="searchbar-container">
+                        <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Szukaj..." value="" />
+                        <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"/><circle cx="18" cy="18" r="17.5" fill="none"/></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"/><circle cx="8" cy="8" r="7" fill="none"/></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"/></g></svg>
+                        </button>
+                    </div>
+                    <div class="logo-text-header-container">
+                        <a class="logo-text-header-link" href="#">
+                            <div class="header-icon">
+                                    <img src="./assets/icons/favorite_header.svg" alt="favorite">
+                            </div>
+                            <div class="header-icon-text">
+                                <p>Ulubione(<span>0</span>)</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="logo-text-header-container">
+                        <a class="logo-text-header-link" href="#">
+                            <div class="header-icon">
+                                    <img src="./assets/icons/client_panel.svg" alt="client panel">
+                            </div>
+                            <div class="header-icon-text">
+                                <p>Zaloguj się</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-nav">
+                <div class="bottom-nav-container">
+                    <div class="left-bottom-nav">
+                        <ul class="bottom-nav-elements-container">
+                            <li class="bottom-nav-links">Odzież firmowa
+                                <div class="bottom-nav-sublist">
+                                    <ul class="sublist-items">
+                                        <li class="sublist-item t-shirts"><a href="">Koszulki T-shirt</a></li>
+                                        <li class="sublist-item"><a href="">Koszulki Polo</a></li>
+                                        <li class="sublist-item"><a href="">Bluzy</a></li>
+                                        <li class="sublist-item"><a href="">Swetry i kamizelki</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bottom-nav-links">Odzież BHP
+                                <div class="bottom-nav-sublist">
+                                    <ul class="sublist-items">
+                                        <li class="sublist-item t-shirts"><a href="">Koszulki T-shirt</a></li>
+                                        <li class="sublist-item"><a href="">Koszulki Polo</a></li>
+                                        <li class="sublist-item"><a href="">Bluzy</a></li>
+                                        <li class="sublist-item"><a href="">Swetry i kamizelki</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bottom-nav-links">Folie flex
+                                <div class="bottom-nav-sublist">
+                                    <ul class="sublist-items">
+                                        <li class="sublist-item t-shirts"><a href="">Koszulki T-shirt</a></li>
+                                        <li class="sublist-item"><a href="">Koszulki Polo</a></li>
+                                        <li class="sublist-item"><a href="">Bluzy</a></li>
+                                        <li class="sublist-item"><a href="">Swetry i kamizelki</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="bottom-nav-links">Gadżety firmowe
+                                <div class="bottom-nav-sublist">
+                                    <ul class="sublist-items">
+                                        <li class="sublist-item t-shirts"><a href="">Koszulki T-shirt</a></li>
+                                        <li class="sublist-item"><a href="">Koszulki Polo</a></li>
+                                        <li class="sublist-item"><a href="">Bluzy</a></li>
+                                        <li class="sublist-item"><a href="">Swetry i kamizelki</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right-bottom-nav">
+                        <ul class="right-bottom-nav-elements-container">
+                            <a class="right-nav-links" href="">
+                                <li>Usługi</li>
+                            </a>
+                            <a class="right-nav-links" href="">
+                                <li>Aktualności</li>
+                            </a>
+                            <a class="right-nav-links" href="">
+                                <li>Kontakt</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id="main-wrapper">
+        <div class="messenger"></div>
+    
+        <section id="swiper">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/img/slider/slider_01.jpg" alt="banner" width="1200" height="383">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/img/slider/slider_02.jpg" alt="banner" width="1200" height="383">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/img/slider/slider_03.jpg" alt="banner" width="1200" height="383">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="#">
+                            <img src="./assets/img/slider/slider_02.jpg" alt="banner" width="1200" height="383">
+                        </a>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+            
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+
+        <section id="news">
+            <h1 class="title">Aktualności</h1>
+            <div class="photo-text-container">
+                <div class="left-photo-container">
+                    <img src="./assets/img/sample_images/sample_image_01.jpg" alt="img" width="400" height="297">
+                </div>
+                <div class="right-text-container">
+                    <div class="text-container">
+                        <h1 class="text-title">
+                            Koszule biznesowe SEVEN SEAS - WIĘCEJ NIŻ KOSZULE
+                        </h1>
+                        <p class="text-author-data">
+                            25.02.2021 | Marcin Maraszek
+                        </p>
+                        <p class="text-desc">
+                            Koszule SEVEN SEAS wyróżniają się: 
+                            <ul>
+                                <li>Nasze koszule ze 100% bawełny stanowią 92% oferty koszul.</li>
+                                <li>Nasze koszule są łatwe w pielęgnacji (easy-care), a niektóre modele nie wymagają prasowania (non-iron).</li>
+                                <li>Nasze koszule mają cztery różnych typów kołnierzy.</li>
+                                <li>Nasze koszule są dostępne w różnych krojach: męski i damski Modern Fit oraz męski Slim Fit.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="bestsellers">
+            <h1 class="title">Bestsellery</h1>
+            <div class="product-swiper-container">
+                <!-- Slider main container -->
+                <div class="swiper-products">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <!-- Slide 01 -->
+                        <div class="swiper-slide">
+                            <div class="product-swiper-container">
+                                <div class="product-swiper-top-container">
+                                    <div class="product-swiper-image topseller">
+                                        <img src="./assets/img/sample_images/sample_image_02.jpg" alt="img" width="160" height="300">
+                                    </div>
+                                    <div class="product-swiper-desc promostars">
+                                        <div class="product-swiper-desc-top">
+                                            <h2 class="swiper-product-title">
+                                                T-shirt Promostars-Heavy 170
+                                            </h2>
+                                            <div class="product-swiper-index">
+                                                <p>Index: <strong>21172</strong></p>
+                                            </div>
+                                            <div class="product-swiper-grammage">
+                                                <p>Gramatura: <strong>170</strong></p>
+                                            </div>
+                                            <div class="product-swiper-composition">
+                                                <p>Skład: <strong>100% bawełna</strong></p>
+                                            </div>
+                                            <div class="product-swiper-price">
+                                                <p>Cena: <a href="#" class="product-swiper-login">Zaloguj się</a><img src="" alt="EKO"></p>
+                                            </div>
+                                            <a href="#" class="product-swiper-add-to-compare">
+                                                <p>dodaj do porównania</p>
+                                            </a>
+                                            <a href="#"  class="product-swiper-add-to-favorite">
+                                                <p>dodaj do ulubionych</p>
+                                            </a>
+                                            <div class="product-swiper-colors">
+                                                <div class="color color20">20</div>
+                                                <div class="color color22">22</div>
+                                                <div class="color color26">26</div>
+                                                <div class="color color30">30</div>
+                                                <div class="color color34">34</div>
+                                                <div class="color color44">44</div>
+                                                <div class="color color50">50</div>
+                                                <div class="color color55">55</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-swiper-desc-bottom">
+                                            <div class="product-swiper-arrows-down">
+                                                <img src="./assets/icons/grey_chevron_down.svg" alt="chevron down" width="20" height="32">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-swiper-bottom-container">
+                                    <div class="product-swiper-bottom-left-desc">
+                                        <strong class="swiper-desc-title">Opis:</strong>
+                                        <ul>
+                                            <li>klasyczny krój</li>
+                                            <li>podwójne szwy</li>
+                                            <li>elastyczny ściągacz (z dodatkiem elastanu)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-swiper-bottom-right-desc">
+                                        <strong class="swiper-desc-title">Dane produktowe:</strong>
+                                        <p><strong>materiał dokładny:</strong> 96% bawełna, 3% elastan</p>
+                                        <p><strong>certyfikat:</strong> OEKO-TEX®</p>
+                                        <p><strong>techniki znakowania:</strong> folia flex, haft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Slide 02 -->
+                        <div class="swiper-slide">
+                            <div class="product-swiper-container">
+                                <div class="product-swiper-top-container">
+                                    <div class="product-swiper-image new">
+                                        <img src="./assets/img/sample_images/sample_image_04.jpg" alt="img" width="160" height="300">
+                                    </div>
+                                    <div class="product-swiper-desc identity10">
+                                        <div class="product-swiper-desc-top">
+                                            <h2 class="swiper-product-title">
+                                                T-shirt Promostars-Heavy 170
+                                            </h2>
+                                            <div class="product-swiper-index">
+                                                <p>Index: <strong>21172</strong></p>
+                                            </div>
+                                            <div class="product-swiper-grammage">
+                                                <p>Gramatura: <strong>170</strong></p>
+                                            </div>
+                                            <div class="product-swiper-composition">
+                                                <p>Skład: <strong>100% bawełna</strong></p>
+                                            </div>
+                                            <div class="product-swiper-price">
+                                                <p>Cena: <a href="#" class="product-swiper-login">Zaloguj się</a><img src="" alt="EKO"></p>
+                                            </div>
+                                            <a href="#" class="product-swiper-add-to-compare">
+                                                <p>dodaj do porównania</p>
+                                            </a>
+                                            <a href="#"  class="product-swiper-add-to-favorite">
+                                                <p>dodaj do ulubionych</p>
+                                            </a>
+                                            <div class="product-swiper-colors">
+                                                <div class="color color20">20</div>
+                                                <div class="color color22">22</div>
+                                                <div class="color color26">26</div>
+                                                <div class="color color30">30</div>
+                                                <div class="color color34">34</div>
+                                                <div class="color color44">44</div>
+                                                <div class="color color50">50</div>
+                                                <div class="color color55">55</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-swiper-desc-bottom">
+                                            <div class="product-swiper-arrows-down">
+                                                <img src="./assets/icons/grey_chevron_down.svg" alt="chevron down" width="20" height="32">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-swiper-bottom-container">
+                                    <div class="product-swiper-bottom-left-desc">
+                                        <strong class="swiper-desc-title">Opis:</strong>
+                                        <ul>
+                                            <li>klasyczny krój</li>
+                                            <li>podwójne szwy</li>
+                                            <li>elastyczny ściągacz (z dodatkiem elastanu)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-swiper-bottom-right-desc">
+                                        <strong class="swiper-desc-title">Dane produktowe:</strong>
+                                        <p><strong>materiał dokładny:</strong> 96% bawełna, 3% elastan</p>
+                                        <p><strong>certyfikat:</strong> OEKO-TEX®</p>
+                                        <p><strong>techniki znakowania:</strong> folia flex, haft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 03 -->
+                        <div class="swiper-slide">
+                            <div class="product-swiper-container">
+                                <div class="product-swiper-top-container">
+                                    <div class="product-swiper-image">
+                                        <img src="./assets/img/sample_images/sample_image_02.jpg" alt="img" width="160" height="300">
+                                    </div>
+                                    <div class="product-swiper-desc">
+                                        <div class="product-swiper-desc-top">
+                                            <h2 class="swiper-product-title">
+                                                T-shirt Promostars-Heavy 170
+                                            </h2>
+                                            <div class="product-swiper-index">
+                                                <p>Index: <strong>21172</strong></p>
+                                            </div>
+                                            <div class="product-swiper-grammage">
+                                                <p>Gramatura: <strong>170</strong></p>
+                                            </div>
+                                            <div class="product-swiper-composition">
+                                                <p>Skład: <strong>100% bawełna</strong></p>
+                                            </div>
+                                            <div class="product-swiper-price">
+                                                <p>Cena: <a href="#" class="product-swiper-login">Zaloguj się</a><img src="" alt="EKO"></p>
+                                            </div>
+                                            <a href="#" class="product-swiper-add-to-compare">
+                                                <p>dodaj do porównania</p>
+                                            </a>
+                                            <a href="#"  class="product-swiper-add-to-favorite">
+                                                <p>dodaj do ulubionych</p>
+                                            </a>
+                                            <div class="product-swiper-colors">
+                                                <div class="color color20">20</div>
+                                                <div class="color color22">22</div>
+                                                <div class="color color26">26</div>
+                                                <div class="color color30">30</div>
+                                                <div class="color color34">34</div>
+                                                <div class="color color44">44</div>
+                                                <div class="color color50">50</div>
+                                                <div class="color color55">55</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-swiper-desc-bottom">
+                                            <div class="product-swiper-arrows-down">
+                                                <img src="./assets/icons/grey_chevron_down.svg" alt="chevron down" width="20" height="32">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-swiper-bottom-container">
+                                    <div class="product-swiper-bottom-left-desc">
+                                        <strong class="swiper-desc-title">Opis:</strong>
+                                        <ul>
+                                            <li>klasyczny krój</li>
+                                            <li>podwójne szwy</li>
+                                            <li>elastyczny ściągacz (z dodatkiem elastanu)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-swiper-bottom-right-desc">
+                                        <strong class="swiper-desc-title">Dane produktowe:</strong>
+                                        <p><strong>materiał dokładny:</strong> 96% bawełna, 3% elastan</p>
+                                        <p><strong>certyfikat:</strong> OEKO-TEX®</p>
+                                        <p><strong>techniki znakowania:</strong> folia flex, haft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slide 04 -->
+                        <div class="swiper-slide">
+                            <div class="product-swiper-container">
+                                <div class="product-swiper-top-container">
+                                    <div class="product-swiper-image">
+                                        <img src="./assets/img/sample_images/sample_image_04.jpg" alt="img" width="160" height="300">
+                                    </div>
+                                    <div class="product-swiper-desc">
+                                        <div class="product-swiper-desc-top">
+                                            <h2 class="swiper-product-title">
+                                                T-shirt Promostars-Heavy 170
+                                            </h2>
+                                            <div class="product-swiper-index">
+                                                <p>Index: <strong>21172</strong></p>
+                                            </div>
+                                            <div class="product-swiper-grammage">
+                                                <p>Gramatura: <strong>170</strong></p>
+                                            </div>
+                                            <div class="product-swiper-composition">
+                                                <p>Skład: <strong>100% bawełna</strong></p>
+                                            </div>
+                                            <div class="product-swiper-price">
+                                                <p>Cena: <a href="#" class="product-swiper-login">Zaloguj się</a><img src="" alt="EKO"></p>
+                                            </div>
+                                            <a href="#" class="product-swiper-add-to-compare">
+                                                <p>dodaj do porównania</p>
+                                            </a>
+                                            <a href="#"  class="product-swiper-add-to-favorite">
+                                                <p>dodaj do ulubionych</p>
+                                            </a>
+                                            <div class="product-swiper-colors">
+                                                <div class="color color20">20</div>
+                                                <div class="color color22">22</div>
+                                                <div class="color color26">26</div>
+                                                <div class="color color30">30</div>
+                                                <div class="color color34">34</div>
+                                                <div class="color color44">44</div>
+                                                <div class="color color50">50</div>
+                                                <div class="color color55">55</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-swiper-desc-bottom">
+                                            <div class="product-swiper-arrows-down">
+                                                <img src="./assets/icons/grey_chevron_down.svg" alt="chevron down" width="20" height="32">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product-swiper-bottom-container">
+                                    <div class="product-swiper-bottom-left-desc">
+                                        <strong class="swiper-desc-title">Opis:</strong>
+                                        <ul>
+                                            <li>klasyczny krój</li>
+                                            <li>podwójne szwy</li>
+                                            <li>elastyczny ściągacz (z dodatkiem elastanu)</li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-swiper-bottom-right-desc">
+                                        <strong class="swiper-desc-title">Dane produktowe:</strong>
+                                        <p><strong>materiał dokładny:</strong> 96% bawełna, 3% elastan</p>
+                                        <p><strong>certyfikat:</strong> OEKO-TEX®</p>
+                                        <p><strong>techniki znakowania:</strong> folia flex, haft</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about_company">
+            <h1 class="title">O firmie</h1>
+            <div class="about_company_container">
+                <div class="about_company_container_top">
+                    <div class="about_company_container_top-slot">
+                        <div class="slot-img">
+                            <img src="./assets/img/sample_images/sample_image_08.jpg" alt="slot-img" width="389" height="300">
+                        </div>
+                        <div class="slot-title">
+                            <p>Odzież firmowa</p>
+                        </div>
+                    </div>
+                    <div class="about_company_container_top-slot">
+                        <div class="slot-img">
+                            <img src="./assets/img/sample_images/sample_image_07.jpg" alt="slot-img" width="389" height="300">
+                        </div>
+                        <div class="slot-title">
+                            <p>Folie flex</p>
+                        </div>
+                    </div>
+                    <div class="about_company_container_top-slot">
+                        <div class="slot-img">
+                            <img src="./assets/img/sample_images/sample_image_06.jpg" alt="slot-img" width="389" height="300">
+                        </div>
+                        <div class="slot-title">
+                            <p>Własne kolekcje</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about_company_container_bottom">
+                    <p>
+                        W Dreamtex od 25 lat zapewniamy lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero_image">
+            <h1 class="title">Nasze marki</h1>
+            <div class="hero_image_container">
+                <div class="hero_image_container_top">
+                    <div class="slot-img">
+                        <img src="./assets/img/sample_images/sample_image_05.jpg" alt="slot-img" width="1170" height="300">
+                    </div>
+                <div class="hero_image_container_bottom">
+                    <p>
+                        Starannie uszyta odzież, z wykorzystaniem dobrze dobranych materiałów sprawiają, że jest doceniana za jakość i trwałość. Odzież marki Promostars, to kompletna oferta przygotowana do oznakowania dowolną techniką, np. sitodruku, haftu i innych. Przeznaczona jest do rozmaitych zastosowań, jako: ubrania firmowe, odzież promocyjna, mundurki szkolne lub odzież robocza BHP. Duży wybór asortymentu na który składają się m.in. koszulki t-shirt, koszulki polo, bluzy, polary, kurtki, czapki, koszule w bogatej kolorystyce, sprawiają, że jest to jedna z najchętniej wybieranych marek odzieży korporacyjnej w Polsce.
+                    </p>
+                    <div class="main-link-btn">
+                        <a href="#">Przejdź do produktów >></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero_image">
+            <div class="hero_image_container">
+                <div class="hero_image_container_top">
+                    <div class="slot-img">
+                        <img src="./assets/img/sample_images/sample_image_03.jpg" alt="slot-img" width="1170" height="300">
+                    </div>
+                <div class="hero_image_container_bottom">
+                    <p>
+                        Ubrania firmowe marki ELEVATE ożywią Twoją markę, przyciągną uwagę i zadowolą jej użytkowników. Doskonałe wzornictwo, z wykorzysteaniem bardzo dobrych materiałów zarówno pod wględem parametrów technicznych jak i użytkowych. To modna odzież jaką spotyka się w dobrych galeriach handlowych, oferująca możliwość personalizacji i brandingu własnym logo.
+                    </p>
+                    <div class="main-link-btn">
+                        <a href="#">Przejdź do produktów >></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero_image">
+            <div class="hero_image_container">
+                <div class="hero_image_container_top">
+                    <div class="slot-img">
+                        <img src="./assets/img/sample_images/sample_image_09.jpg" alt="slot-img" width="1170" height="300">
+                    </div>
+                <div class="hero_image_container_bottom">
+                    <p>
+                        Z blisko 150-letnią tradycją, Slazenger jest jedną z najwspanialszych i najstarszych marek w branży odzieży sportowej. Dzięki obecności na wielu znaych turniejach, marka Slazenger jest dobrze rozpoznawalna i będzie stanowić wysmakowaną reklamę Państwa firmy. Z powodzeniem łączy tradycyjne wzornictwo ze współczesną jakością.
+                    </p>
+                    <div class="main-link-btn">
+                        <a href="#">Przejdź do produktów >></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="hero_image">
+            <div class="hero_image_container">
+                <div class="hero_image_container_top">
+                    <div class="slot-img">
+                        <img src="./assets/img/sample_images/sample_image_10.jpg" alt="slot-img" width="1170" height="300">
+                    </div>
+                <div class="hero_image_container_bottom">
+                    <p>
+                        Lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum
+                    </p>
+                    <div class="main-link-btn">
+                        <a href="#">Przejdź do produktów >></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="newsletter_container">
+                <h1 class="title">Zapisz się do newslettera</h1>
+                <p class="desc">
+                    Chcesz być na bieżąco z naszą ofertą i korzystać z naszych akcji promocyjnych
+                </p>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Imię">
+                    <input type="text" id="company" name="company" placeholder="Firma">
+                    <input type="email" id="email" pattern=".+@globex\.com" placeholder="*Email" required>
+                    <input class="button" type="submit" value="Zapisuję się">
+                </form> 
+                <p class="additional-info">
+                    *Klikając "Zapisuję się" wyrażam zgodę na przetwarzanie danych dla celów marketingowych.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-arrow-up"></div>
+            <div class="footer_container">
+                <div class="footer_container_top">
+                    <div class="footer_container_top-left">
+                        <div class="footer-col">
+                           <div class="footer-links">
+                                <a href="#" class="footer-link">O firmie</a>
+                                <a href="#" class="footer-link">Kontakt</a>
+                                <a href="#" class="footer-link">Regulamin sklepu</a>
+                                <a href="#" class="footer-link">Polityka prywatności</a>
+                           </div>
+                           <div class="footer-socials">
+                                <a href="https://www.facebook.com/">
+                                    <img src="./assets/icons/facebook.svg" alt="fb link">
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <img src="./assets/icons/instagram.svg" alt="instagram link">
+                                </a>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="footer_container_top-right">
+                        <div class="footer-col">
+                            <p class="title data">Dane rejestracyjne</p>
+                            <p class="text">Dreamtex Sp. z o. o.</p>
+                            <p class="text">NIP: 521-000-09-048</p>
+                            <p class="text">REGON: 010366503</p>
+                            <p class="text">KRS: 0000177020</p>
+                        </div>
+                        <div class="footer-col">
+                            <p class="title localization">Lokalizacja</p>
+                            <p class="text">ul. Szyszkowa 32</p>
+                            <p class="text">02-285 Warszawa</p>
+                        </div>
+                        <div class="footer-col">
+                            <p class="title contact">Kontakt</p>
+                            <a href="tel:22 857 45 20" class="text link">(22) 857 45 20</a>
+                            <a href="mailto:sklep@dreamtex.pl" class="text link">sklep@dreamtex.pl</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_container_bottom">
+                    <div class="footer_container_bottom-left">
+                        <p>© 2013-<span></span>&nbsp;Dreamtex Sp. z o.o</p>
+                    </div>
+                    <div class="footer_container_bottom-right">
+                        <p>realizacja <img src="./assets/img/logo/contip-logo.png" alt="contip logo" width="54" height="30"></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="./js/swiper-bundle.js"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="./js/swiper-products.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
