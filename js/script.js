@@ -8,3 +8,7 @@ bottom_nav_link.forEach(e => {
         document.body.classList.remove('menu-hover');
     });
 })
+
+const footer_year = document.querySelector('footer .footer_container_bottom-left span');
+
+footer_year.innerHTML = new Date().getFullYear();
