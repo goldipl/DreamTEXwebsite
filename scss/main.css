@@ -776,6 +776,14 @@ footer .footer_container .footer_container_top .footer_container_top-right .foot
   font-weight: 400;
   margin: 0 2px;
 }
+footer .footer_container .footer_container_top .footer_container_top-right .footer-col .text.link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+footer .footer_container .footer_container_top .footer_container_top-right .footer-col .text.link:hover {
+  text-decoration: underline;
+}
 footer .footer_container .footer_container_bottom {
   display: flex;
   flex-direction: row;

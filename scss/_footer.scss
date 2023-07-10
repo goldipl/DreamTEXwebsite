@@ -107,6 +107,14 @@ footer {
                         line-height: 21px;
                         font-weight: 400;
                         margin: 0 2px;
+                        &.link {
+                            display: flex;
+                            flex-direction: column;
+                            text-decoration: none;
+                            &:hover {
+                                text-decoration: underline;
+                            }
+                        }
                     }
                 }
             }
