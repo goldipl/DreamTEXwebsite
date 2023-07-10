@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
 @import 'reset';
 @import 'nav';
-@import 'swiper_main_layout';
-@import 'sections_main_layout';
+@import './main_layout/swiper_main_layout';
+@import './main_layout/news_section_main_layout';
+@import './main_layout/bestseller_section_main_layout';
+@import './main_layout/about_company_main_layout';
+@import './main_layout/hero_image_main_layout';
+@import './main_layout/newsletter_main_layout';
 @import 'footer';
 
 body {
@@ -26,7 +30,7 @@ body.menu-hover::after {
 }
 
 section {
-    margin-bottom: 36px;
+    margin-bottom: 55px;
     h1.title {
         font-size: 36px;
         line-height: 43px;
