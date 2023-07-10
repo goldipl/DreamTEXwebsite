@@ -344,13 +344,78 @@ body {
   flex-direction: row;
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image {
+  position: relative;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image img {
   -o-object-fit: contain;
      object-fit: contain;
 }
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image.topseller::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("./../../assets/img/labels/topseller_pl.png");
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image.new::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 0;
+  left: 0;
+  background: url("./../../assets/img/labels/new_pl.png");
+  height: 90px;
+  width: 90px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 100%;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc.promostars::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 10px;
+  right: 10px;
+  background: url("./../../assets/img/logo/logo-promostars.png");
+  height: 13px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc.promostars::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 10px;
+  right: 10px;
+  background: url("./../../assets/img/logo/logo-promostars.png");
+  height: 13px;
+  width: 100px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc.identity10::after {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 10px;
+  right: 10px;
+  background: url("./../../assets/img/logo/logo-10-identity.jpg");
+  height: 40px;
+  width: 40px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .swiper-product-title {
   font-family: Segoe UI, sans-serif;
