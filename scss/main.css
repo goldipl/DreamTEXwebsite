@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 * {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -753,6 +754,20 @@ footer {
   width: 100vw;
   height: auto;
 }
+footer .footer-arrow-up {
+  position: absolute;
+  content: "";
+  display: block;
+  top: -64px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url("./../assets/icons/white_blue_chevron_up.svg");
+  width: 64px;
+  height: 64px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+}
 footer .footer_container {
   display: flex;
   flex-direction: column;
@@ -788,6 +803,13 @@ footer .footer_container .footer_container_top .footer_container_top-left .foote
   display: flex;
   flex-direction: row;
   margin-top: 16px;
+}
+footer .footer_container .footer_container_top .footer_container_top-left .footer-col .footer-socials a img {
+  margin-right: 10px;
+  transition: 0.6s;
+}
+footer .footer_container .footer_container_top .footer_container_top-left .footer-col .footer-socials a img:hover {
+  transform: scale(0.8);
 }
 footer .footer_container .footer_container_top .footer_container_top-right {
   display: flex;

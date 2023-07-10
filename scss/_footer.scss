@@ -5,6 +5,20 @@ footer {
     margin-left: calc(((100vw - 1200px)/2)*(-1));
     width: 100vw;
     height: auto;
+    .footer-arrow-up {
+        position: absolute;
+        content: "";
+        display: block;
+        top: -64px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: url('./../assets/icons/white_blue_chevron_up.svg');
+        width: 64px;
+        height: 64px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        cursor: pointer;
+    }
     .footer_container {
         display: flex;
         flex-direction: column;
@@ -40,6 +54,15 @@ footer {
                         display: flex;
                         flex-direction: row;
                         margin-top: 16px;
+                        a {
+                            img {
+                                margin-right: 10px;
+                                transition: 0.6s;
+                                &:hover {
+                                    transform: scale(0.8);
+                                }
+                            }
+                        }
                     }
                 }
 
