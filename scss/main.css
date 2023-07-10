@@ -540,6 +540,7 @@ body {
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom {
   display: flex;
   justify-content: center;
+  transform: translate(-20%, 20%);
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom .product-swiper-arrows-down {
   cursor: pointer;
@@ -687,7 +688,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background: url("./../assets/img/slider/slider_01.jpg");
+  background: linear-gradient(90deg, #1C2F82, #2E81E1);
   background-repeat: no-repeat;
   background-position: center;
   -o-object-fit: contain;
