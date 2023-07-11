@@ -19,6 +19,7 @@ body {
         position: fixed;
         bottom: 16px;
         right: 24px;
+        z-index: 99;
         .messenger-chat-icon {
             display: block;
             background: url('./../assets/icons/chat.svg');
@@ -29,7 +30,6 @@ body {
             color: #3E3E3E;
             text-decoration: none;
             cursor: pointer;
-            z-index: 99;
             &::after {
                 position: relative;
                 content: 'Masz pytanie? Napisz do nas';

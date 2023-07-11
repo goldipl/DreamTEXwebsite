@@ -914,6 +914,7 @@ body .messenger {
   position: fixed;
   bottom: 16px;
   right: 24px;
+  z-index: 99;
 }
 body .messenger .messenger-chat-icon {
   display: block;
@@ -925,7 +926,6 @@ body .messenger .messenger-chat-icon {
   color: #3E3E3E;
   text-decoration: none;
   cursor: pointer;
-  z-index: 99;
 }
 body .messenger .messenger-chat-icon::after {
   position: relative;
