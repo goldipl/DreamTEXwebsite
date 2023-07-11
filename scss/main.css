@@ -912,32 +912,35 @@ body {
 }
 body .messenger {
   position: fixed;
-  content: "";
-  display: block;
-  bottom: 32px;
+  bottom: 16px;
   right: 24px;
+}
+body .messenger .messenger-chat-icon {
+  display: block;
   background: url("./../assets/icons/chat.svg");
   width: 80px;
   height: 88px;
   background-repeat: no-repeat;
   background-size: contain;
+  color: #3E3E3E;
+  text-decoration: none;
   cursor: pointer;
   z-index: 99;
 }
-body .messenger::after {
+body .messenger .messenger-chat-icon::after {
   position: relative;
   content: "Masz pytanie? Napisz do nas";
   font-size: 12px;
   line-height: 12px;
   margin: 0;
   left: 0;
-  bottom: -48px;
+  bottom: -64px;
 }
-body .messenger::before {
+body .messenger .messenger-x-icon {
   position: relative;
   content: "";
   display: block;
-  top: -8px;
+  top: -100px;
   right: -56px;
   background: url("./../assets/icons/close.svg");
   width: 16px;
