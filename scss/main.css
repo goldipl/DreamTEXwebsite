@@ -747,6 +747,14 @@ body {
   margin-left: 50px;
 }
 
+#login .login-container {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 285px;
+}
+
 footer {
   position: relative;
   display: flex;
