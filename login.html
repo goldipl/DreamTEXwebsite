@@ -7,7 +7,7 @@
     <title>Dreamtex - Strona logowania</title>
     <link rel="stylesheet" href="./scss/main.css">
 </head>
-<body class="main">
+<body>
     <header>
         <nav id="nav">
             <div class="top-nav">
@@ -126,7 +126,33 @@
         </div>
 
         <section id="login">
+            <h1 class="title">Zaloguj się</h1>
+            <div class="login-container">
+                <div class="login-fill-info">
 
+                </div>
+                <div class="login-container-middle">
+                    <form>
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email" pattern=".+@globex\.com" required>
+                        <label for="password">Hasło *</label>
+                        <input type="password" id="password" name="password" required>
+                        <a class="password_remember" href="#">Nie pamiętam hasła</a>
+                        <input class="button" type="submit" value="ZALOGUJ">
+                    </form> 
+                </div>
+                <div class="login-container-bottom">
+                    <div class="login-text-btn-bottom-container">
+                        <div class="login-bottom-text-container">
+                            <p>Nie masz konta?</p>
+                            <p>Chcesz zobaczyć ceny?</p>
+                        </div>
+                        <div class="login-bottom-btn-container">
+                            <a class="create-account-btn" href="#">Załóż konto</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
