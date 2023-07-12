@@ -17,6 +17,9 @@
             padding: 0 16px 0 4px;
             box-sizing: border-box;
             p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 font-size: 14px;
                 color: #FFFFFF;
                 span {
@@ -29,7 +32,8 @@
                     border: 2px solid #FFFFFF;
                     width: 28px;
                     height: 28px;
-                    margin-right: 4px;
+                    margin-right: 8px;
+                    font-size: 24px;
                 }
             }
         }

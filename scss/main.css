@@ -768,6 +768,9 @@ body {
   box-sizing: border-box;
 }
 #login .login-container .login-fill-info p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 14px;
   color: #FFFFFF;
 }
@@ -781,7 +784,8 @@ body {
   border: 2px solid #FFFFFF;
   width: 28px;
   height: 28px;
-  margin-right: 4px;
+  margin-right: 8px;
+  font-size: 24px;
 }
 #login .login-container .login-container-middle {
   padding: 0 17px;
