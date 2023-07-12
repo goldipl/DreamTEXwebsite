@@ -132,13 +132,20 @@
                     <p><span>!</span> Proszę wypełnić wszystkie wymagane pola. Proszę podać poprawny adres e-mail.</p>
                 </div>
                 <div class="login-container-middle">
+                    <h2 class="h2title">Dane logowania</h1>
                     <form>
-                        <label for="email">E-mail *</label>
-                        <input type="email" id="email" pattern=".+@globex\.com" required>
-                        <label for="password">Hasło *</label>
-                        <input type="password" id="password" name="password" required>
-                        <a class="password_remember" href="#">Nie pamiętam hasła</a>
-                        <input class="button" type="submit" value="ZALOGUJ">
+                        <div class="login_input-slot">
+                            <label class="email" for="email">E-mail *</label>
+                            <input type="email" id="email" pattern=".+@globex\.com" required>
+                        </div>
+                        <div class="login_input-slot">
+                            <label class="password" for="password">Hasło *</label>
+                            <input type="password" id="password" name="password" required>
+                            <a class="password_remember" href="#">Nie pamiętam hasła</a>
+                        </div>
+                        <div class="login_input-slot">
+                            <input class="button" type="submit" value="ZALOGUJ">
+                        </div>
                     </form> 
                 </div>
                 <div class="login-container-bottom">

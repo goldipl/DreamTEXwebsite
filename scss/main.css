@@ -754,6 +754,144 @@ body {
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 285px;
 }
+#login .login-container .login-fill-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: #2CB5FF;
+  width: -moz-max-content;
+  width: max-content;
+  height: 35px;
+  border-radius: 24px;
+  padding: 0 16px 0 4px;
+  box-sizing: border-box;
+}
+#login .login-container .login-fill-info p {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+#login .login-container .login-fill-info p span {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 4px;
+  border-radius: 100%;
+  border: 2px solid #FFFFFF;
+  width: 28px;
+  height: 28px;
+  margin-right: 4px;
+}
+#login .login-container .login-container-middle {
+  padding: 0 17px;
+}
+#login .login-container .login-container-middle .h2title {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 400;
+  color: #3E3E3E;
+  margin-top: 4px;
+}
+#login .login-container .login-container-middle form {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+#login .login-container .login-container-middle form .login_input-slot {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3%;
+  width: 45%;
+}
+#login .login-container .login-container-middle form .login_input-slot:last-child {
+  width: -moz-max-content;
+  width: max-content;
+}
+#login .login-container .login-container-middle form .login_input-slot label {
+  margin-bottom: 4px;
+  margin-left: 16px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3E3E3E;
+}
+#login .login-container .login-container-middle form .login_input-slot input {
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid #CECECE;
+  border-radius: 20px;
+  background: #EFEFEF;
+  padding-left: 16px;
+}
+#login .login-container .login-container-middle form .login_input-slot input.button {
+  width: -moz-max-content;
+  width: max-content;
+  margin-top: 16px;
+  padding: 0 16px;
+  background-color: #2CB5FF;
+  border: 1px solid #2CB5FF;
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 24px;
+  cursor: pointer;
+  transition: 0.8s;
+}
+#login .login-container .login-container-middle form .login_input-slot input.button:hover {
+  background-color: #1C2F82;
+  border: 1px solid #1C2F82;
+}
+#login .login-container .login-container-middle form .login_input-slot .password_remember {
+  color: #2CB5FF;
+  text-align: right;
+  margin-top: 12px;
+}
+#login .login-container .login-container-middle form .login_input-slot .password_remember:hover {
+  text-decoration: none;
+}
+#login .login-container .login-container-bottom {
+  padding: 0 17px 13px 17px;
+}
+#login .login-container .login-container-bottom .login-text-btn-bottom-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-text-container {
+  margin-right: 24px;
+}
+#login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-text-container p {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0;
+  font-weight: 400;
+  color: #3E3E3E;
+}
+#login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+  height: 40px;
+  box-sizing: border-box;
+  background-color: #2C79FF;
+  border: 1px solid #2C79FF;
+  border-radius: 20px;
+  transition: 0.8s;
+}
+#login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-btn-container:hover {
+  background-color: #1C2F82;
+  border: 1px solid #1C2F82;
+}
+#login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-btn-container .create-account-btn {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 16px;
+}
 
 footer {
   position: relative;
