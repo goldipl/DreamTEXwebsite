@@ -12,6 +12,7 @@
         height: 62px;
         background-color: #FFFFFF;
         box-shadow: 0px -6px 10px #00000029;
+        z-index: 99999999;
         .mobile-nav-container-slot {
             display: flex;
             flex-direction: column;
@@ -96,7 +97,7 @@
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 940px) {
     #mobile-nav {
         display: flex;
     }

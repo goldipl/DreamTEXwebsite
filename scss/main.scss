@@ -80,3 +80,9 @@ section {
         margin-bottom: 12px;
     }
 }
+
+@media (max-width: 1200px) {
+    body {
+        width: 100%;
+    }
+}
