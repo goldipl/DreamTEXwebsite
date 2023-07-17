@@ -53,13 +53,14 @@ body {
   box-sizing: border-box;
   width: 235px;
   height: 36px;
-  border: 1px solid #707070;
+  border: 1px solid #CECECE;
   border-radius: 20px;
   padding-left: 16px;
   background-color: #EFEFEF;
 }
 #nav .top-nav .searchbar-right-container .searchbar-container #searchQueryInput:focus {
-  outline: 1px solid #2CB5FF;
+  border: 1px solid #2CB5FF;
+  outline: 0;
 }
 #nav .top-nav .searchbar-right-container .searchbar-container #searchQuerySubmit {
   position: absolute;
@@ -677,7 +678,6 @@ body {
     box-sizing: border-box;
     width: 235px;
     height: 36px;
-    border: 1px solid #707070;
     border-radius: 20px;
     padding-left: 16px;
     background-color: #EFEFEF;
