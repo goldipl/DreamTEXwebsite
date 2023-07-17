@@ -310,3 +310,11 @@ footer {
         }
     }
 }
+
+@media (max-width: 960px) {
+    footer {
+        .footer-arrow-up {
+            display: none;
+        }
+    }
+}

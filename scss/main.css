@@ -2537,6 +2537,11 @@ footer .footer_container .footer_container_bottom p img {
     margin-left: 4px;
   }
 }
+@media (max-width: 960px) {
+  footer .footer-arrow-up {
+    display: none;
+  }
+}
 body {
   position: relative;
   font-family: "Roboto", sans-serif;
