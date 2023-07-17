@@ -14,7 +14,7 @@
 body {
     position: relative;
     font-family: 'Roboto', sans-serif;
-    width: 1200px;
+    width: 1170px;
     margin: 0 auto;
     color: #3E3E3E;
     .messenger {
@@ -65,7 +65,7 @@ body.menu-hover::after {
     content: '';
     display: block;
     top: 108px;
-    left: calc(((100vw - 1200px)/2)*(-1));
+    left: calc(((100vw - 1170px)/2)*(-1));
     width: 100vw;
     height: 100%;
     z-index: 999;
@@ -82,7 +82,7 @@ section {
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1170px) {
     body {
         width: 100%;
     }

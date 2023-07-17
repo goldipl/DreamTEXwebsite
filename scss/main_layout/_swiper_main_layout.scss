@@ -1,7 +1,7 @@
 #swiper {
     .swiper {
         position: relative;
-        left: calc(((100vw - 1200px)/2)*(-1));
+        left: calc(((100vw - 1170px)/2)*(-1));
         width: 100vw;
         height: 420px;
         .swiper-slide {
@@ -12,7 +12,7 @@
         .swiper-button-prev {
             position: absolute;
             top: 50%;
-            left: calc(((100vw - 1200px)/2));
+            left: calc(((100vw - 1170px)/2));
             &::after {
                 background: url('./../assets/icons/swiper_arrow.svg');
                 height: 46px;
@@ -25,7 +25,7 @@
         .swiper-button-next {
             position: absolute;
             top: 50%;
-            right: calc(((100vw - 1200px)/2));
+            right: calc(((100vw - 1170px)/2));
             &::after {
                 background: url('./../assets/icons/swiper_arrow.svg');
                 transform: rotate(180deg);
@@ -56,7 +56,7 @@
     }
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1170px) { 
     #swiper {
         .swiper {
             position: relative;
