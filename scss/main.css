@@ -806,7 +806,7 @@ body {
     border-radius: 10px;
   }
 }
-@media (max-width: 940px) {
+@media (max-width: 960px) {
   #nav {
     overflow-x: hidden;
   }
@@ -1129,7 +1129,7 @@ body {
   text-transform: uppercase;
 }
 
-@media (max-width: 940px) {
+@media (max-width: 960px) {
   #mobile-nav {
     display: flex;
   }
@@ -1141,6 +1141,8 @@ body {
   height: 420px;
 }
 #swiper .swiper .swiper-slide img {
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100vw;
 }
 #swiper .swiper .swiper-button-prev {
@@ -1196,8 +1198,6 @@ body {
     height: 264px;
   }
   #swiper .swiper .swiper-slide img {
-    -o-object-fit: cover;
-       object-fit: cover;
     width: 100vw;
     height: 230px;
   }
