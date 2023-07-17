@@ -2568,7 +2568,7 @@ body.menu-hover::after {
 }
 
 section {
-  margin-bottom: 55px;
+  margin-bottom: 37px;
 }
 section h1.title {
   font-size: 36px;
@@ -2582,13 +2582,14 @@ section h1.title {
   body {
     width: 100%;
   }
+  body section:not(#swiper) {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 }
-@media (max-width: 800px) {
+@media (max-width: 960px) {
   body {
     margin-bottom: 62px;
-  }
-  body section h1.title {
-    margin-left: 15px;
   }
   body .messenger {
     bottom: 64px;

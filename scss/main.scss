@@ -72,7 +72,7 @@ body.menu-hover::after {
 }
 
 section {
-    margin-bottom: 55px;
+    margin-bottom: 37px;
     h1.title {
         font-size: 36px;
         line-height: 43px;
@@ -85,17 +85,16 @@ section {
 @media (max-width: 1170px) {
     body {
         width: 100%;
+        section:not(#swiper) {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 960px) {
     body {
         margin-bottom: 62px;
-        section {
-            h1.title {
-                margin-left: 15px;
-            }
-        }
         .messenger {
             bottom: 64px;
             right: 8px;
