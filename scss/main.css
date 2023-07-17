@@ -1852,7 +1852,7 @@ body {
   #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom {
     display: flex;
     justify-content: center;
-    transform: translate(-20%, 20%);
+    transform: translate(-50%, 20%);
   }
   #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom .product-swiper-arrows-down {
     cursor: pointer;
