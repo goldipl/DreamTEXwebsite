@@ -145,7 +145,7 @@
                                 position: absolute;
                                 top: 14px;
                                 left: -12px;
-                                background: linear-gradient(0deg, rgb(44, 121, 255) 1%, rgb(44, 181, 255) 100%);
+                                background: linear-gradient(0deg, rgba(44, 121, 255, 0.90) 1%, rgba(44, 181, 255, 0.90) 100%);
                                 flex-direction: column;
                                 list-style: none;
                                 z-index: 99;
@@ -622,12 +622,12 @@
                             }
                         }
                         &:hover {
-                            background-color: rgb(44, 181, 255);
+                            background-color: rgba(44, 181, 255, 0.9);
                             border: 6px solid rgb(46, 129, 225);
                             border-radius: 16px;
                         }
                         &.active {
-                            background-color: rgb(44, 181, 255);
+                            background-color: rgba(44, 181, 255, 0.9);
                             border: 6px solid rgb(46, 129, 225);
                             border-bottom: 0;
                             border-radius: 16px 16px 0px 0px;
@@ -659,7 +659,7 @@
                         box-sizing: border-box;
                         user-select: none;
                         &:hover {
-                            background-color: #2CB5FF;
+                            background-color: rgba(44, 181, 255, 0.9);
                             border: 6px solid #2E81E1;
                         }
                     }

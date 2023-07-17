@@ -152,7 +152,7 @@ body {
   position: absolute;
   top: 14px;
   left: -12px;
-  background: linear-gradient(0deg, rgb(44, 121, 255) 1%, rgb(44, 181, 255) 100%);
+  background: linear-gradient(0deg, rgba(44, 121, 255, 0.9) 1%, rgba(44, 181, 255, 0.9) 100%);
   flex-direction: column;
   list-style: none;
   z-index: 99;
@@ -628,12 +628,12 @@ body {
   background-size: contain;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links:hover {
-  background-color: rgb(44, 181, 255);
+  background-color: rgba(44, 181, 255, 0.9);
   border: 6px solid rgb(46, 129, 225);
   border-radius: 16px;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links.active {
-  background-color: rgb(44, 181, 255);
+  background-color: rgba(44, 181, 255, 0.9);
   border: 6px solid rgb(46, 129, 225);
   border-bottom: 0;
   border-radius: 16px 16px 0px 0px;
@@ -668,7 +668,7 @@ body {
           user-select: none;
 }
 #nav .bottom-nav .bottom-nav-container .right-bottom-nav ul.right-bottom-nav-elements-container .right-nav-links:hover {
-  background-color: #2CB5FF;
+  background-color: rgba(44, 181, 255, 0.9);
   border: 6px solid #2E81E1;
 }
 
