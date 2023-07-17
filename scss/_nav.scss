@@ -822,6 +822,7 @@
        .top-nav {
         flex-direction: column;
         height: auto;
+        overflow: hidden;
             .logo-left-container {
                 width: 100%;
                 justify-content: flex-start;
@@ -830,6 +831,7 @@
             .searchbar-right-container {
                 #searchQueryInput {
                     width: 95vw !important;
+                    margin-bottom: 16px;
                 }
                 .flag-lang-container {
                     position: absolute;

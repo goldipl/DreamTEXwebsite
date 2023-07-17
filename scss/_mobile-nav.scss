@@ -32,6 +32,11 @@
                     bottom: 8px;
                     left: 0;
                     box-shadow: 0px -6px 10px #00000029;
+                    cursor: pointer;
+                    &.active {
+                        background-color: #2E81E1;
+                        border-radius: 0 0 100% 100%;
+                    }
                     .hamburger-line {
                         display: flex;
                         width: 34px;
@@ -91,6 +96,197 @@
                         margin: 0;
                         color: #707070;
                     }
+                }
+            }
+        }
+    }
+    .mobile-nav-menu-items {
+        display: none;
+        position: fixed;
+        bottom: 62px;
+        left: 0;
+        z-index: 999999999999;
+        width: 100%;
+        height: auto;
+        background: linear-gradient(to bottom,#2CB5FF, #2E81E1);
+        border-radius: 20px 20px 0 0;
+        &.open {
+            display: flex;
+        }
+        .mobile-nav-list {
+            width: 90%;
+            margin: 0 auto;
+            .mobile-nav-list-items-icons {
+                list-style: none;
+                padding: 0;
+                .mobile-nav-list-item-icon {
+                    position: relative;
+                    p {
+                        display: inline-flex;
+                        color: #FFFFFF;
+                        text-decoration: none;
+                        height: 42px;
+                        font-size: 22px;
+                        line-height: 32px;
+                        padding-left: 48px;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        max-width: 85vw;
+                        margin: 0;
+                    }
+                    &.t-shirts::before {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        top: 0px;
+                        left: 0px;
+                        background: url('./../assets/icons/t-shirts.svg');
+                        width: 32px;
+                        height: 32px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    &.vests::before {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        top: 0px;
+                        left: 0px;
+                        background: url('./../assets/icons/vestss.svg');
+                        width: 32px;
+                        height: 32px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    &.foils::before {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        top: 0px;
+                        left: 0px;
+                        background: url('./../assets/icons/flex_floxk_foils.svg');
+                        width: 32px;
+                        height: 32px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    &.usb::before {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        top: 0px;
+                        left: 0px;
+                        background: url('./../assets/icons/USB.svg');
+                        width: 32px;
+                        height: 32px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                    }
+                    & .mobile-nav-sublist {
+                        display: none;
+                    }
+                    &.active .mobile-nav-sublist {
+                        position: relative;
+                        padding: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        position: fixed;
+                        bottom: 62px;
+                        left: 0;
+                        z-index: 9999999999999;
+                        width: 100%;
+                        height: 90vh;
+                        background: linear-gradient(to bottom,#2CB5FF, #2E81E1);
+                        border-radius: 20px 20px 0 0;
+                        .mobile-nav-sublist-close-icon {
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            top: 16px;
+                            right: 16px;
+                            background: url('./../assets/icons/white_x_mobile_menu.svg');
+                            width: 20px;
+                            height: 20px;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            z-index: 9999999999999;
+                        }
+                        .mobile-nav-sublist-title {
+                            position: relative;
+                            display: inline-flex;
+                            border-bottom: 1px solid #FFFFFF;
+                            height: 40px;
+                            margin-bottom: 8px;
+                            .mobile-back-icon {
+                                position: absolute;
+                                content: "";
+                                display: inline-flex;
+                                top: 4px;
+                                left: 8px;
+                                background: url('./../assets/icons/white_chevron_left.svg');
+                                width: 20px;
+                                height: 20px;
+                                background-repeat: no-repeat;
+                                background-size: contain;
+                                z-index: 99999999999999999999999999999999999;
+                            }
+                            p {
+                                margin: 0;
+                                font-size: 23px;
+                                line-height: 28px;
+                                color: #FFFFFF;
+                            }
+                        }
+                        .mobile-nav-sublist-items-icon {
+                            padding: 0 8px;
+                            list-style: none;
+                            .mobile-nav-list-item-icon {
+                                position: relative;
+                                a {
+                                    display: inline-flex;
+                                    color: #FFFFFF;
+                                    text-decoration: none;
+                                    height: 42px;
+                                    font-size: 22px;
+                                    line-height: 32px;
+                                    padding-left: 48px;
+                                    text-overflow: ellipsis;
+                                    overflow: hidden;
+                                    white-space: nowrap;
+                                    max-width: 85vw;
+                                    margin: 0;
+                                    text-transform: uppercase;
+                                    font-weight: 500;
+                                }
+                                &.t-shirts::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0px;
+                                    left: 0px;
+                                    background: url('./../assets/icons/t-shirts.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .mobile-nav-list-items {
+                list-style: none;
+                border-top: 1px solid #FFFFFF;
+                padding: 16px 0 0 0;
+                a {
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    font-size: 18px;
+                    line-height: 40px;
+                    font-weight: 500;
+                    text-transform: uppercase;
                 }
             }
         }

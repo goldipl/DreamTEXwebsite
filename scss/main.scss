@@ -40,6 +40,7 @@ body {
                 margin: 0;
                 left: 0;
                 bottom: -64px;
+                text-shadow: 0px 0px 4px #FFFFFF;
             }
         }
         .messenger-x-icon {
@@ -84,5 +85,20 @@ section {
 @media (max-width: 1200px) {
     body {
         width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+        margin-bottom: 62px;
+        section {
+            h1.title {
+                margin-left: 15px;
+            }
+        }
+        .messenger {
+            bottom: 64px;
+            right: 8px;
+        }
     }
 }

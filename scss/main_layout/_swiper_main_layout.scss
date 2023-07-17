@@ -55,3 +55,21 @@
         }
     }
 }
+
+@media (max-width: 1200px) { 
+    #swiper {
+        .swiper {
+            position: relative;
+            left: 0;
+            width: 100vw;
+            height: 264px;
+            .swiper-slide {
+                img {
+                    object-fit: cover;
+                    width: 100vw;
+                    height: 230px;
+                }
+            }
+        }
+    }
+}

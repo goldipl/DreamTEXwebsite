@@ -53,3 +53,66 @@
         }
     }
 } 
+
+@media (max-width: 1200px) {
+    .photo-text-container {
+        height: auto;
+        align-items: center;
+    }   
+}
+
+@media (max-width: 800px) {
+    .photo-text-container {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        .left-photo-container {
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: contain;
+            }
+        }
+        .right-text-container {
+            padding-left: 0;
+            border-left: 0;
+            margin: auto;
+            height: 80%;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            h1.text-title {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 12px;
+            }
+            .text-author-data {
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                margin: 0;
+                color: #707070;
+            }
+            .text-desc {
+                font-size: 12px;
+                line-height: 18px;
+                font-weight: 400;
+                margin: 0;
+                & + ul {
+                    padding-left: 0;
+                    li {
+                        font-size: 12px;
+                        line-height: 18px;
+                        list-style: none;
+                        &::before {
+                            content: '·';
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}

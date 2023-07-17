@@ -47,3 +47,35 @@
         }
     }
 }
+
+@media (max-width: 800px) {
+    #about_company {
+        .about_company_container {
+            .about_company_container_top {
+                flex-direction: column;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                .about_company_container_top-slot {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 100%;
+                    .slot-title {
+                        display: flex;
+                        justify-content: center;
+                        p {
+                            font-size: 28px;
+                            line-height: 36px;
+                        }
+                    }
+                }
+            }
+            .about_company_container_bottom {
+                p {
+                    display: none;
+                }
+            }
+        }
+    }
+}
