@@ -121,6 +121,7 @@
                 padding: 0;
                 .mobile-nav-list-item-icon {
                     position: relative;
+                    cursor: pointer;
                     p {
                         display: inline-flex;
                         color: #FFFFFF;
@@ -211,6 +212,7 @@
                             background-repeat: no-repeat;
                             background-size: contain;
                             z-index: 9999999999999;
+                            cursor: pointer;
                         }
                         .mobile-nav-sublist-title {
                             position: relative;
@@ -230,6 +232,7 @@
                                 background-repeat: no-repeat;
                                 background-size: contain;
                                 z-index: 99999999999999999999999999999999999;
+                                cursor: pointer;
                             }
                             p {
                                 margin: 0;
@@ -243,6 +246,7 @@
                             list-style: none;
                             .mobile-nav-list-item-icon {
                                 position: relative;
+                                cursor: pointer;
                                 a {
                                     display: inline-flex;
                                     color: #FFFFFF;

@@ -957,6 +957,7 @@ body {
 }
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon {
   position: relative;
+  cursor: pointer;
 }
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon p {
   display: inline-flex;
@@ -1049,6 +1050,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 9999999999999;
+  cursor: pointer;
 }
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-title {
   position: relative;
@@ -1069,6 +1071,7 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   z-index: 100000000000000000000000000000000000;
+  cursor: pointer;
 }
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-title p {
   margin: 0;
@@ -1082,6 +1085,7 @@ body {
 }
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon {
   position: relative;
+  cursor: pointer;
 }
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon a {
   display: inline-flex;
