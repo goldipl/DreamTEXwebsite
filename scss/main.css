@@ -99,7 +99,7 @@ body {
 }
 #nav .bottom-nav {
   display: flex;
-  background: linear-gradient(90deg, #1C2F82, #2E81E1);
+  background: linear-gradient(90deg, #2C79FF, #2E81E1);
   margin-left: calc((100vw - 1170px) / 2 * -1);
   width: 100vw;
   height: 48px;
@@ -122,29 +122,45 @@ body {
   margin: 0;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links {
-  color: #FFFFFF;
+  color: rgb(255, 255, 255);
   list-style: none;
-  padding: 14px 12px;
+  padding: 14px 8px;
   width: -moz-max-content;
   width: max-content;
   cursor: pointer;
+  box-sizing: border-box;
+  height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+  border: 6px solid rgba(255, 255, 255, 0);
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist {
-  position: relative;
+  position: absolute;
   z-index: 99999;
+  top: 27px;
+  left: 12px;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items {
   display: none;
   position: absolute;
   top: 14px;
   left: -12px;
-  background: linear-gradient(0deg, #1C2F82 1%, #2CB5FF 100%);
+  background: linear-gradient(0deg, rgb(44, 121, 255) 1%, rgb(44, 181, 255) 100%);
   flex-direction: column;
   list-style: none;
   z-index: 99;
-  padding: 0;
-  border-radius: 0 10px 10px 10px;
-  padding: 8px 0;
+  border-radius: 0px 10px 10px;
+  padding: 8px 0px;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items.active {
+  display: flex;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item {
   position: relative;
@@ -612,11 +628,16 @@ body {
   background-size: contain;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links:hover {
-  background-color: #2CB5FF;
-  border-radius: 10px 10px 0 0;
+  background-color: rgb(44, 181, 255);
+  border: 6px solid rgb(46, 129, 225);
+  border-radius: 16px;
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links:hover ul.sublist-items {
-  display: flex;
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links.active {
+  background-color: rgb(44, 181, 255);
+  border: 6px solid rgb(46, 129, 225);
+  border-bottom: 0;
+  border-radius: 16px 16px 0px 0px;
+  padding-top: 8px;
 }
 #nav .bottom-nav .bottom-nav-container .right-bottom-nav {
   display: flex;
@@ -629,16 +650,26 @@ body {
   margin: 0;
 }
 #nav .bottom-nav .bottom-nav-container .right-bottom-nav ul.right-bottom-nav-elements-container .right-nav-links {
+  display: flex;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
   color: #FFFFFF;
   padding: 14px 12px;
   width: -moz-max-content;
   width: max-content;
   text-decoration: none;
   list-style: none;
+  border: 6px solid rgba(255, 255, 255, 0);
+  height: 47px;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #nav .bottom-nav .bottom-nav-container .right-bottom-nav ul.right-bottom-nav-elements-container .right-nav-links:hover {
   background-color: #2CB5FF;
-  border-radius: 10px;
+  border: 6px solid #2E81E1;
 }
 
 @media (max-width: 1170px) {
@@ -748,7 +779,7 @@ body {
     position: absolute;
     top: 14px;
     left: -12px;
-    background: linear-gradient(0deg, #1C2F82 1%, #2CB5FF 100%);
+    background: linear-gradient(0deg, #2C79FF 1%, #2CB5FF 100%);
     flex-direction: column;
     list-style: none;
     z-index: 99;
@@ -775,7 +806,7 @@ body {
     font-weight: 500;
   }
   #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a:hover {
-    color: #1C2F82;
+    color: #2C79FF;
   }
   #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links:hover {
     background-color: #2CB5FF;
