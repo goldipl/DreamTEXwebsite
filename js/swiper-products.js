@@ -3,6 +3,11 @@ const swiper_products = new Swiper('.swiper-products', {
     direction: 'horizontal',
     loop: true,
   
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
