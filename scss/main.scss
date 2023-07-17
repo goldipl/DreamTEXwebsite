@@ -79,6 +79,7 @@ section {
         font-weight: 300;
         color: #707070;
         margin-bottom: 12px;
+        margin-top: 0;
     }
 }
 
@@ -96,8 +97,15 @@ section {
     body {
         margin-bottom: 62px;
         .messenger {
-            bottom: 64px;
-            right: 8px;
+            display: none;
+        }
+        section {
+            margin-bottom: 19px;
+            h1.title {
+                font-size: 27px;
+                line-height: 33px;
+                margin-bottom: 4px;
+            }
         }
     }
 }

@@ -3,10 +3,11 @@
         position: relative;
         left: calc(((100vw - 1170px)/2)*(-1));
         width: 100vw;
-        height: 420px;
+        height: calc(100% + 40px);
         .swiper-slide {
             img {
                 object-fit: cover;
+                height: calc(100% + 40px);
                 width: 100vw;
             }
         }
@@ -38,9 +39,10 @@
             }
         }
         .swiper-pagination {
-            position: absolute;
+            position: relative;
             left: 0;
-            bottom: 0;
+            bottom: -16px;
+            padding-bottom: 16px;
             .swiper-pagination-bullet {
                 box-sizing: border-box;
                 width: 12px;
@@ -57,18 +59,55 @@
     }
 }
 
-@media (max-width: 1170px) { 
+@media (max-width: 1920px) { 
     #swiper {
         .swiper {
-            position: relative;
-            left: 0;
             width: 100vw;
-            height: 264px;
+            height: 400px;
             .swiper-slide {
                 img {
                     width: 100vw;
-                    height: 230px;
+                    height: 366px;
                 }
+            }
+            .swiper-pagination {
+                bottom: 16px;           
+            }
+        }
+    }
+}
+
+@media (max-width: 1170px) { 
+    #swiper {
+        .swiper {
+            left: 0;
+        }
+    }
+}
+
+@media (max-width: 960px) { 
+    #swiper {
+        .swiper {
+            height: auto;
+            .swiper-wrapper {
+                .swiper-slide {
+                    content: url('./../../assets/img/slider/baner_mobilny.jpg');
+                    background-size: contain;
+                    background-position: center;
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    a {
+                        img {
+                            display: none;
+                            height: inherit !important;
+                        }
+                    }
+                }
+            }
+            .swiper-pagination {
+                display: none;          
             }
         }
     }
