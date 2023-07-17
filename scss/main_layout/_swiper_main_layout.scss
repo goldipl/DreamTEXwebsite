@@ -91,16 +91,15 @@
             height: auto;
             .swiper-wrapper {
                 .swiper-slide {
-                    content: url('./../../assets/img/slider/baner_mobilny.jpg');
-                    background-size: contain;
-                    background-position: center;
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain;
                     a {
                         img {
-                            display: none;
+                            content: url('./../../assets/img/slider/baner_mobilny.jpg');
+                            background-size: contain;
+                            background-position: center;
+                            display: block;
+                            width: 100%;
+                            height: 100%;
+                            object-fit: contain;
                             height: inherit !important;
                         }
                     }

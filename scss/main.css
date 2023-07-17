@@ -1245,7 +1245,7 @@ body {
   #swiper .swiper {
     height: auto;
   }
-  #swiper .swiper .swiper-wrapper .swiper-slide {
+  #swiper .swiper .swiper-wrapper .swiper-slide a img {
     content: url("./../../assets/img/slider/baner_mobilny.jpg");
     background-size: contain;
     background-position: center;
@@ -1254,9 +1254,6 @@ body {
     height: 100%;
     -o-object-fit: contain;
        object-fit: contain;
-  }
-  #swiper .swiper .swiper-wrapper .swiper-slide a img {
-    display: none;
     height: inherit !important;
   }
   #swiper .swiper .swiper-pagination {
