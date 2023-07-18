@@ -1,0 +1,36 @@
+.breadcrumbs {
+    .breadcrumbs-list {
+        display: inline-flex;
+        padding-left: 0;
+        .breadcrumb-item {
+            list-style: none;
+            &:first-child {
+                a {
+                    padding-left: 0;
+                    &::before {
+                        display: none;
+                    }
+                }
+            }
+            a {
+                position: relative;
+                font-size: 16px;
+                line-height: 19px;
+                font-weight: 400;
+                color: #3E3E3E;
+                text-decoration: none;
+                padding-left: 12px;
+                margin-left: 6px;
+                &:hover {
+                    text-decoration: underline;
+                }
+                &::before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    content: '/ ';
+                }
+            }
+        }
+    }
+}
