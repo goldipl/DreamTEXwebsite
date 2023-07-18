@@ -141,6 +141,9 @@ body {
      -moz-user-select: none;
           user-select: none;
 }
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links.active .bottom-nav-sublist ul.sublist-items {
+  display: flex;
+}
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist {
   position: absolute;
   z-index: 99999;
@@ -158,9 +161,7 @@ body {
   z-index: 99;
   border-radius: 0px 10px 10px;
   padding: 8px 0px;
-}
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items.active {
-  display: flex;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1607843137);
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item {
   position: relative;
@@ -173,15 +174,53 @@ body {
   padding-left: 56px;
   height: 42px;
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a {
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p {
   text-decoration: none;
   color: #FFFFFF;
   font-size: 18px;
   line-height: 22px;
   font-weight: 500;
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a:hover {
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a:hover,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p:hover {
   color: #1C2F82;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items {
+  display: none;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active {
+  position: absolute;
+  top: -8px;
+  left: 100%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgba(44, 121, 255, 0.9) 1%, rgba(44, 181, 255, 0.9) 100%);
+  flex-direction: column;
+  list-style: none;
+  z-index: 99;
+  border-radius: 10px;
+  padding: 16px;
+  box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1607843137);
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active .subsublist-item.first,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active .subsublist-item.first {
+  border-bottom: 1px solid #FFFFFF;
+  padding-bottom: 4px;
+  margin-bottom: 4px;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active .subsublist-item.first a,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active .subsublist-item.first a {
+  text-transform: uppercase;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active .subsublist-item a,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active .subsublist-item a {
+  text-transform: none;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 400;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item.t-shirts::before {
   position: absolute;
@@ -1004,6 +1043,9 @@ body {
   max-width: 85vw;
   margin: 0;
 }
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon p:hover {
+  color: #1C2F82;
+}
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.t-shirts::before {
   position: absolute;
   content: "";
@@ -1065,7 +1107,7 @@ body {
   left: 0;
   z-index: 9999999999999;
   width: 100%;
-  height: calc(94vh - 62px);
+  height: calc(88vh - 62px);
   background: linear-gradient(to bottom, #2CB5FF, #2E81E1);
   border-radius: 20px 20px 0 0;
 }
@@ -1113,12 +1155,14 @@ body {
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon {
   padding: 0 8px;
   list-style: none;
+  overflow-y: scroll;
 }
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon {
   position: relative;
   cursor: pointer;
 }
-#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon a {
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon a,
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon p {
   display: inline-flex;
   color: #FFFFFF;
   text-decoration: none;
@@ -1134,13 +1178,503 @@ body {
   text-transform: uppercase;
   font-weight: 500;
 }
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon a:hover,
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon p:hover {
+  color: #1C2F82;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items {
+  display: none;
+  padding: 0 8px;
+  list-style: none;
+  padding: 15px;
+  flex-direction: column;
+  position: fixed;
+  bottom: 62px;
+  left: 0;
+  z-index: 100000000000000000;
+  width: 100%;
+  height: calc(88vh - 62px);
+  background: linear-gradient(to bottom, #2CB5FF, #2E81E1);
+  border-radius: 20px 20px 0 0;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items.active {
+  display: flex;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items .mobile-nav-subsublist-title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 16px;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items .mobile-back-icon {
+  position: absolute;
+  content: "";
+  display: inline-flex;
+  top: 18px;
+  left: 24px;
+  background: url("./../assets/icons/white_chevron_left.svg");
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 10000000000000000000000000000000000000000;
+  cursor: pointer;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items .mobile-nav-subsublist-item.first a {
+  text-transform: uppercase;
+  font-weight: 600;
+  border-bottom: 1px solid #FFFFFF;
+  margin-bottom: 16px;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items .mobile-nav-subsublist-item a {
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: none;
+  padding-left: 0;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items .mobile-nav-subsublist-item a:hover {
+  color: #1C2F82;
+}
 #mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.t-shirts::before {
   position: absolute;
   content: "";
   display: block;
-  top: 0px;
-  left: 0px;
+  top: 0;
+  left: 0;
   background: url("./../assets/icons/t-shirts.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.polo::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/polo_shirts.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.blouses::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/blouses.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.sweaters::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/sweaters_and_vests.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.shirts::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/shirts.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.fleeces::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/fleeces.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.hats::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/hats.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.jackets::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/jackets.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.softshells::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/softshell_jackets.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.sleeveless::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/sleeveless.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.trousers::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/trousers.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.bags::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/bags.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.accessories::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/accessories.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.boots::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/boots.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.vests::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/vestss.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.jumpsuit::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/jumpsuit.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.gloves::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/gloves.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.foils::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/flex_floxk_foils.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.thermopress::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/thermopress.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.printsub::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/sublimation_printing.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.printsolvent::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/solvent_printing.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.backpacks::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/backpacks.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.keychains::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/keychains.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.office::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/office.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.pens::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/pens_notepads.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.wallets::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/wallets.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.briefcases::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/briefcases.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.mugs::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/mugs.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.relax::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/relax.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.tools-flashlights::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/tools_and_flashlights.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.home-beauty::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/home_and_beauty.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.oddments::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/oddments.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.multimedia::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/multimedia.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.watches::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/watches.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.umbrellas::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/umbrellas.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.usb::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/USB.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.lanyard::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/lanyard.svg");
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
@@ -1158,6 +1692,9 @@ body {
   line-height: 40px;
   font-weight: 500;
   text-transform: uppercase;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items a:hover {
+  color: #1C2F82;
 }
 
 @media (max-width: 960px) {

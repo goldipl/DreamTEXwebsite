@@ -135,6 +135,9 @@
                         white-space: nowrap;
                         max-width: 85vw;
                         margin: 0;
+                        &:hover {
+                            color: #1C2F82;
+                        }
                     }
                     &.t-shirts::before {
                         position: absolute;
@@ -197,7 +200,7 @@
                         left: 0;
                         z-index: 9999999999999;
                         width: 100%;
-                        height: calc(94vh - 62px);
+                        height: calc(88vh - 62px);
                         background: linear-gradient(to bottom,#2CB5FF, #2E81E1);
                         border-radius: 20px 20px 0 0;
                         .mobile-nav-sublist-close-icon {
@@ -244,10 +247,12 @@
                         .mobile-nav-sublist-items-icon {
                             padding: 0 8px;
                             list-style: none;
+                            overflow-y: scroll;
                             .mobile-nav-list-item-icon {
                                 position: relative;
                                 cursor: pointer;
-                                a {
+                                a,
+                                p {
                                     display: inline-flex;
                                     color: #FFFFFF;
                                     text-decoration: none;
@@ -262,14 +267,507 @@
                                     margin: 0;
                                     text-transform: uppercase;
                                     font-weight: 500;
+                                    &:hover {
+                                        color: #1C2F82;
+                                    }
+                                }
+                                .mobile-nav-subsublist-items {
+                                    display: none;
+                                    padding: 0 8px;
+                                    list-style: none;
+                                    padding: 15px;
+                                    flex-direction: column;
+                                    position: fixed;
+                                    bottom: 62px;
+                                    left: 0;
+                                    z-index: 99999999999999999;
+                                    width: 100%;
+                                    height: calc(88vh - 62px);
+                                    background: linear-gradient(to bottom, #2CB5FF, #2E81E1);
+                                    border-radius: 20px 20px 0 0;
+                                    &.active {
+                                        display: flex;
+                                    }
+                                    .mobile-nav-subsublist-title {
+                                        font-size: 24px;
+                                        line-height: 29px;
+                                        font-weight: 400;
+                                        border-bottom: 1px solid #FFFFFF;
+                                        margin-bottom: 16px;
+                                    }
+                                    .mobile-back-icon {
+                                        position: absolute;
+                                        content: "";
+                                        display: inline-flex;
+                                        top: 18px;
+                                        left: 24px;
+                                        background: url('./../assets/icons/white_chevron_left.svg');
+                                        width: 20px;
+                                        height: 20px;
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        z-index: 9999999999999999999999999999999999999999;
+                                        cursor: pointer;
+                                    }
+                                    .mobile-nav-subsublist-item {
+                                        &.first {
+                                            a {
+                                                text-transform: uppercase;
+                                                font-weight: 600;
+                                                border-bottom: 1px solid #FFFFFF;
+                                                margin-bottom: 16px;
+                                            }
+                                        }
+                                        a {
+                                            font-size: 18px;
+                                            line-height: 22px;
+                                            text-transform: none;
+                                            padding-left: 0;
+                                            &:hover {
+                                                color: #1C2F82;
+                                            }
+                                        }
+                                    }
                                 }
                                 &.t-shirts::before {
                                     position: absolute;
                                     content: "";
                                     display: block;
-                                    top: 0px;
-                                    left: 0px;
+                                    top: 0;
+                                    left: 0;
                                     background: url('./../assets/icons/t-shirts.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.polo::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/polo_shirts.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.blouses::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/blouses.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.sweaters::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/sweaters_and_vests.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.shirts::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/shirts.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.fleeces::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/fleeces.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.hats::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/hats.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.jackets::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/jackets.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.softshells::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/softshell_jackets.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.sleeveless::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/sleeveless.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.trousers::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/trousers.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.bags::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/bags.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.accessories::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/accessories.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.boots::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/boots.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.vests::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/vestss.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.jumpsuit::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/jumpsuit.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.gloves::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/gloves.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.foils::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/flex_floxk_foils.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.thermopress::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/thermopress.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.printsub::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/sublimation_printing.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.printsolvent::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/solvent_printing.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.backpacks::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/backpacks.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.keychains::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/keychains.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.office::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/office.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.pens::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/pens_notepads.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.wallets::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/wallets.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.briefcases::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/briefcases.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.mugs::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/mugs.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.relax::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/relax.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.tools-flashlights::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/tools_and_flashlights.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.home-beauty::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/home_and_beauty.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.oddments::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/oddments.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.multimedia::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/multimedia.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.watches::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/watches.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.umbrellas::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/umbrellas.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.usb::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/USB.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
+                                &.lanyard::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/lanyard.svg');
                                     width: 32px;
                                     height: 32px;
                                     background-repeat: no-repeat;
@@ -291,6 +789,9 @@
                     line-height: 40px;
                     font-weight: 500;
                     text-transform: uppercase;
+                    &:hover {
+                        color: #1C2F82;
+                    }
                 }
             }
         }
