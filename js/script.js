@@ -57,6 +57,7 @@ const desktop_sublist_item = document.querySelectorAll('#nav .bottom-nav .bottom
 
 desktop_sublist_item.forEach(e => {
     e.addEventListener('click', () => {
+        e.classList.toggle('active');
         e.nextElementSibling.classList.toggle('active');
         e.parentElement.parentElement.parentElement.parentElement.classList.toggle('active');
         document.body.classList.toggle('menu-hover');
