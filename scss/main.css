@@ -1246,7 +1246,7 @@ body {
     height: auto;
   }
   #swiper .swiper .swiper-wrapper .swiper-slide a img {
-    content: url("./../../assets/img/slider/baner_mobilny.jpg");
+    content: url("./../assets/img/slider/baner_mobilny.jpg");
     background-size: contain;
     background-position: center;
     display: block;
