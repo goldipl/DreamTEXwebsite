@@ -41,14 +41,38 @@ const mobile_nav_back_icon = document.querySelector('#mobile-nav .mobile-nav-sub
 
 mobile_nav_back_icon.addEventListener('click', () => {
     mobile_nav_back_icon.parentElement.parentElement.classList.toggle('active');
-})
+});
 
-const desktop_nav_main_items = document.querySelectorAll('#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links');
+const desktop_nav_main_items = document.querySelectorAll('#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container > li.bottom-nav-links');
 
 desktop_nav_main_items.forEach(e => {
     e.addEventListener('click', () => {
         document.body.classList.toggle('menu-hover');
         e.classList.toggle('active');
-        e.firstElementChild.firstElementChild.classList.toggle('active');
     });
+});
+
+const desktop_sublist_item = document.querySelectorAll('#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container > li.bottom-nav-links .bottom-nav-sublist ul.sublist-items > li.sublist-item p');
+
+desktop_sublist_item.forEach(e => {
+    e.addEventListener('click', () => {
+        e.nextElementSibling.classList.toggle('active');
+        e.parentElement.parentElement.parentElement.parentElement.classList.toggle('active');
+        document.body.classList.toggle('menu-hover');
+    });
+});
+
+const mobile_sublist_item = document.querySelectorAll('#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon p');
+
+mobile_sublist_item.forEach(e => {
+    e.addEventListener('click', () => {
+        e.nextElementSibling.classList.toggle('active');
+        e.parentElement.parentElement.parentElement.parentElement.classList.toggle('active');
+    });
+});
+
+const mobile_nav_sublist_back_icon = document.querySelector('#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon .mobile-nav-subsublist-items .mobile-back-icon');
+
+mobile_nav_sublist_back_icon.addEventListener('click', () => {
+    mobile_nav_sublist_back_icon.parentElement.classList.toggle('active');
 });
