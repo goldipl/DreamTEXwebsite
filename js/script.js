@@ -78,3 +78,15 @@ const mobile_nav_sublist_back_icon = document.querySelector('#mobile-nav .mobile
 mobile_nav_sublist_back_icon.addEventListener('click', () => {
     mobile_nav_sublist_back_icon.parentElement.classList.toggle('active');
 });
+
+const product_arrows = document.querySelectorAll('.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-bottom .products-slot-arrows-down');
+
+product_arrows.forEach(e => {
+    e.addEventListener('click', () => e.parentElement.parentElement.parentElement.nextElementSibling.style.display = "flex");
+});
+
+const bestseller_product_arrows = document.querySelectorAll('#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom .product-swiper-arrows-down');
+
+bestseller_product_arrows.forEach(e => {
+    e.addEventListener('click', () => e.parentElement.parentElement.parentElement.nextElementSibling.style.display = "flex");
+});
