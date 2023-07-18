@@ -18,6 +18,7 @@ const mobile_nav_menu = document.querySelector('#mobile-nav .mobile-nav-menu-ite
 hamburger.addEventListener('click', () => {
     mobile_nav_menu.classList.toggle('open');
     hamburger.classList.toggle('active');
+    document.body.classList.toggle('mobile-menu-hover');
 });
 
 const mobile_nav_list_item = document.querySelectorAll('#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon');
