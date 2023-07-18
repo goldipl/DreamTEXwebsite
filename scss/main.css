@@ -1971,7 +1971,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../../assets/img/labels/topseller_pl.png");
+  background: url("./../assets/img/labels/topseller_pl.png");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -1983,7 +1983,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../../assets/img/labels/new_pl.png");
+  background: url("./../assets/img/labels/new_pl.png");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -2978,7 +2978,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../../assets/img/labels/topseller_pl.png");
+  background: url("./../assets/img/labels/topseller_pl.png");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -2990,7 +2990,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../../assets/img/labels/new_pl.png");
+  background: url("./../assets/img/labels/new_pl.png");
   height: 90px;
   width: 90px;
   background-size: cover;
