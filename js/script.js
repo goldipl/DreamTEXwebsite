@@ -47,7 +47,6 @@ const desktop_nav_main_items = document.querySelectorAll('#nav .bottom-nav .bott
 
 desktop_nav_main_items.forEach(e => {
     e.addEventListener('click', () => {
-        console.log('dupa')
         document.body.classList.toggle('menu-hover');
         e.classList.toggle('active');
         e.firstElementChild.firstElementChild.classList.toggle('active');
