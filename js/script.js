@@ -5,7 +5,9 @@ footer_year.innerHTML = new Date().getFullYear();
 
 const footer_arrow_up = document.querySelector('footer .footer-arrow-up');
 
-footer_arrow_up.addEventListener('click', () => window.scrollTo(0,0))
+if (!!footer_arrow_up) {
+    footer_arrow_up.addEventListener('click', () => window.scrollTo(0,0));
+}
 
 const messenger = document.querySelector('.messenger');
 const messe_x_icon = document.querySelector('.messenger .messenger-x-icon');
@@ -82,11 +84,17 @@ mobile_nav_sublist_back_icon.addEventListener('click', () => {
 const product_arrows = document.querySelectorAll('.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-bottom .products-slot-arrows-down');
 
 product_arrows.forEach(e => {
-    e.addEventListener('click', () => e.parentElement.parentElement.parentElement.nextElementSibling.style.display = "flex");
+    e.addEventListener('click', () => {
+        e.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle('show');
+        e.parentElement.classList.toggle('active');
+    });
 });
 
 const bestseller_product_arrows = document.querySelectorAll('#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom .product-swiper-arrows-down');
 
 bestseller_product_arrows.forEach(e => {
-    e.addEventListener('click', () => e.parentElement.parentElement.parentElement.nextElementSibling.style.display = "flex");
+    e.addEventListener('click', () => {
+        e.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle('show');
+        e.parentElement.classList.toggle('active');
+    });
 });
