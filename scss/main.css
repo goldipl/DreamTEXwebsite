@@ -2057,6 +2057,9 @@ body {
   font-weight: 600;
   margin-left: 4px;
 }
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-price p .product-swiper-login:hover {
+  text-decoration: underline;
+}
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-price p img {
   margin-left: 4px;
 }
@@ -3364,6 +3367,9 @@ body {
   text-decoration: none;
   font-weight: 600;
   margin-left: 4px;
+}
+.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-price p .products-slot-login:hover {
+  text-decoration: underline;
 }
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-price p img {
   margin-left: 4px;

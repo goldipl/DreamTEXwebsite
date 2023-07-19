@@ -129,6 +129,9 @@
                                         text-decoration: none;
                                         font-weight: 600;
                                         margin-left: 4px;
+                                        &:hover {
+                                            text-decoration: underline;
+                                        }
                                     }
                                     img {
                                         margin-left: 4px;
