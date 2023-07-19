@@ -27,8 +27,12 @@ Used technologies:
 ## Screenshots
 * Desktop version :desktop_computer:   
 
+![Screenshot](./screenshots/dreamtex-desktop.png)  
 
 * Tablet version :computer:   
 
+![Screenshot](./screenshots/dreamtext-tablet.png)  
 
 * Mobile version :iphone:      
+
+![Screenshot](./screenshots/dreamtex-mobile.png)  
