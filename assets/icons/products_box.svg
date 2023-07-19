@@ -1,0 +1,19 @@
+<svg id="Przycisk_listing_-_boksy" data-name="Przycisk listing - boksy" xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23">
+  <rect id="Rectangle_221" data-name="Rectangle 221" width="23" height="23" fill="none"/>
+  <g id="Rectangle_217" data-name="Rectangle 217" fill="none" stroke="#707070" stroke-width="2">
+    <rect width="10" height="10" rx="2" stroke="none"/>
+    <rect x="1" y="1" width="8" height="8" rx="1" fill="none"/>
+  </g>
+  <g id="Rectangle_218" data-name="Rectangle 218" transform="translate(13)" fill="none" stroke="#707070" stroke-width="2">
+    <rect width="10" height="10" rx="2" stroke="none"/>
+    <rect x="1" y="1" width="8" height="8" rx="1" fill="none"/>
+  </g>
+  <g id="Rectangle_219" data-name="Rectangle 219" transform="translate(0 13)" fill="none" stroke="#707070" stroke-width="2">
+    <rect width="10" height="10" rx="2" stroke="none"/>
+    <rect x="1" y="1" width="8" height="8" rx="1" fill="none"/>
+  </g>
+  <g id="Rectangle_220" data-name="Rectangle 220" transform="translate(13 13)" fill="none" stroke="#707070" stroke-width="2">
+    <rect width="10" height="10" rx="2" stroke="none"/>
+    <rect x="1" y="1" width="8" height="8" rx="1" fill="none"/>
+  </g>
+</svg>
