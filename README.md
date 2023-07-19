@@ -14,7 +14,15 @@ Used technologies:
 * SCSS
 
 ## Live :star2:  
-* https://goldipl.github.io/DreamTEXwebsite/   
+* Main Page (logged) :arrow_right: https://goldipl.github.io/DreamTEXwebsite/    
+
+* Main Page (unlogged) :arrow_right: https://goldipl.github.io/DreamTEXwebsite/index-logout  
+
+* Login Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/login  
+
+* Products Catalog :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-catalog   
+
+* Contact Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/contact    
 
 ## Screenshots
 * Desktop version :desktop_computer:   
