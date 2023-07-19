@@ -1475,22 +1475,108 @@
                     </ul>
                 </div>
 
+                <div class="products_view_filter">
+                    <a href="#">
+                        <div class="product-view_filter-box"></div>
+                    </a>
+                    <div class="product-view_filter-line"></div>
+                    <a href="#">
+                        <div class="product-view_filter-listing"></div>
+                    </a>
+                </div>
+
                 <div class="filters_container">
                     <div class="filters_column">
                         <h1 class="filters-title">Filtry:</h1>
                         <button class="accordion">Marki</button>
                         <div class="slot">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                          <ul>
+                            <li>
+                                <a href="#">Marka 01</a>
+                            </li>
+                            <li>
+                                <a href="#">Marka 02</a>
+                            </li>
+                            <li>
+                                <a href="#">Marka 03</a>
+                            </li>
+                            <li>
+                                <a href="#">Marka 04</a>
+                            </li>
+                            <li>
+                                <a href="#">Marka 05</a>
+                            </li>
+                          </ul>
                         </div>
                         
                         <button class="accordion">Tagi</button>
                         <div class="slot">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <ul>
+                                <li>
+                                    <a href="#">Tag 01</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tag 02</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tag 03</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tag 04</a>
+                                </li>
+                                <li>
+                                    <a href="#">Tag 05</a>
+                                </li>
+                              </ul>
                         </div>
                         
                         <button class="accordion">Kolor</button>
                         <div class="slot">
-                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            <div class="filters-colors">
+                                <div class="color red"></div>
+                                <div class="color black"></div>
+                                <div class="color yellow"></div>
+                                <div class="color white"></div>
+                                <div class="color blue"></div>
+                                <div class="color green"></div>
+                                <div class="color orange"></div>
+                                <div class="color purple"></div>
+                                <div class="color pink"></div>
+                                <div class="color brown"></div>
+                                <div class="color beige"></div>
+                                <div class="color grey"></div>
+                                <div class="color silver"></div>
+                                <div class="color melange"></div>
+                                <div class="color bright"></div>
+                                <div class="color multicolor"></div>
+                                <div class="color transparent"></div>
+                            </div>
+                        </div>
+
+                        <button class="accordion variants active">Warianty</button>
+                        <div class="slot">
+                            <div class="filters-colors">
+                                <div class="color red">30</div>
+                                <div class="color red">31</div>
+                                <div class="color red">32</div>
+                            </div>
+                        </div>
+
+                        <h1 class="filters-title">Cena:</h1>
+                        <div class="searchbar-container">
+                            <input id="searchbar-input" type="text" name="searchQueryInput" placeholder="od" value="">
+                            <button id="searchbar-submit" type="submit" name="searchQuerySubmit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"></circle><circle cx="18" cy="18" r="17.5" fill="none"></circle></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"></circle><circle cx="8" cy="8" r="7" fill="none"></circle></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"></line></g></svg>
+                            </button>
+                        </div>
+                        <div class="searchbar-container">
+                            <input id="searchbar-input" type="text" name="searchQueryInput" placeholder="do" value="">
+                            <button id="searchbar-submit" type="submit" name="searchQuerySubmit">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"></circle><circle cx="18" cy="18" r="17.5" fill="none"></circle></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"></circle><circle cx="8" cy="8" r="7" fill="none"></circle></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"></line></g></svg>
+                            </button>
+                        </div>
+                        <div class="next-arrow-container">
+                            <div class="arrow"></div>
                         </div>
                     </div>
                     <div class="filters_products">
@@ -1753,11 +1839,30 @@
                     </div>
                 </div>
             </div>
+
+            <div class="pagination">
+                <div class="pagination_container">
+                    <div class="element active">
+                        <p>1</p>
+                    </div>
+                    <div class="element">
+                        <p>2</p>
+                    </div>
+                    <div class="element">
+                        <p>3</p>
+                    </div>
+                    <div class="element">
+                        <p>...</p>
+                    </div>
+                    <div class="element">
+                        <p>999</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
 
         <footer>
-            <div class="footer-arrow-up"></div>
             <div class="footer_container">
                 <div class="footer_container_top">
                     <div class="footer_container_top-left">
@@ -1811,5 +1916,6 @@
     </div>
     <script src="./js/script.js"></script>
     <script src="./js/accordion.js"></script>
+    <script src="./js/colors_variants.js"></script>
 </body>
 </html>
