@@ -3935,6 +3935,158 @@ body {
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_data .cart_data_container form .form-slot textarea:focus {
   outline: 1px solid #2CB5FF;
 }
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 160px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container.payment-method {
+  margin-bottom: 80px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 248px;
+  padding: 30px 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  background-color: #FFFFFF;
+  width: 25%;
+  border: 1px solid #CECECE;
+  cursor: pointer;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot.checked {
+  border: 3px solid #707070;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .text-top {
+  font-size: 16px;
+  line-height: 19px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot img {
+  margin: 16px 0;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .text-bottom {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 0;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .text-bottom span {
+  font-size: 14px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .text-bottom.small {
+  font-size: 16px;
+  line-height: 21px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .text-bottom.with-image {
+  position: relative;
+  display: inline-flex;
+  margin: 24px;
+  margin-left: 48px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .text-bottom.with-image::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  top: -2px;
+  left: -36px;
+  background: url("./../../assets/icons/home_icon_gray.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot form {
+  margin: 15px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot form .cart_radios {
+  margin-bottom: 8px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot form .cart_radios label {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3E3E3E;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 5px 15px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 259px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #2CB5FF;
+  border: 1px solid #2CB5FF;
+  border-radius: 30px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-left a {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 16px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-left a svg {
+  width: 20px;
+  height: 20px;
+  margin-right: 4px;
+  margin-bottom: -3px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-left a svg path {
+  fill: #FFFFFF;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151px;
+  height: 60px;
+  box-sizing: border-box;
+  background-color: #CECECE;
+  border: 1px solid #CECECE;
+  border-radius: 30px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-right.active {
+  background-color: #2CB5FF;
+  border: 1px solid #2CB5FF;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-right a {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0 16px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-right a svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 4px;
+  margin-bottom: -3px;
+  transform: rotate(180deg);
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-right a svg path {
+  fill: #FFFFFF;
+}
 
 footer {
   position: relative;
