@@ -4003,6 +4003,48 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container {
+  display: none;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active {
+  display: flex;
+  flex-direction: column;
+  margin: -80px 30px 30px 30px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .title {
+  display: flex;
+  justify-content: center;
+  margin-left: 15px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main {
+  display: flex;
+  flex-direction: row;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin: 30px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot label {
+  font-size: 16px;
+  line-height: 19px;
+  margin: 0 0 0 16px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+  font-size: 16px;
+  background-color: #EFEFEF;
+  border: 1px solid #CECECE;
+  margin-bottom: 20px;
+  padding-left: 16px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot input:focus {
+  outline: 1px solid #2CB5FF;
+}
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot form {
   margin: 15px;
 }
