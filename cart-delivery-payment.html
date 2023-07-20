@@ -1512,7 +1512,68 @@
                     </div>
                     <div class="cart_square_container">
                         <div class="cart_square-slot">
-
+                            <p class="text-top">PRZESYŁKA KURIERSKA</p>
+                            <img src="./assets/icons/dpd.svg" alt="DPD" width="161" height="70">
+                            <p class="text-bottom">14 zł + VAT</p>
+                        </div>
+                        <div class="cart_square-slot">
+                            <p class="text-top">PRZESYŁKA KURIERSKA ZA POBRANIEM</p>
+                            <img src="./assets/icons/dpd.svg" alt="DPD" width="161" height="70">
+                            <p class="text-bottom">16 zł + VAT</p>
+                        </div>
+                        <div class="cart_square-slot">
+                            <p class="text-top">Odbiór osobisty</p>
+                            <p class="text-bottom with-image">Lokalizacja</p>
+                            <p class="text-bottom small">ul. Szyszkowa 32</p>
+                            <p class="text-bottom small">02-285 Warszawa</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_delivery_payment_container-slot">
+                    <div class="number_title_container">
+                        <p class="number">4</p>
+                        <p class="title">Sposób płatności</p>
+                    </div>
+                    <div class="cart_square_container payment-method">
+                        <div class="cart_square-slot">
+                            <p class="text-top">Tradycyjny przelew bankowy</p>
+                            <img src="./assets/icons/surface1.svg" alt="surface" width="82" height="83">
+                        </div>
+                        <div class="cart_square-slot">
+                            <p class="text-top">Szybki przelew</p>
+                            <img src="./assets/icons/przelewy24_logo_2022.svg" alt="przelewy24" width="206" height="72">
+                        </div>
+                        <div class="cart_square-slot">
+                            <p class="text-top">Płatność przy odbiorze</p>
+                            <p class="text-bottom">karta <span>lub</span> gotówka</p>
+                        </div>
+                    </div>
+                    <form>
+                        <div class="cart_radios">
+                            <input type="radio" id="option1" name="option" value="Chcę otrzymać zamówienie po pełnym skompletowaniu">
+                            <label for="option1">Chcę otrzymać zamówienie po pełnym skompletowaniu</label>
+                        </div>
+                        <div class="cart_radios">
+                            <input type="radio" id="option2" name="option" value="Chcę otrzymać zamówienie w partiach">
+                            <label for="option2">Chcę otrzymać zamówienie w partiach</label>
+                        </div>
+                    </form>
+                    <div class="cart_delivery_payment-buttons">
+                        <div class="cart_delivery_payment-button-left">
+                            <a href="#">
+                                <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#3E3E3E"/>
+                                </svg>
+                                Wróć do koszyka
+                            </a>
+                        </div>
+                        <div class="cart_delivery_payment-button-right">
+                            <a href="#">
+                                Kupuję
+                                <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#3E3E3E"/>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1572,9 +1633,7 @@
             </div>
         </footer>
     </div>
-    <script src="./js/swiper-bundle.js"></script>
-    <script src="./js/swiper.js"></script>
-    <script src="./js/swiper-products.js"></script>
+    <script src="./js/cart-delivery.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
