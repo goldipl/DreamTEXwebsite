@@ -28,6 +28,8 @@ Used technologies:
 
 * Cart (delivery & payment) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-delivery-payment   
 
+* Cart (summary) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-summary
+
 ## Screenshots
 * Desktop version :desktop_computer:   
 
