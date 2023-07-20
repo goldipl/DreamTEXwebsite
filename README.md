@@ -22,7 +22,11 @@ Used technologies:
 
 * Products Catalog :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-catalog   
 
-* Contact Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/contact    
+* Contact Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/contact   
+
+* Cart Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart  
+
+* Cart (delivery & payment) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-delivery-payment   
 
 ## Screenshots
 * Desktop version :desktop_computer:   
