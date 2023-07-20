@@ -13,6 +13,8 @@
 @import 'contact';
 @import 'products-catalog';
 @import 'pagination';
+@import './cart/cart';
+@import './cart/cart_delivery_payment';
 @import 'footer';
 
 body {
