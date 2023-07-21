@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
-    <title>Dreamtex - Koszyk - Dostawa i płatność</title>
-    <link rel="stylesheet" href="./css/swiper-bundle.css"/>
+    <title>Dreamtex - Koszyk - Podsumowanie</title>
     <link rel="stylesheet" href="./scss/main.css">
 </head>
-<body class="main">
+<body>
     <header>
         <nav id="nav">
             <div class="top-nav">
@@ -1464,146 +1463,171 @@
             <div class="messenger-x-icon"></div>
         </div>
     
-        <section id="cart_delivery_payment">
-            <h1 class="title">Zamówienie</h1>
-            <div class="cart_delivery_payment_container">
-                <div class="cart_delivery_payment_container-slot">
-                    <div class="number_title_container">
-                        <p class="number">1</p>
-                        <p class="title">Dane do faktury i wysyłki</p>
+        <section id="news">
+            <h1 class="title">Aktualności</h1>
+            <div class="news_container">
+                <div class="photo-text-container">
+                    <div class="left-photo-container">
+                        <img src="./assets/img/sample_images/sample_image_01.jpg" alt="img" width="400" height="297">
                     </div>
-                    <div class="cart_description">
-                        <p>HURTOWNIA DREAMTEX</p>
-                        <p>SZYSZKOWA 32</p>
-                        <p>02-285 WARSZAWA</p>
-                        <p>NIP: 5210000948</p>
-                    </div>
-                </div>
-                <div class="cart_delivery_payment_container-slot">
-                    <div class="number_title_container">
-                        <p class="number">2</p>
-                        <p class="title">Dane zamawiającego</p>
-                    </div>
-                    <div class="cart_data">
-                        <div class="cart_data_container">
-                            <form>
-                                <div class="form-slot">
-                                    <label class="name" for="name">Imię i nazwisko</label>
-                                    <input type="text" id="name" required>
-                                    <label class="telephone" for="telephone">Telefon kontaktowy</label>
-                                    <input type="number" id="telephone" required>
-                                </div>
-                                <div class="form-slot">
-                                    <label class="email" for="email">E-mail</label>
-                                    <input type="email" id="email" pattern=".+@globex\.com" required>
-                                </div>
-                                <div class="form-slot">
-                                    <label class="textarea" for="textarea">Wiadomość do zamówienia</label>
-                                    <textarea name="textarea" id="textarea" rows="5" required></textarea>
-                                </div>
-                            </form>
+                    <div class="right-text-container">
+                        <div class="text-container">
+                            <h1 class="text-title">
+                                Koszule biznesowe SEVEN SEAS - WIĘCEJ NIŻ KOSZULE
+                            </h1>
+                            <p class="text-author-data">
+                                25.02.2021 | Marcin Maraszek
+                            </p>
+                            <p class="text-desc">
+                                <strong>Koszule SEVEN SEAS wyróżniają się:</strong>
+                                </p><ul>
+                                    <li>Nasze koszule ze 100% bawełny stanowią 92% oferty koszul.</li>
+                                    <li>Nasze koszule są łatwe w pielęgnacji (easy-care), a niektóre modele nie wymagają prasowania (non-iron).</li>
+                                    <li>Nasze koszule mają cztery różnych typów kołnierzy.</li>
+                                    <li>Nasze koszule są dostępne w różnych krojach: męski i damski Modern Fit oraz męski Slim Fit.</li>
+                                </ul>
+                            <p></p>
                         </div>
                     </div>
                 </div>
-                <div class="cart_delivery_payment_container-slot">
-                    <div class="number_title_container">
-                        <p class="number">3</p>
-                        <p class="title">Metoda dostawy</p>
-                        <p class="desc">(Dla zamówień powyżej 1000zł transport gratis)</p>
+
+                <div class="photo-text-container">
+                    <div class="left-photo-container">
+                        <img src="./assets/img/sample_images/sample_news_image.png" alt="img" width="400" height="297">
                     </div>
-                    <div class="cart_square_container">
-                        <div class="cart_square-slot courier">
-                            <p class="text-top">PRZESYŁKA KURIERSKA</p>
-                            <img src="./assets/icons/dpd.svg" alt="DPD" width="161" height="70">
-                            <p class="text-bottom">14 zł + VAT</p>
-                        </div>
-                        <div class="cart_square-slot courier">
-                            <p class="text-top">PRZESYŁKA KURIERSKA ZA POBRANIEM</p>
-                            <img src="./assets/icons/dpd.svg" alt="DPD" width="161" height="70">
-                            <p class="text-bottom">16 zł + VAT</p>
-                        </div>
-                        <div class="cart_square-slot">
-                            <p class="text-top">Odbiór osobisty</p>
-                            <p class="text-bottom with-image">Lokalizacja</p>
-                            <p class="text-bottom small">ul. Szyszkowa 32</p>
-                            <p class="text-bottom small">02-285 Warszawa</p>
-                        </div>
-                    </div>
-                    <div class="courier_address_container">
-                        <h1 class="title">Adres dostawy - inny niż na fakturze</h1>
-                        <div class="courier_address_container-main">
-                            <div class="form-slot">
-                                <label class="name" for="name">Imię i nazwisko *</label>
-                                <input type="text" id="name" required>
-                                <label class="company" for="company">Firma *</label>
-                                <input type="text" id="company" required>
-                                <label class="telephone" for="telephone">Telefon *</label>
-                                <input type="number" id="telephone" required>
-                            </div>
-                            <div class="form-slot">
-                                <label class="street" for="street">Ulica *</label>
-                                <input type="text" id="street" required>
-                                <label class="zipcode" for="zipcode">Kod pocztowy *</label>
-                                <input type="text" id="zipcode" required>
-                                <label class="city" for="city">Miasto *</label>
-                                <input type="text" id="city" required>
-                            </div>
+                    <div class="right-text-container">
+                        <div class="text-container">
+                            <h1 class="text-title">
+                                PROMOCJA WALENTYNKI 2021
+                            </h1>
+                            <p class="text-author-data">
+                                25.02.2021 | Lorem ipsum
+                            </p>
+                            <p class="text-desc">
+                                <strong></strong>
+                                </p>
+                            <p></p>
                         </div>
                     </div>
                 </div>
-                <div class="cart_delivery_payment_container-slot">
-                    <div class="number_title_container">
-                        <p class="number">4</p>
-                        <p class="title">Sposób płatności</p>
+
+                <div class="photo-text-container">
+                    <div class="left-photo-container">
+                        <img src="./assets/img/sample_images/sample_news_image.png" alt="img" width="400" height="297">
                     </div>
-                    <div class="cart_square_container payment-method">
-                        <div class="cart_square-slot">
-                            <p class="text-top">Tradycyjny przelew bankowy</p>
-                            <img src="./assets/icons/surface1.svg" alt="surface" width="82" height="83">
-                        </div>
-                        <div class="cart_square-slot">
-                            <p class="text-top">Szybki przelew</p>
-                            <img src="./assets/icons/przelewy24_logo_2022.svg" alt="przelewy24" width="206" height="72">
-                        </div>
-                        <div class="cart_square-slot">
-                            <p class="text-top">Płatność przy odbiorze</p>
-                            <p class="text-bottom">karta <span>lub</span> gotówka</p>
+                    <div class="right-text-container">
+                        <div class="text-container">
+                            <h1 class="text-title">
+                                Lorem ipsum Lorem ipsum Lorem ipsum
+                            </h1>
+                            <p class="text-author-data">
+                                25.02.2021 | Lorem ipsum
+                            </p>
+                            <p class="text-desc">
+                                Lorem ipsumLorem ipsumLorem ipsum: Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.
+                            </p>
                         </div>
                     </div>
-                    <form>
-                        <div class="cart_radios">
-                            <input type="radio" id="option1" name="option" value="Chcę otrzymać zamówienie po pełnym skompletowaniu">
-                            <label for="option1">Chcę otrzymać zamówienie po pełnym skompletowaniu</label>
+                </div>
+
+                <div class="photo-text-container">
+                    <div class="left-photo-container">
+                        <img src="./assets/img/sample_images/sample_news_image.png" alt="img" width="400" height="297">
+                    </div>
+                    <div class="right-text-container">
+                        <div class="text-container">
+                            <h1 class="text-title">
+                                Lorem ipsum Lorem ipsum Lorem ipsum
+                            </h1>
+                            <p class="text-author-data">
+                                25.02.2021 | Lorem ipsum
+                            </p>
+                            <p class="text-desc">
+                                Lorem ipsumLorem ipsumLorem ipsum: Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.
+                            </p>
                         </div>
-                        <div class="cart_radios">
-                            <input type="radio" id="option2" name="option" value="Chcę otrzymać zamówienie w partiach">
-                            <label for="option2">Chcę otrzymać zamówienie w partiach</label>
+                    </div>
+                </div>
+
+                <div class="photo-text-container">
+                    <div class="left-photo-container">
+                        <img src="./assets/img/sample_images/sample_news_image.png" alt="img" width="400" height="297">
+                    </div>
+                    <div class="right-text-container">
+                        <div class="text-container">
+                            <h1 class="text-title">
+                                Lorem ipsum Lorem ipsum Lorem ipsum
+                            </h1>
+                            <p class="text-author-data">
+                                25.02.2021 | Lorem ipsum
+                            </p>
+                            <p class="text-desc">
+                                Lorem ipsumLorem ipsumLorem ipsum: Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.
+                            </p>
                         </div>
-                    </form>
-                    <div class="cart_delivery_payment-buttons">
-                        <div class="cart_delivery_payment-button-left">
-                            <a href="#">
-                                <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#3E3E3E"/>
-                                </svg>
-                                Wróć do koszyka
-                            </a>
+                    </div>
+                </div>
+
+                <div class="photo-text-container">
+                    <div class="left-photo-container">
+                        <img src="./assets/img/sample_images/sample_news_image.png" alt="img" width="400" height="297">
+                    </div>
+                    <div class="right-text-container">
+                        <div class="text-container">
+                            <h1 class="text-title">
+                                Lorem ipsum Lorem ipsum Lorem ipsum
+                            </h1>
+                            <p class="text-author-data">
+                                25.02.2021 | Lorem ipsum
+                            </p>
+                            <p class="text-desc">
+                                Lorem ipsumLorem ipsumLorem ipsum: Lorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsumLorem ipsum.
+                            </p>
                         </div>
-                        <div class="cart_delivery_payment-button-right">
-                            <a href="#">
-                                Kupuję
-                                <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#3E3E3E"/>
-                                </svg>
-                            </a>
-                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pagination">
+                <div class="pagination_container">
+                    <div class="element active">
+                        <p>1</p>
+                    </div>
+                    <div class="element">
+                        <p>2</p>
+                    </div>
+                    <div class="element">
+                        <p>3</p>
+                    </div>
+                    <div class="element">
+                        <p>...</p>
+                    </div>
+                    <div class="element">
+                        <p>999</p>
                     </div>
                 </div>
             </div>
         </section>
 
+        <section id="newsletter">
+            <div class="newsletter_container">
+                <h1 class="title">Zapisz się do newslettera</h1>
+                <p class="desc">
+                    Chcesz być na bieżąco z naszą ofertą i korzystać z naszych akcji promocyjnych
+                </p>
+                <form>
+                    <input type="text" id="name" name="name" placeholder="Imię">
+                    <input type="text" id="company" name="company" placeholder="Firma">
+                    <input type="email" id="email" pattern=".+@globex\.com" placeholder="*Email" required>
+                    <input class="button" type="submit" value="Zapisuję się">
+                </form> 
+                <p class="additional-info">
+                    *Klikając "Zapisuję się" wyrażam zgodę na przetwarzanie danych dla celów marketingowych.
+                </p>
+            </div>
+        </section>
+
         <footer>
-            <div class="footer-arrow-up"></div>
             <div class="footer_container">
                 <div class="footer_container_top">
                     <div class="footer_container_top-left">
@@ -1655,7 +1679,6 @@
             </div>
         </footer>
     </div>
-    <script src="./js/cart-delivery.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>

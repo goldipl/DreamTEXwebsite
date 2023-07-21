@@ -41,6 +41,9 @@
                 margin-right: 16px;
                 font-size: 20px;
                 margin-top: 16px;
+                &:focus {
+                    outline: 1px solid #2CB5FF;
+                }
                 &.button {
                     background-color: #00FFB1;
                     padding: 0;
