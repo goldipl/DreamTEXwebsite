@@ -28,7 +28,19 @@ Used technologies:
 
 * Cart (delivery & payment) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-delivery-payment   
 
-* Cart (summary) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-summary
+* Cart (summary) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-summary   
+
+* Products Card Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-card    
+
+* Offerts (offerts) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts-offerts     
+
+* Offerts (suggestions) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts-suggestions     
+
+* Offerts (orders) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts-orders      
+
+* News Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/news       
+
+* Register Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register      
 
 ## Screenshots
 * Desktop version :desktop_computer:   
