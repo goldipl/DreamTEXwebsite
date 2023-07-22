@@ -4617,6 +4617,13 @@ body {
   font-weight: 400;
 }
 
+#offerts.orders .offerts_container .color-breadcrumbs {
+  margin-top: 83px;
+}
+#offerts.orders .offerts_container .offerts-filters-table.orders {
+  margin-top: 61px;
+}
+
 #news {
   margin-top: 40px;
   margin-bottom: 84px;
