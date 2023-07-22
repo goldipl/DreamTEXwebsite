@@ -13,6 +13,10 @@ Used technologies:
 * HTML5
 * SCSS
 
+Used also:
+* SwiperJS
+* LightboxJS
+
 ## Live :star2:  
 * Main Page (logged) :arrow_right: https://goldipl.github.io/DreamTEXwebsite/    
 
