@@ -42,6 +42,8 @@ Used technologies:
 
 * Register Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register      
 
+* Orders Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/orders      
+
 ## Screenshots
 * Desktop version :desktop_computer:   
 
