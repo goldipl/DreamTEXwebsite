@@ -48,6 +48,20 @@ Used also:
 
 * Orders Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/orders      
 
+* Profile Admin Data Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-your-data  
+
+* Profile Admin Company Data Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-company-data     
+
+* Profile Admin Employees List Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-employees-list    
+
+* Profile Admin Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-addresses     
+
+* Profile User Data Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-your-data      
+
+* Profile User Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-addresses     
+
+* Register (full) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register-full      
+
 ## Screenshots
 * Desktop version :desktop_computer:   
 
