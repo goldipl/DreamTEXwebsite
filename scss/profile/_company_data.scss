@@ -1,0 +1,61 @@
+#your_profile.company_data {
+    .add_logo_container {
+        .add_logo_box {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            height: 100px;
+            box-sizing: border-box;
+            border: 1px solid #CECECE;
+            border-radius: 20px;
+            margin-left: 63px;
+            cursor: pointer;
+            &:hover {
+                border: 1px solid #2CB5FF;
+            }
+            .add_logo_box-text {
+                p {
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #707070;
+                    text-align: center;
+                    margin: 0 0 11px 0;
+                }
+            }
+            .add_logo_box-plus {
+                p {
+                    font-size: 40px;
+                    line-height: 20px;
+                    color: #707070;
+                    text-align: center;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        .input-slot {
+            margin-top: 20px;
+            width: 50%;
+            &.row {
+                display: flex;
+                flex-direction: row;
+                .slot {
+                    display: flex;
+                    flex-direction: column;
+                    &:nth-child(1) {
+                        width: 60%;
+                        margin-right: 15%;
+                    }  
+                    &:nth-child(2) {
+                        width: 25%;
+                    }  
+                }
+            }
+        }
+    }
+}

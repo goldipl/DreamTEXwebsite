@@ -10,6 +10,7 @@
 @import './main_layout/newsletter_main_layout';
 @import 'breadcrumbs';
 @import 'color_breadcrumbs';
+@import 'blue_white_breadcrumbs';
 @import 'login';
 @import 'contact';
 @import 'products-catalog';
@@ -20,6 +21,11 @@
 @import 'orders';
 @import 'news';
 @import 'register';
+@import 'register_full';
+@import 'remind_password';
+@import './profile/your_profile';
+@import './profile/company_data';
+@import './profile/_addresses_employees';
 @import './cart/cart';
 @import './cart/cart_delivery_payment';
 @import './cart/cart_summary';
