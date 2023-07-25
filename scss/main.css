@@ -3896,9 +3896,9 @@ body {
   margin-top: 13px;
 }
 #products_cart.show_discount_table::before {
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: calc((100vw - 1170px) / 2 * -1);
+  left: 0;
   display: block;
   content: "";
   background-color: rgba(0, 0, 0, 0.4);

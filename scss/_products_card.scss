@@ -1,9 +1,9 @@
 #products_cart {
     margin-top: 13px;
     &.show_discount_table::before {
-        position: absolute;
+        position: fixed;
         top: 0;
-        left: calc((100vw - 1170px) / 2 * -1);
+        left: 0;
         display: block;
         content: '';
         background-color: #00000066;
