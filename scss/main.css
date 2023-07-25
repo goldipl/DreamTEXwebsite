@@ -3895,6 +3895,50 @@ body {
 #products_cart {
   margin-top: 13px;
 }
+#products_cart.show_discount_table::before {
+  position: absolute;
+  top: 0;
+  left: calc((100vw - 1170px) / 2 * -1);
+  display: block;
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100vw;
+  height: 100vh;
+  z-index: 99;
+}
+#products_cart #discount_table {
+  display: none;
+  position: absolute;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-35vw, -30vh);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  content: "";
+  width: 50vw;
+  height: 50vh;
+  z-index: 9999999999999;
+  background-color: #FFFFFF;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+#products_cart #discount_table.active {
+  display: flex;
+}
+#products_cart #discount_table.active .discount_table_container .close-icon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  content: "";
+  width: 16px;
+  height: 16px;
+  background: url("./../assets/icons/close2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
 #products_cart .products_cart_container {
   display: flex;
   flex-direction: column;
