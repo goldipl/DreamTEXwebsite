@@ -1,0 +1,70 @@
+#register_success {
+    margin-top: 45px;
+    .register_success_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        min-height: 440px;
+        padding: 30px;
+        box-shadow: 0px 3px 15px #00000033;
+        margin-bottom: 100px;
+        .title {
+            font-size: 36px;
+            line-height: 43px;
+            font-weight: 400;
+            color: #707070;
+            margin: 0;
+            text-align: center;
+        }
+        .desc {
+            font-size: 18px;
+            line-height: 22px;
+            font-weight: 400;
+            color: #707070;
+            margin: 10px 0;
+            text-align: center;
+        }
+        .blue_btn_container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .blue_btn {
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: max-content;
+                height: 60px;
+                box-sizing: border-box;
+                background-color: #2CB5FF;
+                border: 1px solid #2CB5FF;
+                padding: 8px 16px;
+                border-radius: 30px;
+                transition: 0.8s;
+                cursor: pointer;
+                &:hover {
+                    background-color: #FFFFFF;
+                    a {
+                        color: #2CB5FF;
+                    }
+                }
+                a {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    font-size: 20px;
+                    line-height: 24px;
+                    font-weight: 400;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

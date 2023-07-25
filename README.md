@@ -24,7 +24,9 @@ Used also:
 
 * Login Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/login  
 
-* Products Catalog :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-catalog   
+* Products Catalog Boxes :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-catalog   
+
+* Products Catalog List :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-catalog-list       
 
 * Contact Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/contact   
 
@@ -33,6 +35,8 @@ Used also:
 * Cart (delivery & payment) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-delivery-payment   
 
 * Cart (summary) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-summary   
+
+* Cart (empty) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-empty  
 
 * Products Card Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-card    
 
@@ -43,6 +47,8 @@ Used also:
 * Offerts (orders) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts-orders      
 
 * News Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/news       
+
+* Article Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/article       
 
 * Register Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register      
 
@@ -61,6 +67,10 @@ Used also:
 * Profile User Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-addresses     
 
 * Register (full) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register-full      
+
+* Register Retail Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register-retail        
+
+* Register Success Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register-success                 
 
 ## Screenshots
 * Desktop version :desktop_computer:   
