@@ -72,6 +72,12 @@ Used also:
 
 * Register Success Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register-success                 
 
+* Favorites Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/favorite       
+
+* Favorites (List view) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/favorite-list   
+
+* Clients Panel Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/clients-panel      
+
 ## Screenshots
 * Desktop version :desktop_computer:   
 
