@@ -602,6 +602,13 @@
                     img {
                         object-fit: contain;
                     }
+                    a {
+                        img {
+                            &:hover {
+                                opacity: 0.8;
+                            }
+                        }
+                    }
                     &.topseller::after {
                         position: absolute;
                         display: block;
@@ -675,6 +682,18 @@
                             line-height: 19px;
                             font-weight: 600;
                             margin: 24px 0 10px 0;
+                            a {
+                                font-family: Segoe UI, sans-serif;
+                                font-size: 19px;
+                                line-height: 19px;
+                                font-weight: 600;
+                                margin: 24px 0 10px 0;
+                                text-decoration: none;
+                                color: #3E3E3E;
+                                &:hover {
+                                    color: #2CB5FF;
+                                }
+                            }
                         }
                         .products_cart_products-slot-index,
                         .products_cart_products-slot-grammage,

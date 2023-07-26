@@ -1964,6 +1964,9 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image a img:hover {
+  opacity: 0.8;
+}
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image.topseller::after {
   position: absolute;
   display: block;
@@ -2036,6 +2039,18 @@ body {
   line-height: 19px;
   font-weight: 600;
   margin: 24px 0 10px 0;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .swiper-product-title a {
+  font-family: Segoe UI, sans-serif;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 600;
+  margin: 24px 0 10px 0;
+  text-decoration: none;
+  color: #3E3E3E;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .swiper-product-title a:hover {
+  color: #2CB5FF;
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-index p,
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-grammage p,
@@ -3572,6 +3587,9 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+.products-slot .products-slot-top-container .products-slot-image a img:hover {
+  opacity: 0.8;
+}
 .products-slot .products-slot-top-container .products-slot-image.topseller::after {
   position: absolute;
   display: block;
@@ -3644,6 +3662,18 @@ body {
   line-height: 19px;
   font-weight: 600;
   margin: 24px 0 10px 0;
+}
+.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .swiper-product-title a {
+  font-family: Segoe UI, sans-serif;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 600;
+  margin: 24px 0 10px 0;
+  text-decoration: none;
+  color: #3E3E3E;
+}
+.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .swiper-product-title a:hover {
+  color: #2CB5FF;
 }
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-index p,
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-grammage p,
@@ -4668,6 +4698,9 @@ body {
   -o-object-fit: contain;
      object-fit: contain;
 }
+#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-image a img:hover {
+  opacity: 0.8;
+}
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-image.topseller::after {
   position: absolute;
   display: block;
@@ -4740,6 +4773,18 @@ body {
   line-height: 19px;
   font-weight: 600;
   margin: 24px 0 10px 0;
+}
+#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-top .swiper-product-title a {
+  font-family: Segoe UI, sans-serif;
+  font-size: 19px;
+  line-height: 19px;
+  font-weight: 600;
+  margin: 24px 0 10px 0;
+  text-decoration: none;
+  color: #3E3E3E;
+}
+#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-top .swiper-product-title a:hover {
+  color: #2CB5FF;
 }
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-top .products_cart_products-slot-index p,
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-top .products_cart_products-slot-grammage p,
