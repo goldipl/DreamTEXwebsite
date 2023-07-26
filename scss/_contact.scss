@@ -255,3 +255,50 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #contact {
+        margin-top: 16px;
+        .contact_container {
+            padding: 28px 15px 15px 15px;
+            margin-bottom: 35px;
+            .contact_container-top {
+                .phone_mail_container {
+                    flex-direction: column;
+                    .phone_container {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            .contact_container-message-form {
+                h2.title {
+                    text-align: left;
+                }
+                form {
+                    .form_contact_container {
+                        position: relative;
+                        flex-direction: column;
+                        .form_contact_container-short {
+                            width: 100%;
+                            .form_name_button-slot {
+                                position: absolute;
+                                left: 0;
+                                bottom: 0;
+                            }
+                        }
+                        .form_contact_container-wide {
+                            margin-left: 0;
+                            width: 100%;
+                            margin-top: 16px;
+                            margin-bottom: 120px;
+                            textarea {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

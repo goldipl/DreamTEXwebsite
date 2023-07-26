@@ -146,3 +146,93 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #login {
+        margin-top: 16px;
+        .login-container {
+            padding: 10px;
+            margin-bottom: 40px;
+            .login-fill-info {
+                display: none;
+            }
+            .login-container-middle {
+                padding: 0;
+                .h2title {
+                    display: none;
+                }
+                form {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    .login_input-slot {
+                        display: flex;
+                        flex-direction: column;
+                        margin-right: 0;
+                        width: 70%;
+                        label {
+                            margin-top: 16px;
+                        }
+                        .password_remember {
+                            color: #2CB5FF;
+                            text-align: right;
+                            margin-top: 12px;
+                            text-align: center;
+                            &:hover {
+                                text-decoration: none;
+                            }
+                        }
+                    }
+                }
+            }
+            .login-container-bottom {
+                padding: 0;
+                .login-text-btn-bottom-container {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    .login-bottom-text-container {
+                        margin-right: 0;
+                        margin: 20px 0;
+                        p {
+                            font-size: 18px;
+                            line-height: 20px;
+                            margin: 0;
+                            font-weight: 400;
+                            color: #707070;
+                            text-align: center;
+                        }
+                    }
+                    .login-bottom-btn-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                        height: 40px;
+                        box-sizing: border-box;
+                        background-color: #FFFFFF;
+                        border: 1px solid #2CB5FF;
+                        border-radius: 20px;
+                        transition: 0.8s;
+                        margin-bottom: 8px;
+                        &:hover {
+                            background-color: #FFFFFF;
+                            border: 1px solid #2CB5FF;
+                        }
+                        .create-account-btn {
+                            font-size: 20px;
+                            line-height: 24px;
+                            font-weight: 400;
+                            color: #707070;
+                            text-decoration: none;
+                            text-transform: unset;
+                            padding: 0 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
