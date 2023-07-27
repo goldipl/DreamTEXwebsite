@@ -108,6 +108,10 @@
                         height: 10px;
                         background-repeat: no-repeat;
                         background-size: contain;
+                        transition: 0.8s;
+                    }
+                    &.active::after {
+                        transform: translateX(-50%) rotate(0);
                     }
                 }
 

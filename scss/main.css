@@ -3458,6 +3458,10 @@ body {
   height: 10px;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: 0.8s;
+}
+#products-catalog .products_catalog_container .filters_container .filters_column .accordion.active::after {
+  transform: translateX(-50%) rotate(0);
 }
 #products-catalog .products_catalog_container .filters_container .filters_column .active {
   background-color: #FFFFFF;
