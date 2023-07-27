@@ -71,6 +71,30 @@
                 background-size: cover;
                 background-repeat: no-repeat;
             }
+            &.promotion::after {
+                position: absolute;
+                display: block;
+                content: '';
+                top: 0;
+                left: 0;
+                background: url('./../assets/img/labels/promotion_label.svg');
+                height: 90px;
+                width: 90px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+            &.sale::after {
+                position: absolute;
+                display: block;
+                content: '';
+                top: 0;
+                left: 0;
+                background: url('./../assets/img/labels/sale_label.svg');
+                height: 90px;
+                width: 90px;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
         }
     }
 }
