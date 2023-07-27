@@ -97,3 +97,27 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #register_retail {
+        margin-top: 16px;
+        .register_retail_container {
+            padding: 10px;
+            margin-bottom: 67px;
+            .input-container {
+                .input-slot {
+                    flex-direction: column;
+                    width: 100%;
+                }
+            }
+            .save-btn-container {
+                flex-direction: column;
+                justify-content: center;
+                .save-btn {
+                    height: 40px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}

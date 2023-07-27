@@ -26,3 +26,25 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #cart_summary {
+        margin-top: 16px;
+        .cart_summary_container {
+            justify-content: flex-start;
+            width: 100%;
+            height: 438px;
+            margin-bottom: 67px;
+            padding: 20px 51px;
+            .title {
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 8px;
+            }
+            .desc {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+}

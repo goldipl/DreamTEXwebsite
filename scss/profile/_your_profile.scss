@@ -92,3 +92,42 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #your_profile {
+        margin-top: 16px;
+        .your_profile_container {
+            padding: 10px;
+            margin-bottom: 67px;
+            .title {
+                font-size: 27px;
+                line-height: 33px;
+                margin-bottom: 4px;
+            }
+            .subtitle {
+                font-size: 22px !important;
+                line-height: 28px !important;
+            }
+            .input-container {
+                flex-direction: column;
+                .input-slot {
+                    width: 100%;
+                    margin-right: 0;
+                    label {
+                        margin-top: 16px;
+                    }
+                }
+            }
+            .save-btn-container {
+                margin-top: 30px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                .save-btn {
+                    margin-top: 16px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

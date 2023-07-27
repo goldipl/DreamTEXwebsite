@@ -254,6 +254,11 @@
                                 margin: 16px 0 0 0;
                             }
                         }
+                        .total_price-value {
+                            p {
+                                white-space: pre;
+                            }
+                        }
                         .additional_info {
                             p {
                                 font-size: 14px;
@@ -320,6 +325,7 @@
                     .cart_items_container-slots {
                         flex-direction: column;
                         .cart_items_container-header {
+                            justify-content: space-around;
                             height: 44px;
                             overflow-x: scroll;
                             overflow-y: hidden;
@@ -338,11 +344,7 @@
                                 }
                             }
                             .product-title-img {
-                                width: auto;
-                                margin: 0 8px;
-                                p:first-child {
-                                    display: none;
-                                }
+                                display: none;
                             }
                         }
                         .cart_items_container-slot {
@@ -374,7 +376,7 @@
                                         .product-value,
                                         .product-delete {
                                             width: auto;
-                                            margin: 0 8px;
+                                            margin: 0 6px;
                                         }
                                         .product-quantity {
                                             input {

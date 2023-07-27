@@ -181,9 +181,12 @@ footer {
 
 @media (max-width: 800px) { 
     footer {
+        height: 630px;
         .footer_container {
+            padding: 20px;
             .footer_container_top {
                 flex-direction: column;
+                padding: 0;
                 .footer_container_top-left {
                     .footer-col {
                         .footer-links {
@@ -193,15 +196,17 @@ footer {
                                 color: #FFFFFF;
                                 text-decoration: none;
                                 font-weight: 400;
-                                font-size: 18px;
-                                line-height: 22px;
-                                margin: 2px 0;
+                                font-size: 22px;
+                                line-height: 32px;
                                 &:hover {
                                     text-decoration: underline;
                                 }
                             }
                         }
                         .footer-socials {
+                            position: absolute;
+                            left: 20px;
+                            bottom: 76px;
                             display: flex;
                             flex-direction: row;
                             margin-top: 16px;
@@ -226,6 +231,21 @@ footer {
                     .footer-col {
                         margin-right: 0;
                         margin-bottom: 16px;
+                        &.data {
+                            position: absolute;
+                            top: 310px;
+                            left: 20px;
+                        }
+                        &.localization {
+                            position: absolute;
+                            top: 180px;
+                            left: 20px;
+                        }
+                        &.contact {
+                            position: absolute;
+                            top: 180px;
+                            left: 50vw;
+                        }
                         .title {
                             position: relative;
                             color: #FFFFFF;
@@ -296,14 +316,16 @@ footer {
                 }
             }
             .footer_container_bottom {
+                margin-top: 110px;
                 border-top: 0;
-                padding: 0 8px;
+                padding: 0;
                 p {
                     font-size: 12px;
                     line-height: 16px;
                     font-weight: 400;
                     img {
-                        margin-left: 4px;
+                        margin-top: 8px;
+                        margin-left: 6px;
                     }
                 }
             }

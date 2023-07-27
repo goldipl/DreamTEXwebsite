@@ -148,3 +148,29 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #register {
+        margin-top: 16px;
+        .register_container {
+            margin-bottom: 67px;
+            .cart_square_container {
+                flex-direction: column;
+                .cart_square_container-slot {
+                    flex-direction: column;
+                    width: 100%;
+                    margin-bottom: 16px;
+                }
+            }
+            .check_container {
+                .check_nip_container {
+                    flex-direction: column;
+                    align-items: center;
+                    .check_btn {
+                        margin-top: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

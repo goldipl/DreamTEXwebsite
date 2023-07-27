@@ -48,3 +48,17 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    .color-breadcrumbs {
+        .color-breadcrumbs-list {
+            margin-left: 0;
+            .color-breadcrumb-item {
+                a { 
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    } 
+}

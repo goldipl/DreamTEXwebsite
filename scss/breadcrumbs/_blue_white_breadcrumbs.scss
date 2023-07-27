@@ -59,3 +59,19 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    .blue_white-breadcrumbs {
+        overflow-x: auto;
+        .blue_white-breadcrumbs-list {
+            .blue_white-breadcrumb-item {
+                min-width: 200px;
+                margin-left: -16px;
+                a { 
+                    font-size: 14px;
+                    line-height: 16px;
+                }
+            }
+        }
+    } 
+}

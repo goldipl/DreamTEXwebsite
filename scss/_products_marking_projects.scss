@@ -76,3 +76,19 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #products_cart {
+        .marking_projects_container {
+            display: none;
+            &.show {
+                top: 2vh;
+                left: 50vw;
+                transform: translateX(-50vw);
+                width: 95%;
+                height: auto;
+                padding: 10px;
+            }
+        }
+    }
+}

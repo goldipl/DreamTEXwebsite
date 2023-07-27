@@ -68,3 +68,29 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #register_success {
+        margin-top: 16px;
+        .register_success_container {
+            justify-content: flex-start;
+            min-height: 440px;
+            margin-bottom: 67px;
+            .title {
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 8px;
+            }
+            .desc {
+                font-size: 12px;
+                line-height: 14px;
+            }
+            .blue_btn_container {
+                .blue_btn {
+                    height: 40px;
+                    margin-top: 16px;
+                }
+            }
+        }
+    }
+}

@@ -120,6 +120,17 @@
     opacity: .8;
 }
 
+@media (max-width: 960px) {
+    .gallery-container .gallery-container-small {
+        flex-direction: row;
+        .gallery-item {
+            img {
+                object-fit: contain;
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     .gallery-container {
         width: 100%;

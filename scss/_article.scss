@@ -53,6 +53,10 @@
         }
         .hero-img {
             margin: 23px -30px;
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
         }
     }
     & + #newsletter {
@@ -60,3 +64,17 @@
     }
 }
         
+@media (max-width: 960px) {
+    #article {
+        margin-top: 16px;
+        margin-bottom: 67px;
+        .article_container {
+            padding: 10px;
+            .photo-text-container {
+                .left-photo-container {
+                   margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}
