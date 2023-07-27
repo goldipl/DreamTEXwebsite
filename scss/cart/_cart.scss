@@ -331,7 +331,7 @@
                             .product-value,
                             .product-delete {
                                 width: auto;
-                                margin: 0 8px;
+                                margin: 0 6px;
                                 p {
                                     font-size: 14px;
                                     line-height: 17px;
@@ -340,6 +340,9 @@
                             .product-title-img {
                                 width: auto;
                                 margin: 0 8px;
+                                p:first-child {
+                                    display: none;
+                                }
                             }
                         }
                         .cart_items_container-slot {
