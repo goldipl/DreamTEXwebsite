@@ -6643,6 +6643,12 @@ body {
   margin-bottom: 24px;
 }
 
+@media (max-width: 960px) {
+  #news {
+    margin-top: 16px;
+    margin-bottom: 67px;
+  }
+}
 #clients_panel {
   margin-top: 37px;
 }
