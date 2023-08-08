@@ -39,27 +39,18 @@
         }
     }
     .table_container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        border-collapse: collapse;
+        overflow-x: auto;
+        display: block;
         width: calc(100% + 60px);
-        margin-top: 0;
-        margin-bottom: 47px;
-        margin-left: -30px;
-        margin-right: -30px;
+        max-width: calc(100% + 60px);
+        margin: 0px -30px 47px -30px;
         .addresses-table-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
             height: 55px;
             width: 100%;
             &.header {
                 background-color: #CECECE !important;
                 .table-col {
-                    &:nth-child(1) {
-                        width: 10%;
-                    }
                     p {
                         font-weight: 400;
                         font-family: 'Segoe UI', sans-serif;
@@ -71,9 +62,6 @@
             }
             .table-col {
                 height: 55px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
                 p {
                     text-align: center;
                     font-weight: 400;
@@ -143,27 +131,18 @@
         }
     }
     .table_container {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        border-collapse: collapse;
+        overflow-x: auto;
+        display: block;
         width: calc(100% + 60px);
-        margin-top: 0;
-        margin-bottom: 47px;
-        margin-left: -30px;
-        margin-right: -30px;
+        max-width: calc(100% + 60px);
+        margin: 0px -30px 47px -30px;
         .addresses-table-row {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
-            align-items: center;
             height: 55px;
             width: 100%;
             &.header {
                 background-color: #CECECE !important;
                 .table-col {
-                    &:nth-child(1) {
-                        width: 10%;
-                    }
                     p {
                         font-weight: 400;
                         font-family: 'Segoe UI', sans-serif;
@@ -174,10 +153,9 @@
                 background-color: #EFEFEF;
             }
             .table-col {
+                width: 8%;
                 height: 55px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                text-align: center;
                 p {
                     text-align: center;
                     font-weight: 400;
@@ -196,6 +174,7 @@
                     height: 32px;
                     box-sizing: border-box;
                     transition: 0.6s;
+                    margin: 0 auto;
                     &:hover {
                         background-color: #FFFFFF;
                         color: #2CB5FF;
@@ -249,18 +228,14 @@
         }
         .table_container {
             overflow-x: scroll;
+            width: 100% !important;
+            margin: 0 !important;
             .addresses-table-row {
-                width: 120px;
-                p {
-                    width: 120px;
-                }
                 &.header {
                     .table-col {
-                        width: 120px;
                         p {
                             font-weight: 400;
                             font-family: 'Segoe UI', sans-serif;
-                            width: 120px;
                         }
                     }
                 }
@@ -269,10 +244,6 @@
                 }
                 .table-col {
                     height: 55px;
-                    width: 120px;
-                    .edit-btn {
-                        margin-right: 24px;
-                    }
                 }
             }
         }
@@ -319,27 +290,12 @@
             }
         }
         .table_container {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            width: calc(100% + 60px);
-            margin-top: 0;
-            margin-bottom: 47px;
-            margin-left: -30px;
-            margin-right: -30px;
             .addresses-table-row {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
                 height: 55px;
                 width: 100%;
                 &.header {
                     background-color: #CECECE !important;
                     .table-col {
-                        &:nth-child(1) {
-                            width: 10%;
-                        }
                         p {
                             font-weight: 400;
                             font-family: 'Segoe UI', sans-serif;
@@ -350,13 +306,10 @@
                     background-color: #EFEFEF;
                 }
                 .table-col {
-                    height: 55px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
                     p {
                         text-align: center;
                         font-weight: 400;
+                        white-space: pre;
                     }
                     .edit-btn {
                         display: flex;

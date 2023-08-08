@@ -371,10 +371,14 @@
                                         justify-content: space-between;
                                         .product-size,
                                         .product-quantity,
-                                        .product-price,
                                         .product-availability,
-                                        .product-value,
                                         .product-delete {
+                                            width: auto;
+                                            margin: 0 6px;
+                                        }
+                                        .product-price,
+                                        .product-value {
+                                            word-break: break-all;
                                             width: auto;
                                             margin: 0 6px;
                                         }

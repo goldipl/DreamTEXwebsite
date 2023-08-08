@@ -56,6 +56,7 @@
             display: flex;
             flex-direction: row;
             align-items: flex-end;
+            margin-bottom: 32px;
             .title {
                 font-size: 28px;
                 line-height: 34px;
@@ -128,31 +129,12 @@
             }
         }
         .offerts-filters-table {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
+            border-collapse: collapse;
+            overflow-x: auto;
+            display: block;
             width: calc(100% + 30px);
-            margin-top: 24px;
-            margin-bottom: 47px;
-            margin-left: -15px;
-            margin-right: -15px;
-            &.offerts {
-                .offerts-filters-table-row {
-                    &.header {
-                        .table-col {
-                            &:nth-child(1) {
-                                width: 29%;
-                            }
-                            &:nth-child(2) {
-                                margin-left: 16px;
-                            }
-                            &:nth-child(3) {
-                                margin-left: -24px;
-                            }
-                        }
-                    }
-                }
-            }
+            max-width: calc(100% + 30px);
+            margin: 0px -15px 47px -15px;
             &.orders {
                 .offerts-filters-table-row {
                     .table-col {
@@ -162,40 +144,14 @@
                             }
                         }
                     }
-                    &.header {
-                        .table-col {
-                            &:nth-child(1) {
-                                width: 2%;
-                                p {
-                                    width: 10px;
-                                }
-                            }
-                            &:nth-child(2) {
-                                width: 29%;
-                            }
-                            &:nth-child(3) {
-                                margin-left: 16px;
-                            }
-                            &:nth-child(4) {
-                                margin-left: -24px;
-                            }
-                        }
-                    }
                 }
             }
             .offerts-filters-table-row {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                align-items: center;
                 height: 55px;
                 width: 100%;
                 &.header {
                     background-color: #CECECE !important;
                     .table-col {
-                        &:nth-child(1) {
-                            width: 32%;
-                        }
                         p {
                             font-weight: 400;
                             font-family: 'Segoe UI', sans-serif;
@@ -207,12 +163,17 @@
                 }
                 .table-col {
                     height: 55px;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
+                    width: 15%;
+                    text-align: center;
                     p {
                         text-align: center;
                         font-weight: 400;
+                        white-space: pre;
+                    }
+                    a {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
                     }
                 }
             }
@@ -309,95 +270,12 @@
                 }
             }
             .offerts-filters-table {
-                display: flex;
-                flex-direction: row;
-                flex-wrap: wrap;
+                border-collapse: collapse;
+                overflow-x: auto;
+                display: block;
                 width: calc(100% + 30px);
-                margin-top: 24px;
-                margin-bottom: 47px;
-                margin-left: -15px;
-                margin-right: -15px;
-                overflow-x: scroll;
-                .offerts-filters-table-row {
-                    padding-left: 80vw;
-                    .table-col {
-                        min-width: 80px;
-                        &:nth-child(1) {
-                            min-width: 200px;
-                        }
-                    }
-                    &.header {
-                        .table-col {
-                            min-width: 80px;
-                            &:nth-child(1) {
-                                width: 29%;
-                            }
-                            &:nth-child(2) {
-                                margin-left: 0;
-                            }
-                            &:nth-child(3) {
-                                margin-left: 0;
-                            }
-                        }
-                    }
-                }
-                &.offerts {
-                    .offerts-filters-table-row {
-                        padding-left: 80vw;
-                        .table-col {
-                            min-width: 80px;
-                            &:nth-child(1) {
-                                min-width: 200px;
-                            }
-                        }
-                        &.header {
-                            .table-col {
-                                min-width: 80px;
-                                &:nth-child(1) {
-                                    width: 29%;
-                                }
-                                &:nth-child(2) {
-                                    margin-left: 0;
-                                }
-                                &:nth-child(3) {
-                                    margin-left: 0;
-                                }
-                            }
-                        }
-                    }
-                }
-                &.orders {
-                    .offerts-filters-table-row {
-                        padding-left: 80vw;
-                        .table-col {
-                            min-width: 80px;
-                            &:nth-child(2) {
-                                p {
-                                    font-family: 'Segoe UI', sans-serif;
-                                }
-                            }
-                        }
-                        &.header {
-                            .table-col {
-                                &:nth-child(1) {
-                                    width: 2%;
-                                    p {
-                                        width: 10px;
-                                    }
-                                }
-                                &:nth-child(2) {
-                                    width: 29%;
-                                }
-                                &:nth-child(3) {
-                                    margin-left: 0;
-                                }
-                                &:nth-child(4) {
-                                    margin-left: 0;
-                                }
-                            }
-                        }
-                    }
-                }
+                max-width: calc(100% + 30px);
+                margin: 0 -15px 47px -15px;
                 .offerts-filters-table-row {
                     display: flex;
                     flex-direction: row;
@@ -408,10 +286,6 @@
                     &.header {
                         background-color: #CECECE !important;
                         .table-col {
-                            min-width: 80px;
-                            &:nth-child(1) {
-                                width: 32%;
-                            }
                             p {
                                 font-weight: 400;
                                 font-family: 'Segoe UI', sans-serif;
@@ -422,10 +296,10 @@
                         background-color: #EFEFEF;
                     }
                     .table-col {
-                        height: 55px;
                         display: flex;
-                        align-items: center;
-                        justify-content: center;
+                        height: 55px;
+                        width: auto;
+                        margin: auto 15px;
                         p {
                             text-align: center;
                             font-weight: 400;
@@ -435,13 +309,4 @@
             }
         }
     }  
-    body.orders #offerts .offerts_container .offerts-filters-table.orders .offerts-filters-table-row {
-        padding-left: 50vw !important;
-    }
-    body.orders #offerts .offerts_container .offerts-filters-table.orders .offerts-filters-table-row .table-col:nth-child(2) {
-        min-width: 220px !important;
-    }
-    body.orders #offerts .offerts_container .offerts-filters-table.orders .offerts-filters-table-row .table-col:nth-child(1) {
-        min-width: 40px !important;
-    }
 }
