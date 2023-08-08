@@ -689,23 +689,12 @@
             }
         }
         .products-list_container-slots {
-            display: flex;
-            flex-direction: column;
+            width: 100%;
             .products-list_container-header {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
                 background-color: #CECECE;
                 height: 44px;
                 .products-list-slot {
-                    width: 15%;
                     text-align: center;
-                    &:nth-child(1) {
-                        width: 15%;
-                    }
-                    &:nth-child(2) {
-                        width: 25%;
-                    }
                     p {
                         font-size: 14px;
                         line-height: 17px;
@@ -721,73 +710,44 @@
                 border-top: 0;
             }
             .products-list_container-slot {
-                display: flex;
-                flex-direction: row;
                 border-top: 1px solid #3E3E3E;
                 border-bottom: 1px solid #3E3E3E;
                 width: 100%;
-                overflow: hidden;
-                .products-list_container-slot-left {
-                    display: flex;
-                    flex-direction: row;
-                    align-items: center;
-                    .products-list_container-slot-img {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        width: 64px;
-                        margin-top: 11px;
+                &:nth-child(odd) {
+                    background-color: #EFEFEF;
+                }
+                &:nth-child(1) {
+                    td {
+                        background-color: #FFFFFF;
                     }
                 }
-                .products-list_container-slot-right {
+                .products-list_container-slot-img {
                     display: flex;
                     flex-direction: column;
-                    width: 100%;
-                    .products-list_container-slot-items {
-                        display: flex;
-                        flex-direction: column;
-                        .product-desc-slot {
-                            display: flex;
-                            flex-direction: row;
-                            align-items: center;
-                            height: 35px;
-                            &:nth-child(even) {
-                                background-color: #EFEFEF;
-                            }
-                            .products-list-slot {
-                                display: flex;
-                                justify-content: center;
-                                align-items: center;
-                                width: 10%;
-                                text-align: center;
-                                &:nth-child(1) {
-                                    width: 15%;
-                                    text-align: left;
-                                }
-                                &:nth-child(2) {
-                                    width: 25%;
-                                    text-align: left;
-                                }
-                                p {
-                                    font-size: 14px;
-                                    line-height: 17px;
-                                }
-                                &.quantity {
-                                    input {
-                                        width: 59px;
-                                        height: 27px;
-                                        text-align: center;
-                                        &::-webkit-inner-spin-button,
-                                        &::-webkit-outer-spin-button {  
-                                            opacity: 1;
-                                        }
-                                    }
-                                }
+                    justify-content: center;
+                    align-items: center;
+                    width: 64px;
+                    margin-top: 11px;
+                }    
+                .products-list-slot {
+                    text-align: center;
+                    p {
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 17px;
+                    }
+                    &.quantity {
+                        input {
+                            width: 59px;
+                            height: 27px;
+                            text-align: center;
+                            &::-webkit-inner-spin-button,
+                            &::-webkit-outer-spin-button {  
+                                opacity: 1;
                             }
                         }
                     }
-                }
+                } 
             }
             .cart-clean-button-container {
                 border-top: 1px solid #3E3E3E;
@@ -847,27 +807,19 @@
         .products_catalog_container {
             min-height: unset;
             padding: 10px;
-            .products-list_container-slots {
-                width: 100%;
-                .products-list_container-header {
-                    overflow-x: scroll;
-                    overflow-y: hidden;
-                    & > div {
-                        width: max-content;
-                        min-width: 80px;
+            .products-list-table {
+                overflow-x: scroll;
+                .products-list_container-slots {
+                    width: 100%;
+                    .products-list_container-header {
+                        & > div {
+                            width: max-content;
+                        }
                     }
-                }
-                .products-list_container-slot-right {
-                    overflow-x: scroll;
-                    overflow-y: hidden;
-                    .product-desc-slot {
-                        width: max-content;
-                        .products-list-slot {
-                            min-width: 15%;
-                            p {
-                                white-space: pre;
-                                min-width: 100px;
-                            }
+                    .products-list-slot {
+                        padding: 0 8px;
+                        p {
+                            white-space: pre;
                         }
                     }
                 }
