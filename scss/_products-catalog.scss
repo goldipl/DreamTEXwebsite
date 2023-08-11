@@ -100,18 +100,18 @@
                         position: absolute;
                         content: "";
                         display: block;
-                        top: 24px;
+                        top: 22px;
                         right: 10px;
-                        transform: translateX(-50%) rotate(180deg);
-                        background: url('./../assets/icons/arrow-up.svg');
-                        width: 20px;
-                        height: 10px;
+                        transform: translateX(-50%) rotate(0);
+                        background: url('./../assets/icons/arrow_down_filters.svg');
+                        width: 24px;
+                        height: 14px;
                         background-repeat: no-repeat;
                         background-size: contain;
                         transition: 0.8s;
                     }
                     &.active::after {
-                        transform: translateX(-50%) rotate(0);
+                        transform: translateX(-50%) rotate(180deg);
                     }
                 }
 
