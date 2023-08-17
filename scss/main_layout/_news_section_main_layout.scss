@@ -18,9 +18,10 @@
         border-left: 1px solid #707070;
         margin: auto 24px;
         height: 80%;
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
         h1.text-title {
             font-size: 32px;
             line-height: 38px;
