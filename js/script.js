@@ -16,11 +16,12 @@ messe_x_icon.addEventListener('click', () => messenger.style.display = "none");
 
 const hamburger = document.querySelector('#mobile-nav .mobile-nav-container .mobile-nav-container-slot.hamburger .hamburger-container');
 const mobile_nav_menu = document.querySelector('#mobile-nav .mobile-nav-menu-items');
+const menu_hover = document.querySelector('body .menu-hover');
 
 hamburger.addEventListener('click', () => {
     mobile_nav_menu.classList.toggle('open');
     hamburger.classList.toggle('active');
-    document.body.classList.toggle('mobile-menu-hover');
+    menu_hover.classList.toggle('active');
 });
 
 const mobile_nav_list_item = document.querySelectorAll('#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon');
@@ -58,14 +59,14 @@ function changeMenuElement(e) {
   const hasActiveClass = e.target.classList.contains('active');
     for (let i = 0; i < oldActive.length; i++) {
         oldActive[i].classList.remove("active");
-        document.body.classList.remove('menu-hover');
+        menu_hover.classList.remove('active');
     }
     if (hasActiveClass) {
         e.target.classList.remove("active");
-        document.body.classList.remove('menu-hover');
+        menu_hover.classList.remove('active');
     } else {
         e.target.classList.add("active");
-        document.body.classList.add('menu-hover');
+        menu_hover.classList.add('active');
     }
 }
 
@@ -101,3 +102,18 @@ bestseller_product_arrows.forEach(e => {
         e.parentElement.classList.toggle('active');
     });
 });
+
+menu_hover.addEventListener('click', () => {
+    menu_hover.classList.remove('active');
+    desktop_nav_main_items.forEach(e => {
+        e.classList.remove('active');
+    })
+    mobile_nav_menu.classList.remove('open');
+    hamburger.classList.remove('active');
+    mobile_nav_list_item.forEach(e => {
+        e.classList.remove('active');
+    })
+    mobile_sublist_item.forEach(e => {
+        e.classList.remove('active');
+    })
+})

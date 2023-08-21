@@ -9068,6 +9068,17 @@ body {
   margin: 0 auto;
   color: #3E3E3E;
 }
+body .menu-hover.active {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6784313725);
+  content: "";
+  display: block !important;
+  top: 108px;
+  left: calc((100vw - 1170px) / 2 * -1);
+  width: 100vw;
+  height: 100%;
+  z-index: 9999;
+}
 body .messenger {
   position: fixed;
   bottom: 16px;
@@ -9109,18 +9120,6 @@ body .messenger .messenger-x-icon {
   cursor: pointer;
 }
 
-body.menu-hover::after {
-  position: absolute;
-  background: rgba(0, 0, 0, 0.6784313725);
-  content: "";
-  display: block;
-  top: 108px;
-  left: calc((100vw - 1170px) / 2 * -1);
-  width: 100vw;
-  height: 100%;
-  z-index: 999;
-}
-
 section {
   margin-bottom: 37px;
 }
@@ -9146,11 +9145,11 @@ section h1.title {
   body {
     margin-bottom: 62px;
   }
-  body.mobile-menu-hover::after {
+  body .menu-hover.active {
     position: absolute;
     background: rgba(0, 0, 0, 0.6784313725);
     content: "";
-    display: block;
+    display: block !important;
     top: 0;
     left: 0;
     width: 100vw;

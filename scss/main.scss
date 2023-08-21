@@ -43,6 +43,17 @@ body {
     width: 1170px;
     margin: 0 auto;
     color: #3E3E3E;
+    .menu-hover.active {
+        position: absolute;
+        background: #000000ad;
+        content: '';
+        display: block !important;
+        top: 108px;
+        left: calc(((100vw - 1170px)/2)*(-1));
+        width: 100vw;
+        height: 100%;
+        z-index: 9999;
+    }
     .messenger {
         position: fixed;
         bottom: 16px;
@@ -85,18 +96,6 @@ body {
     }
 }
 
-body.menu-hover::after {
-    position: absolute;
-    background: #000000ad;
-    content: '';
-    display: block;
-    top: 108px;
-    left: calc(((100vw - 1170px)/2)*(-1));
-    width: 100vw;
-    height: 100%;
-    z-index: 999;
-}
-
 section {
     margin-bottom: 37px;
     h1.title {
@@ -122,11 +121,11 @@ section {
 @media (max-width: 960px) {
     body {
         margin-bottom: 62px;
-        &.mobile-menu-hover::after {
+        .menu-hover.active {
             position: absolute;
             background: #000000ad;
             content: '';
-            display: block;
+            display: block !important;
             top: 0;
             left: 0;
             width: 100vw;
