@@ -47,24 +47,27 @@ mobile_nav_back_icon.addEventListener('click', () => {
 });
 
 const desktop_nav_main_items = document.querySelectorAll('#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container > li.bottom-nav-links');
-
-desktop_nav_main_items.forEach(e => {
-    e.addEventListener('click', () => {
-        document.body.classList.toggle('menu-hover');
-        e.classList.toggle('active');
-    });
-});
-
 const desktop_sublist_item = document.querySelectorAll('#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container > li.bottom-nav-links .bottom-nav-sublist ul.sublist-items > li.sublist-item p');
 
-desktop_sublist_item.forEach(e => {
-    e.addEventListener('click', () => {
-        e.classList.toggle('active');
-        e.nextElementSibling.classList.toggle('active');
-        e.parentElement.parentElement.parentElement.parentElement.classList.toggle('active');
-        document.body.classList.toggle('menu-hover');
-    });
-});
+for (let i = 0; i < desktop_nav_main_items.length; i++) {
+    desktop_nav_main_items[i].addEventListener("click", changeMenuElement);
+}
+
+function changeMenuElement(e) {
+  const oldActive = document.querySelectorAll("#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links.active");
+  const hasActiveClass = e.target.classList.contains('active');
+    for (let i = 0; i < oldActive.length; i++) {
+        oldActive[i].classList.remove("active");
+        document.body.classList.remove('menu-hover');
+    }
+    if (hasActiveClass) {
+        e.target.classList.remove("active");
+        document.body.classList.remove('menu-hover');
+    } else {
+        e.target.classList.add("active");
+        document.body.classList.add('menu-hover');
+    }
+}
 
 const mobile_sublist_item = document.querySelectorAll('#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon p');
 

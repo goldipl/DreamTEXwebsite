@@ -173,28 +173,10 @@ body {
   padding-left: 56px;
   height: 42px;
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 500;
-}
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a.active,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p.active {
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item:hover p {
   color: #1C2F82;
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a:hover,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p:hover {
-  color: #1C2F82;
-}
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items {
-  display: none;
-}
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active {
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item:hover p + .subsublist-items {
   position: absolute;
   top: -8px;
   left: 100%;
@@ -208,22 +190,33 @@ body {
   padding: 16px;
   box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.1607843137);
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active .subsublist-item.first,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active .subsublist-item.first {
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item:hover p + .subsublist-items .subsublist-item.first {
   border-bottom: 1px solid #FFFFFF;
   padding-bottom: 4px;
   margin-bottom: 4px;
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active .subsublist-item.first a,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active .subsublist-item.first a {
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item:hover p + .subsublist-items .subsublist-item.first a {
   text-transform: uppercase;
 }
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items.active .subsublist-item a,
-#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items.active .subsublist-item a {
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item:hover p + .subsublist-items .subsublist-item a {
   text-transform: none;
   font-size: 18px;
   line-height: 32px;
-  font-weight: 400;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item:hover p + .subsublist-items .subsublist-item a:hover {
+  color: #1C2F82;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 500;
+}
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item a + .subsublist-items,
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item p + .subsublist-items {
+  display: none;
 }
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item.t-shirts::before {
   position: absolute;

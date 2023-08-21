@@ -166,23 +166,11 @@
                                     text-transform: uppercase;
                                     padding-left: 56px;
                                     height: 42px;
-                                    a,
-                                    p {
-                                        text-decoration: none;
-                                        color: #FFFFFF;
-                                        font-size: 18px;
-                                        line-height: 22px;
-                                        font-weight: 500;
-                                        &.active {
+                                    &:hover {
+                                        p {
                                             color: #1C2F82;
                                         }
-                                        &:hover {
-                                            color: #1C2F82;
-                                        }
-                                        & + .subsublist-items {
-                                            display: none;
-                                        }
-                                        & + .subsublist-items.active {
+                                        & p + .subsublist-items {
                                             position: absolute;
                                             top: -8px;
                                             left: 100%;
@@ -208,9 +196,23 @@
                                                     text-transform: none;
                                                     font-size: 18px;
                                                     line-height: 32px;
-                                                    font-weight: 400;
+                                                    &:hover {
+                                                        color: #1C2F82;
+                                                    }
                                                 }
                                             }
+                                        }
+                                    }
+                                    a,
+                                    p {
+                                        text-decoration: none;
+                                        color: #FFFFFF;
+                                        font-size: 18px;
+                                        line-height: 22px;
+                                        font-weight: 500;
+                                 
+                                        & + .subsublist-items {
+                                            display: none;
                                         }
                                     }
                                     &.t-shirts::before {
