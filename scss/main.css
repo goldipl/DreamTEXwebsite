@@ -1935,7 +1935,7 @@ body {
   margin-right: 1%;
   margin-left: 3%;
 }
-#bestsellers .swiper-products .swiper-slide:nth-child(2) {
+#bestsellers .swiper-products .swiper-slide:nth-child(even) {
   margin-left: 1%;
   margin-right: 3%;
 }
