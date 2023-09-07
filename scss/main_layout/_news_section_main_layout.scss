@@ -1,5 +1,6 @@
 /* ========== NEWS SECTION ========== */
 .photo-text-container {
+    position: relative;
     display: flex;
     flex-direction: row;
     padding: 15px;
@@ -28,6 +29,22 @@
             flex-direction: column;
             justify-content: flex-start;
             height: 100%;
+            .main-link-btn {
+                position: absolute;
+                right: 15px;
+                bottom: 15px;
+                a {
+                    font-family: Segoe UI, sans-serif;
+                    font-size: 18px;
+                    line-height: 24px;
+                    color: #707070;
+                    margin-left: 30px;
+                    text-decoration: none;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
             h1.text-title {
                 font-size: 32px;
                 line-height: 38px;
@@ -89,35 +106,43 @@
             display: flex;
             justify-content: flex-start;
             align-items: flex-start;
-            h1.text-title {
-                font-size: 18px;
-                line-height: 22px;
-                font-weight: 400;
-                margin-top: 0;
-                margin-bottom: 12px;
-            }
-            .text-author-data {
-                font-size: 12px;
-                line-height: 18px;
-                font-weight: 400;
-                margin: 0;
-                color: #707070;
-            }
-            .text-desc {
-                font-size: 12px;
-                line-height: 18px;
-                font-weight: 400;
-                margin: 0;
-                & + ul {
-                    padding-left: 0;
-                    li {
-                        font-size: 12px;
-                        line-height: 18px;
-                        list-style: none;
-                        &::before {
-                            content: '·';
-                            margin-right: 8px;
+            .text-container {
+                h1.text-title {
+                    font-size: 18px;
+                    line-height: 22px;
+                    font-weight: 400;
+                    margin-top: 0;
+                    margin-bottom: 12px;
+                }
+                .text-author-data {
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    margin: 0;
+                    color: #707070;
+                }
+                .text-desc {
+                    font-size: 12px;
+                    line-height: 18px;
+                    font-weight: 400;
+                    margin: 0;
+                    & + ul {
+                        padding-left: 0;
+                        li {
+                            font-size: 12px;
+                            line-height: 18px;
+                            list-style: none;
+                            &::before {
+                                content: '·';
+                                margin-right: 8px;
+                            }
                         }
+                    }
+                }
+                .main-link-btn {
+                    a {
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
