@@ -14,12 +14,13 @@
         }
     }
     .right-text-container {
-        padding-left: 24px;
+        padding-left: 30px;
         border-left: 1px solid #707070;
-        margin: auto 24px;
-        height: 80%;
+        margin: 0 30px;
+        height: 100%;
         display: -webkit-box;
-        -webkit-line-clamp: 9;
+        align-items: center;
+        -webkit-line-clamp: 12;
         -webkit-box-orient: vertical;
         overflow: hidden;
         h1.text-title {
