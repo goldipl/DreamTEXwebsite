@@ -23,32 +23,38 @@
         -webkit-line-clamp: 12;
         -webkit-box-orient: vertical;
         overflow: hidden;
-        h1.text-title {
-            font-size: 32px;
-            line-height: 38px;
-            font-weight: 400;
-            margin-top: 0;
-            margin-bottom: 12px;
-        }
-        .text-author-data {
-            font-size: 18px;
-            line-height: 22px;
-            font-weight: 400;
-            margin: 0;
-            color: #707070;
-        }
-        .text-desc {
-            font-size: 14px;
-            line-height: 20px;
-            font-weight: 400;
-            margin: 0;
-            & + ul {
-                padding-left: 0;
-                li {
-                    list-style: none;
-                    &::before {
-                        content: '·';
-                        margin-right: 8px;
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            h1.text-title {
+                font-size: 32px;
+                line-height: 38px;
+                font-weight: 400;
+                margin-top: 0;
+                margin-bottom: 12px;
+            }
+            .text-author-data {
+                font-size: 18px;
+                line-height: 22px;
+                font-weight: 400;
+                margin: 0;
+                color: #707070;
+            }
+            .text-desc {
+                font-size: 14px;
+                line-height: 20px;
+                font-weight: 400;
+                margin: 0;
+                & + ul {
+                    padding-left: 0;
+                    li {
+                        list-style: none;
+                        &::before {
+                            content: '·';
+                            margin-right: 8px;
+                        }
                     }
                 }
             }

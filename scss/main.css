@@ -1827,33 +1827,39 @@ body {
   -webkit-box-orient: vertical;
   overflow: hidden;
 }
-.photo-text-container .right-text-container h1.text-title {
+.photo-text-container .right-text-container .text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
+}
+.photo-text-container .right-text-container .text-container h1.text-title {
   font-size: 32px;
   line-height: 38px;
   font-weight: 400;
   margin-top: 0;
   margin-bottom: 12px;
 }
-.photo-text-container .right-text-container .text-author-data {
+.photo-text-container .right-text-container .text-container .text-author-data {
   font-size: 18px;
   line-height: 22px;
   font-weight: 400;
   margin: 0;
   color: #707070;
 }
-.photo-text-container .right-text-container .text-desc {
+.photo-text-container .right-text-container .text-container .text-desc {
   font-size: 14px;
   line-height: 20px;
   font-weight: 400;
   margin: 0;
 }
-.photo-text-container .right-text-container .text-desc + ul {
+.photo-text-container .right-text-container .text-container .text-desc + ul {
   padding-left: 0;
 }
-.photo-text-container .right-text-container .text-desc + ul li {
+.photo-text-container .right-text-container .text-container .text-desc + ul li {
   list-style: none;
 }
-.photo-text-container .right-text-container .text-desc + ul li::before {
+.photo-text-container .right-text-container .text-container .text-desc + ul li::before {
   content: "·";
   margin-right: 8px;
 }
