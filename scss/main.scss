@@ -71,21 +71,29 @@ body {
             cursor: pointer;
             &::after {
                 position: relative;
-                content: 'Masz pytanie? Napisz do nas';
+                content: "Masz pytanie? Napisz do nas";
                 font-size: 12px;
-                line-height: 12px;
+                line-height: 14px;
                 margin: 0;
+                font-weight: 600;
                 left: 0;
                 bottom: -64px;
                 text-shadow: 0px 0px 4px #FFFFFF;
+                background: #FFFFFF;
+                display: block;
+                color: #707070;
+                text-align: center;
+                border-radius: 5px;
+                padding: 2px;
+                width: 82px;
             }
         }
         .messenger-x-icon {
             position: relative;
             content: "";
             display: block;
-            top: -100px;
-            right: -56px;
+            top: -92px;
+            right: -62px;
             background: url('./../assets/icons/close.svg');
             width: 16px;
             height: 16px;
