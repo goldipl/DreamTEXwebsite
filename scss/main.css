@@ -1748,7 +1748,7 @@ body {
 #swiper .swiper .swiper-pagination {
   position: relative;
   left: 0;
-  bottom: -16px;
+  bottom: 0;
   padding-bottom: 16px;
 }
 #swiper .swiper .swiper-pagination .swiper-pagination-bullet {
@@ -1767,11 +1767,14 @@ body {
 @media (max-width: 1920px) {
   #swiper .swiper {
     width: 100vw;
+    height: 420px;
+  }
+  #swiper .swiper .swiper-slide {
     height: 400px;
   }
   #swiper .swiper .swiper-slide img {
     width: 100vw;
-    height: 366px;
+    height: 400px;
   }
   #swiper .swiper .swiper-pagination {
     bottom: 16px;

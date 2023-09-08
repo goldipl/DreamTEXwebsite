@@ -41,7 +41,7 @@
         .swiper-pagination {
             position: relative;
             left: 0;
-            bottom: -16px;
+            bottom: 0;
             padding-bottom: 16px;
             .swiper-pagination-bullet {
                 box-sizing: border-box;
@@ -63,11 +63,12 @@
     #swiper {
         .swiper {
             width: 100vw;
-            height: 400px;
+            height: 420px;
             .swiper-slide {
+                height: 400px;
                 img {
                     width: 100vw;
-                    height: 366px;
+                    height: 400px;
                 }
             }
             .swiper-pagination {
