@@ -1820,8 +1820,8 @@ body {
 .photo-text-container .right-text-container {
   padding-left: 30px;
   border-left: 1px solid #707070;
-  margin: 0 30px;
-  height: 100%;
+  margin: 15px 30px;
+  height: 90%;
   display: -webkit-box;
   align-items: center;
   -webkit-line-clamp: 12;
