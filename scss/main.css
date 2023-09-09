@@ -197,12 +197,17 @@ body {
   border-radius: 16px;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .logout_btn a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: #ffffff;
   font-size: 12px;
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
   text-decoration: none;
+  width: 100%;
+  height: 100%;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .logout_btn:hover a {
   color: #1d3082;
