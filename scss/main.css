@@ -1899,6 +1899,10 @@ body {
     height: auto;
     padding: 10px;
   }
+  .photo-text-container .left-photo-container {
+    width: 100%;
+    height: auto;
+  }
   .photo-text-container .left-photo-container img {
     width: 100%;
     height: auto;
@@ -1908,7 +1912,8 @@ body {
   .photo-text-container .right-text-container {
     padding-left: 0;
     border-left: 0;
-    margin: auto;
+    width: 100%;
+    margin: 10px;
     height: 80%;
     display: flex;
     justify-content: flex-start;
