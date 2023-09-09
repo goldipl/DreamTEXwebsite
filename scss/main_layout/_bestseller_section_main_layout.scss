@@ -380,14 +380,15 @@
     #bestsellers {
         .swiper-products {
             height: auto;
+            padding: 10px;
             padding-bottom: 32px;
             .swiper-slide {
-                width: 92% !important;
-                margin-right: 4%;
-                margin-left: 4%;
+                width: 96% !important;
+                margin-right: 2%;
+                margin-left: 2%;
                 &:nth-child(2) {
-                    margin-right: 4%;
-                    margin-left: 4%;
+                    margin-right: 2%;
+                    margin-left: 2%;
                 }
             }
             .swiper-button-prev {
