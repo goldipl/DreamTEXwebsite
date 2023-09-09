@@ -3519,7 +3519,6 @@ body {
 #products-catalog .products_catalog_container {
   width: 100%;
   height: auto;
-  min-height: 953px;
   padding: 15px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 0;
@@ -4123,7 +4122,6 @@ body {
 }
 
 #products-catalog.list .products_catalog_container {
-  min-height: unset;
   margin-bottom: 88px;
 }
 #products-catalog.list .products_catalog_container .filters_container .filters_column .filters-title {
@@ -4284,7 +4282,6 @@ body {
     margin-top: 17px;
   }
   #products-catalog .products_catalog_container {
-    min-height: unset;
     padding: 10px;
   }
   #products-catalog .products_catalog_container .products-list-table {

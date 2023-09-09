@@ -3,7 +3,6 @@
     .products_catalog_container {
         width: 100%;
         height: auto;
-        min-height: 953px;
         padding: 15px;
         box-shadow: 0px 3px 15px #00000033;
         margin-bottom: 0;
@@ -627,7 +626,6 @@
 
 #products-catalog.list {
     .products_catalog_container {
-        min-height: unset;
         margin-bottom: 88px;
         .filters_container {
             .filters_column {
@@ -804,7 +802,6 @@
     #products-catalog {
         margin-top: 17px;
         .products_catalog_container {
-            min-height: unset;
             padding: 10px;
             .products-list-table {
                 overflow-x: scroll;
