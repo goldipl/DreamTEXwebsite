@@ -293,7 +293,6 @@
                             display: flex;
                             justify-content: center;
                             transform: translate(-20%, 0%);
-                            transition: 0.7s;
                             &.active {
                                 position: absolute;
                                 bottom: 0;
@@ -384,6 +383,7 @@
             padding-bottom: 32px;
             .swiper-slide {
                 width: 98% !important;
+                max-width: 340px;
                 margin-right: 1%;
                 margin-left: 1%;
                 &:nth-child(2) {

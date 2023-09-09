@@ -2268,7 +2268,6 @@ body {
   display: flex;
   justify-content: center;
   transform: translate(-20%, 0%);
-  transition: 0.7s;
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom.active {
   position: absolute;
@@ -2353,6 +2352,7 @@ body {
   }
   #bestsellers .swiper-products .swiper-slide {
     width: 98% !important;
+    max-width: 340px;
     margin-right: 1%;
     margin-left: 1%;
   }
@@ -2431,7 +2431,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  margin: 30px 15px;
+  margin: 15px;
 }
 
 @media (max-width: 800px) {
@@ -2483,7 +2483,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   color: #707070;
-  margin: 30px 15px;
+  margin: 15px;
 }
 #hero_image .hero_image_container .hero_image_container_bottom .main-link-btn {
   position: absolute;
