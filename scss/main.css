@@ -45,8 +45,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 24px;
-  margin-right: 24px;
+  margin-left: 15px;
+  margin-right: 31px;
 }
 #nav .top-nav .searchbar-right-container .searchbar-container #searchQueryInput {
   box-sizing: border-box;
@@ -83,7 +83,7 @@ body {
   margin-right: 24px;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon img {
-  height: 30px;
+  height: 27px;
   width: auto;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon-text p {
