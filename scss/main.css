@@ -85,6 +85,9 @@ body {
   text-decoration: none;
   padding: 10px;
   margin-right: 4px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon {
   cursor: pointer;
@@ -192,6 +195,9 @@ body {
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon img {
   height: 27px;
   width: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon-text p {
   margin: 0;
@@ -201,6 +207,7 @@ body {
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+  user-select: none;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container:hover a.logo-text-header-link .header-icon img {
   filter: invert(46%) sepia(95%) saturate(414%) hue-rotate(172deg) brightness(86%) contrast(106%);
