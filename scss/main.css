@@ -2390,6 +2390,8 @@ body {
 }
 #about_company .about_company_container .about_company_container_top .about_company_container_top-slot .slot-img img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 #about_company .about_company_container .about_company_container_top .about_company_container_top-slot .slot-title {
   display: flex;
