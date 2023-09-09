@@ -117,3 +117,9 @@ menu_hover.addEventListener('click', () => {
         e.classList.remove('active');
     })
 })
+
+const clients_panel_desktop_icon = document.querySelector('#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon');
+
+clients_panel_desktop_icon.addEventListener('click', () => {
+    clients_panel_desktop_icon.nextElementSibling.classList.toggle('active');
+})

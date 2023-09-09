@@ -1,930 +1,991 @@
 #nav {
     .top-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 60px;
+      .logo-left-container {
         display: flex;
+      }
+      .searchbar-right-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .flag-lang-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          a {
+            display: flex;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 12px;
+            line-height: 14px;
+            color: #707070;
+            height: 36px;
+            width: auto;
+          }
+        }
+        .searchbar-container {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-left: 15px;
+          margin-right: 31px;
+          #searchQueryInput {
+            box-sizing: border-box;
+            width: 235px;
+            height: 36px;
+            border: 1px solid #cecece;
+            border-radius: 20px;
+            padding-left: 16px;
+            background-color: #efefef;
+            &:focus {
+              border: 1px solid #2cb5ff;
+              outline: 0;
+            }
+          }
+          #searchQuerySubmit {
+            position: absolute;
+            top: -1px;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            background-color: unset;
+            border: unset;
+            cursor: pointer;
+          }
+        }
+        .logo-text-header-container {
+          position: relative;
+          &:last-child a.logo-text-header-link {
+            margin-right: 0;
+          }
+          a.logo-text-header-link {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-decoration: none;
+            margin-right: 24px;
+            &.clients-panel-icon {
+              cursor: pointer;
+              & + .clients-panel-box-container {
+                position: absolute;
+                left: 0;
+                top: 52px;
+                background: #ffffff;
+                flex-direction: column;
+                box-shadow: 0 0 4px #00000029;
+                z-index: 999999999999999312312312;
+                &.active {
+                  display: flex !important;
+                }
+                .clients-panel-box-container-slot {
+                  margin-bottom: 16px;
+                  display: flex;
+                  flex-direction: row;
+                  justify-content: space-between;
+                  align-items: center;
+                  height: auto;
+                  padding: 9px;
+                  border: 0;
+                  box-sizing: border-box;
+                  &.profile {
+                    background-color: #2cb5ff;
+                  }
+                  &.offerts {
+                    background-color: #0077b7;
+                  }
+                  &.compare {
+                    background-color: #1d3082;
+                  }
+                  p {
+                    display: inline-flex;
+                    order: 1;
+                  }
+                  img {
+                    display: inline-flex;
+                    order: 0;
+                    margin: 0;
+                    width: 30px;
+                    height: 30px;
+                  }
+                  .text-top {
+                    display: flex;
+                    justify-content: center;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+            .header-icon {
+              img {
+                height: 27px;
+                width: auto;
+              }
+            }
+            .header-icon-text {
+              p {
+                margin: 0;
+                font-size: 12px;
+                line-height: 14px;
+                color: #707070;
+              }
+            }
+          }
+          &:hover {
+            a.logo-text-header-link {
+              .header-icon {
+                img {
+                  filter: invert(46%) sepia(95%) saturate(414%) hue-rotate(172deg)
+                    brightness(86%) contrast(106%);
+                }
+              }
+              .header-icon-text {
+                p {
+                  color: #2cb5ff;
+                  text-decoration: underline;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .bottom-nav {
+      display: flex;
+      background: linear-gradient(90deg, #1c2f82, #2e81e1);
+      margin-left: calc(((100vw - 1170px) / 2) * (-1));
+      width: 100vw;
+      height: 48px;
+      .bottom-nav-container {
+        display: flex;
+        flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 60px;
-        .logo-left-container {
+        width: 1170px;
+        margin: 0 auto;
+        .left-bottom-nav {
+          ul.bottom-nav-elements-container {
             display: flex;
+            flex-direction: row;
+            padding: 0;
+            margin: 0;
+            li.bottom-nav-links {
+              color: rgb(255, 255, 255);
+              list-style: none;
+              padding: 14px 8px;
+              width: max-content;
+              cursor: pointer;
+              box-sizing: border-box;
+              height: 47px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              cursor: pointer;
+              border: 6px solid rgba(255, 255, 255, 0);
+              box-sizing: border-box;
+              user-select: none;
+              &.active .bottom-nav-sublist ul.sublist-items {
+                display: flex;
+              }
+              .bottom-nav-sublist {
+                position: absolute;
+                z-index: 99999;
+                top: 27px;
+                left: 12px;
+                ul.sublist-items {
+                  display: none;
+                  position: absolute;
+                  top: 14px;
+                  left: -12px;
+                  background: linear-gradient(
+                    0deg,
+                    rgba(44, 121, 255, 0.9) 1%,
+                    rgba(44, 181, 255, 0.9) 100%
+                  );
+                  flex-direction: column;
+                  list-style: none;
+                  z-index: 99;
+                  border-radius: 0px 10px 10px;
+                  padding: 8px 0px;
+                  box-shadow: 10px 0px 10px #00000029;
+                  li.sublist-item {
+                    position: relative;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    width: auto;
+                    min-width: 260px;
+                    text-transform: uppercase;
+                    padding-left: 56px;
+                    height: 42px;
+                    &:hover {
+                      p {
+                        color: #1c2f82;
+                      }
+                      & p + .subsublist-items {
+                        position: absolute;
+                        top: -8px;
+                        left: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        background: linear-gradient(
+                          0deg,
+                          rgba(44, 121, 255, 0.9) 1%,
+                          rgba(44, 181, 255, 0.9) 100%
+                        );
+                        flex-direction: column;
+                        list-style: none;
+                        z-index: 99;
+                        border-radius: 10px;
+                        padding: 16px;
+                        box-shadow: 10px 0px 10px #00000029;
+                        .subsublist-item {
+                          &.first {
+                            border-bottom: 1px solid #ffffff;
+                            padding-bottom: 4px;
+                            margin-bottom: 4px;
+                            a {
+                              text-transform: uppercase;
+                            }
+                          }
+                          a {
+                            text-transform: none;
+                            font-size: 18px;
+                            line-height: 32px;
+                            &:hover {
+                              color: #1c2f82;
+                            }
+                          }
+                        }
+                      }
+                    }
+                    a,
+                    p {
+                      text-decoration: none;
+                      color: #ffffff;
+                      font-size: 18px;
+                      line-height: 22px;
+                      font-weight: 500;
+  
+                      & + .subsublist-items {
+                        display: none;
+                      }
+                    }
+                    &.t-shirts::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/t-shirts.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.polo::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/polo_shirts.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.blouses::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 14.5px;
+                      background: url("./../assets/icons/blouses.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.sweaters::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/sweaters_and_vests.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.shirts::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/shirts.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.fleeces::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/fleeces.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.hats::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/hats.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.jackets::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/jackets.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.softshells::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/softshell_jackets.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.sleeveless::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 16px;
+                      background: url("./../assets/icons/sleeveless.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.trousers::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 19px;
+                      background: url("./../assets/icons/trousers.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.bags::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/bags.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.accessories::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/accessories.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.boots::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/boots.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.vests::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/vestss.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.jumpsuit::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/jumpsuit.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.gloves::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/gloves.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.foils::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/flex_floxk_foils.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.thermopress::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/thermopress.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.printsub::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/sublimation_printing.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.printsolvent::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/solvent_printing.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.backpacks::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/backpacks.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.keychains::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/keychains.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.office::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/office.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.pens::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/pens_notepads.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.wallets::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/wallets.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.briefcases::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/briefcases.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.mugs::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/mugs.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.relax::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/relax.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.tools-flashlights::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/tools_and_flashlights.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.home-beauty::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/home_and_beauty.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.oddments::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/oddments.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.multimedia::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 10px;
+                      left: 12px;
+                      background: url("./../assets/icons/multimedia.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.watches::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/watches.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.umbrellas::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/umbrellas.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.usb::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/USB.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                    &.lanyard::before {
+                      position: absolute;
+                      content: "";
+                      display: block;
+                      top: 4px;
+                      left: 12px;
+                      background: url("./../assets/icons/lanyard.svg");
+                      width: 32px;
+                      height: 32px;
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    }
+                  }
+                }
+              }
+              &:hover:nth-child(1),
+              &.active:nth-child(1) {
+                border: 6px solid #1f3f94;
+              }
+              &:hover:nth-child(2),
+              &.active:nth-child(2) {
+                border: 6px solid #224aa1;
+              }
+              &:hover {
+                background-color: rgba(44, 181, 255, 0.9);
+                border: 6px solid #234ea6;
+                border-radius: 16px;
+              }
+              &.active {
+                background-color: rgba(44, 181, 255, 0.9);
+                border: 6px solid #234ea6;
+                border-bottom: 0 !important;
+                border-radius: 16px 16px 0px 0px;
+                padding-top: 8px;
+              }
+            }
+          }
+        }
+        .right-bottom-nav {
+          display: flex;
+          flex-direction: row;
+          ul.right-bottom-nav-elements-container {
+            display: flex;
+            padding: 0;
+            margin: 0;
+            .right-nav-links {
+              display: flex;
+              border-radius: 16px;
+              justify-content: center;
+              align-items: center;
+              color: #ffffff;
+              padding: 14px 12px;
+              width: max-content;
+              text-decoration: none;
+              list-style: none;
+              border: 6px solid rgba(255, 255, 255, 0);
+              height: 47px;
+              box-sizing: border-box;
+              user-select: none;
+              &:hover {
+                background-color: rgba(44, 181, 255, 0.9);
+                border: 6px solid #296bc8;
+              }
+              &:nth-child(1):hover {
+                border: 6px solid #2865c1;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @media (max-width: 1170px) {
+    #nav {
+      .top-nav {
+        width: 100%;
+        .logo-left-container {
+          display: flex;
         }
         .searchbar-right-container {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .flag-lang-container {
             display: flex;
             justify-content: center;
             align-items: center;
-            .flag-lang-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                a {
-                    display: flex;
-                    text-decoration: none;
-                    text-transform: uppercase;
-                    font-size: 12px;
-                    line-height: 14px;
-                    color: #707070;
-                    height: 36px;
-                    width: auto;
-                }
+            a {
+              display: flex;
+              text-decoration: none;
+              text-transform: uppercase;
+              font-size: 12px;
+              line-height: 14px;
+              color: #707070;
+              height: 36px;
+              width: auto;
             }
-            .searchbar-container {
-                position: relative;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-left: 15px;
-                margin-right: 31px;
-                #searchQueryInput {
-                    box-sizing: border-box;
-                    width: 235px;
-                    height: 36px;
-                    border: 1px solid #CECECE;
-                    border-radius: 20px;
-                    padding-left: 16px;
-                    background-color: #EFEFEF;
-                    &:focus {
-                        border: 1px solid #2CB5FF;
-                        outline: 0;
-                    }
+          }
+          .searchbar-container {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 10px;
+            margin-right: 10px;
+            #searchQueryInput {
+              box-sizing: border-box;
+              width: 235px;
+              height: 36px;
+              border-radius: 20px;
+              padding-left: 16px;
+              background-color: #efefef;
+              &:focus {
+                outline: 1px solid #2cb5ff;
+              }
+            }
+            #searchQuerySubmit {
+              position: absolute;
+              top: -1px;
+              right: 0;
+              width: 42px;
+              height: 36px;
+              background-color: unset;
+              border: unset;
+              cursor: pointer;
+            }
+          }
+          .logo-text-header-container {
+            a.logo-text-header-link {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              text-decoration: none;
+              .header-icon {
+                img {
+                  height: 30px;
+                  width: auto;
                 }
-                #searchQuerySubmit {
+              }
+              .header-icon-text {
+                p {
+                  margin: 0;
+                  font-size: 12px;
+                  line-height: 14px;
+                  color: #707070;
+                }
+              }
+            }
+          }
+        }
+      }
+      .bottom-nav {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+        .bottom-nav-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin: 0;
+          .left-bottom-nav {
+            ul.bottom-nav-elements-container {
+              display: flex;
+              flex-direction: row;
+              padding: 0;
+              margin: 0;
+              li.bottom-nav-links {
+                color: #ffffff;
+                list-style: none;
+                padding: 14px 12px;
+                width: max-content;
+                cursor: pointer;
+                .bottom-nav-sublist {
+                  position: relative;
+                  z-index: 99999;
+                  ul.sublist-items {
+                    display: none;
                     position: absolute;
-                    top: -1px;
-                    right: 0;
-                    width: 36px;
-                    height: 36px;
-                    background-color: unset;
-                    border: unset;
-                    cursor: pointer;
-                }
-            }
-            .logo-text-header-container {
-                &:last-child a.logo-text-header-link  {
-                    margin-right: 0;
-                }
-                a.logo-text-header-link {
-                    display: flex;
+                    top: 14px;
+                    left: -12px;
+                    background: linear-gradient(0deg, #2c79ff 1%, #2cb5ff 100%);
                     flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    text-decoration: none;
-                    margin-right: 24px;
-                    .header-icon {
-                        img {
-                            height: 27px;
-                            width: auto;
+                    list-style: none;
+                    z-index: 99;
+                    padding: 0;
+                    border-radius: 0 10px 10px 10px;
+                    padding: 8px 0;
+                    li.sublist-item {
+                      position: relative;
+                      display: flex;
+                      justify-content: flex-start;
+                      align-items: center;
+                      width: auto;
+                      min-width: 260px;
+                      text-transform: uppercase;
+                      padding-left: 56px;
+                      height: 42px;
+                      a {
+                        text-decoration: none;
+                        color: #ffffff;
+                        font-size: 18px;
+                        line-height: 22px;
+                        font-weight: 500;
+                        &:hover {
+                          color: #2c79ff;
                         }
+                      }
                     }
-                    .header-icon-text {
-                        p {
-                            margin: 0;
-                            font-size: 12px;
-                            line-height: 14px;
-                            color: #707070;
-                        }
-                    }
+                  }
                 }
                 &:hover {
-                    a.logo-text-header-link {
-                        .header-icon {
-                            img {
-                                filter: invert(46%) sepia(95%) saturate(414%) hue-rotate(172deg) brightness(86%) contrast(106%);
-                            }
-                        }
-                        .header-icon-text {
-                            p {
-                                color: #2CB5FF;
-                                text-decoration: underline;
-                            }
-                        }
-                    }
+                  background-color: #2cb5ff;
+                  border-radius: 10px 10px 0 0;
+                  ul.sublist-items {
+                    display: flex;
+                  }
                 }
+              }
             }
-        }
-    }
-    .bottom-nav {
-        display: flex;
-        background: linear-gradient(90deg, #1C2F82, #2E81E1);
-        margin-left: calc(((100vw - 1170px)/2)*(-1));
-        width: 100vw;
-        height: 48px;
-        .bottom-nav-container {
+          }
+          .right-bottom-nav {
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
-            align-items: center;
-            width: 1170px;
-            margin: 0 auto;
-            .left-bottom-nav {
-                ul.bottom-nav-elements-container {
-                    display: flex;
-                    flex-direction: row;
-                    padding: 0;
-                    margin: 0;
-                    li.bottom-nav-links {
-                        color: rgb(255, 255, 255);
-                        list-style: none;
-                        padding: 14px 8px;
-                        width: max-content;
-                        cursor: pointer;
-                        box-sizing: border-box;
-                        height: 47px;
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        position: relative;
-                        cursor: pointer;
-                        border: 6px solid rgba(255,255,255,0);
-                        box-sizing: border-box;
-                        user-select: none;
-                        &.active .bottom-nav-sublist ul.sublist-items {
-                            display: flex;
-                        }
-                        .bottom-nav-sublist {
-                            position: absolute;
-                            z-index: 99999;
-                            top: 27px;
-                            left: 12px;
-                            ul.sublist-items {
-                                display: none;
-                                position: absolute;
-                                top: 14px;
-                                left: -12px;
-                                background: linear-gradient(0deg, rgba(44, 121, 255, 0.90) 1%, rgba(44, 181, 255, 0.90) 100%);
-                                flex-direction: column;
-                                list-style: none;
-                                z-index: 99;
-                                border-radius: 0px 10px 10px;
-                                padding: 8px 0px;
-                                box-shadow: 10px 0px 10px #00000029;
-                                li.sublist-item {
-                                    position: relative;
-                                    display: flex;
-                                    justify-content: flex-start;
-                                    align-items: center;
-                                    width: auto;
-                                    min-width: 260px;
-                                    text-transform: uppercase;
-                                    padding-left: 56px;
-                                    height: 42px;
-                                    &:hover {
-                                        p {
-                                            color: #1C2F82;
-                                        }
-                                        & p + .subsublist-items {
-                                            position: absolute;
-                                            top: -8px;
-                                            left: 100%;
-                                            display: flex;
-                                            flex-direction: column;
-                                            background: linear-gradient(0deg, rgba(44, 121, 255, 0.90) 1%, rgba(44, 181, 255, 0.90) 100%);
-                                            flex-direction: column;
-                                            list-style: none;
-                                            z-index: 99;
-                                            border-radius: 10px;
-                                            padding: 16px;
-                                            box-shadow: 10px 0px 10px #00000029;
-                                            .subsublist-item {
-                                                &.first {
-                                                    border-bottom: 1px solid #FFFFFF;
-                                                    padding-bottom: 4px;
-                                                    margin-bottom: 4px;
-                                                    a {
-                                                        text-transform: uppercase;
-                                                    }
-                                                }
-                                                a {
-                                                    text-transform: none;
-                                                    font-size: 18px;
-                                                    line-height: 32px;
-                                                    &:hover {
-                                                        color: #1C2F82;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                    a,
-                                    p {
-                                        text-decoration: none;
-                                        color: #FFFFFF;
-                                        font-size: 18px;
-                                        line-height: 22px;
-                                        font-weight: 500;
-                                 
-                                        & + .subsublist-items {
-                                            display: none;
-                                        }
-                                    }
-                                    &.t-shirts::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/t-shirts.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.polo::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/polo_shirts.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.blouses::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 14.5px;
-                                        background: url('./../assets/icons/blouses.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.sweaters::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/sweaters_and_vests.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.shirts::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/shirts.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.fleeces::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/fleeces.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.hats::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/hats.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.jackets::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/jackets.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.softshells::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/softshell_jackets.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.sleeveless::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 16px;
-                                        background: url('./../assets/icons/sleeveless.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.trousers::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 19px;
-                                        background: url('./../assets/icons/trousers.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.bags::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/bags.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.accessories::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/accessories.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.boots::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/boots.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.vests::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/vestss.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.jumpsuit::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/jumpsuit.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.gloves::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/gloves.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.foils::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/flex_floxk_foils.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.thermopress::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/thermopress.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.printsub::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/sublimation_printing.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.printsolvent::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/solvent_printing.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.backpacks::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/backpacks.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.keychains::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/keychains.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.office::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/office.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.pens::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/pens_notepads.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.wallets::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/wallets.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.briefcases::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/briefcases.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.mugs::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/mugs.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.relax::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/relax.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.tools-flashlights::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/tools_and_flashlights.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.home-beauty::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/home_and_beauty.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.oddments::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/oddments.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.multimedia::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 10px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/multimedia.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.watches::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/watches.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.umbrellas::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/umbrellas.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.usb::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/USB.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                    &.lanyard::before {
-                                        position: absolute;
-                                        content: "";
-                                        display: block;
-                                        top: 4px;
-                                        left: 12px;
-                                        background: url('./../assets/icons/lanyard.svg');
-                                        width: 32px;
-                                        height: 32px;
-                                        background-repeat: no-repeat;
-                                        background-size: contain;
-                                    }
-                                }
-                            }
-                        }
-                        &:hover:nth-child(1),
-                        &.active:nth-child(1) {
-                            border: 6px solid #1f3f94;
-                        }
-                        &:hover:nth-child(2),
-                        &.active:nth-child(2) {
-                            border: 6px solid #224aa1;
-                        }
-                        &:hover {
-                            background-color: rgba(44, 181, 255, 0.9);
-                            border: 6px solid #234ea6;
-                            border-radius: 16px;
-                        }
-                        &.active {
-                            background-color: rgba(44, 181, 255, 0.9);
-                            border: 6px solid #234ea6;
-                            border-bottom: 0 !important;
-                            border-radius: 16px 16px 0px 0px;
-                            padding-top: 8px;
-                        }
-                    }
+            ul.right-bottom-nav-elements-container {
+              display: flex;
+              padding: 0;
+              margin: 0;
+              .right-nav-links {
+                color: #ffffff;
+                padding: 14px 12px;
+                width: max-content;
+                text-decoration: none;
+                list-style: none;
+                &:hover {
+                  background-color: #2cb5ff;
+                  border-radius: 10px;
                 }
+              }
             }
-            .right-bottom-nav {
-                display: flex;
-                flex-direction: row;
-                ul.right-bottom-nav-elements-container {
-                    display: flex;
-                    padding: 0;
-                    margin: 0;
-                    .right-nav-links {
-                        display: flex;
-                        border-radius: 16px;
-                        justify-content: center;
-                        align-items: center;
-                        color: #FFFFFF;
-                        padding: 14px 12px;
-                        width: max-content;
-                        text-decoration: none;
-                        list-style: none;
-                        border: 6px solid rgba(255,255,255,0);
-                        height: 47px;
-                        box-sizing: border-box;
-                        user-select: none;
-                        &:hover {
-                            background-color: rgba(44, 181, 255, 0.9);
-                            border: 6px solid #296bc8;
-                        }
-                        &:nth-child(1):hover {
-                            border: 6px solid #2865c1;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
-}
-
-@media (max-width: 1170px) {
+  }
+  
+  @media (max-width: 960px) {
     #nav {
-        .top-nav {
-            width: 100%;
-            .logo-left-container {
-                display: flex;
-            }
-            .searchbar-right-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                .flag-lang-container {
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    a {
-                        display: flex;
-                        text-decoration: none;
-                        text-transform: uppercase;
-                        font-size: 12px;
-                        line-height: 14px;
-                        color: #707070;
-                        height: 36px;
-                        width: auto;
-                    }
-                }
-                .searchbar-container {
-                    position: relative;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    margin-left: 10px;
-                    margin-right: 10px;
-                    #searchQueryInput {
-                        box-sizing: border-box;
-                        width: 235px;
-                        height: 36px;
-                        border-radius: 20px;
-                        padding-left: 16px;
-                        background-color: #EFEFEF;
-                        &:focus {
-                            outline: 1px solid #2CB5FF;
-                        }
-                    }
-                    #searchQuerySubmit {
-                        position: absolute;
-                        top: -1px;
-                        right: 0;
-                        width: 42px;
-                        height: 36px;
-                        background-color: unset;
-                        border: unset;
-                        cursor: pointer;
-                    }
-                }
-                .logo-text-header-container {
-                    a.logo-text-header-link {
-                        display: flex;
-                        flex-direction: column;
-                        justify-content: center;
-                        align-items: center;
-                        text-decoration: none;
-                        .header-icon {
-                            img {
-                                height: 30px;
-                                width: auto;
-                            }
-                        }
-                        .header-icon-text {
-                            p {
-                                margin: 0;
-                                font-size: 12px;
-                                line-height: 14px;
-                                color: #707070;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-        .bottom-nav {
-            margin-left: 0;
-            margin-right: 0;
-            width: 100%;
-            .bottom-nav-container {
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between;
-                align-items: center;
-                width: 100%;
-                margin: 0;
-                .left-bottom-nav {
-                    ul.bottom-nav-elements-container {
-                        display: flex;
-                        flex-direction: row;
-                        padding: 0;
-                        margin: 0;
-                        li.bottom-nav-links {
-                            color: #FFFFFF;
-                            list-style: none;
-                            padding: 14px 12px;
-                            width: max-content;
-                            cursor: pointer;
-                            .bottom-nav-sublist {
-                                position: relative;
-                                z-index: 99999;
-                                ul.sublist-items {
-                                    display: none;
-                                    position: absolute;
-                                    top: 14px;
-                                    left: -12px;
-                                    background: linear-gradient(0deg, #2C79FF 1%, #2CB5FF 100%);
-                                    flex-direction: column;
-                                    list-style: none;
-                                    z-index: 99;
-                                    padding: 0;
-                                    border-radius: 0 10px 10px 10px;
-                                    padding: 8px 0;
-                                    li.sublist-item {
-                                        position: relative;
-                                        display: flex;
-                                        justify-content: flex-start;
-                                        align-items: center;
-                                        width: auto;
-                                        min-width: 260px;
-                                        text-transform: uppercase;
-                                        padding-left: 56px;
-                                        height: 42px;
-                                        a {
-                                            text-decoration: none;
-                                            color: #FFFFFF;
-                                            font-size: 18px;
-                                            line-height: 22px;
-                                            font-weight: 500;
-                                            &:hover {
-                                                color: #2C79FF;
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                            &:hover {
-                                background-color: #2CB5FF;
-                                border-radius: 10px 10px 0 0;
-                                ul.sublist-items {
-                                    display: flex;
-                                } 
-                            }
-                        }
-                    }
-                }
-                .right-bottom-nav {
-                    display: flex;
-                    flex-direction: row;
-                    ul.right-bottom-nav-elements-container {
-                        display: flex;
-                        padding: 0;
-                        margin: 0;
-                        .right-nav-links {
-                            color: #FFFFFF;
-                            padding: 14px 12px;
-                            width: max-content;
-                            text-decoration: none;
-                            list-style: none;
-                            &:hover {
-                                background-color: #2CB5FF;
-                                border-radius: 10px;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    } 
-}
-
-@media (max-width: 960px) {
-    #nav {
-        overflow-x: hidden;
-       .top-nav {
+      overflow-x: hidden;
+      .top-nav {
         flex-direction: column;
         height: auto;
         overflow: hidden;
-            .logo-left-container {
-                width: 100%;
-                justify-content: flex-start;
-                margin-left: 24px;
-            }
-            .searchbar-right-container {
-                #searchQueryInput {
-                    width: 95vw !important;
-                    margin-bottom: 16px;
-                }
-                .flag-lang-container {
-                    position: absolute;
-                    top: 8px;
-                    right: 2.5vw;
-                }
-                .logo-text-header-container {
-                    display: none;
-                }
-            }
+        .logo-left-container {
+          width: 100%;
+          justify-content: flex-start;
+          margin-left: 24px;
         }
-       .bottom-nav {
+        .searchbar-right-container {
+          #searchQueryInput {
+            width: 95vw !important;
+            margin-bottom: 16px;
+          }
+          .flag-lang-container {
+            position: absolute;
+            top: 8px;
+            right: 2.5vw;
+          }
+          .logo-text-header-container {
             display: none;
-       }
+          }
+        }
+      }
+      .bottom-nav {
+        display: none;
+      }
     }
 }
