@@ -747,6 +747,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
   }
   #nav .top-nav .searchbar-right-container .searchbar-container #searchQueryInput {
     box-sizing: border-box;
@@ -763,7 +765,7 @@ body {
     position: absolute;
     top: -1px;
     right: 0;
-    width: 36px;
+    width: 42px;
     height: 36px;
     background-color: unset;
     border: unset;
@@ -2350,13 +2352,13 @@ body {
     padding-bottom: 32px;
   }
   #bestsellers .swiper-products .swiper-slide {
-    width: 96% !important;
-    margin-right: 2%;
-    margin-left: 2%;
+    width: 98% !important;
+    margin-right: 1%;
+    margin-left: 1%;
   }
   #bestsellers .swiper-products .swiper-slide:nth-child(2) {
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
   }
   #bestsellers .swiper-products .swiper-button-prev {
     display: none;
@@ -2370,6 +2372,17 @@ body {
     position: absolute;
     left: 0;
     bottom: 8px;
+  }
+}
+@media (max-width: 600px) {
+  #bestsellers .swiper-products .swiper-slide {
+    width: 96% !important;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  #bestsellers .swiper-products .swiper-slide:nth-child(2) {
+    margin-right: 2%;
+    margin-left: 2%;
   }
 }
 #about_company .about_company_container {
