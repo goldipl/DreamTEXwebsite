@@ -122,4 +122,5 @@ const clients_panel_desktop_icon = document.querySelector('#nav .top-nav .search
 
 clients_panel_desktop_icon.addEventListener('click', () => {
     clients_panel_desktop_icon.nextElementSibling.classList.toggle('active');
+    clients_panel_desktop_icon.classList.toggle('active');
 })

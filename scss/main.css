@@ -83,33 +83,58 @@ body {
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  margin-right: 24px;
+  padding: 10px;
+  margin-right: 4px;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon {
   cursor: pointer;
 }
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon.active {
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px 20px 0px 0px;
+}
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container {
   position: absolute;
   left: 0;
-  top: 52px;
+  top: 60px;
   background: #ffffff;
   flex-direction: column;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1607843137);
   z-index: 999999999999999300000000;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 20px 20px 20px;
+  width: 170px;
+  height: 294px;
+  padding: 10px;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .title {
+  text-decoration: none;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .title h2 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #707070;
+  font-weight: 400;
+  margin: 0 0 10px 0;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container.active {
   display: flex !important;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot {
-  margin-bottom: 16px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: auto;
-  padding: 9px;
   border: 0;
   box-sizing: border-box;
+  padding: 0 5px;
+  height: 40px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.profile {
   background-color: #2cb5ff;
@@ -119,6 +144,9 @@ body {
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.compare {
   background-color: #1d3082;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.orders {
+  background-color: #0083E8;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot p {
   display: inline-flex;
@@ -135,6 +163,31 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .line-container .line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #efefef;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .logout_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 86px;
+  height: 32px;
+  background-color: #2CB5FF;
+  box-sizing: border-box;
+  margin: 10px auto 0;
+  border-radius: 16px;
+}
+#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .logout_btn a {
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon img {
   height: 27px;
