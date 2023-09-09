@@ -145,6 +145,9 @@ body {
   font-size: 12px;
   line-height: 14px;
   color: #707070;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container:hover a.logo-text-header-link .header-icon img {
   filter: invert(46%) sepia(95%) saturate(414%) hue-rotate(172deg) brightness(86%) contrast(106%);
