@@ -1720,7 +1720,7 @@ body {
 }
 #swiper .swiper .swiper-button-prev {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: calc((100vw - 1170px) / 2);
 }
 #swiper .swiper .swiper-button-prev::after {
@@ -1733,7 +1733,7 @@ body {
 }
 #swiper .swiper .swiper-button-next {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: calc((100vw - 1170px) / 2);
 }
 #swiper .swiper .swiper-button-next::after {
@@ -1767,7 +1767,7 @@ body {
 @media (max-width: 1920px) {
   #swiper .swiper {
     width: 100vw;
-    height: 420px;
+    height: 437px;
   }
   #swiper .swiper .swiper-slide {
     height: 400px;
@@ -6490,7 +6490,6 @@ body {
 
 #news {
   margin-top: 40px;
-  margin-bottom: 84px;
 }
 #news .news_container {
   display: flex;
