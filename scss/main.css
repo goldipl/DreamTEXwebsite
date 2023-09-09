@@ -4094,7 +4094,6 @@ body {
   display: flex;
   justify-content: center;
   transform: translate(-30%, 0%);
-  transition: 0.7s;
 }
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-bottom.active {
   position: absolute;
@@ -5113,7 +5112,6 @@ body {
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-bottom {
   display: flex;
   justify-content: center;
-  transition: 0.7s;
 }
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-bottom.active {
   position: absolute;
@@ -5563,7 +5561,6 @@ body {
   #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-bottom {
     display: flex;
     justify-content: center;
-    transition: 0.7s;
   }
   #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-desc .products_cart_products-slot-desc-bottom.active {
     position: absolute;
