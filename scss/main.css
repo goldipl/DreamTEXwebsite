@@ -8468,7 +8468,10 @@ body {
 
 @media (max-width: 960px) {
   #cart .cart_container {
-    padding: 10px 0;
+    padding: 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
     margin-bottom: 67px;
   }
   #cart .cart_container .cart_items_container {
