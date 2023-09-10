@@ -8492,7 +8492,6 @@ body {
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-title-img,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-size,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-quantity,
-  #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-price,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-availability,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-value,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-delete {
@@ -8502,12 +8501,14 @@ body {
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-title-img p,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-size p,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-quantity p,
-  #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-price p,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-availability p,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-value p,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-delete p {
     font-size: 14px;
     line-height: 17px;
+  }
+  #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-price {
+    display: none;
   }
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-title-img {
     display: none;
@@ -8539,16 +8540,19 @@ body {
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-slot .cart_items_container-slot-right .cart_items_container-slot-items .product-desc-slot .product-availability,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-slot .cart_items_container-slot-right .cart_items_container-slot-items .product-desc-slot .product-delete {
     width: auto;
+    min-width: 40px;
     margin: 0 6px;
   }
-  #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-slot .cart_items_container-slot-right .cart_items_container-slot-items .product-desc-slot .product-price,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-slot .cart_items_container-slot-right .cart_items_container-slot-items .product-desc-slot .product-value {
     word-break: break-all;
     width: auto;
     margin: 0 6px;
   }
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-slot .cart_items_container-slot-right .cart_items_container-slot-items .product-desc-slot .product-quantity input {
-    width: 42px;
+    width: 59px;
+  }
+  #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-slot .cart_items_container-slot-right .cart_items_container-slot-items .product-desc-slot .product-price {
+    display: none;
   }
   #cart .cart_container .cart_items_container .cart_items_container-left .cart-clean-search-container {
     display: flex;

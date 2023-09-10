@@ -366,7 +366,6 @@
                             .product-title-img,
                             .product-size,
                             .product-quantity,
-                            .product-price,
                             .product-availability,
                             .product-value,
                             .product-delete {
@@ -376,6 +375,9 @@
                                     font-size: 14px;
                                     line-height: 17px;
                                 }
+                            }
+                            .product-price {
+                                display: none;
                             }
                             .product-title-img {
                                 display: none;
@@ -408,9 +410,9 @@
                                         .product-availability,
                                         .product-delete {
                                             width: auto;
+                                            min-width: 40px;
                                             margin: 0 6px;
                                         }
-                                        .product-price,
                                         .product-value {
                                             word-break: break-all;
                                             width: auto;
@@ -418,8 +420,11 @@
                                         }
                                         .product-quantity {
                                             input {
-                                                width: 42px;
+                                                width: 59px;
                                             }
+                                        }
+                                        .product-price {
+                                            display: none;
                                         }
                                     }
                                 }
