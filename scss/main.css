@@ -2163,7 +2163,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/topseller_pl.png");
+  background: url("./../assets/img/labels/bestseller.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -2175,7 +2175,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/new_pl.png");
+  background: url("./../assets/img/labels/new.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -2187,7 +2187,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/promotion_label.svg");
+  background: url("./../assets/img/labels/promotion.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -2199,7 +2199,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/sale_label.svg");
+  background: url("./../assets/img/labels/sale.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -2547,6 +2547,9 @@ body {
   #bestsellers .swiper-products .swiper-slide:nth-child(2) {
     margin-right: 2vw;
     margin-left: 2vw;
+  }
+  #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image img {
+    height: 100% !important;
   }
 }
 #about_company .about_company_container {
@@ -3911,7 +3914,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/topseller_pl.png");
+  background: url("./../assets/img/labels/bestseller.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -3923,7 +3926,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/new_pl.png");
+  background: url("./../assets/img/labels/new.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -3935,7 +3938,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/promotion_label.svg");
+  background: url("./../assets/img/labels/promotion.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -3947,7 +3950,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/sale_label.svg");
+  background: url("./../assets/img/labels/sale.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -5034,7 +5037,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/topseller_pl.png");
+  background: url("./../assets/img/labels/bestseller.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -5046,7 +5049,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/new_pl.png");
+  background: url("./../assets/img/labels/new.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -5058,7 +5061,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/promotion_label.svg");
+  background: url("./../assets/img/labels/promotion.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -5070,7 +5073,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/sale_label.svg");
+  background: url("./../assets/img/labels/sale.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -5510,7 +5513,7 @@ body {
     content: "";
     top: 0;
     left: 0;
-    background: url("./../assets/img/labels/topseller_pl.png");
+    background: url("./../assets/img/labels/bestseller.svg");
     height: 90px;
     width: 90px;
     background-size: cover;
@@ -5522,7 +5525,7 @@ body {
     content: "";
     top: 0;
     left: 0;
-    background: url("./../assets/img/labels/new_pl.png");
+    background: url("./../assets/img/labels/new.svg");
     height: 90px;
     width: 90px;
     background-size: cover;
@@ -6198,7 +6201,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/topseller_pl.png");
+  background: url("./../assets/img/labels/bestseller.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -6222,7 +6225,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/promotion_label.svg");
+  background: url("./../assets/img/labels/promotion.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
@@ -6234,7 +6237,7 @@ body {
   content: "";
   top: 0;
   left: 0;
-  background: url("./../assets/img/labels/sale_label.svg");
+  background: url("./../assets/img/labels/sale.svg");
   height: 90px;
   width: 90px;
   background-size: cover;
