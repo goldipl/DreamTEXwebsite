@@ -597,6 +597,7 @@
                 padding: 15px 15px 0 15px;
                 .products_cart_products-slot-image {
                     margin-left: 16px;
+                    margin-right: 16px;
                     display: flex;
                     justify-content: center;
                     img {
@@ -1080,7 +1081,10 @@
                 box-shadow: 0px 3px 15px #00000033;
                 border-radius: 20px;
                 width: 300px;
-                margin-right: 1%;
+                margin-right: 5%;
+                &:last-child {
+                    margin-right: 0;
+                }
                 .products_cart_products-slot-top-container {
                     display: flex;
                     flex-direction: column;
@@ -1130,40 +1134,13 @@
                         justify-content: space-between;
                         width: 100%;
                         &.promostars::after {
-                            position: absolute;
-                            display: block;
-                            content: '';
-                            top: 10px;
-                            right: 10px;
-                            background: url('./../assets/img/logo/logo-promostars.png');
-                            height: 13px;
-                            width: 100px;
-                            background-size: cover;
-                            background-repeat: no-repeat;
+                            display: none;
                         }
                         &.promostars::after {
-                            position: absolute;
-                            display: block;
-                            content: '';
-                            top: 10px;
-                            right: 10px;
-                            background: url('./../assets/img/logo/logo-promostars.png');
-                            height: 13px;
-                            width: 100px;
-                            background-size: cover;
-                            background-repeat: no-repeat;
+                            display: none;
                         }
                         &.identity10::after {
-                            position: absolute;
-                            display: block;
-                            content: '';
-                            top: 10px;
-                            right: 10px;
-                            background: url('./../assets/img/logo/logo-10-identity.jpg');
-                            height: 40px;
-                            width: 40px;
-                            background-size: cover;
-                            background-repeat: no-repeat;
+                            display: none;
                         }
                         .products_cart_products-slot-desc-top {
                             .swiper-product-title {
@@ -1295,9 +1272,9 @@
                             display: flex;
                             justify-content: center;
                             align-items: center;
-                            width: 25px;
-                            height: 25px;
-                            font-size: 12px;
+                            width: 30px;
+                            height: 30px;
+                            font-size: 14px;
                             line-height: 14px;
                             border-radius: 100%;
                             padding: 2px;

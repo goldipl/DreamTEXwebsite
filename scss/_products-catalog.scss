@@ -339,6 +339,7 @@
         flex-direction: row;
         .products-slot-image {
             margin-left: 16px;
+            margin-right: 16px;
             img {
                 object-fit: contain;
             }
@@ -844,6 +845,14 @@
                     width: 100%;
                 }
             }
+        }
+        .products-slot .products-slot-desc::after {
+            display: none !important;
+        }
+        .products-slot .color {
+            width: 30px !important;
+            height: 30px !important;
+            font-size: 14px !important;
         }
     }
     

@@ -265,9 +265,10 @@
               align-items: center;
               position: relative;
               cursor: pointer;
-              border: 6px solid rgba(255, 255, 255, 0);
+              border: 5px solid rgba(255, 255, 255, 0);
               box-sizing: border-box;
               user-select: none;
+              font-size: 18px;
               &.active .bottom-nav-sublist ul.sublist-items {
                 display: flex;
               }
@@ -322,20 +323,24 @@
                         z-index: 99;
                         border-radius: 10px;
                         padding: 16px;
-                        box-shadow: 10px 0px 10px #00000029;
+                        box-shadow: inset 10px 0px 10px #00000029;
                         .subsublist-item {
+                          margin-left: 10px;
+                          margin-right: 10px;
                           &.first {
                             border-bottom: 1px solid #ffffff;
                             padding-bottom: 4px;
                             margin-bottom: 4px;
                             a {
                               text-transform: uppercase;
+                              font-weight: 500;
                             }
                           }
                           a {
                             text-transform: none;
                             font-size: 18px;
                             line-height: 32px;
+                            font-weight: 400;
                             &:hover {
                               color: #1c2f82;
                             }
@@ -804,20 +809,20 @@
               }
               &:hover:nth-child(1),
               &.active:nth-child(1) {
-                border: 6px solid #1f3f94;
+                border: 5px solid #1f3f94;
               }
               &:hover:nth-child(2),
               &.active:nth-child(2) {
-                border: 6px solid #224aa1;
+                border: 5px solid #224aa1;
               }
               &:hover {
                 background-color: rgba(44, 181, 255, 0.9);
-                border: 6px solid #234ea6;
+                border: 5px solid #234ea6;
                 border-radius: 16px;
               }
               &.active {
                 background-color: rgba(44, 181, 255, 0.9);
-                border: 6px solid #234ea6;
+                border: 5px solid #234ea6;
                 border-bottom: 0 !important;
                 border-radius: 16px 16px 0px 0px;
                 padding-top: 8px;
@@ -842,16 +847,17 @@
               width: max-content;
               text-decoration: none;
               list-style: none;
-              border: 6px solid rgba(255, 255, 255, 0);
+              border: 5px solid rgba(255, 255, 255, 0);
               height: 47px;
               box-sizing: border-box;
               user-select: none;
+              font-size: 18px;
               &:hover {
                 background-color: rgba(44, 181, 255, 0.9);
-                border: 6px solid #296bc8;
+                border: 5px solid #296bc8;
               }
               &:nth-child(1):hover {
-                border: 6px solid #2865c1;
+                border: 5px solid #2865c1;
               }
             }
           }
@@ -966,6 +972,9 @@
                 .bottom-nav-sublist {
                   position: relative;
                   z-index: 99999;
+                  top: 9px;
+                  left: unset;
+                  right: 100%;
                   ul.sublist-items {
                     display: none;
                     position: absolute;
