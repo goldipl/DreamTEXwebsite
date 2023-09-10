@@ -8569,6 +8569,12 @@ body {
     width: 90%;
     padding: 0 16px;
   }
+  #cart .cart_container .cart_items_container .cart_items_container-left .cart-clean-search-container .cart-search-container {
+    width: 85%;
+  }
+  #cart .cart_container .cart_items_container .cart_items_container-left .cart-clean-search-container .cart-search-container #searchQueryInput-cart {
+    width: 100%;
+  }
   #cart .cart_container .cart_items_container .cart_items_container-right .header-right {
     height: 0;
   }

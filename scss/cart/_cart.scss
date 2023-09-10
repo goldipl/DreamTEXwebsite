@@ -445,6 +445,12 @@
                                 padding: 0 16px;
                             }
                         }
+                        .cart-search-container {
+                            width: 85%;
+                            #searchQueryInput-cart {
+                                width: 100%;
+                            }
+                        }
                     }
                 }
                 .cart_items_container-right {
