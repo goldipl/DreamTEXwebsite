@@ -1033,6 +1033,7 @@ body {
 @media (max-width: 960px) {
   #nav {
     overflow-x: hidden;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   }
   #nav .top-nav {
     flex-direction: column;
