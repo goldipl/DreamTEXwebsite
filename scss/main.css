@@ -8309,6 +8309,7 @@ body {
 }
 #cart .cart_container .cart_items_container .cart_items_container-left .cart-clean-search-container .cart-search-container {
   position: relative;
+  margin-top: 15px;
 }
 #cart .cart_container .cart_items_container .cart_items_container-left .cart-clean-search-container .cart-search-container #searchQueryInput-cart {
   box-sizing: border-box;
@@ -8490,6 +8491,9 @@ body {
     height: 44px;
     overflow-x: scroll;
     overflow-y: hidden;
+  }
+  #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header.no-items {
+    display: none;
   }
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-title-img,
   #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots .cart_items_container-header .product-size,
