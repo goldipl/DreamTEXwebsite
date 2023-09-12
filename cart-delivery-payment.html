@@ -1552,87 +1552,145 @@
                                 <input type="text" id="zipcode" required>
                             </div>
                         </div>
+                        <div class="addresses_button-container">
+                            <h2 class="subtitle">Lista adresów</h2>
+                            <div class="search-container addresses">
+                                <input id="searchQueryInput" type="text" name="searchQueryInput" placeholder="Szukaj..." value="">
+                                <button id="searchQuerySubmit" type="submit" name="searchQuerySubmit">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"></circle><circle cx="18" cy="18" r="17.5" fill="none"></circle></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"></circle><circle cx="8" cy="8" r="7" fill="none"></circle></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"></line></g></svg>
+                                </button>
+                            </div>
+                        </div>
+                        <table class="table_container">
+                            <thead>
+                                <tr class="addresses-table-row header">
+                                    <th class="table-col">
+                                        <p>Nazwa</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Adres</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Kod pocztowy</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Miasto</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p></p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p></p>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="addresses-table-row">
+                                    <th class="table-col">
+                                        <p>P.H.U Jednyka</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Staszica 5/11</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>02-985</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Warszawa</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="edit-btn" href="#">Edytuj</a>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="choose-btn" href="#">Wybierz</a>
+                                    </th>
+                                </tr>
+                                <tr class="addresses-table-row">
+                                    <th class="table-col">
+                                        <p>P.H.U Jednyka</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Staszica 5/11</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>02-985</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Warszawa</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="edit-btn" href="#">Edytuj</a>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="choose-btn" href="#">Wybierz</a>
+                                    </th>
+                                </tr>
+                                <tr class="addresses-table-row">
+                                    <th class="table-col">
+                                        <p>P.H.U Jednyka</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Staszica 5/11</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>02-985</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Warszawa</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="edit-btn" href="#">Edytuj</a>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="choose-btn" href="#">Wybierz</a>
+                                    </th>
+                                </tr>
+                                <tr class="addresses-table-row">
+                                    <th class="table-col">
+                                        <p>P.H.U Jednyka</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Staszica 5/11</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>02-985</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <p>Warszawa</p>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="edit-btn" href="#">Edytuj</a>
+                                    </th>
+                                    <th class="table-col">
+                                        <a class="choose-btn" href="#">Wybierz</a>
+                                    </th>
+                                </tr>
+                            </tbody>
+                         </table>
+                         <div class="pagination">
+                            <div class="pagination_container">
+                                <div class="element active">
+                                    <p>1</p>
+                                </div>
+                                <div class="element">
+                                    <p>2</p>
+                                </div>
+                                <div class="element">
+                                    <p>3</p>
+                                </div>
+                                <div class="element">
+                                    <p>...</p>
+                                </div>
+                                <div class="element">
+                                    <p>999</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="cart_delivery_payment_container-slot">
-                    <div class="number_title_container">
+                    <div class="number_title_container payment">
                         <p class="number">2</p>
-                        <div class="title_desc">
-                            <p class="title">Dane zamawiającego</p>
-                        </div>
-                    </div>
-                    <div class="cart_data">
-                        <div class="cart_data_container">
-                            <form>
-                                <div class="form-slot">
-                                    <label class="name" for="name">Imię i nazwisko</label>
-                                    <input type="text" id="name" required>
-                                    <label class="telephone" for="telephone">Telefon kontaktowy</label>
-                                    <input type="number" id="telephone" required>
-                                </div>
-                                <div class="form-slot">
-                                    <label class="email" for="email">E-mail</label>
-                                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                                </div>
-                                <div class="form-slot">
-                                    <label class="textarea" for="textarea">Wiadomość do zamówienia</label>
-                                    <textarea name="textarea" id="textarea" rows="5" required></textarea>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart_delivery_payment_container-slot">
-                    <div class="number_title_container">
-                        <p class="number">3</p>
-                        <div class="title_desc">
-                            <p class="title">Metoda dostawy</p>
-                            <p class="desc">(Dla zamówień powyżej 1000zł transport gratis)</p>
-                        </div>
-                    </div>
-                    <div class="cart_square_container">
-                        <div class="cart_square-slot courier">
-                            <p class="text-top">PRZESYŁKA KURIERSKA</p>
-                            <img src="./assets/icons/dpd.svg" alt="DPD" width="161" height="70">
-                            <p class="text-bottom">14 zł + VAT</p>
-                        </div>
-                        <div class="cart_square-slot courier">
-                            <p class="text-top">PRZESYŁKA KURIERSKA ZA POBRANIEM</p>
-                            <img src="./assets/icons/dpd.svg" alt="DPD" width="161" height="70">
-                            <p class="text-bottom">16 zł + VAT</p>
-                        </div>
-                        <div class="cart_square-slot">
-                            <p class="text-top">Odbiór osobisty</p>
-                            <p class="text-bottom with-image">Lokalizacja</p>
-                            <p class="text-bottom small">ul. Szyszkowa 32</p>
-                            <p class="text-bottom small">02-285 Warszawa</p>
-                        </div>
-                    </div>
-                    <div class="courier_address_container">
-                        <h1 class="title">Adres dostawy - inny niż na fakturze</h1>
-                        <div class="courier_address_container-main">
-                            <div class="form-slot">
-                                <label class="name" for="name">Imię i nazwisko *</label>
-                                <input type="text" id="name" required>
-                                <label class="company" for="company">Firma *</label>
-                                <input type="text" id="company" required>
-                                <label class="telephone" for="telephone">Telefon *</label>
-                                <input type="number" id="telephone" required>
-                            </div>
-                            <div class="form-slot">
-                                <label class="street" for="street">Ulica *</label>
-                                <input type="text" id="street" required>
-                                <label class="zipcode" for="zipcode">Kod pocztowy *</label>
-                                <input type="text" id="zipcode" required>
-                                <label class="city" for="city">Miasto *</label>
-                                <input type="text" id="city" required>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cart_delivery_payment_container-slot">
-                    <div class="number_title_container">
-                        <p class="number">4</p>
                         <div class="title_desc">
                             <p class="title">Sposób płatności</p>
                         </div>
@@ -1647,17 +1705,43 @@
                             <img src="./assets/icons/przelewy24_logo_2022.svg" alt="przelewy24" width="206" height="72">
                         </div>
                         <div class="cart_square-slot">
-                            <p class="text-top">Płatność przy odbiorze</p>
-                            <p class="text-bottom">karta <span>lub</span> gotówka</p>
+                            <div class="only-text center-text">
+                                <p class="text-top">Płatność przy odbiorze</p>
+                                <p class="text-bottom">karta <span>lub</span> gotówka</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart_delivery_payment_container-slot">
+                    <div class="number_title_container additional-info">
+                        <p class="number">3</p>
+                        <div class="title_desc">
+                            <p class="title">Dodatkowe informacje</p>
+                        </div>
+                    </div>
+                    <div class="cart_data">
+                        <div class="cart_data_container">
+                            <form>
+                                <div class="form-slot">
+                                    <label class="name" for="name">Imię i nazwisko osoby do odbioru</label>
+                                    <input type="text" id="name" required>
+                                    <label class="telephone" for="telephone">Telefon osoby do odbioru</label>
+                                    <input type="number" id="telephone" required>
+                                </div>
+                                <div class="form-slot full">
+                                    <label class="textarea" for="textarea">Wiadomość do zamówienia</label>
+                                    <textarea name="textarea" id="textarea" rows="5" required></textarea>
+                                </div>
+                            </form>
                         </div>
                     </div>
                     <form>
-                        <div class="cart_radios">
-                            <input type="radio" id="option1" name="option" value="Oświadczam, że zapoznałem się z Regulaminem sklepu internetowego Dreamtex.pl">
+                        <div class="cart_checkbox">
+                            <input type="checkbox" id="option1" name="option" value="Oświadczam, że zapoznałem się z Regulaminem sklepu internetowego Dreamtex.pl">
                             <label for="option1">Oświadczam, że zapoznałem się z Regulaminem sklepu internetowego Dreamtex.pl</label>
                         </div>
-                        <div class="cart_radios">
-                            <input type="radio" id="option2" name="option" value="Oświadczam, że zapoznałem się z Polityką prywatności sklepu internetowego Dreamtex.pl">
+                        <div class="cart_checkbox">
+                            <input type="checkbox" id="option2" name="option" value="Oświadczam, że zapoznałem się z Polityką prywatności sklepu internetowego Dreamtex.pl">
                             <label for="option2">Oświadczam, że zapoznałem się z Polityką prywatności sklepu internetowego Dreamtex.pl</label>
                         </div>
                     </form>

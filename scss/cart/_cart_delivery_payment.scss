@@ -22,6 +22,12 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 100px;
+                &.payment {
+                    margin-bottom: 74px;
+                }
+                &.additional-info {
+                    margin-bottom: 30px;
+                }
                 .number {
                     display: inline-flex;
                     justify-content: center;
@@ -76,6 +82,9 @@
                             &:nth-child(1) {
                                 margin-left: 0;
                             }
+                            &.full {
+                                width: 95%;
+                            }
                             label {
                                 font-size: 16px;
                                 line-height: 19px;
@@ -104,7 +113,7 @@
                                 background-color: #EFEFEF;
                                 border: 1px solid #CECECE;
                                 padding: 16px;
-                                margin-bottom: 56px;
+                                margin-bottom: 20px;
                                 &:focus {
                                     outline: 1px solid #2CB5FF;
                                 }
@@ -195,6 +204,11 @@
                                     background-repeat: no-repeat;
                                     background-size: contain;
                                 }
+                            }
+                        }
+                        &.center-text {
+                            .text-bottom {
+                                margin-top: 30%;
                             }
                         }
                     }
@@ -324,16 +338,75 @@
                                 }
                             }
                     }
+                    .addresses_button-container {
+                        display: inline-flex;
+                        align-items: center;
+                        .subtitle {
+                            font-size: 28px;
+                            line-height: 34px;
+                            font-weight: 400;
+                            margin-right: 24px;
+                        }
+                        .search-container {
+                            position: relative;
+                            width: 250px;
+                            #searchQueryInput {
+                                box-sizing: border-box;
+                                width: 250px;
+                                height: 36px;
+                                border: 1px solid #cecece;
+                                border-radius: 20px;
+                                padding-left: 16px;
+                                background-color: #efefef;
+                                &:focus {
+                                  border: 1px solid #2cb5ff;
+                                  outline: 0;
+                                }
+                              }
+                              #searchQuerySubmit {
+                                position: absolute;
+                                top: -1px;
+                                right: 0;
+                                width: 36px;
+                                height: 36px;
+                                background-color: unset;
+                                border: unset;
+                                cursor: pointer;
+                              }
+                        }
+                    }
+                    .table_container {
+                        .header {
+                            background-color: #CECECE;
+                        }
+                        p {
+                            font-weight: 400;
+                        }
+                        a {
+                            text-decoration: none;
+                            background-color: #2CB5FF;
+                            color: #FFFFFF;
+                            width: 80px;
+                            height: 32px;
+                            padding: 6px 16px;
+                            border-radius: 16px;
+                            font-weight: 400;
+                            box-sizing: border-box;
+                        }
+                    }
                 }
             }
             form {
                 margin: 15px;
-                .cart_radios {
+                .cart_checkbox {
                     margin-bottom: 8px;
+                    cursor: pointer;
+                    user-select: none;
                     label {
                         font-size: 16px;
                         line-height: 19px;
                         color: #3E3E3E;
+                        user-select: none;
                     }
                 }
             }
