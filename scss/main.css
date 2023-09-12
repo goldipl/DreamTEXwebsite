@@ -8350,7 +8350,7 @@ body {
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
   border: 1px solid #CECECE;
   border-radius: 10px;
-  padding: 20px;
+  padding: 12px 20px;
 }
 #cart .cart_container .cart_items_container .cart_items_container-right .cart_right_container .title {
   margin: 0 0 20px 0;
@@ -8421,10 +8421,12 @@ body {
 #cart .cart_container .cart_items_container .cart_items_container-right .cart_right_container .total_price_without_delivery .total_price-value p {
   white-space: pre;
 }
-#cart .cart_container .cart_items_container .cart_items_container-right .cart_right_container .total_price_without_delivery .additional_info p {
+#cart .cart_container .cart_items_container .cart_items_container-right .cart_right_container .additional_info p {
   font-size: 14px;
   line-height: 17px;
   color: #3E3E3E;
+  margin-top: 15px;
+  margin-bottom: 5px;
 }
 #cart .cart_container .cart_items_container .cart_items_container-right .cart_right_container .delivery_payment_button {
   display: flex;
