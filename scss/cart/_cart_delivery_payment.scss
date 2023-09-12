@@ -14,11 +14,14 @@
             z-index: 1;
             &:first-of-type {
                 margin-top: 0;
+                .number_title_container {
+                    margin-top: -10px;
+                }
             }
             .number_title_container {
                 display: flex;
                 align-items: center;
-                margin-bottom: 43px;
+                margin-bottom: 100px;
                 .number {
                     display: inline-flex;
                     justify-content: center;
@@ -30,7 +33,7 @@
                     box-sizing: border-box;
                     color: #FFFFFF;
                     background-color: #2CB5FF;
-                    margin: 0 0 0 16px;
+                    margin: 0 0 0 15px;
                 }
                 .title_desc {
                     display: inline-flex;
@@ -46,7 +49,7 @@
                         font-size: 20px;
                         line-height: 24px;
                         color: #707070;
-                        margin-left: 14px;
+                        margin-left: 10px;
                     }
                 }
             }
@@ -115,11 +118,12 @@
                 flex-direction: row;
                 justify-content: space-evenly;
                 align-items: center;
-                margin-bottom: 160px;
+                margin-bottom: 66px;
                 &.payment-method {
                     margin-bottom: 80px;
                 }
                 .cart_square-slot {
+                    position: relative;
                     display: flex;
                     flex-direction: column;
                     align-items: center;
@@ -134,6 +138,22 @@
                     cursor: pointer;
                     &.checked {
                         border: 3px solid #707070;
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            display: block;
+                            bottom: 2px;
+                            right: 4px;
+                            background: url(./../assets/icons/cart_green_approve.svg);
+                            width: 60px;
+                            height: 60px;
+                            background-repeat: no-repeat;
+                            background-size: contain;
+                            cursor: pointer;
+                        }
+                    }
+                    &.text {
+                        justify-content: flex-start;
                     }
                     .text-top {
                         font-size: 16px;
@@ -145,50 +165,130 @@
                     img {
                         margin: 16px 0;
                     }
-                    .text-bottom {
-                        font-size: 20px;
-                        line-height: 24px;
-                        text-align: center;
-                        margin: 0;
-                        span {
-                            font-size: 14px;
-                        }
-                        &.small {
-                            font-size: 16px;
-                            line-height: 21px;
-                        }
-                        &.with-image {
-                            position: relative;
-                            display: inline-flex;
-                            margin: 24px;
-                            margin-left: 48px;
-                            &::before {
-                                position: absolute;
-                                content: '';
-                                display: block;
-                                width: 30px;
-                                height: 30px;
-                                top: -2px;
-                                left: -36px;
-                                background: url('./../assets/icons/home_icon_gray.png');
-                                background-repeat: no-repeat;
-                                background-size: contain;
+                    .only-text {
+                        .text-bottom {
+                            font-size: 20px;
+                            line-height: 24px;
+                            text-align: center;
+                            margin: 0;
+                            span {
+                                font-size: 14px;
+                            }
+                            &.small {
+                                font-size: 16px;
+                                line-height: 21px;
+                            }
+                            &.with-image {
+                                position: relative;
+                                display: inline-flex;
+                                margin: 24px;
+                                margin-left: 48px;
+                                &::before {
+                                    position: absolute;
+                                    content: '';
+                                    display: block;
+                                    width: 30px;
+                                    height: 30px;
+                                    top: -2px;
+                                    left: -36px;
+                                    background: url('./../assets/icons/home_icon_gray.png');
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
                             }
                         }
                     }
                 }
+            }
+            .title-checkbox {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                margin: 0 auto;
+                width: 100%;
+                .title-address {
+                    display: flex;
+                    justify-content: center;
+                    margin-left: 15px;
+                    font-size: 28px;
+                    line-height: 34px;
+                    font-weight: 400;
+                    margin-bottom: 32px;
+                }
+                .checkbox-wrapper-64 input[type="checkbox"] {
+                    visibility: hidden;
+                    display: none;
+                  }
+                
+                  .checkbox-wrapper-64 *,
+                  .checkbox-wrapper-64 ::after,
+                  .checkbox-wrapper-64 ::before {
+                    box-sizing: border-box;
+                  }
+                  .checkbox-wrapper-64 {
+                    margin-left: 11px;
+                  }
+                  /* The switch - the box around the slider */
+                  .checkbox-wrapper-64 .switch {
+                    font-size: 17px;
+                    position: relative;
+                    display: inline-block;
+                    width: 40px;
+                    height: 20px;
+                  }
+                
+                  /* Hide default HTML checkbox */
+                  .checkbox-wrapper-64 .switch input {
+                    opacity: 0;
+                    width: 0;
+                    height: 0;
+                  }
+                
+                  /* The slider */
+                  .checkbox-wrapper-64 .slider {
+                    position: absolute;
+                    cursor: pointer;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    background-color: #707070;
+                    border: 1px solid #adb5bd;
+                    transition: .4s;
+                    border-radius: 30px;
+                  }
+                
+                  .checkbox-wrapper-64 .slider:before {
+                    position: absolute;
+                    content: "";
+                    height: 16px;
+                    width: 16px;
+                    border-radius: 20px;
+                    left: 2px;
+                    bottom: 1px;                
+                    background-color: #fff;
+                    transition: .4s;
+                  }
+                
+                  .checkbox-wrapper-64 input:checked + .slider {
+                    background-color: #2CB5FF;
+                    border: 1px solid #2CB5FF;
+                  }
+                
+                  .checkbox-wrapper-64 input:focus + .slider {
+                    box-shadow: 0 0 1px #2CB5FF;
+                  }
+                
+                  .checkbox-wrapper-64 input:checked + .slider:before {
+                    transform: translateX(19px);
+                  }
             }
             .courier_address_container {
                 display: none;
                 &.active {
                     display: flex;
                     flex-direction: column;
-                    margin: -80px 30px 30px 30px;
-                    .title {
-                        display: flex;
-                        justify-content: center;
-                        margin-left: 15px;
-                    }
+                    margin: 0 30px 30px 30px;
                     .courier_address_container-main {
                         display: flex;
                         flex-direction: row;
