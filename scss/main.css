@@ -9032,7 +9032,7 @@ body {
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container {
     overflow-x: scroll;
     margin-bottom: 110px;
-    padding-left: 70vw;
+    justify-content: flex-start;
   }
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container.payment-method {
     margin-bottom: 36px;

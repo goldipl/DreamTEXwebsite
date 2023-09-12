@@ -457,7 +457,7 @@
                 .cart_square_container {
                     overflow-x: scroll;
                     margin-bottom: 110px;
-                    padding-left: 70vw;
+                    justify-content: flex-start;
                     &.payment-method {
                         margin-bottom: 36px;
                     }
