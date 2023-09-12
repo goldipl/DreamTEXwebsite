@@ -496,7 +496,7 @@
                 .number_title_container {
                     display: flex;
                     align-items: center;
-                    margin-bottom: 31px;
+                    margin-bottom: 31px !important;
                     .number {
                         min-width: 46px;
                     }
@@ -537,6 +537,7 @@
                     overflow-x: scroll;
                     margin-bottom: 110px;
                     justify-content: flex-start;
+                    margin-bottom: 20px;
                     &.payment-method {
                         margin-bottom: 36px;
                     }
@@ -557,4 +558,18 @@
             }
         }
     } 
+    #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main {
+        flex-direction: column;
+        .form-slot {
+            width: 100% !important;
+            margin: 0 !important;
+        }
+    }
+    .courier_address_container {
+        overflow-x: scroll !important;
+        margin: 0 10px 10px 10px !important;
+        .table_container {
+            overflow-x: scroll !important;
+        }
+    }
 }

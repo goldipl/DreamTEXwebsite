@@ -9073,7 +9073,7 @@ body {
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .number_title_container {
     display: flex;
     align-items: center;
-    margin-bottom: 31px;
+    margin-bottom: 31px !important;
   }
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .number_title_container .number {
     min-width: 46px;
@@ -9112,6 +9112,7 @@ body {
     overflow-x: scroll;
     margin-bottom: 110px;
     justify-content: flex-start;
+    margin-bottom: 20px;
   }
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container.payment-method {
     margin-bottom: 36px;
@@ -9128,6 +9129,20 @@ body {
   }
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_delivery_payment-buttons .cart_delivery_payment-button-left {
     margin-bottom: 18px;
+  }
+  #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main {
+    flex-direction: column;
+  }
+  #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot {
+    width: 100% !important;
+    margin: 0 !important;
+  }
+  .courier_address_container {
+    overflow-x: scroll !important;
+    margin: 0 10px 10px 10px !important;
+  }
+  .courier_address_container .table_container {
+    overflow-x: scroll !important;
   }
 }
 #cart_summary {
