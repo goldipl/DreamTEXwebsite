@@ -295,8 +295,14 @@
                             .form-slot {
                                 display: flex;
                                 flex-direction: column;
-                                width: 50%;
+                                width: 20%;
                                 margin: 30px;
+                                &:first-of-type {
+                                    width: 50%;
+                                }
+                                &:nth-child(2) {
+                                    width: 30%;
+                                }
                                 label {
                                     font-size: 16px;
                                     line-height: 19px;

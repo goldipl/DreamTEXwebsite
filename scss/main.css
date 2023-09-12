@@ -8877,8 +8877,14 @@ body {
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 20%;
   margin: 30px;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot:first-of-type {
+  width: 50%;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot:nth-child(2) {
+  width: 30%;
 }
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .courier_address_container-main .form-slot label {
   font-size: 16px;
