@@ -2535,7 +2535,7 @@ body {
     font-size: 14px !important;
   }
   #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom {
-    transform: translate(-50%, 0%) !important;
+    transform: translate(-50%, 0%);
   }
 }
 @media (max-width: 600px) {
@@ -4393,7 +4393,7 @@ body {
     height: 100% !important;
   }
   .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-bottom {
-    transform: translate(-50%, 0%) !important;
+    transform: translate(-50%, 0%);
   }
 }
 .pagination {
