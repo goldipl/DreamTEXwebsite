@@ -6823,7 +6823,7 @@ body {
     margin-bottom: 0;
   }
   #clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot {
-    width: 80%;
+    width: 70%;
     margin-bottom: 16px;
     display: flex;
     flex-direction: row;
@@ -6832,6 +6832,7 @@ body {
     height: auto;
     padding: 9px;
     border: 0;
+    border-radius: 10px;
   }
   #clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot p {
     display: inline-flex;
