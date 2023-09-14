@@ -2677,7 +2677,7 @@ body {
   #hero_image .hero_image_container .hero_image_container_bottom p {
     font-size: 16px;
     line-height: 20px;
-    margin-left: 0;
+    margin: 10px 10px 30px 10px;
   }
   #hero_image .hero_image_container .hero_image_container_bottom .main-link-btn {
     position: absolute;
