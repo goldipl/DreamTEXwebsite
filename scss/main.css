@@ -7818,6 +7818,11 @@ body {
     line-height: 33px;
     margin-bottom: 4px;
   }
+  #your_profile .your_profile_container .subtitle {
+    font-size: 22px;
+    line-height: 27px;
+    margin-bottom: 0;
+  }
   #your_profile .your_profile_container .subtitle_button-container {
     margin: 20px 0 !important;
   }
@@ -7834,16 +7839,6 @@ body {
   }
   #your_profile .your_profile_container .input-container .input-slot label {
     margin-top: 16px;
-  }
-  #your_profile .your_profile_container .save-btn-container {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  #your_profile .your_profile_container .save-btn-container .save-btn {
-    margin-top: 16px;
-    height: 40px;
   }
 }
 #your_profile.company_data .add_logo_container .add_logo_box {

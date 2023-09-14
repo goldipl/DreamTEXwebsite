@@ -112,12 +112,16 @@
                 line-height: 33px;
                 margin-bottom: 4px;
             }
+            .subtitle {
+                font-size: 22px;
+                line-height: 27px;
+                margin-bottom: 0;
+            }
             .subtitle_button-container {
                 margin: 20px 0 !important;
                 .subtitle {
                     font-size: 21px !important;
-                    line-height: 28px !important;
-                }
+                    line-height: 28px !important;                }
             }
             .input-container {
                 flex-direction: column;
@@ -127,16 +131,6 @@
                     label {
                         margin-top: 16px;
                     }
-                }
-            }
-            .save-btn-container {
-                margin-top: 30px;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                .save-btn {
-                    margin-top: 16px;
-                    height: 40px;
                 }
             }
         }
