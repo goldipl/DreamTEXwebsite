@@ -57,7 +57,7 @@
                     }
                 }
             }
-            &:nth-child(odd) {
+            &:nth-child(even) {
                 background-color: #EFEFEF;
             }
             .table-col {
@@ -122,6 +122,7 @@
                 transition: 0.6s;
                 font-size: 18px;
                 line-height: 22px;
+                border-radius: 20px;
 
                 &:hover {
                     background-color: #FFFFFF;
@@ -149,13 +150,16 @@
                     }
                 }
             }
-            &:nth-child(odd) {
+            &:nth-child(even) {
                 background-color: #EFEFEF;
             }
             .table-col {
-                width: 8%;
+                width: 22%;
                 height: 55px;
                 text-align: center;
+                &.short {
+                    width: 100px;
+                }
                 p {
                     text-align: center;
                     font-weight: 400;
@@ -221,9 +225,11 @@
     #your_profile.addresses,
     #your_profile.employees {
         .subtitle_button-container {
+            margin: 0 30px;
             .subtitle {
                 font-size: 22px;
                 line-height: 28px;
+                margin: 0;
             }
         }
         .table_container {
@@ -239,7 +245,7 @@
                         }
                     }
                 }
-                &:nth-child(odd) {
+                &:nth-child(even) {
                     background-color: #EFEFEF;
                 }
                 .table-col {
@@ -302,7 +308,7 @@
                         }
                     }
                 }
-                &:nth-child(odd) {
+                &:nth-child(even) {
                     background-color: #EFEFEF;
                 }
                 .table-col {

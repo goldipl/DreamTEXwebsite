@@ -2949,6 +2949,9 @@ body {
     line-height: 16px;
   }
 }
+.blue_white-breadcrumbs {
+  margin-top: 10px;
+}
 .blue_white-breadcrumbs.two-slots .blue_white-breadcrumbs-list .blue_white-breadcrumb-item {
   width: 50%;
 }
@@ -7971,8 +7974,8 @@ body {
   font-weight: 400;
   font-family: "Segoe UI", sans-serif;
 }
-#your_profile.addresses .table_container .addresses-table-row:nth-child(odd),
-#your_profile.employees .table_container .addresses-table-row:nth-child(odd) {
+#your_profile.addresses .table_container .addresses-table-row:nth-child(even),
+#your_profile.employees .table_container .addresses-table-row:nth-child(even) {
   background-color: #EFEFEF;
 }
 #your_profile.addresses .table_container .addresses-table-row .table-col,
@@ -8044,6 +8047,7 @@ body {
   transition: 0.6s;
   font-size: 18px;
   line-height: 22px;
+  border-radius: 20px;
 }
 #your_profile.addresses .subtitle_button-container .add-address-btn-container .add-address-btn:hover,
 #your_profile.employees .subtitle_button-container .add-address-btn-container .add-address-btn:hover {
@@ -8073,15 +8077,19 @@ body {
   font-weight: 400;
   font-family: "Segoe UI", sans-serif;
 }
-#your_profile.addresses .table_container .addresses-table-row:nth-child(odd),
-#your_profile.employees .table_container .addresses-table-row:nth-child(odd) {
+#your_profile.addresses .table_container .addresses-table-row:nth-child(even),
+#your_profile.employees .table_container .addresses-table-row:nth-child(even) {
   background-color: #EFEFEF;
 }
 #your_profile.addresses .table_container .addresses-table-row .table-col,
 #your_profile.employees .table_container .addresses-table-row .table-col {
-  width: 8%;
+  width: 22%;
   height: 55px;
   text-align: center;
+}
+#your_profile.addresses .table_container .addresses-table-row .table-col.short,
+#your_profile.employees .table_container .addresses-table-row .table-col.short {
+  width: 100px;
 }
 #your_profile.addresses .table_container .addresses-table-row .table-col p,
 #your_profile.employees .table_container .addresses-table-row .table-col p {
@@ -8135,10 +8143,15 @@ body {
 }
 
 @media (max-width: 960px) {
+  #your_profile.addresses .subtitle_button-container,
+  #your_profile.employees .subtitle_button-container {
+    margin: 0 30px;
+  }
   #your_profile.addresses .subtitle_button-container .subtitle,
   #your_profile.employees .subtitle_button-container .subtitle {
     font-size: 22px;
     line-height: 28px;
+    margin: 0;
   }
   #your_profile.addresses .table_container,
   #your_profile.employees .table_container {
@@ -8151,8 +8164,8 @@ body {
     font-weight: 400;
     font-family: "Segoe UI", sans-serif;
   }
-  #your_profile.addresses .table_container .addresses-table-row:nth-child(odd),
-  #your_profile.employees .table_container .addresses-table-row:nth-child(odd) {
+  #your_profile.addresses .table_container .addresses-table-row:nth-child(even),
+  #your_profile.employees .table_container .addresses-table-row:nth-child(even) {
     background-color: #EFEFEF;
   }
   #your_profile.addresses .table_container .addresses-table-row .table-col,
@@ -8216,8 +8229,8 @@ body {
     font-weight: 400;
     font-family: "Segoe UI", sans-serif;
   }
-  #your_profile.addresses .table_container .addresses-table-row:nth-child(odd),
-  #your_profile.employees .table_container .addresses-table-row:nth-child(odd) {
+  #your_profile.addresses .table_container .addresses-table-row:nth-child(even),
+  #your_profile.employees .table_container .addresses-table-row:nth-child(even) {
     background-color: #EFEFEF;
   }
   #your_profile.addresses .table_container .addresses-table-row .table-col p,
