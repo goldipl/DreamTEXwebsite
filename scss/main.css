@@ -142,26 +142,14 @@ body {
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.profile {
   background-color: #2CB5FF;
 }
-#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.profile:hover {
-  color: #1d3082;
-}
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.orders {
   background-color: #0083E8;
-}
-#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.orders:hover {
-  color: #2cb5ff;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.offerts {
   background-color: #2A47C4;
 }
-#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.offerts:hover {
-  color: #2cb5ff;
-}
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.compare {
   background-color: #1D3082;
-}
-#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot.compare:hover {
-  color: #2cb5ff;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .clients-panel-box-container-slot p {
   display: inline-flex;
@@ -208,9 +196,6 @@ body {
   text-decoration: none;
   width: 100%;
   height: 100%;
-}
-#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon + .clients-panel-box-container .logout_btn:hover a {
-  color: #1d3082;
 }
 #nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link .header-icon img {
   height: 27px;

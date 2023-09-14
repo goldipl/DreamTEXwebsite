@@ -120,27 +120,15 @@
                   line-height: 14px;
                   &.profile {
                     background-color: #2CB5FF;
-                    &:hover {
-                        color: #1d3082;
-                    }
                   }
                   &.orders {
                     background-color: #0083E8;
-                    &:hover {
-                        color: #2cb5ff;
-                    }
                   }
                   &.offerts {
                     background-color: #2A47C4;
-                    &:hover {
-                        color: #2cb5ff;
-                    }
                   }
                   &.compare {
                     background-color: #1D3082;
-                    &:hover {
-                        color: #2cb5ff;
-                    }
                   }
                   p {
                     display: inline-flex;
@@ -189,9 +177,6 @@
                         text-decoration: none;
                         width: 100%;
                         height: 100%;
-                    }
-                    &:hover a {
-                        color: #1d3082;
                     }
                 }
               }
