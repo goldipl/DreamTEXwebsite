@@ -11,6 +11,10 @@
         justify-content: center;
         padding-left: 0;
         width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
         .blue_white-breadcrumb-item {
             position: relative;
             display: inline-flex;
@@ -18,6 +22,7 @@
             align-items: center;
             width: calc(24% + 30px);
             height: 40px;
+            box-sizing: border-box;
             list-style: none;
             background-color: #FFFFFF;
             margin-left: -30px;

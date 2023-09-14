@@ -1497,10 +1497,7 @@
             <div class="offerts_container">
                 <div class="color-breadcrumbs">
                     <ul class="color-breadcrumbs-list">
-                        <li class="color-breadcrumb-item">
-                            <a href="./offerts-suggestions.html">Propozycje</a>
-                        </li>
-                        <li class="color-breadcrumb-item">
+                        <li class="color-breadcrumb-item active">
                             <a href="./offerts-offerts.html">Oferty</a>
                         </li>
                         <li class="color-breadcrumb-item">
@@ -1513,6 +1510,38 @@
                         <a href="#">Nowa propozycja/oferta</a>
                     </div>
                 </div>
+                <div class="offerts-filters">
+                    <div class="form-slot">
+                        <label class="name1" for="name1">Nazwa</label>
+                        <input type="text" id="name1">
+                        <label class="value1" for="value1">Wartość</label>
+                        <input type="text" id="value1" value="od">
+                    </div>
+                    <div class="form-slot">
+                        <label class="name2" for="name2">Utworzył</label>
+                        <input type="text" id="name2">
+                        <label class="value2" for="value2"></label>
+                        <input type="text" id="value2" value="do">
+                    </div>
+                    <div class="form-slot">
+                        <label class="client" for="client">Klient</label>
+                        <input type="text" id="client">
+                    </div>
+                    <div class="form-slot with-btns">
+                        <div class="slot first">
+                            <label class="date" for="date">Data</label>
+                            <input type="date" id="date">
+                        </div>
+                        <div class="slot second">
+                            <div class="filter_btn">
+                                <a href="#">Filtruj</a>
+                            </div>
+                            <div class="clean_btn">
+                                <a href="#">Wyczyść</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <table class="offerts-filters-table offerts">
                     <thead>
                         <tr class="offerts-filters-table-row header">
@@ -1520,16 +1549,19 @@
                                 <p>Nazwa</p>
                             </th>
                             <th class="table-col">
-                                <p>Produkty</p>
+                                <p>Utworzył</p>
                             </th>
                             <th class="table-col">
-                                <p>Podgląd</p>
+                                <p>Klient</p>
+                            </th>
+                            <th class="table-col">
+                                <p>Data utworzenia</p>
+                            </th>
+                            <th class="table-col">
+                                <p>Wartość</p>
                             </th>
                             <th class="table-col">
                                 <p>PDF</p>
-                            </th>
-                            <th class="table-col">
-                                <p>Drukuj</p>
                             </th>
                             <th class="table-col">
                                 <p>Edytuj</p>
@@ -1542,24 +1574,23 @@
                     <tbody>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1575,24 +1606,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1608,24 +1638,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1641,24 +1670,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1674,24 +1702,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1707,24 +1734,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1740,24 +1766,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1773,24 +1798,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1806,24 +1830,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1839,24 +1862,23 @@
                         </tr>
                         <tr class="offerts-filters-table-row">
                             <td class="table-col">
-                                <p>Oferta nr 1, 2021-01-26 / promostars@dreamtex.pl</p>
+                                <p>Oferta nr 1, 2021-01-26</p>
                             </td>
                             <td class="table-col">
-                                <p>2</p>
+                                <p>Paweł Ogonowski</p>
                             </td>
                             <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/preview.svg" alt="preview" width="30" height="30">
-                                </a>
+                                <p>Sokołów</p>
+                            </td>
+                            <td class="table-col">
+                                <p>05.04.2023</p>
+                            </td>
+                            <td class="table-col">
+                                <p>5426 zł</p>
                             </td>
                             <td class="table-col">
                                 <a href="#">
                                     <img src="./assets/icons/pdf.svg" alt="pdf" width="30" height="30">
-                                </a>
-                            </td>
-                            <td class="table-col">
-                                <a href="#">
-                                    <img src="./assets/icons/printer.svg" alt="print" width="30" height="30">
                                 </a>
                             </td>
                             <td class="table-col">
@@ -1947,7 +1969,6 @@
             </div>
         </footer>
     </div>
-    <script src="./js/cart-delivery.js"></script>
     <script src="./js/script.js"></script>
 </body>
 </html>
