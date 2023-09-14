@@ -93,6 +93,16 @@
     }
 }
 
+.table_container.profile-user {
+    width: calc(100% + 42px) !important;
+    .edit-btn {
+        font-weight: 400 !important;
+    }
+    .table-col:last-of-type {
+        padding-right: 30px !important;
+    }
+}
+
 @media (max-width: 960px) {
     #your_profile {
         margin-top: 16px;
@@ -121,7 +131,8 @@
                 margin: 20px 0 !important;
                 .subtitle {
                     font-size: 21px !important;
-                    line-height: 28px !important;                }
+                    line-height: 28px !important;                
+                }
             }
             .input-container {
                 flex-direction: column;

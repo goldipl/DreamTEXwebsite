@@ -7797,6 +7797,16 @@ body {
   padding: 0;
 }
 
+.table_container.profile-user {
+  width: calc(100% + 42px) !important;
+}
+.table_container.profile-user .edit-btn {
+  font-weight: 400 !important;
+}
+.table_container.profile-user .table-col:last-of-type {
+  padding-right: 30px !important;
+}
+
 @media (max-width: 960px) {
   #your_profile {
     margin-top: 16px;
