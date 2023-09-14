@@ -99,14 +99,25 @@
         .your_profile_container {
             padding: 10px;
             margin-bottom: 67px;
+            margin-left: -10px;
+            margin-right: -10px;
+            width: calc(100% + 20px);
+            table {
+                margin-left: -10px !important;
+                margin-right: -10px !important;
+                width: calc(100% + 20px) !important;
+            }
             .title {
                 font-size: 27px;
                 line-height: 33px;
                 margin-bottom: 4px;
             }
-            .subtitle {
-                font-size: 22px !important;
-                line-height: 28px !important;
+            .subtitle_button-container {
+                margin: 20px 0 !important;
+                .subtitle {
+                    font-size: 21px !important;
+                    line-height: 28px !important;
+                }
             }
             .input-container {
                 flex-direction: column;

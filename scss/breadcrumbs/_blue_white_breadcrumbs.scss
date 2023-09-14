@@ -21,7 +21,7 @@
             display: inline-flex;
             justify-content: center;
             align-items: center;
-            width: calc(24% + 30px);
+            width: calc(19% + 30px);
             height: 40px;
             box-sizing: border-box;
             list-style: none;
@@ -68,11 +68,14 @@
 
 @media (max-width: 960px) {
     .blue_white-breadcrumbs {
-        overflow-x: auto;
         .blue_white-breadcrumbs-list {
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
             .blue_white-breadcrumb-item {
-                min-width: 200px;
-                margin-left: -16px;
+                min-width: 100%;
+                margin-left: 0;
+                margin-bottom: 5px;
                 a { 
                     font-size: 14px;
                     line-height: 16px;

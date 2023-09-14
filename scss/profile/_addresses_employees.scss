@@ -45,6 +45,9 @@
         width: calc(100% + 60px);
         max-width: calc(100% + 60px);
         margin: 0px -30px 47px -30px;
+        &.short67 {
+
+        }
         .addresses-table-row {
             height: 55px;
             width: 100%;
@@ -221,6 +224,17 @@
     }
 }
 
+.table_container.short67 {
+   .table-col.short {
+        a {
+            margin: 0 16px !important;
+        }
+        &:last-child {
+            padding-right: 10px !important;
+        }
+    }
+}
+
 @media (max-width: 960px) {
     #your_profile.addresses,
     #your_profile.employees {
@@ -234,14 +248,17 @@
         }
         .table_container {
             overflow-x: scroll;
-            width: 100% !important;
             margin: 0 !important;
+            margin-left: -10px !important;
+            margin-right: -10px !important;
+            width: calc(100% + 20px) !important;
             .addresses-table-row {
                 &.header {
                     .table-col {
                         p {
                             font-weight: 400;
                             font-family: 'Segoe UI', sans-serif;
+                            margin: 0 16px;
                         }
                     }
                 }
@@ -250,6 +267,10 @@
                 }
                 .table-col {
                     height: 55px;
+                    p,
+                    a {
+                        margin: 0 16px;
+                    }
                 }
             }
         }

@@ -2970,7 +2970,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: calc(24% + 30px);
+  width: calc(19% + 30px);
   height: 40px;
   box-sizing: border-box;
   list-style: none;
@@ -3014,12 +3014,15 @@ body {
 }
 
 @media (max-width: 960px) {
-  .blue_white-breadcrumbs {
-    overflow-x: auto;
+  .blue_white-breadcrumbs .blue_white-breadcrumbs-list {
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
   }
   .blue_white-breadcrumbs .blue_white-breadcrumbs-list .blue_white-breadcrumb-item {
-    min-width: 200px;
-    margin-left: -16px;
+    min-width: 100%;
+    margin-left: 0;
+    margin-bottom: 5px;
   }
   .blue_white-breadcrumbs .blue_white-breadcrumbs-list .blue_white-breadcrumb-item a {
     font-size: 14px;
@@ -7801,14 +7804,25 @@ body {
   #your_profile .your_profile_container {
     padding: 10px;
     margin-bottom: 67px;
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
+  #your_profile .your_profile_container table {
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+    width: calc(100% + 20px) !important;
   }
   #your_profile .your_profile_container .title {
     font-size: 27px;
     line-height: 33px;
     margin-bottom: 4px;
   }
-  #your_profile .your_profile_container .subtitle {
-    font-size: 22px !important;
+  #your_profile .your_profile_container .subtitle_button-container {
+    margin: 20px 0 !important;
+  }
+  #your_profile .your_profile_container .subtitle_button-container .subtitle {
+    font-size: 21px !important;
     line-height: 28px !important;
   }
   #your_profile .your_profile_container .input-container {
@@ -8142,6 +8156,13 @@ body {
   width: 2%;
 }
 
+.table_container.short67 .table-col.short a {
+  margin: 0 16px !important;
+}
+.table_container.short67 .table-col.short:last-child {
+  padding-right: 10px !important;
+}
+
 @media (max-width: 960px) {
   #your_profile.addresses .subtitle_button-container,
   #your_profile.employees .subtitle_button-container {
@@ -8156,13 +8177,16 @@ body {
   #your_profile.addresses .table_container,
   #your_profile.employees .table_container {
     overflow-x: scroll;
-    width: 100% !important;
     margin: 0 !important;
+    margin-left: -10px !important;
+    margin-right: -10px !important;
+    width: calc(100% + 20px) !important;
   }
   #your_profile.addresses .table_container .addresses-table-row.header .table-col p,
   #your_profile.employees .table_container .addresses-table-row.header .table-col p {
     font-weight: 400;
     font-family: "Segoe UI", sans-serif;
+    margin: 0 16px;
   }
   #your_profile.addresses .table_container .addresses-table-row:nth-child(even),
   #your_profile.employees .table_container .addresses-table-row:nth-child(even) {
@@ -8171,6 +8195,12 @@ body {
   #your_profile.addresses .table_container .addresses-table-row .table-col,
   #your_profile.employees .table_container .addresses-table-row .table-col {
     height: 55px;
+  }
+  #your_profile.addresses .table_container .addresses-table-row .table-col p,
+  #your_profile.addresses .table_container .addresses-table-row .table-col a,
+  #your_profile.employees .table_container .addresses-table-row .table-col p,
+  #your_profile.employees .table_container .addresses-table-row .table-col a {
+    margin: 0 16px;
   }
   #your_profile.addresses .subtitle_button-container,
   #your_profile.employees .subtitle_button-container {

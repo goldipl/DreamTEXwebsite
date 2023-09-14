@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
-    <title>Dreamtex - Twój profil - Admin - Twoje dane</title>
+    <title>Dreamtex - Twój profil - Admin - Klienci</title>
     <link rel="stylesheet" href="./scss/main.css">
 </head>
 <body class="main">
@@ -1491,19 +1491,19 @@
             <div class="messenger-x-icon"></div>
         </div>
     
-        <section id="your_profile">
+        <section id="your_profile" class="addresses">
             <h1 class="title">Twój profil</h1>
             <div class="your_profile_container">
                 <h1 class="title">Witaj <span>Paweł Ogonowski</span> (admin)</h1>
                 <div class="blue_white-breadcrumbs">
                     <ul class="blue_white-breadcrumbs-list">
-                        <li class="blue_white-breadcrumb-item active">
+                        <li class="blue_white-breadcrumb-item" style="z-index: 0;">
                             <a href="./your-profile-admin-your-data.html">Twoje dane</a>
                         </li>
                         <li class="blue_white-breadcrumb-item">
                             <a href="./your-profile-admin-company-data.html">Dane firmy</a>
                         </li>
-                        <li class="blue_white-breadcrumb-item">
+                        <li class="blue_white-breadcrumb-item active">
                             <a href="./your-profile-admin-clients.html">Klienci</a>
                         </li>
                         <li class="blue_white-breadcrumb-item">
@@ -1514,46 +1514,145 @@
                         </li>
                     </ul>
                 </div>
-                <h2 class="subtitle">Dane logowania</h2>
-                <div class="input-container">
-                    <div class="input-slot">
-                        <label class="email" for="email">E-mail *</label>
-                        <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                    </div>
-                    <div class="input-slot">
-                        <label class="password" for="password">Hasło *</label>
-                        <input type="password" id="password" required>
-                    </div>
-                    <div class="input-slot">
-                        <label class="password" for="password">Powtórz hasło *</label>
-                        <input type="password" id="password" required>
-                    </div>
+                <div class="subtitle_button-container">
+                    <h2 class="subtitle">Lista adresów</h2>
+                    <div class="add-address-btn-container">
+                        <a class="add-address-btn" href="#">+ Dodaj adres</a>
+                     </div>
                 </div>
-                <h2 class="subtitle">Osoba kontaktowa</h2>
-                <div class="input-container">
-                    <div class="input-slot">
-                        <label class="name" for="name">Imię i Nazwisko</label>
-                        <input type="text" id="name">
-                    </div>
-                    <div class="input-slot">
-                        <label class="tel" for="tel">Tel.</label>
-                        <input type="number" id="tel">
-                    </div>
-                    <div class="input-slot">
-                        <label class="email" for="email">E-mail</label>
-                        <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                    </div>
-                </div>
-                <div class="save-btn-container">
-                    <div class="save-btn">
-                        <a href="#">Zapisz</a>
-                    </div>
-                </div>
+                <table class="table_container short67">
+                    <thead>
+                       <tr class="addresses-table-row header">
+                            <th>
+                                <p>Nazwa</p>
+                            </th>
+                            <th>
+                                <p>NIP</p>
+                            </th>
+                            <th>
+                                <p>Adres</p>
+                            </th>
+                            <th>
+                                <p>Kod pocztowy</p>
+                            </th>
+                            <th>
+                                <p>Miasto</p>
+                            </th>
+                            <th>
+                                <p></p>
+                            </th>
+                            <th>
+                                <p></p>
+                            </th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="addresses-table-row">
+                            <td class="table-col">
+                                <p>P.H.U Jednyka</p>
+                            </td>
+                            <td class="table-col">
+                                <p>542-554-65-65</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Staszica 5/11</p>
+                            </td>
+                            <td class="table-col">
+                                <p>02-985</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Warszawa</p>
+                            </td>
+                            <td class="table-col short">
+                                <a class="edit-btn" href="#">Edytuj</a>
+                            </td>
+                            <td class="table-col short">
+                                <a href="#">
+                                    <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="addresses-table-row">
+                            <td class="table-col">
+                                <p>P.H.U Jednyka</p>
+                            </td>
+                            <td class="table-col">
+                                <p>542-554-65-65</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Staszica 5/11</p>
+                            </td>
+                            <td class="table-col">
+                                <p>02-985</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Warszawa</p>
+                            </td>
+                            <td class="table-col short">
+                                <a class="edit-btn" href="#">Edytuj</a>
+                            </td>
+                            <td class="table-col short">
+                                <a href="#">
+                                    <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="addresses-table-row">
+                            <td class="table-col">
+                                <p>P.H.U Jednyka</p>
+                            </td>
+                            <td class="table-col">
+                                <p>542-554-65-65</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Staszica 5/11</p>
+                            </td>
+                            <td class="table-col">
+                                <p>02-985</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Warszawa</p>
+                            </td>
+                            <td class="table-col short">
+                                <a class="edit-btn" href="#">Edytuj</a>
+                            </td>
+                            <td class="table-col short">
+                                <a href="#">
+                                    <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
+                                </a>
+                            </td>
+                        </tr>
+                        <tr class="addresses-table-row">
+                            <td class="table-col">
+                                <p>P.H.U Jednyka</p>
+                            </td>
+                            <td class="table-col">
+                                <p>542-554-65-65</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Staszica 5/11</p>
+                            </td>
+                            <td class="table-col">
+                                <p>02-985</p>
+                            </td>
+                            <td class="table-col">
+                                <p>Warszawa</p>
+                            </td>
+                            <td class="table-col short">
+                                <a class="edit-btn" href="#">Edytuj</a>
+                            </td>
+                            <td class="table-col short">
+                                <a href="#">
+                                    <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </section>
 
         <footer>
-            <div class="footer-arrow-up"></div>
             <div class="footer_container">
                 <div class="footer_container_top">
                     <div class="footer_container_top-left">
