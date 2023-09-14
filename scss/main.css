@@ -6680,16 +6680,16 @@ body {
 #clients_panel .clients_panel_container {
   width: 100%;
   height: auto;
-  padding: 40px 15px 15px 15px;
+  padding: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  margin-bottom: 80px;
+  margin-bottom: 150px;
 }
 #clients_panel .clients_panel_container .title {
-  font-size: 36px;
-  line-height: 43px;
+  font-size: 32px;
+  line-height: 38px;
   font-weight: 400;
   color: #3E3E3E;
-  margin-bottom: 0;
+  margin: 0;
   text-align: left;
 }
 #clients_panel .clients_panel_container .cart_square_container {
@@ -6704,13 +6704,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 248px;
+  height: 180px;
   padding: 30px 15px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   background-color: #FFFFFF;
-  width: 25%;
-  border: 3px solid #CECECE;
+  border: 0;
+  width: 20%;
   color: #3E3E3E;
   text-decoration: none;
   -webkit-user-select: none;
@@ -6721,18 +6721,18 @@ body {
 #clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot.profile {
   background-color: #2CB5FF;
 }
+#clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot.orders {
+  background-color: #0083E8;
+}
 #clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot.offerts {
-  background-color: #0077B7;
+  background-color: #2A47C4;
 }
 #clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot.compare {
   background-color: #1D3082;
 }
-#clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot:hover {
-  border: 3px solid #707070;
-}
 #clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot .text-top {
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 24px;
+  line-height: 29px;
   font-weight: 400;
   text-align: center;
   margin: 0;
@@ -6742,6 +6742,8 @@ body {
   color: #FFFFFF;
 }
 #clients_panel .clients_panel_container .cart_square_container .cart_square_container-slot img {
+  width: auto;
+  height: 80px;
   margin: 16px 0;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -6751,7 +6753,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 180px;
+  margin-bottom: 20px;
 }
 #clients_panel .clients_panel_container .button_container .logout_btn {
   display: flex;
@@ -6768,9 +6770,6 @@ body {
   margin-left: 20px;
   cursor: pointer;
 }
-#clients_panel .clients_panel_container .button_container .logout_btn:hover {
-  background-color: #FFFFFF;
-}
 #clients_panel .clients_panel_container .button_container .logout_btn a {
   display: flex;
   justify-content: center;
@@ -6785,9 +6784,6 @@ body {
   text-transform: uppercase;
   padding: 0;
 }
-#clients_panel .clients_panel_container .button_container .logout_btn a:hover {
-  color: #2CB5FF;
-}
 
 @media (max-width: 960px) {
   #clients_panel {
@@ -6795,6 +6791,7 @@ body {
   }
   #clients_panel .clients_panel_container {
     padding: 10px;
+    margin-bottom: 80px;
   }
   #clients_panel .clients_panel_container .title {
     font-size: 27px;
@@ -6835,8 +6832,14 @@ body {
     justify-content: center;
     width: 100%;
   }
+  #clients_panel .clients_panel_container .line-container .line {
+    display: block;
+    width: auto;
+    height: 1px;
+    background-color: #efefef;
+  }
   #clients_panel .clients_panel_container .button_container {
-    margin-top: 21px;
+    margin-top: 16px;
     margin-bottom: 24px;
   }
   #clients_panel .clients_panel_container .button_container .logout_btn {
