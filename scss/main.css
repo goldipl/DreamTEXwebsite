@@ -9877,6 +9877,10 @@ section h1.title {
   margin-top: 0;
 }
 
+#news-layout footer {
+  margin-top: 80px;
+}
+
 @media (max-width: 1170px) {
   body {
     width: 100%;
