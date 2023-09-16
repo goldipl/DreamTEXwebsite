@@ -1525,6 +1525,9 @@
                 </div>
 
                 <div class="filters_container">
+                    <div class="filter-show-btn" style="display: none;">
+                        <p>Filtry</p><span class="arrow"></span>
+                    </div>
                     <div class="filters_column">
                         <h1 class="filters-title">Filtry:</h1>
                         <button class="accordion">Marki</button>
@@ -1601,18 +1604,12 @@
                             </div>
                         </div>
 
-                        <h1 class="filters-title">Cena</h1>
-                        <div class="searchbar-container">
+                        <h1 class="filters-title price">Cena</h1>
+                        <div class="searchbar-container price-searchbar-from">
                             <input id="searchbar-input" type="text" name="searchQueryInput" placeholder="od" value="">
-                            <button id="searchbar-submit" type="submit" name="searchQuerySubmit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"></circle><circle cx="18" cy="18" r="17.5" fill="none"></circle></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"></circle><circle cx="8" cy="8" r="7" fill="none"></circle></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"></line></g></svg>
-                            </button>
                         </div>
-                        <div class="searchbar-container">
+                        <div class="searchbar-container price-searchbar-to">
                             <input id="searchbar-input" type="text" name="searchQueryInput" placeholder="do" value="">
-                            <button id="searchbar-submit" type="submit" name="searchQuerySubmit">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"></circle><circle cx="18" cy="18" r="17.5" fill="none"></circle></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"></circle><circle cx="8" cy="8" r="7" fill="none"></circle></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"></line></g></svg>
-                            </button>
                         </div>
                         <div class="next-arrow-container">
                             <div class="arrow"></div>
@@ -1854,5 +1851,6 @@
     <script src="./js/script.js"></script>
     <script src="./js/accordion.js"></script>
     <script src="./js/colors_variants.js"></script>
+    <script src="./js/filters_show.js"></script>
 </body>
 </html>
