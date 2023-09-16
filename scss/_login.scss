@@ -84,6 +84,8 @@
                             line-height: 24px;
                             cursor: pointer;
                             transition: 0.8s;
+                            transition: 0.8s;
+                            margin-right: -35px;
                             &:hover {
                                 background-color: #1C2F82;
                                 border: 1px solid #1C2F82;
@@ -100,6 +102,9 @@
                     }
                 }
             }
+        }
+        .horizontal-login-line {
+            display: none;
         }
         .login-container-bottom {
             padding: 0 17px 13px 17px;
@@ -124,8 +129,8 @@
                     width: max-content;
                     height: 40px;
                     box-sizing: border-box;
-                    background-color: #2C79FF;
-                    border: 1px solid #2C79FF;
+                    background-color: #2CB5FF;
+                    border: 1px solid #2CB5FF;
                     border-radius: 20px;
                     transition: 0.8s;
                     &:hover {
@@ -152,7 +157,7 @@
         margin-top: 16px;
         .login-container {
             padding: 10px;
-            margin-bottom: 40px;
+            margin-bottom: 80px;
             .login-fill-info {
                 display: none;
             }
@@ -183,8 +188,18 @@
                                 text-decoration: none;
                             }
                         }
+                        .button {
+                            margin-right: 0 !important;
+                        }
                     }
                 }
+            }
+            .horizontal-login-line {
+                display: block;
+                height: 1px;
+                background-color: #EFEFEF;
+                width: 100%;
+                margin: 10px 0;
             }
             .login-container-bottom {
                 padding: 0;
@@ -195,7 +210,7 @@
                     align-items: center;
                     .login-bottom-text-container {
                         margin-right: 0;
-                        margin: 20px 0;
+                        margin: 10px 0;
                         p {
                             font-size: 18px;
                             line-height: 20px;
