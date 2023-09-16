@@ -3,6 +3,7 @@
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;
+  border-collapse: collapse;
 }
 
 body {
