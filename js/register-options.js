@@ -5,10 +5,8 @@ register_delivery_square.forEach(e => e.addEventListener('click', () => {
     e.classList.toggle('checked');
     if (e.classList.contains('checked')) {
         nip_container.classList.add('active');
-        if ((e.classList.contains('checked'))) {
-            e.nextElementSibling.classList.remove('checked');
-            e.previousElementSibling.classList.remove('checked');
-        }
+        e.nextElementSibling.classList.remove('checked');
+        e.previousElementSibling.classList.remove('checked');
     } else {
         if (!(e.classList.contains('checked'))) {
              nip_container.classList.remove('active');
