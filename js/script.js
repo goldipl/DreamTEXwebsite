@@ -38,6 +38,7 @@ mobile_nav_close_icon.forEach(e => {
     e.addEventListener('click', () => {
         mobile_nav_menu.classList.toggle('open');
         hamburger.classList.toggle('active');
+        menu_hover.classList.toggle('active');
     });
 });
 
