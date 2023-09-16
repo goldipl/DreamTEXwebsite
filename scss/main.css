@@ -3519,6 +3519,7 @@ body {
   padding: 16px;
   margin-top: 8px;
   font-size: 16px;
+  max-width: 815px;
 }
 #contact .contact_container .contact_container-message-form form .form_contact_container .form_contact_container-wide textarea:focus {
   border: 1px solid #2CB5FF;
