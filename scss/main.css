@@ -9120,6 +9120,7 @@ body {
   border: 1px solid #CECECE;
   padding: 16px;
   margin-bottom: 20px;
+  max-width: 784px;
 }
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_data .cart_data_container form .form-slot textarea:focus {
   outline: 1px solid #2CB5FF;
