@@ -7141,6 +7141,9 @@ body {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
+  margin-bottom: 45px;
+}
+#register .register_container .cart_square_container.active {
   margin-bottom: 257px;
 }
 #register .register_container .cart_square_container .cart_square_container-slot {
