@@ -8070,8 +8070,8 @@ body {
   border-collapse: collapse;
   overflow-x: auto;
   display: block;
-  width: calc(100% + 60px);
-  max-width: calc(100% + 60px);
+  width: calc(100% + 42px);
+  max-width: calc(100% + 42px);
   margin: 0px -30px 47px -30px;
 }
 #your_profile.addresses .table_container .addresses-table-row,
@@ -8173,8 +8173,8 @@ body {
   border-collapse: collapse;
   overflow-x: auto;
   display: block;
-  width: calc(100% + 60px);
-  max-width: calc(100% + 60px);
+  width: calc(100% + 42px);
+  max-width: calc(100% + 42px);
   margin: 0px -30px 47px -30px;
 }
 #your_profile.addresses .table_container .addresses-table-row,
