@@ -4307,8 +4307,6 @@ body {
   border-top: 0;
 }
 #products-catalog.list .products_catalog_container .products-list_container-slots .products-list_container-slot {
-  border-top: 1px solid #3E3E3E;
-  border-bottom: 1px solid #3E3E3E;
   width: 100%;
 }
 #products-catalog.list .products_catalog_container .products-list_container-slots .products-list_container-slot:nth-child(odd) {
