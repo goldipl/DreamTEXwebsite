@@ -1,4 +1,11 @@
 .breadcrumbs {
+    &.favorite {
+        .breadcrumbs-list {
+            margin-top: 0;
+            margin-bottom: 4px;
+            margin-left: 0;
+        }
+    }
     .breadcrumbs-list {
         display: inline-flex;
         justify-content: center;
