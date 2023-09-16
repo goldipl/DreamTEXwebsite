@@ -3,9 +3,42 @@
     .register_full_container {
         width: 100%;
         height: auto;
-        padding: 30px;
+        padding: 30px 30px 9px 34px;
         box-shadow: 0px 3px 15px #00000033;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
+        .register-fill-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            background-color: #2CB5FF;
+            width: max-content;
+            height: 35px;
+            border-radius: 24px;
+            padding: 0 16px 0 4px;
+            box-sizing: border-box;
+            margin-top: -12px;
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                color: #FFFFFF;
+                span {
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    box-sizing: border-box;
+                    padding: 4px;
+                    border-radius: 100%;
+                    border: 2px solid #FFFFFF;
+                    width: 28px;
+                    height: 28px;
+                    margin-right: 8px;
+                    font-size: 24px;
+                }
+            }
+        }
         .title {
             font-size: 36px;
             line-height: 43px;
@@ -25,14 +58,49 @@
             display: flex;
             flex-direction: row;
             .input-container {
-                &.left,
+                &.left {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-right: 96px;
+                    &:first-child {
+                        .input-slot:not(.row) {
+                            margin-top: 0;
+                        }
+                    }
+                    .input-slot {
+                        width: 95%;
+                        margin-top: 20px;
+                        &.row {
+                            display: flex;
+                            flex-direction: row;
+                            .slot {
+                                display: flex;
+                                flex-direction: column;
+                                &.nip {
+                                    width: 30%;
+                                }
+                                &.address {
+                                    width: 65%;
+                                    margin-left: 5%;
+                                }
+                                &.city {
+                                    width: 65%;
+                                }
+                                &.zipcode {
+                                    width: 30%;
+                                    margin-left: 5%;
+                                }
+                            }
+                        }
+                    }
+                }
                 &.right {
                     display: flex;
                     flex-direction: column;
                     width: 100%;
                     .input-slot {
                         width: 95%;
-                        margin-top: 20px;
                         &.row {
                             display: flex;
                             flex-direction: row;
@@ -45,6 +113,7 @@
             display: flex;
             flex-direction: row;
             margin-bottom: 40px;
+            margin-right: -20px;
             .input-slot {
                 display: flex;
                 flex-direction: column;
@@ -83,7 +152,7 @@
                 justify-content: center;
                 align-items: center;
                 width: max-content;
-                height: 60px;
+                height: 50px;
                 box-sizing: border-box;
                 background-color: #2CB5FF;
                 border: 1px solid #2CB5FF;
@@ -91,7 +160,7 @@
                 border-radius: 30px;
                 transition: 0.8s;
                 margin-left: 20px;
-                margin-right: 20px;
+                margin-right: 0;
                 cursor: pointer;
                 &:hover {
                     background-color: #FFFFFF;
@@ -124,15 +193,19 @@
         .register_full_container {
             padding: 10px;
             margin-bottom: 67px;
+            .register-fill-info { 
+                display: none;
+            }
             .subtitle {
                 font-size: 22px;
                 line-height: 27px;
                 font-weight: 400;
-                margin-bottom: 18px;
+                margin-bottom: 4px;
             }
             .input-container-big {
                 flex-direction: column;
                 .input-container {
+                    margin-right: 0;
                     &.left,
                     &.right {
                         display: flex;
@@ -146,6 +219,20 @@
                                 .slot {
                                     display: flex;
                                     flex-direction: column;
+                                    &.nip {
+                                        width: 100%;
+                                    }
+                                    &.address {
+                                        width: 100%;
+                                        margin-left: 0;
+                                    }
+                                    &.city {
+                                        width: 100%;
+                                    }
+                                    &.zipcode {
+                                        width: 100%;
+                                        margin-left: 0;
+                                    }
                                 }
                             }
                         }
@@ -156,7 +243,7 @@
                 flex-direction: column;
                 margin-bottom: 24px;
                 .input-slot {
-                    width: 100%;
+                    width: 97%;
                     margin-right: 0;
                     label {
                         margin-top: 12px;
