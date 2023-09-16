@@ -3905,7 +3905,7 @@ body {
   width: 25px;
   height: 25px;
 }
-#products-catalog .products_catalog_container .filters_container .filters_column .slot .filters-colors .color:hover {
+#products-catalog .products_catalog_container .filters_container .filters_column .slot .filters-colors .color:hover, #products-catalog .products_catalog_container .filters_container .filters_column .slot .filters-colors .color.active {
   outline: 1px solid #2CB5FF;
 }
 #products-catalog .products_catalog_container .filters_container .filters_products {

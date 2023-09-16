@@ -330,7 +330,8 @@
                                 width: 25px;
                                 height: 25px;
                             }
-                            &:hover {
+                            &:hover,
+                            &.active {
                                 outline: 1px solid #2CB5FF;
                             }
                         }
