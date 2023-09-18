@@ -1,6 +1,7 @@
 const marking_btn = document.querySelector('#products_cart .products_cart_container .btns_bottom_product .signing_btn a');
 const marking_table = document.querySelector('#marking_table .marking_table_container');
 const dark_background = document.getElementById('products_cart');
+const marking_table_close = document.querySelector('#products_cart .marking_table_container .close-icon');
 
 marking_btn.addEventListener('click', (e) => {
     e.preventDefault();
@@ -25,5 +26,10 @@ const save_marking_table = document.querySelector('#products_cart .marking_table
 
 save_marking_table.addEventListener('click', () => {
     marking_table.classList.toggle('show');
+    dark_background.classList.remove('show_marking_table');
+});
+
+marking_table_close.addEventListener('click', () => {
+    marking_table.classList.remove('show');
     dark_background.classList.remove('show_marking_table');
 });
