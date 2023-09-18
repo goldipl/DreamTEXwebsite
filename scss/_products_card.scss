@@ -1,3 +1,4 @@
+@charset "utf-8";
 #products_cart {
     margin-top: 13px;
     &.show_discount_table::before {
@@ -248,6 +249,22 @@
                         margin: 4px 0;
                         padding-left: 24px;
                         cursor: pointer;
+                        user-select: none;
+                        &.active {
+                            color: #000000;
+                            &::before {
+                                position: absolute;
+                                display: block;
+                                content: "";
+                                top: 0px;
+                                left: 0px;
+                                background: url("./../assets/icons/compare_delete.svg");
+                                height: 17px;
+                                width: 17px;
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
+                        }
                         &:hover {
                             color: #2CB5FF;
                         }
@@ -271,6 +288,22 @@
                         margin: 4px 0;
                         padding-left: 24px;
                         cursor: pointer;
+                        user-select: none;
+                        &.active {
+                            color: #000000;
+                            &::before {
+                                position: absolute;
+                                display: block;
+                                content: "";
+                                top: 0px;
+                                left: 0px;
+                                background: url("./../assets/icons/favorite-red-heart-delete.svg");
+                                height: 17px;
+                                width: 17px;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
+                        }
                         &:hover {
                             color: #2CB5FF;
                         }
