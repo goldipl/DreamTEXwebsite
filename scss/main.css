@@ -7821,9 +7821,9 @@ body {
 #remind_password .remind_password_container {
   width: 100%;
   height: auto;
-  padding: 30px;
+  padding: 30px 27px 21px 30px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-  margin-bottom: 80px;
+  margin-bottom: 223px;
 }
 #remind_password .remind_password_container .subtitle {
   margin: 0;
@@ -7872,6 +7872,9 @@ body {
   justify-content: flex-end;
 }
 #remind_password .remind_password_container .remind_btn_container .remind_btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: -moz-max-content;
   width: max-content;
   height: 60px;
@@ -7890,10 +7893,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   width: 100%;
   height: 100%;
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 20px;
+  line-height: 24px;
   font-weight: 400;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -7911,6 +7915,7 @@ body {
   }
   #remind_password .remind_password_container {
     padding: 10px;
+    margin-bottom: 80px;
   }
   #remind_password .remind_password_container .input-slot {
     width: 100%;
