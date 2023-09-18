@@ -9565,6 +9565,24 @@ body {
   .courier_address_container .table_container {
     overflow-x: scroll !important;
   }
+  #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .title-checkbox {
+    flex-direction: column !important;
+    margin-bottom: 30px !important;
+  }
+  #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .title-address {
+    margin: 0 !important;
+    text-align: center;
+    font-size: 19px !important;
+    line-height: 23px !important;
+    margin-top: 20px !important;
+    margin-bottom: 14px !important;
+  }
+  #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot:first-of-type .number_title_container {
+    margin-top: 0 !important;
+  }
+  #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .title-checkbox .checkbox-wrapper-64 .slider {
+    background-color: #3E3E3E;
+  }
 }
 #cart_summary {
   margin-top: 37px;
