@@ -95,6 +95,29 @@
                 background-size: cover;
                 background-repeat: no-repeat;
             }
+            &.big {
+                position: relative;
+                .left-bottom-size {
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 53px;
+                    height: 53px;
+                    border-radius: 100%;
+                    background-color: #0083bc;
+                    p {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        font-size: 28px;
+                        margin: 0;
+                        color: #fff;
+                    }
+                }
+            }
         }
     }
 }
@@ -102,7 +125,7 @@
 .lightbox {
     position: fixed;
     display: none;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: #00000066;
     width: 100%;
     height: 100%;              
     overflow: auto;
@@ -114,29 +137,41 @@
     width: 70%;
     height: 70%;
     margin: 5% auto;
+    max-width: 40vw;
 }
 .lightbox-content img {
-    border-radius: 7px;
-    box-shadow: 0 0 3px 0 rgba(225, 225, 225, .25);
     width: 100%;
     height: 100%;
     object-fit: contain;
     user-select: none;
 }
-.lightbox-prev,
-.lightbox-next {
+.lightbox-prev {
     position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
     color: #fff;
     padding: 12px;
     top: 45%;
     cursor: pointer;
-    font-size: 32px !important;
-}
-.lightbox-prev {
+    font-size: 0 !important;
+    width: 35px;
+    height: 60px;
+    background: url(./../assets/icons/products_arrow_slider.svg);
+    background-size: 35px 60px;
+    background-repeat: none;
+    transform: rotate(180deg);
     left: 0;
 }
 .lightbox-next {
+    position: absolute;
+    color: #fff;
+    padding: 12px;
+    top: 45%;
+    cursor: pointer;
+    font-size: 0 !important;
+    width: 35px;
+    height: 60px;
+    background: url(./../assets/icons/products_arrow_slider.svg);
+    background-size: 35px 60px;
+    background-repeat: none;
     right: 0;
 }
 .lightbox-prev:hover,

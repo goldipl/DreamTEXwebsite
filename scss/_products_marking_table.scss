@@ -1,7 +1,7 @@
 #products_cart {
     #marking_table {
         position: relative;
-        z-index: 999;
+        z-index: 999;    
     }
     &.show_marking_table::before {
         position: fixed;
@@ -27,6 +27,20 @@
             width: 1170px;
         }
         margin-bottom: 80px;
+        .close-icon {
+            position: absolute;
+            top: -10px;
+            right: 10px;
+            display: block;
+            content: "";
+            width: 16px;
+            height: 16px;
+            background: url(./../assets/icons/close_discount_modal.svg);
+            background-size: contain;
+            background-repeat: no-repeat;
+            cursor: pointer;
+            z-index: 999;
+        }
         .marking_table_container-slot {
             position: relative;
             width: 100%;
@@ -37,6 +51,10 @@
             background-color: #FFFFFF;
             margin-top: -20px;
             z-index: 1;
+            &.projects-name {
+                border-radius: 0 0 20px 20px;
+                padding-bottom: 40px;
+            }
             &.marking-container {
                 display: none;
             }
