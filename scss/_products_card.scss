@@ -225,8 +225,8 @@
                 flex-direction: column;
             }
             .products-description {
-                max-width: 550px;
-                margin-left: 111px;
+                max-width: 569px;
+                margin-left: 92px;
                 .description {
                     .title {
                         font-size: 24px;
@@ -378,7 +378,7 @@
             .products-colors {
                 display: inline-flex;
                 flex-wrap: wrap;
-                max-width: 90%;
+                max-width: 100%;
                 margin: 30px 0;
                 .color {
                     display: flex;
@@ -467,14 +467,14 @@
                 display: flex;
                 flex-direction: row;
                 flex-wrap: wrap;
-                width: 550px;
+                width: 569px;
                 border: 1px solid #2CB5FF;
                 .products-sizes-table-row {
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    width: 550px;
-                    max-width: 550px;
+                    width: 569px;
+                    max-width: 569px;
                     &.header {
                         background-color: #CECECE !important;
                     }
