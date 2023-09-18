@@ -23,6 +23,7 @@
                 margin-bottom: 257px;
             }
             .cart_square_container-slot {
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -59,6 +60,19 @@
                 }
                 &.checked {
                     border: 3px solid #707070;
+                    &::after {
+                        position: absolute;
+                        content: "";
+                        display: block;
+                        bottom: 2px;
+                        right: 4px;
+                        background: url(./../assets/icons/cart_green_approve.svg);
+                        width: 60px;
+                        height: 60px;
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        cursor: pointer;
+                    }
                 }
                 .text-top {
                     font-size: 18px;
@@ -175,6 +189,9 @@
             .cart_square_container {
                 flex-direction: column;
                 margin-bottom: -15px;
+                &.active {
+                    margin-bottom: 165px;
+                }
                 .cart_square_container-slot {
                     flex-direction: column;
                     width: 100%;
@@ -192,11 +209,19 @@
                 }
             }
             .check_container {
+                margin-bottom: unset;
                 .check_nip_container {
                     flex-direction: column;
                     align-items: center;
                     .check_btn {
                         margin-top: 16px;
+                    }
+                }
+                &.active {
+                    p {
+                        text-align: center;
+                        font-size: 16px;
+                        line-height: 20px;
                     }
                 }
             }
