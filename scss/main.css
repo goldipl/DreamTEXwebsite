@@ -2840,7 +2840,7 @@ body {
      object-fit: cover;
 }
 #article + #newsletter {
-  margin-bottom: 24px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 960px) {
