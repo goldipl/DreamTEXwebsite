@@ -7754,29 +7754,31 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 10px;
 }
-#register_success .register_success_container .blue_btn_container .blue_btn {
+#register_success .register_success_container .blue_btn_container .blue_btn.success {
   display: inline-flex;
   justify-content: center;
   align-items: center;
   width: -moz-max-content;
   width: max-content;
-  height: 60px;
+  height: 50px;
   box-sizing: border-box;
   background-color: #2CB5FF;
   border: 1px solid #2CB5FF;
   padding: 8px 16px;
   border-radius: 30px;
   transition: 0.8s;
+  text-align: center;
   cursor: pointer;
 }
-#register_success .register_success_container .blue_btn_container .blue_btn:hover {
+#register_success .register_success_container .blue_btn_container .blue_btn.success:hover {
   background-color: #FFFFFF;
 }
-#register_success .register_success_container .blue_btn_container .blue_btn:hover a {
+#register_success .register_success_container .blue_btn_container .blue_btn.success:hover a {
   color: #2CB5FF;
 }
-#register_success .register_success_container .blue_btn_container .blue_btn a {
+#register_success .register_success_container .blue_btn_container .blue_btn.success a {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -7796,22 +7798,34 @@ body {
     margin-top: 16px;
   }
   #register_success .register_success_container {
+    padding: 12px 0 20px 0;
     justify-content: flex-start;
-    min-height: 440px;
-    margin-bottom: 67px;
+    min-height: auto;
+    margin-bottom: 80px;
   }
   #register_success .register_success_container .title {
     font-size: 22px;
     line-height: 27px;
+    font-weight: 500;
     margin-bottom: 8px;
+    color: #3E3E3E;
+    width: 80%;
   }
   #register_success .register_success_container .desc {
     font-size: 12px;
     line-height: 14px;
+    font-weight: 500;
+    margin: 0;
+    color: #3E3E3E;
+    width: 80%;
+  }
+  #register_success .register_success_container .blue_btn_container {
+    margin-top: 10px;
+    height: 39px !important;
   }
   #register_success .register_success_container .blue_btn_container .blue_btn {
-    height: 40px;
-    margin-top: 16px;
+    height: 39px !important;
+    padding: 0 16px !important;
   }
 }
 #remind_password {
