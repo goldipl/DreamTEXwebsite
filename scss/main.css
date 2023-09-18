@@ -9583,6 +9583,14 @@ body {
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .title-checkbox .checkbox-wrapper-64 .slider {
     background-color: #3E3E3E;
   }
+  #cart_delivery_payment .addresses-table-row .table-col p,
+  #cart_delivery_payment .addresses-table-row .table-col a {
+    margin: 8px 16px !important;
+  }
+  #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .addresses_button-container .subtitle {
+    font-size: 22px;
+    line-height: 28px;
+  }
 }
 #cart_summary {
   margin-top: 37px;
