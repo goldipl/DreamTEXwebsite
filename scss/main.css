@@ -7922,7 +7922,7 @@ body {
   border: 1px solid #2CB5FF;
   border-radius: 30px;
   transition: 0.8s;
-  padding: 8px 22px;
+  padding: 8px 24px;
   cursor: pointer;
 }
 #remind_password .remind_password_container .remind_btn_container .remind_btn:hover {
@@ -7950,11 +7950,19 @@ body {
 @media (max-width: 960px) {
   #remind_password {
     margin-top: 16px;
-    margin-bottom: 67px;
+    margin-bottom: 80px;
   }
   #remind_password .remind_password_container {
     padding: 10px;
     margin-bottom: 80px;
+  }
+  #remind_password .remind_password_container .subtitle {
+    margin: 0;
+    font-size: 22px;
+    line-height: 28px;
+    color: #3E3E3E;
+    font-weight: 400;
+    margin-bottom: 24px;
   }
   #remind_password .remind_password_container .input-slot {
     width: 100%;
