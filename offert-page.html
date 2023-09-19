@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
-    <title>Dreamtex - Ofertownik - Produkty</title>
+    <title>Dreamtex - Ofertownik</title>
     <link rel="stylesheet" href="./css/swiper-bundle.css"/>
     <link rel="stylesheet" href="./scss/main.css">
 </head>
@@ -1505,12 +1505,54 @@
                         </li>
                     </ul>
                 </div>
-                <div class="cart-clean-search-container">
-                    <div class="cart-clean-button-container">
-                        <a class="cart-clean-button"><svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#3E3E3E"/></svg> WRÓĆ</a>
+                <div class="offert_table_container">
+                    <nav id="tabs">
+                      <li class="active"><a href="#tab1">Produkty</a></li>
+                      <li><a href="#tab2">Znakowanie</a></li>
+                      <li><a href="#tab3">Ustal ceny</a></li>
+                      <li><a href="#tab4">Opisy</a></li>
+                      <li><a href="#tab5">Szczegóły</a></li>
+                      <li><a href="#tab6">Podsumowanie</a></li>
+                    </nav>
+                    
+                    <section id="tab-contents">
+                      <div id="tab1" class="tab-contents active">
+                        <p>These are the contents of tab 1.</p>
+                      </div>
+                      <div id="tab2" class="tab-contents">
+                        <p>These are the contents of tab 2.</p>
+                      </div>
+                      <div id="tab3" class="tab-contents">
+                        <p>These are the contents of tab 3.</p>
+                      </div>
+                      <div id="tab4" class="tab-contents">
+                        <p>These are the contents of tab 4.</p>
+                      </div>
+                      <div id="tab5" class="tab-contents">
+                        <p>These are the contents of tab 5.</p>
+                      </div>
+                      <div id="tab6" class="tab-contents">
+                        <p>These are the contents of tab 6.</p>
+                      </div>
+                    </section>
+                </div>
+                <div class="offert-search-btn-container">
+                    <div class="offert-searchbar-container">
+                        <input id="offertSearchQueryInput" type="text" name="searchQueryInput" placeholder="Szukaj..." value="" />
+                        <button id="offertSearchQuerySubmit" type="submit" name="searchQuerySubmit">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"/><circle cx="18" cy="18" r="17.5" fill="none"/></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"/><circle cx="8" cy="8" r="7" fill="none"/></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"/></g></svg>
+                        </button>
                     </div>
-                    <div class="cart-price-summary-container">
-                        <p class="cart-price-summary">SUMA: <span class="cart-price-summary-value">24,85</span> PLN</p>
+                    <div class="offert-btn-container--back">
+                        <a class="next-button">Dodaj własny produkt</a>
+                    </div>
+                </div>
+                <div class="offert-btn-container">
+                    <div class="offert-btn-container--back">
+                        <a class="back-button"><svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#3E3E3E"/></svg> WRÓĆ</a>
+                    </div>
+                    <div class="offert-btn-container--back">
+                        <a class="next-button">DALEJ <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#FFFFFF"/></svg></a>
                     </div>
                 </div>
             </div>
@@ -1569,5 +1611,6 @@
         </footer>
     </div>
     <script src="./js/script.js"></script>
+    <script src="./js/offert_tabs.js"></script>
 </body>
 </html>
