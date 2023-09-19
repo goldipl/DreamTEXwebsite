@@ -1,0 +1,38 @@
+#cart {
+    &.order {
+        .cart_container {
+            .color-breadcrumbs {
+                .color-breadcrumbs-list {
+                    margin-top: 32px;
+                }
+            }
+            .order_info {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 30px;
+                &__column {
+                    display: flex;
+                    flex-direction: column;
+                    &--slot {
+                        .title {
+
+                        }
+                        .desc {
+                            
+                        }
+                    }
+                }
+            }
+            .cart_items_container {
+                .cart_items_container-left {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+}

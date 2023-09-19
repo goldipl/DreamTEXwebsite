@@ -9794,6 +9794,23 @@ body {
     line-height: 14px;
   }
 }
+#cart.order .cart_container .color-breadcrumbs .color-breadcrumbs-list {
+  margin-top: 32px;
+}
+#cart.order .cart_container .order_info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
+}
+#cart.order .cart_container .order_info__column {
+  display: flex;
+  flex-direction: column;
+}
+#cart.order .cart_container .cart_items_container .cart_items_container-left {
+  width: 100%;
+}
+
 footer {
   position: relative;
   display: flex;
