@@ -47,12 +47,106 @@
                 border-bottom: 1px solid #ccc;
                 background-color: #FFFFFF;
                 .tab-contents {
-                  padding: 10px;
                   display: none;
                   &.active {
                     display: block;
                     border-top: 5px solid #2CB5FF;
                   }
+                  .products-list-table {
+                    .products-list_container-slots {
+                        width: 100%;
+                        .products-list_container-header {
+                            background-color: #CECECE;
+                            height: 44px;
+                            .products-list-slot {
+                                text-align: center;
+                                p {
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                    color: #3E3E3E;
+                                }
+                            }
+                            .product-title-img {
+                                width: 64px;
+                                margin-left: 12px;
+                            }
+                        }
+                        & > .products-list_container-header + .products-list_container-slot {
+                            border-top: 0;
+                        }
+                        .products-list_container-slot {
+                            width: 100%;
+                            &:nth-child(odd) {
+                                background-color: #EFEFEF;
+                            }
+                            &:nth-child(1) {
+                                td {
+                                    background-color: #FFFFFF;
+                                }
+                            }
+                            .products-list_container-slot-img {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                width: 64px;
+                                margin-top: 11px;
+                            }    
+                            .products-list-slot {
+                                text-align: center;
+                                p {
+                                    font-weight: 400;
+                                    font-size: 14px;
+                                    line-height: 17px;
+                                }
+                                &.quantity {
+                                    input {
+                                        width: 59px;
+                                        height: 27px;
+                                        text-align: center;
+                                        &::-webkit-inner-spin-button,
+                                        &::-webkit-outer-spin-button {  
+                                            opacity: 1;
+                                        }
+                                    }
+                                }
+                            } 
+                        }
+                        .cart-clean-button-container {
+                            border-top: 1px solid #3E3E3E;
+                            .cart-clean-button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 221px;
+                                height: 60px;
+                                box-sizing: border-box;
+                                border: 2px solid #2CB5FF;
+                                border-radius: 30px;
+                                margin: 24px;
+                                text-decoration: none;
+                                font-size: 20px;
+                                color: #3E3E3E;
+                                cursor: pointer;
+                                transition: 0.6s;
+                                svg {
+                                    width: 20px;
+                                    height: 20px;
+                                    margin-right: 8px;
+                                }
+                                &:hover {
+                                    background-color: #2CB5FF;
+                                    color: #FFFFFF;
+                                    svg {
+                                        path {
+                                            fill: #FFFFFF;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    }
                 }
               }
         }
@@ -73,5 +167,43 @@
 }
 
 @media (max-width: 960px) {
-
+    #offert {
+        .offert_container {
+            .offert_table_container {
+                #tabs {
+                    li {
+                      a {
+                      }
+                    }
+                  }
+                  #tab-contents {
+                    .tab-contents {
+                      &.active {
+                      }
+                      .products-list-table {
+                        overflow-x: scroll;
+                        .products-list_container-slots {
+                            width: 100%;
+                            .products-list_container-header {
+                                & > div {
+                                    width: max-content;
+                                }
+                            }
+                            .products-list-slot {
+                                padding: 0 8px;
+                                p {
+                                    white-space: pre;
+                                }
+                            }
+                        }
+                    }
+                    }
+                  }
+            }
+            .offert-search-btn-container {
+            }
+            .offert-btn-container {
+            }
+        }
+    }
 }
