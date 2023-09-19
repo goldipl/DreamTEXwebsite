@@ -4201,7 +4201,7 @@ body {
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-bottom {
   display: flex;
   justify-content: center;
-  transform: translate(-30%, 0%);
+  transform: translate(-38%, 0%);
 }
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-bottom.active {
   position: absolute;
