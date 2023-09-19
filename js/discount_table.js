@@ -1,12 +1,13 @@
 const discount_table = document.getElementById('discount_table');
 const transparent_background = document.getElementById('products_cart');
-const button = document.querySelector('#products_cart .products_cart_container .product_description_container .products-price .price .calculate');
+const button_calculate = document.querySelector('#products_cart .products_cart_container .product_description_container .products-price .price .calculate');
 const close_button = document.querySelector('#products_cart #discount_table .discount_table_container .close-icon');
 const result_btn = document.querySelector('#products_cart #discount_table .discount_table_container .quantity_counter .search_quantity #quantity_counter-submit');
 const result_text = document.querySelector('#products_cart #discount_table .discount_table_container .quantity_counter #result');
 
-button.addEventListener('click', (e) => {
+button_calculate.addEventListener('click', (e) => {
     e.preventDefault();
+    window.scrollTo(0,0);
     discount_table.classList.add('active');
     transparent_background.classList.add('show_discount_table');
 });

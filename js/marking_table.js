@@ -5,6 +5,7 @@ const marking_table_close = document.querySelector('#products_cart .marking_tabl
 
 marking_btn.addEventListener('click', (e) => {
     e.preventDefault();
+    window.scrollTo(0,0);
     marking_table.classList.toggle('show');
     dark_background.classList.add('show_marking_table');
 });
