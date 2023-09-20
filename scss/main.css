@@ -7253,6 +7253,8 @@ body {
   color: #3E3E3E;
   text-decoration: none;
   margin-left: -6px;
+  width: 100%;
+  height: 100%;
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--back .back-button svg {
   margin-right: 10px;
@@ -7278,6 +7280,8 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   margin-right: -6px;
+  width: 100%;
+  height: 100%;
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--next .next-button svg {
   transform: rotate(180deg);
@@ -7593,6 +7597,9 @@ body {
   color: #FFFFFF;
   text-decoration: none;
   margin-right: -6px;
+  width: 100%;
+  height: 100%;
+  white-space: pre;
 }
 #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container .next-button svg {
   transform: rotate(180deg);
