@@ -1521,6 +1521,9 @@
                             <table class="products-list_container-slots">
                                 <thead>
                                     <tr class="products-list_container-header">
+                                        <th class="products-list-slot">
+                                            <p>L.p.</p>
+                                        </th>
                                         <th class="product-title-img">
                                             <p>Zdjęcie</p>
                                         </th>
@@ -1531,112 +1534,180 @@
                                             <p>Ilość</p>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Cena</p>
+                                            <p>Twoja Cena</p>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Dostępność</p>
+                                            <p>Marża</p>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Wartość</p>
+                                            <p>Cena klienta</p>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Duplikuj</p>
+                                            <p>Wartość sprzedaży</p>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Usuń</p>
+                                            <p>Zysk</p>
                                         </th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr class="products-list_container-slot">
-                                        <th class="product-title-img">
+                                        <td class="products-list-slot" rowspan="4">
+                                            <p>1</p>
+                                        </td>
+                                        <td class="product-title-img" rowspan="4">
                                             <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Heavy 170<br>21172-30</p>
-                                        </th>
-                                        <th class="products-list-slot quantity">
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p>Promostars Heavy<br>21172-30</p>
+                                        </td>
+                                        <td class="products-list-slot quantity">
                                             <input type="number" min="1" value="3">
-                                        </th>
-                                        <th class="products-list-slot">
+                                        </td>
+                                        <td class="products-list-slot">
                                             <p><span>14,97</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>24h</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p><span>29,94</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot duplicate">
-                                            <a href="#">
-                                                <img src="./assets/icons/compare.svg" alt="duplicate" width="30" height="30">
-                                            </a>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
-                                        </th>
+                                        </td>
+                                        <td class="products-list-slot" colspan="2">
+                                            <div class="lock-container">
+                                                <input class="profit-margin" type="number" min="1" value="">
+                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
+                                                <input class="client-price" type="number" min="1" value="">
+                                            </div>
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>50,88</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot green">
+                                            <p><span>5,97</span> PLN</p>
+                                        </td>
                                     </tr>
                                     <tr class="products-list_container-slot">
-                                        <th class="product-title-img">
-                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Heavy 170<br>21172-30</p>
-                                        </th>
-                                        <th class="products-list-slot quantity">
-                                            <input type="number" min="1" value="3">
-                                        </th>
-                                        <th class="products-list-slot">
+                                        <td class="products-list-slot">
+                                            <p>Haft/środek<br>Logo Sokołów</p>
+                                        </td>
+                                        <td class="products-list-slot quantity">
+                                            <p>3</p>
+                                        </td>
+                                        <td class="products-list-slot">
                                             <p><span>14,97</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>24h</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p><span>29,94</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot duplicate">
-                                            <a href="#">
-                                                <img src="./assets/icons/compare.svg" alt="duplicate" width="30" height="30">
-                                            </a>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
-                                        </th>
+                                        </td>
+                                        <td class="products-list-slot" colspan="2">
+                                            <div class="lock-container">
+                                                <input class="profit-margin" type="number" min="1" value="">
+                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
+                                                <input class="client-price" type="number" min="1" value="">
+                                            </div>
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>50,88</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot green">
+                                            <p><span>5,97</span> PLN</p>
+                                        </td>
                                     </tr>
                                     <tr class="products-list_container-slot">
-                                        <th class="product-title-img">
-                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Heavy 170<br>21172-30</p>
-                                        </th>
-                                        <th class="products-list-slot quantity">
-                                            <input type="number" min="1" value="3">
-                                        </th>
-                                        <th class="products-list-slot">
+                                        <td class="products-list-slot">
+                                            <p>Haft/Lewe ramie</p>
+                                        </td>
+                                        <td class="products-list-slot quantity">
+                                            <p>3</p>
+                                        </td>
+                                        <td class="products-list-slot">
                                             <p><span>14,97</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>24h</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p><span>29,94</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot duplicate">
-                                            <a href="#">
-                                                <img src="./assets/icons/compare.svg" alt="duplicate" width="30" height="30">
-                                            </a>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
-                                        </th>
+                                        </td>
+                                        <td class="products-list-slot" colspan="2">
+                                            <div class="lock-container">
+                                                <input class="profit-margin" type="number" min="1" value="">
+                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
+                                                <input class="client-price" type="number" min="1" value="">
+                                            </div>
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>50,88</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot green">
+                                            <p><span>5,97</span> PLN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="products-list_container-slot strong">
+                                        <td class="products-list-slot">
+                                            <p></p>
+                                        </td>
+                                        <td class="products-list-slot quantity">
+                                            <p></p>
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p></p>
+                                        </td>
+                                        <td class="products-list-slot" colspan="2">
+                                          
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>150</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot green">
+                                            <p><span>15</span> PLN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="products-list_container-slot pack">
+                                        <td class="products-list-slot">
+                                            <p>2</p>
+                                        </td>
+                                        <td class="product-title-img">
+                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p>Promostars Heavy<br>21172-30</p>
+                                        </td>
+                                        <td class="products-list-slot quantity">
+                                            <input type="number" min="1" value="3">
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>14,97</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot" colspan="2">
+                                            <div class="lock-container">
+                                                <input class="profit-margin" type="number" min="1" value="">
+                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
+                                                <input class="client-price" type="number" min="1" value="">
+                                            </div>
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>50,88</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot green">
+                                            <p><span>5,97</span> PLN</p>
+                                        </td>
+                                    </tr>
+                                    <tr class="products-list_container-slot pack">
+                                        <td class="products-list-slot">
+                                            <p>3</p>
+                                        </td>
+                                        <td class="product-title-img">
+                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p>Promostars Heavy<br>21172-30</p>
+                                        </td>
+                                        <td class="products-list-slot quantity">
+                                            <input type="number" min="1" value="3">
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>14,97</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot" colspan="2">
+                                            <div class="lock-container">
+                                                <input class="profit-margin" type="number" min="1" value="">
+                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
+                                                <input class="client-price" type="number" min="1" value="">
+                                            </div>
+                                        </td>
+                                        <td class="products-list-slot">
+                                            <p><span>50,88</span> PLN</p>
+                                        </td>
+                                        <td class="products-list-slot green">
+                                            <p><span>5,97</span> PLN</p>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -1659,15 +1730,37 @@
                       </div>
                     </section>
                 </div>
-                <div class="offert-search-btn-container">
-                    <div class="offert-searchbar-container">
-                        <input id="offertSearchQueryInput" type="text" name="searchQueryInput" placeholder="Szukaj..." value="" />
-                        <button id="offertSearchQuerySubmit" type="submit" name="searchQuerySubmit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"/><circle cx="18" cy="18" r="17.5" fill="none"/></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"/><circle cx="8" cy="8" r="7" fill="none"/></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"/></g></svg>
-                        </button>
+                <div class="offert-options-container">
+                    <div class="offert-options-container--left">
+                        <div class="first-line">
+                            <div class="currency-select">
+                                <label class="currency" for="currency">Waluta</label>
+                                <select name="currency" id="currency">
+                                    <option value="Option1">PLN</option>
+                                    <option value="Option2">EUR</option>
+                                    <option value="Option3">USD</option>
+                                    <option value="Option4">CHF</option>
+                                </select>
+                            </div>
+                            <div class="btn-container">
+                                <a class="next-button" href="">Wpisz marżę do wszystkich produktów <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#FFFFFF"/></svg></a>
+                            </div>
+                            <input class="quantity" type="text">
+                        </div>
+                        <div class="second-line">
+                            <div class="btn-container">
+                                <a class="next-button" href="">Wpisz marżę do wszystkich produktów <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#FFFFFF"/></svg></a>
+                            </div>
+                            <input class="quantity" type="text">
+                        </div>
                     </div>
-                    <div class="offert-btn-container--add-own-product">
-                        <a class="button" href="#">Dodaj własny produkt</a>
+                    <div class="offert-options-container--right">
+                        <div class="first-line">
+                            <p>Suma: <span>250</span> PLN</p>
+                        </div>
+                        <div class="second-line">
+                            <p>Zysk: <span>25</span> PLN</p>
+                        </div>
                     </div>
                 </div>
                 <div class="offert-btn-container">
@@ -1682,6 +1775,7 @@
         </section>
 
         <footer>
+            <div class="footer-arrow-up"></div>
             <div class="footer_container">
                 <div class="footer_container_top">
                     <div class="footer_container_top-left">

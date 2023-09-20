@@ -1,0 +1,227 @@
+#offert {
+    &.set_prices_offert_page {
+        .offert_table_container {
+            .products-list-table {
+                .products-list_container-slots {
+                    .products-list_container-slot {
+                        height: 100px;
+                        .product-title-img {
+                            width: 120px;
+                            text-align: center;
+                            img {
+                                margin: 0 auto;
+                            }
+                        }
+                        &.pack {
+                            border-bottom: 1px solid #707070;
+                        }
+                        &.strong {
+                            height: 40px;
+                            border-top: 1px solid #707070;
+                            border-bottom: 1px solid #707070;
+                            td, th {
+                                p, span {
+                                    font-weight: bold !important;
+                                }
+                            }
+                        }
+                       .products-list-slot {
+                            .lock-container {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 172px;
+                                height: 45px;
+                                border: 1px solid #707070;
+                                margin: 0 auto;
+                                .profit-margin {
+                                    width: 50px;
+                                    height: 30px;
+                                }
+                                .lock-icon {
+                                    margin: 0 4px;
+                                    width: 15px;
+                                    height: 15px;
+                                }
+                                .client-price {
+                                    width: 80px;
+                                    height: 30px;
+                                    padding: 4px;
+                                }
+                            }
+                            &.green {
+                                p {
+                                    color: #1FBC59;
+                                }
+                            }
+                       }
+                    }
+                }
+            }
+        }
+        .offert-options-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            &--left {
+                .first-line {
+                    display: flex;
+                    flex-direction: row;
+                    input {
+                        font-family: 'Roboto', sans-serif;
+                        background-color: #EFEFEF;
+                        border: 1px solid #CECECE;
+                        border-radius: 20px;
+                        height: 40px;
+                        width: 70px;
+                        font-size: 16px;
+                        padding-left: 16px;
+                        box-sizing: border-box;
+                        margin-left: 10px;
+                        margin-top: 19px;
+                        &:focus {
+                            border: 1px solid #2CB5FF;
+                            outline: 0;
+                        }
+                    }
+                    .currency-select {
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            margin-left: 12px;
+                            font-size: 14px;
+                            line-height: 19px;
+                            min-height: 19px;
+                            text-align: left;
+                            font-weight: 400;
+                        }
+                        input,
+                        select {
+                            font-family: 'Roboto', sans-serif;
+                            background-color: #EFEFEF;
+                            border: 1px solid #CECECE;
+                            border-radius: 20px;
+                            height: 40px;
+                            width: 70px;
+                            font-size: 16px;
+                            padding-left: 16px;
+                            box-sizing: border-box;
+                            &:focus {
+                                border: 1px solid #2CB5FF;
+                                outline: 0;
+                            }
+                        }
+                    }
+                    .btn-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                        height: 40px;
+                        box-sizing: border-box;
+                        background-color: #2CB5FF;
+                        border-radius: 30px;
+                        padding: 0 20px;
+                        margin-left: 20px;
+                        margin-top: 19px;
+                        .next-button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                            margin-right: -6px;
+                            svg {
+                                transform: rotate(180deg);
+                                margin-left: 10px;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+                .second-line {
+                    display: flex;
+                    flex-direction: row;
+                    input {
+                        margin-top: 10px;
+                        font-family: 'Roboto', sans-serif;
+                        background-color: #EFEFEF;
+                        border: 1px solid #CECECE;
+                        border-radius: 20px;
+                        height: 40px;
+                        width: 70px;
+                        font-size: 16px;
+                        padding-left: 16px;
+                        box-sizing: border-box;
+                        margin-left: 10px;
+                        &:focus {
+                            border: 1px solid #2CB5FF;
+                            outline: 0;
+                        }
+                    }
+                    .btn-container {
+                        margin-top: 10px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: max-content;
+                        height: 40px;
+                        box-sizing: border-box;
+                        background-color: #2CB5FF;
+                        border-radius: 30px;
+                        padding: 0 20px;
+                        margin-left: 90px;
+                        .next-button {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            font-size: 16px;
+                            line-height: 19px;
+                            color: #FFFFFF;
+                            text-decoration: none;
+                            margin-right: -6px;
+                            svg {
+                                transform: rotate(180deg);
+                                margin-left: 10px;
+                                width: 20px;
+                                height: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+            &--right {
+                margin-right: 8px;
+                .first-line {
+                    p {
+                        margin: 0;
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: bold;
+                        text-align: right;
+                    }
+                }
+                .second-line {
+                    p {
+                        margin: 0;
+                        font-size: 20px;
+                        line-height: 24px;
+                        font-weight: bold;
+                        color: #1FBC59;
+                        margin-top: 5px;
+                        text-align: right;
+                    }  
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+}
