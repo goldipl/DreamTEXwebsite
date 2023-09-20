@@ -7169,6 +7169,7 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 15px;
+  margin-top: -18px;
 }
 #offert .offert_container .offert-search-btn-container .offert-searchbar-container {
   position: relative;
