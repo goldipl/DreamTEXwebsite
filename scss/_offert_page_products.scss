@@ -6,17 +6,17 @@
         flex-direction: column;
         width: 100%;
         height: auto;
-        padding: 15px;
+        padding: 20px;
         box-shadow: 0px 3px 15px #00000033;
         .offert_table_container {
             margin-top: 33px;
-            margin-left: -15px;
-            margin-right: -15px;
-            width: calc(100% + 30px);
+            margin-left: -20px;
+            margin-right: -20px;
+            width: calc(100% + 40px);
             #tabs {
                 list-style-type: none;
-                margin-left: 32px;
-                margin-right: 32px;
+                margin-left: 27px;
+                margin-right: 27px;
                 li {
                     display: inline-block;
                     margin-bottom: 0;
@@ -61,14 +61,22 @@
                             .products-list-slot {
                                 text-align: center;
                                 p {
-                                    font-size: 14px;
-                                    line-height: 17px;
+                                    font-size: 16px;
+                                    line-height: 19px;
                                     color: #3E3E3E;
+                                    font-weight: 400;
                                 }
                             }
                             .product-title-img {
+                                position: relative;
                                 width: 64px;
                                 margin-left: 12px;
+                                p {
+                                    font-size: 16px;
+                                    line-height: 19px;
+                                    color: #3E3E3E;
+                                    font-weight: 400;
+                                }
                             }
                         }
                         & > .products-list_container-header + .products-list_container-slot {
@@ -76,22 +84,34 @@
                         }
                         .products-list_container-slot {
                             width: 100%;
-                            &:nth-child(odd) {
+                            &:nth-child(even) {
                                 background-color: #EFEFEF;
                             }
                             &:nth-child(1) {
-                                td {
-                                    background-color: #FFFFFF;
+                                th {
+                                    width: 300px;
+                                }
+                            }   
+                            .product-title-img {
+                                position: relative;
+                                cursor: pointer;
+                                &.green-checked {
+                                    &::after {
+                                        position: absolute;
+                                        content: "";
+                                        display: block;
+                                        bottom: calc(50% - 10px);
+                                        right: calc(50% - 10px);
+                                        background: url(./../assets/icons/cart_green_approve.svg);
+                                        width: 21px;
+                                        height: 21px;
+                                        box-sizing: border-box;
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        cursor: pointer;
+                                    }
                                 }
                             }
-                            .products-list_container-slot-img {
-                                display: flex;
-                                flex-direction: column;
-                                justify-content: center;
-                                align-items: center;
-                                width: 64px;
-                                margin-top: 11px;
-                            }    
                             .products-list-slot {
                                 text-align: center;
                                 p {
@@ -156,12 +176,120 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
+            .offert-searchbar-container {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0;
+                #offertSearchQueryInput {
+                    box-sizing: border-box;
+                    width: 350px;
+                    height: 36px;
+                    border: 1px solid #CECECE;
+                    border-radius: 20px;
+                    padding-left: 16px;
+                    background-color: #EFEFEF;
+                    &:focus {
+                        border: 1px solid #2CB5FF;
+                        outline: 0;
+                    }
+                }
+                #offertSearchQuerySubmit {
+                    position: absolute;
+                    top: -1px;
+                    right: 0;
+                    width: 36px;
+                    height: 36px;
+                    background-color: unset;
+                    border: unset;
+                    cursor: pointer;
+                }
+            }
+            .offert-btn-container--add-own-product {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 228px;
+                height: 40px;
+                box-sizing: border-box;
+                background-color: #2CB5FF;
+                border-radius: 30px;
+                .button {
+                    color: #FFFFFF;
+                    font-size: 18px;
+                    line-height: 22px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
+                    height: 100%;
+                    text-decoration: none;
+                    &::before {
+                        content: '+';
+                        font-size: 18px;
+                        margin-right: 8px;
+                    }
+                }
+            }
         }
         .offert-btn-container {
             display: flex;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            .offert-btn-container--back {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 143px;
+                height: 60px;
+                box-sizing: border-box;
+                background-color: #FFFFFF;
+                border: 2px solid #2CB5FF;
+                border-radius: 30px;
+                .back-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #3E3E3E;
+                    text-decoration: none;
+                    margin-left: -6px;
+                    svg {
+                        margin-right: 10px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
+            .offert-btn-container--next {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 143px;
+                height: 60px;
+                box-sizing: border-box;
+                background-color: #2CB5FF;
+                border-radius: 30px;
+                .next-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 20px;
+                    line-height: 24px;
+                    color: #FFFFFF;
+                    text-decoration: none;
+                    margin-right: -6px;
+                    svg {
+                        transform: rotate(180deg);
+                        margin-left: 10px;
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+            }
         }
     }
 }
@@ -197,13 +325,27 @@
                             }
                         }
                     }
-                    }
-                  }
+                }
+                }
             }
-            .offert-search-btn-container {
+        }
+        .offert-search-btn-container {
+            .offert-searchbar-container {
+                #offertSearchQueryInput {
+                }
+                #offertSearchQuerySubmit {
+
+                }
             }
-            .offert-btn-container {
+            .offert-btn-container--add-own-product {
+
             }
+        }
+        .offert-btn-container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 }
