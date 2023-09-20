@@ -300,6 +300,7 @@
             .offert_table_container {
                 #tabs {
                     li {
+                        width: 100%;
                       a {
                       }
                     }
@@ -330,8 +331,10 @@
             }
         }
         .offert-search-btn-container {
+            flex-direction: column !important;
             .offert-searchbar-container {
                 #offertSearchQueryInput {
+                    margin-bottom: 10px;
                 }
                 #offertSearchQuerySubmit {
 

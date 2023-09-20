@@ -1519,63 +1519,138 @@
                       <div id="tab1" class="tab-contents active">
                         <div class="products-list-table">
                             <table class="products-list_container-slots">
-                                <thead>
-                                    <tr class="products-list_container-header">
-                                        <th class="product-title-img">
-                                            <p>Zdjęcie</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Nazwa</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Ilość</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Cena</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Dostępność</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Wartość</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Duplikuj</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Usuń</p>
-                                        </th>
-                                    </tr>
-                                </thead>
                                 <tbody>
                                     <tr class="products-list_container-slot">
                                         <th class="product-title-img">
                                             <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Heavy 170<br>21172-30</p>
-                                        </th>
-                                        <th class="products-list-slot quantity">
-                                            <input type="number" min="1" value="3">
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p><span>14,97</span> PLN</p>
+                                            <div class="form-slot">
+                                                <label class="name" for="name">Nazwa</label>
+                                                <input type="text" id="name">
+                                            </div>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>24h</p>
+                                            <div class="form-slot">
+                                                <label class="branding" for="branding">Znakowanie</label>
+                                                <select name="branding" id="branding">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p><span>29,94</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot duplicate">
-                                            <a href="#">
-                                                <img src="./assets/icons/compare.svg" alt="duplicate" width="30" height="30">
-                                            </a>
+                                            <div class="form-slot">
+                                                <label class="colors" for="colors">Kolory</label>
+                                                <select name="colors" id="colors">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
                                         </th>
                                         <th class="products-list-slot">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
+                                            <div class="form-slot">
+                                                <label class="size" for="size">Rozmiar [cm]</label>
+                                                <select name="size" id="size">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="form-slot">
+                                                <label class="branding_location" for="branding_location">Miejsce znakowania</label>
+                                                <select name="branding_location" id="branding_location">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="btn-container blue">
+                                                <a class="button" href="#">+ Dodaj pliki</a>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="btn-container grey">
+                                                <a class="button" href="#">Dodaj</a>
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr class="products-list_container-slot branding-info-text">
+                                        <th colspan="8">Logo Sokołów / Haft / środek / sokolow_logo_01.jpg; sokolow_logo_01.pdf</th>
+                                    </tr>
+                                    <tr class="products-list_container-slot">
+                                        <th class="product-title-img">
+                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="form-slot">
+                                                <label class="name" for="name">Nazwa</label>
+                                                <input type="text" id="name">
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="form-slot">
+                                                <label class="branding" for="branding">Znakowanie</label>
+                                                <select name="branding" id="branding">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="form-slot">
+                                                <label class="colors" for="colors">Kolory</label>
+                                                <select name="colors" id="colors">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="form-slot">
+                                                <label class="size" for="size">Rozmiar [cm]</label>
+                                                <select name="size" id="size">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="form-slot">
+                                                <label class="branding_location" for="branding_location">Miejsce znakowania</label>
+                                                <select name="branding_location" id="branding_location">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="btn-container blue">
+                                                <a class="button" href="#">+ Dodaj pliki</a>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="btn-container grey">
+                                                <a class="button" href="#">Dodaj</a>
+                                            </div>
                                         </th>
                                     </tr>
                                     <tr class="products-list_container-slot">
@@ -1583,59 +1658,64 @@
                                             <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Heavy 170<br>21172-30</p>
-                                        </th>
-                                        <th class="products-list-slot quantity">
-                                            <input type="number" min="1" value="3">
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p><span>14,97</span> PLN</p>
+                                            <div class="form-slot">
+                                                <label class="name" for="name">Nazwa</label>
+                                                <input type="text" id="name">
+                                            </div>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>24h</p>
+                                            <div class="form-slot">
+                                                <label class="branding" for="branding">Znakowanie</label>
+                                                <select name="branding" id="branding">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p><span>29,94</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot duplicate">
-                                            <a href="#">
-                                                <img src="./assets/icons/compare.svg" alt="duplicate" width="30" height="30">
-                                            </a>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
-                                        </th>
-                                    </tr>
-                                    <tr class="products-list_container-slot">
-                                        <th class="product-title-img">
-                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
+                                            <div class="form-slot">
+                                                <label class="colors" for="colors">Kolory</label>
+                                                <select name="colors" id="colors">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
                                         </th>
                                         <th class="products-list-slot">
-                                            <p>Heavy 170<br>21172-30</p>
-                                        </th>
-                                        <th class="products-list-slot quantity">
-                                            <input type="number" min="1" value="3">
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p><span>14,97</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>24h</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p><span>29,94</span> PLN</p>
-                                        </th>
-                                        <th class="products-list-slot duplicate">
-                                            <a href="#">
-                                                <img src="./assets/icons/compare.svg" alt="duplicate" width="30" height="30">
-                                            </a>
+                                            <div class="form-slot">
+                                                <label class="size" for="size">Rozmiar [cm]</label>
+                                                <select name="size" id="size">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
                                         </th>
                                         <th class="products-list-slot">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
+                                            <div class="form-slot">
+                                                <label class="branding_location" for="branding_location">Miejsce znakowania</label>
+                                                <select name="branding_location" id="branding_location">
+                                                    <option value="Option1">Option1</option>
+                                                    <option value="Option2">Option2</option>
+                                                    <option value="Option3">Option3</option>
+                                                    <option value="Option4">Option4</option>
+                                                </select>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="btn-container blue">
+                                                <a class="button" href="#">+ Dodaj pliki</a>
+                                            </div>
+                                        </th>
+                                        <th class="products-list-slot">
+                                            <div class="btn-container grey">
+                                                <a class="button" href="#">Dodaj</a>
+                                            </div>
                                         </th>
                                     </tr>
                                 </tbody>
@@ -1658,17 +1738,6 @@
                         <p>These are the contents of tab 6.</p>
                       </div>
                     </section>
-                </div>
-                <div class="offert-search-btn-container">
-                    <div class="offert-searchbar-container">
-                        <input id="offertSearchQueryInput" type="text" name="searchQueryInput" placeholder="Szukaj..." value="" />
-                        <button id="offertSearchQuerySubmit" type="submit" name="searchQuerySubmit">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"/><circle cx="18" cy="18" r="17.5" fill="none"/></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"/><circle cx="8" cy="8" r="7" fill="none"/></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"/></g></svg>
-                        </button>
-                    </div>
-                    <div class="offert-btn-container--add-own-product">
-                        <a class="button" href="#">Dodaj własny produkt</a>
-                    </div>
                 </div>
                 <div class="offert-btn-container">
                     <div class="offert-btn-container--back">

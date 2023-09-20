@@ -1,0 +1,109 @@
+#offert {
+    &.branding_offert_page {
+        .offert_table_container {
+            .products-list-table {
+                .products-list_container-slots {
+                    .products-list_container-slot {
+                        border-bottom: 2px solid #c4c4c4de;
+                        th {
+                            width: auto !important;
+                            &.product-title-img {
+                                padding: 0 15px;
+                            }
+                        }
+                        &.branding-info-text {
+                            th {
+                                position: relative;
+                                font-size: 16px;
+                                line-height: 19px;
+                                font-weight: 400;
+                                color: #3E3E3E;
+                                text-align: left;
+                                padding: 10px 0 10px 42px;
+                                cursor: pointer;
+                                text-align: left;
+                                &::after {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    bottom: calc(50% - 6px);
+                                    right: calc(50% - 12px);
+                                    background: url(./../assets/icons/close.svg);
+                                    width: 16px;
+                                    height: 16px;
+                                    box-sizing: border-box;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                    cursor: pointer;
+                                }
+                            }
+                        }
+                        .form-slot {
+                            display: flex;
+                            flex-direction: column;
+                            width: calc(100% - 10px);
+                            margin-right: 10px;
+                            min-width: 59px;
+                            label {
+                                margin-left: 12px;
+                                font-size: 14px;
+                                line-height: 19px;
+                                min-height: 19px;
+                                text-align: left;
+                                font-weight: 400;
+                            }
+                            input,
+                            select {
+                                font-family: 'Roboto', sans-serif;
+                                background-color: #EFEFEF;
+                                border: 1px solid #CECECE;
+                                border-radius: 20px;
+                                height: 40px;
+                                font-size: 16px;
+                                padding-left: 16px;
+                                box-sizing: border-box;
+                                &:focus {
+                                    border: 1px solid #2CB5FF;
+                                    outline: 0;
+                                }
+                            }
+                        }
+                        .btn-container {
+                            width: max-content;
+                            height: 40px;
+                            box-sizing: border-box;
+                            background-color: #2CB5FF;
+                            border-radius: 30px;
+                            transition: 0.8s;
+                            padding: 0 24px;
+                            margin-top: 19px;
+                            .button {
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                width: 100%;
+                                height: 100%;
+                                font-size: 16px;
+                                line-height: 19px;
+                                color: #FFFFFF;
+                                text-decoration: none;
+                                font-weight: 400;
+                            }
+                            &.grey {
+                                background-color: #707070; 
+                                margin-left: -25px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .offert-btn-container {
+            margin-top: -18px;
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+}
