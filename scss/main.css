@@ -7210,6 +7210,10 @@ body {
   box-sizing: border-box;
   background-color: #2CB5FF;
   border-radius: 30px;
+  transition: 0.6s;
+}
+#offert .offert_container .offert-search-btn-container .offert-btn-container--add-own-product:hover {
+  background-color: #1C2F82;
 }
 #offert .offert_container .offert-search-btn-container .offert-btn-container--add-own-product .button {
   color: #FFFFFF;
@@ -7243,6 +7247,13 @@ body {
   background-color: #FFFFFF;
   border: 2px solid #2CB5FF;
   border-radius: 30px;
+  transition: 0.6s;
+}
+#offert .offert_container .offert-btn-container .offert-btn-container--back:hover {
+  background-color: #2CB5FF;
+}
+#offert .offert_container .offert-btn-container .offert-btn-container--back:hover .back-button {
+  color: #FFFFFF;
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--back .back-button {
   display: flex;
@@ -7270,6 +7281,10 @@ body {
   box-sizing: border-box;
   background-color: #2CB5FF;
   border-radius: 30px;
+  transition: 0.6s;
+}
+#offert .offert_container .offert-btn-container .offert-btn-container--next:hover {
+  background-color: #1C2F82;
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--next .next-button {
   display: flex;

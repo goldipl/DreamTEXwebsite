@@ -216,6 +216,10 @@
                 box-sizing: border-box;
                 background-color: #2CB5FF;
                 border-radius: 30px;
+                transition: 0.6s;
+                &:hover {
+                    background-color: #1C2F82;
+                }
                 .button {
                     color: #FFFFFF;
                     font-size: 18px;
@@ -249,6 +253,13 @@
                 background-color: #FFFFFF;
                 border: 2px solid #2CB5FF;
                 border-radius: 30px;
+                transition: 0.6s;
+                &:hover {
+                    background-color: #2CB5FF;
+                    .back-button {
+                        color: #FFFFFF;
+                    }
+                }
                 .back-button {
                     display: flex;
                     justify-content: center;
@@ -276,6 +287,10 @@
                 box-sizing: border-box;
                 background-color: #2CB5FF;
                 border-radius: 30px;
+                transition: 0.6s;
+                &:hover {
+                    background-color: #1C2F82;
+                }
                 .next-button {
                     display: flex;
                     justify-content: center;
