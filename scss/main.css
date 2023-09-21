@@ -7683,43 +7683,70 @@ body {
   border-bottom: 0;
   margin-bottom: 0;
 }
-#offert.details_offert_page .offert_table_container .details_offert .details_offert {
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  padding: 40px 30px 30px 30px;
+  padding: 18px 30px 30px 30px;
 }
-#offert.details_offert_page .offert_table_container .details_offert .details_offert__column {
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column {
   display: flex;
   flex-direction: column;
-  margin-right: 40px;
+  margin-right: 30px;
+  width: 25%;
 }
-#offert.details_offert_page .offert_table_container .details_offert .details_offert__column--slot {
-  margin: 0 0 20px 0;
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column:last-of-type {
+  margin-right: 0;
 }
-#offert.details_offert_page .offert_table_container .details_offert .details_offert__column--slot .title {
-  font-size: 28px;
-  line-height: 34px;
-  font-weight: 400;
-  color: #3e3e3e;
-  margin: 0 0 10px 0;
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot {
+  display: flex;
+  flex-direction: column;
 }
-#offert.details_offert_page .offert_table_container .details_offert .details_offert__column--slot .desc {
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot label {
+  margin-top: 10px;
+  margin-left: 12px;
   font-size: 16px;
   line-height: 19px;
-  font-weight: 400;
-  color: #3e3e3e;
-  margin: 0;
+  min-height: 19px;
 }
-#offert.details_offert_page .offert_table_container .details_offert .details_offert__column--slot .vat-invoice {
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  color: #3e3e3e;
-  margin-right: 6px;
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot input.variants,
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot input#offert_valid_to,
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot select {
+  font-family: "Roboto", sans-serif;
+  background-color: #EFEFEF;
+  border: 1px solid #CECECE;
+  border-radius: 20px;
+  height: 40px;
+  font-size: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
-#offert.details_offert_page .offert_table_container .details_offert .details_offert__column--slot .vat-invoice:hover {
-  text-decoration: underline;
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot input.variants:focus,
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot input#offert_valid_to:focus,
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot select:focus {
+  border: 1px solid #2CB5FF;
+  outline: 0;
+}
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot textarea {
+  font-family: "Roboto", sans-serif;
+  background-color: #EFEFEF;
+  border: 1px solid #CECECE;
+  border-radius: 20px;
+  font-size: 14px;
+  line-height: 17px;
+  padding-left: 16px;
+  padding: 16px;
+  max-width: 240px;
+}
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot textarea:focus {
+  border: 1px solid #2CB5FF;
+  outline: 0;
+}
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot .checkbox-slot {
+  margin-bottom: 10px;
+}
+#offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot.checkbox {
+  margin-top: 20px;
 }
 #offert.details_offert_page .offert_table_container .offert_button-container {
   display: inline-flex;
@@ -7733,6 +7760,7 @@ body {
   line-height: 37px;
   font-weight: 400;
   color: #000000;
+  margin-left: 32px;
 }
 #offert.details_offert_page .offert_table_container .offert_button-container .add-address-btn-container {
   margin-left: 18px;
@@ -7759,13 +7787,43 @@ body {
   background-color: #ffffff;
   color: #2cb5ff;
 }
+#offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+}
+#offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container #searchQueryInput-offert {
+  box-sizing: border-box;
+  width: 250px;
+  height: 36px;
+  border: 1px solid #CECECE;
+  border-radius: 20px;
+  padding-left: 16px;
+  background-color: #EFEFEF;
+  margin-left: 26px;
+}
+#offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container #searchQueryInput-offert:focus {
+  border: 1px solid #2CB5FF;
+  outline: 0;
+}
+#offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container #searchQuerySubmit-offert {
+  position: absolute;
+  top: -1px;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background-color: unset;
+  border: unset;
+  cursor: pointer;
+}
 #offert.details_offert_page .offert_table_container .offert_table_container {
   border-collapse: collapse;
   overflow-x: auto;
-  display: block;
-  width: calc(100% + 42px);
-  max-width: calc(100% + 42px);
-  margin: 0px -30px 47px -30px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
 }
 #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row {
   height: 55px;
@@ -7780,9 +7838,6 @@ body {
 }
 #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row:nth-child(even) {
   background-color: #efefef;
-}
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col {
-  height: 55px;
 }
 #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col p {
   text-align: center;
@@ -7807,6 +7862,12 @@ body {
 #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col .edit-btn:hover {
   background-color: #ffffff;
   color: #2cb5ff;
+}
+#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col.short {
+  width: 120px;
+}
+#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col.short a {
+  margin: 0 auto;
 }
 
 #offerts.orders .offerts_container .color-breadcrumbs {

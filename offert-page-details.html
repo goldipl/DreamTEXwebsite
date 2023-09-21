@@ -1519,56 +1519,50 @@
                         <div id="tab1" class="tab-contents active">
                             <div class="details_offert">
                                 <div class="details_offert__column">
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Numer zamówienia</p>
-                                        <p class="desc">156</p>
+                                    <div class="details_offert__column--slot">
+                                        <label class="offert_name" for="offert_name">Nazwa oferty</label>
+                                        <input class="variants" type="text" id="offert_name">
                                     </div>
-                                    <div class="details_offert__column--slot order_create">
-                                        <p class="title">Utworzył</p>
-                                        <p class="desc">Tomasz Jankowski</p>
+                                    <div class="details_offert__column--slot">
+                                        <label class="client_name" for="client_name">Klient</label>
+                                        <input class="variants" type="text" id="client_name">
                                     </div>
-                                </div>
-                                <div class="details_offert__column">
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Numer zamówienia</p>
-                                        <p class="desc">HURTOWNIA DREAMTEX</p>
-                                        <p class="desc">Szyszkowa 32</p>
-                                        <p class="desc">02-285 Warszawa</p>
-                                        <p class="desc">NIP: 5210000948</p>
+                                    <div class="details_offert__column--slot">
+                                        <label class="colors_version" for="colors_version">Szata kolorystyczna oferty</label>
+                                        <select name="colors_version" id="colors_version">
+                                            <option value="Option1">Option1</option>
+                                            <option value="Option2">Option2</option>
+                                            <option value="Option3">Option3</option>
+                                            <option value="Option4">Option4</option>
+                                        </select>
                                     </div>
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Osoba kontakowa</p>
-                                        <p class="desc">Jan Kowalski</p>
-                                    </div>
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Telefon</p>
-                                        <p class="desc">+48 123-123-123</p>
-                                    </div>
-                                </div>
-                                <div class="details_offert__column">
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Sposób płatności</p>
-                                        <p class="desc">Gotówka</p>
-                                    </div>
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Metoda wysyłki</p>
-                                        <p class="desc">Kurier za pobraniem</p>
+                                    <div class="details_offert__column--slot checkbox">
+                                        <div class="checkbox-slot">
+                                            <input type="checkbox" id="options_price" name="option" value="Cena zawiera koszty transportu">
+                                            <label for="options_price">Cena zawiera koszty transportu</label>
+                                        </div>
+                                        <div class="checkbox-slot">
+                                            <input type="checkbox" id="options_branding" name="option" value="Pokaż osobno cenę za znakowanie">
+                                            <label for="options_branding">Pokaż osobno cenę za znakowanie</label>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="details_offert__column">
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Status</p>
-                                        <p class="desc">gotowe</p>
+                                    <div class="details_offert__column--slot">
+                                        <label class="offerent_data" for="offerent_data">Dane oferenta</label>
+                                        <textarea name="offerent_data" id="offerent_data" cols="4" rows="5"></textarea>
                                     </div>
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">List przewozowy</p>
-                                        <p class="desc">4f86w38rw46fa84w83</p>
+                                </div>
+                                <div class="details_offert__column">
+                                    <div class="details_offert__column--slot">
+                                        <label class="offert_valid_to" for="offert_valid_to">Oferta ważna do</label>
+                                        <input type="date" name="offert_valid_to" id="offert_valid_to">
                                     </div>
-                                    <div class="details_offert__column--slot order_number">
-                                        <p class="title">Faktura</p>
-                                        <a href="#" class="vat-invoice">
-                                            <p class="desc">FV-156 <img src="./assets/icons/pdf.svg" alt="pdf" width="20" height="20"></p>
-                                        </a>
+                                </div>
+                                <div class="details_offert__column">
+                                    <div class="details_offert__column--slot">
+                                        <label class="comments" for="comments">Uwagi</label>
+                                        <textarea name="comments" id="comments" cols="4" rows="5"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -1577,16 +1571,19 @@
                                 <h2 class="subtitle">Lista klientów</h2>
                                 <div class="add-address-btn-container">
                                     <a class="add-address-btn" href="#">+ Dodaj klienta</a>
-                                 </div>
+                                </div>
+                                <div class="offert-search-container">
+                                    <input id="searchQueryInput-offert" type="text" name="searchQueryInput" placeholder="Szukaj..." value="">
+                                    <button id="searchQuerySubmit-offert" type="submit" name="searchQuerySubmit">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36"><g fill="#fff" stroke="#707070" stroke-width="1"><circle cx="18" cy="18" r="18" stroke="none"></circle><circle cx="18" cy="18" r="17.5" fill="none"></circle></g><g transform="translate(9.424 9.25)"><g fill="#fff" stroke="#707070" stroke-width="2"><circle cx="8" cy="8" r="8" stroke="none"></circle><circle cx="8" cy="8" r="7" fill="none"></circle></g><line x2="4" y2="4" transform="translate(13.5 13.5)" fill="none" stroke="#707070" stroke-linecap="round" stroke-width="2"></line></g></svg>
+                                    </button>
+                                </div>
                             </div>
                             <table class="offert_table_container">
                                 <thead>
                                    <tr class="addresses-table-row header">
                                         <th>
                                             <p>Nazwa</p>
-                                        </th>
-                                        <th>
-                                            <p>NIP</p>
                                         </th>
                                         <th>
                                             <p>Adres</p>
@@ -1611,9 +1608,6 @@
                                             <p>P.H.U Jednyka</p>
                                         </td>
                                         <td class="table-col">
-                                            <p>542-554-65-65</p>
-                                        </td>
-                                        <td class="table-col">
                                             <p>Staszica 5/11</p>
                                         </td>
                                         <td class="table-col">
@@ -1626,9 +1620,7 @@
                                             <a class="edit-btn" href="#">Edytuj</a>
                                         </td>
                                         <td class="table-col short">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
+                                            <a class="edit-btn choose" href="#">Wybierz</a>
                                         </td>
                                     </tr>
                                     <tr class="addresses-table-row">
@@ -1636,9 +1628,6 @@
                                             <p>P.H.U Jednyka</p>
                                         </td>
                                         <td class="table-col">
-                                            <p>542-554-65-65</p>
-                                        </td>
-                                        <td class="table-col">
                                             <p>Staszica 5/11</p>
                                         </td>
                                         <td class="table-col">
@@ -1651,9 +1640,7 @@
                                             <a class="edit-btn" href="#">Edytuj</a>
                                         </td>
                                         <td class="table-col short">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
+                                            <a class="edit-btn choose" href="#">Wybierz</a>
                                         </td>
                                     </tr>
                                     <tr class="addresses-table-row">
@@ -1661,9 +1648,6 @@
                                             <p>P.H.U Jednyka</p>
                                         </td>
                                         <td class="table-col">
-                                            <p>542-554-65-65</p>
-                                        </td>
-                                        <td class="table-col">
                                             <p>Staszica 5/11</p>
                                         </td>
                                         <td class="table-col">
@@ -1676,9 +1660,7 @@
                                             <a class="edit-btn" href="#">Edytuj</a>
                                         </td>
                                         <td class="table-col short">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
+                                            <a class="edit-btn choose" href="#">Wybierz</a>
                                         </td>
                                     </tr>
                                     <tr class="addresses-table-row">
@@ -1686,9 +1668,6 @@
                                             <p>P.H.U Jednyka</p>
                                         </td>
                                         <td class="table-col">
-                                            <p>542-554-65-65</p>
-                                        </td>
-                                        <td class="table-col">
                                             <p>Staszica 5/11</p>
                                         </td>
                                         <td class="table-col">
@@ -1701,9 +1680,7 @@
                                             <a class="edit-btn" href="#">Edytuj</a>
                                         </td>
                                         <td class="table-col short">
-                                            <a href="#">
-                                                <img src="./assets/icons/delete.svg" alt="delete" width="18" height="18">
-                                            </a>
+                                            <a class="edit-btn choose" href="#">Wybierz</a>
                                         </td>
                                     </tr>
                                 </tbody>

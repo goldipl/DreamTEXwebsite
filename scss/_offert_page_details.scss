@@ -4,134 +4,192 @@
         #tab-contents {
             border-bottom: 0;
             margin-bottom: 0;
-        }
-        .details_offert {
-        .details_offert {
-            display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
-            padding: 40px 30px 30px 30px;
-            &__column {
-            display: flex;
-            flex-direction: column;
-            margin-right: 40px;
-            &--slot {
-                margin: 0 0 20px 0;
-                .title {
-                font-size: 28px;
-                line-height: 34px;
-                font-weight: 400;
-                color: #3e3e3e;
-                margin: 0 0 10px 0;
-                }
-                .desc {
-                font-size: 16px;
-                line-height: 19px;
-                font-weight: 400;
-                color: #3e3e3e;
-                margin: 0;
-                }
-                .vat-invoice {
+            .details_offert {
                 display: flex;
-                align-items: center;
-                text-decoration: none;
-                color: #3e3e3e;
-                margin-right: 6px;
-                &:hover {
-                    text-decoration: underline;
-                }
+                flex-direction: row;
+                justify-content: flex-start;
+                padding: 18px 30px 30px 30px;
+                &__column {
+                    display: flex;
+                    flex-direction: column;
+                    margin-right: 30px;
+                    width: 25%;
+                    &:last-of-type {
+                        margin-right: 0;
+                    }
+                    &--slot {
+                        display: flex;
+                        flex-direction: column;
+                        label {
+                            margin-top: 10px;
+                            margin-left: 12px;
+                            font-size: 16px;
+                            line-height: 19px;
+                            min-height: 19px;
+                        }
+                        input.variants,
+                        input#offert_valid_to,
+                        select {
+                            font-family: 'Roboto', sans-serif;
+                            background-color: #EFEFEF;
+                            border: 1px solid #CECECE;
+                            border-radius: 20px;
+                            height: 40px;
+                            font-size: 16px;
+                            padding-left: 16px;
+                            padding-right: 16px;
+                            &:focus {
+                                border: 1px solid #2CB5FF;
+                                outline: 0;
+                            }
+                        }
+                        textarea {
+                            font-family: 'Roboto', sans-serif;
+                            background-color: #EFEFEF;
+                            border: 1px solid #CECECE;
+                            border-radius: 20px;
+                            font-size: 14px;
+                            line-height: 17px;
+                            padding-left: 16px;
+                            padding: 16px;
+                            max-width: 240px;
+                            &:focus {
+                                border: 1px solid #2CB5FF;
+                                outline: 0;
+                            }
+                        }
+                        .checkbox-slot {
+                            margin-bottom: 10px;
+                        }
+                        &.checkbox {
+                            margin-top: 20px;
+                        }
+                    }
                 }
             }
-            }
-        }
         }
         .offert_button-container {
-        display: inline-flex;
-        align-items: center;
-        margin-bottom: 0;
-        .subtitle {
-            display: inline-flex;
-            font-family: "Segoe UI", sans-serif;
-            font-size: 28px;
-            line-height: 37px;
-            font-weight: 400;
-            color: #000000;
-        }
-        .add-address-btn-container {
-            margin-left: 18px;
-            .add-address-btn {
             display: inline-flex;
             align-items: center;
-            justify-content: center;
-            border: 1px solid #2cb5ff;
-            background-color: #2cb5ff;
-            border-radius: 16px;
-            color: #ffffff;
-            text-decoration: none;
-            padding: 8px 16px;
-            width: max-content;
-            height: 40px;
-            box-sizing: border-box;
-            transition: 0.6s;
-            font-size: 18px;
-            line-height: 22px;
-
-            &:hover {
-                background-color: #ffffff;
-                color: #2cb5ff;
+            margin-bottom: 0;
+            .subtitle {
+                display: inline-flex;
+                font-family: "Segoe UI", sans-serif;
+                font-size: 28px;
+                line-height: 37px;
+                font-weight: 400;
+                color: #000000;
+                margin-left: 32px;
             }
+            .add-address-btn-container {
+                margin-left: 18px;
+                .add-address-btn {
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border: 1px solid #2cb5ff;
+                    background-color: #2cb5ff;
+                    border-radius: 16px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    padding: 8px 16px;
+                    width: max-content;
+                    height: 40px;
+                    box-sizing: border-box;
+                    transition: 0.6s;
+                    font-size: 18px;
+                    line-height: 22px;
+                    &:hover {
+                        background-color: #ffffff;
+                        color: #2cb5ff;
+                    }
+                }
             }
-        }
+            .offert-search-container {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: 0;
+                #searchQueryInput-offert {
+                    box-sizing: border-box;
+                    width: 250px;
+                    height: 36px;
+                    border: 1px solid #CECECE;
+                    border-radius: 20px;
+                    padding-left: 16px;
+                    background-color: #EFEFEF;
+                    margin-left: 26px;
+                    &:focus {
+                        border: 1px solid #2CB5FF;
+                        outline: 0;
+                    }
+                }
+                #searchQuerySubmit-offert {
+                    position: absolute;
+                    top: -1px;
+                    right: 0;
+                    width: 36px;
+                    height: 36px;
+                    background-color: unset;
+                    border: unset;
+                    cursor: pointer;
+                }
+            }
         }
         .offert_table_container {
-        border-collapse: collapse;
-        overflow-x: auto;
-        display: block;
-        width: calc(100% + 42px);
-        max-width: calc(100% + 42px);
-        margin: 0px -30px 47px -30px;
-        .addresses-table-row {
-            height: 55px;
-            width: 100%;
-            &.header {
-            background-color: #cecece !important;
-            .table-col {
-                p {
-                font-weight: 400;
-                font-family: "Segoe UI", sans-serif;
+            border-collapse: collapse;
+            overflow-x: auto;
+            width: calc(100%);
+            max-width: calc(100%);
+            margin: 0;
+            .addresses-table-row {
+                height: 55px;
+                width: 100%;
+                &.header {
+                    background-color: #cecece !important;
+                    .table-col {
+                        p {
+                            font-weight: 400;
+                            font-family: "Segoe UI", sans-serif;
+                        }
+                    }
+                }
+                &:nth-child(even) {
+                    background-color: #efefef;
+                }
+                .table-col {  
+                    p {
+                        text-align: center;
+                        font-weight: 400;
+                    }
+                    .edit-btn {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border: 1px solid #2cb5ff;
+                        background-color: #2cb5ff;
+                        border-radius: 16px;
+                        color: #ffffff;
+                        text-decoration: none;
+                        padding: 8px 16px;
+                        width: max-content;
+                        height: 32px;
+                        box-sizing: border-box;
+                        transition: 0.6s;
+                        &:hover {
+                            background-color: #ffffff;
+                            color: #2cb5ff;
+                        }
+                    }
+                    &.short {
+                        width: 120px;
+                        a {
+                            margin: 0 auto;
+                        }
+                    }
                 }
             }
-            }
-            &:nth-child(even) {
-            background-color: #efefef;
-            }
-            .table-col {
-            height: 55px;
-            p {
-                text-align: center;
-                font-weight: 400;
-            }
-            .edit-btn {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 1px solid #2cb5ff;
-                background-color: #2cb5ff;
-                border-radius: 16px;
-                color: #ffffff;
-                text-decoration: none;
-                padding: 8px 16px;
-                width: max-content;
-                height: 32px;
-                box-sizing: border-box;
-                transition: 0.6s;
-                &:hover {
-                background-color: #ffffff;
-                color: #2cb5ff;
-                }
-            }
-            }
-        }
         }
     }
   }
