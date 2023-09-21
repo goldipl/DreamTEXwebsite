@@ -113,5 +113,58 @@
 }
 
 @media (max-width: 960px) {
-
+    #cart {
+        &.order {
+            .cart_container {
+                .order_info {
+                    flex-direction: column;
+                    padding: 10px;
+                    &__column {
+                        flex-direction: column;
+                        margin-right: 0;
+                        &--slot {
+                            margin: 0 0 20px 0;
+                            .title {
+                                font-size: 22px;
+                                line-height: 27px;
+                                margin: 0 0 10px 0;
+                            }
+                            .desc {
+                                font-size: 16px;
+                                line-height: 19px;
+                                font-weight: 400;
+                                color: #3E3E3E;
+                                margin: 0;
+                            }
+                        }
+                    }
+                }
+                .cart_items_container {
+                    .cart_items_container-left {
+                        .cart-clean-search-container {
+                            flex-direction: column-reverse;
+                            .cart-clean-button-container {
+                                display: flex;
+                                justify-content: flex-end;
+                                .cart-clean-button {
+                                    width: 143px;
+                                }
+                            }
+                            .cart-price-summary-container {
+                                display: flex;
+                                justify-content: flex-end;
+                                width: 100%;
+                                .cart-price-summary {
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                    font-weight: bold;
+                                    margin: 15px 17px 0 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
