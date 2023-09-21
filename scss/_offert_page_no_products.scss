@@ -59,3 +59,9 @@
         }
     }
 }
+
+@media (max-width: 960px) {
+    #offert.no_products_offert_page .offert_container .offert_table_container #tabs li {
+        width: 100% !important;
+    }
+}
