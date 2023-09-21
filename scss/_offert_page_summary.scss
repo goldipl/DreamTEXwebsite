@@ -137,5 +137,16 @@
 }
 
 @media (max-width: 960px) {
-    
+    #offert {
+        &.summary_offert_page {
+            .offert-btn-container {
+                flex-direction: column;
+                .offert-right-btns {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }

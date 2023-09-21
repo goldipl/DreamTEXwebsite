@@ -229,5 +229,18 @@
 }
 
 @media (max-width: 960px) {
-
+    #offert.set_prices_offert_page .offert-options-container,
+    #offert.set_prices_offert_page .offert-options-container--left .first-line,
+    #offert.set_prices_offert_page .offert-options-container--left .second-line {
+        flex-direction: column !important;
+    }
+    #offert.set_prices_offert_page .offert-options-container--left {
+        width: 100% !important;
+    }
+    #offert.set_prices_offert_page .offert-options-container--left .first-line .btn-container,
+    #offert.set_prices_offert_page .offert-options-container--left .first-line input,
+    #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container,
+    #offert.set_prices_offert_page .offert-options-container--left .second-line input {
+        margin: 10px 0 !important;
+    }
 }

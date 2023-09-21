@@ -47,5 +47,13 @@
 }
 
 @media (max-width: 960px) {
-
+    #offert {
+        &.descriptions_offert_page {
+            .offert_table_container {
+                .products-list-table {
+                    overflow-x: scroll;
+                }
+            }
+        }
+    }
 }

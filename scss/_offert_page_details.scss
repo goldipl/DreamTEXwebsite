@@ -1,174 +1,105 @@
 #offert {
-  &.details_offert_page {
-    .offert_table_container {
-        #tab-contents {
-            border-bottom: 0;
-            margin-bottom: 0;
-            .details_offert {
-                display: flex;
-                flex-direction: row;
-                justify-content: flex-start;
-                padding: 18px 30px 30px 30px;
-                &__column {
+    &.details_offert_page {
+        .offert_table_container {
+            #tab-contents {
+                border-bottom: 0;
+                margin-bottom: 0;
+
+                .details_offert {
                     display: flex;
-                    flex-direction: column;
-                    margin-right: 30px;
-                    width: 25%;
-                    &:last-of-type {
-                        margin-right: 0;
-                    }
-                    &--slot {
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    padding: 18px 30px 30px 30px;
+
+                    &__column {
                         display: flex;
                         flex-direction: column;
-                        label {
-                            margin-top: 10px;
-                            margin-left: 12px;
-                            font-size: 16px;
-                            line-height: 19px;
-                            min-height: 19px;
+                        margin-right: 30px;
+                        width: 25%;
+
+                        &:last-of-type {
+                            margin-right: 0;
                         }
-                        input.variants,
-                        input#offert_valid_to,
-                        select {
-                            font-family: 'Roboto', sans-serif;
-                            background-color: #EFEFEF;
-                            border: 1px solid #CECECE;
-                            border-radius: 20px;
-                            height: 40px;
-                            font-size: 16px;
-                            padding-left: 16px;
-                            padding-right: 16px;
-                            &:focus {
-                                border: 1px solid #2CB5FF;
-                                outline: 0;
+
+                        &--slot {
+                            display: flex;
+                            flex-direction: column;
+
+                            label {
+                                margin-top: 10px;
+                                margin-left: 12px;
+                                font-size: 16px;
+                                line-height: 19px;
+                                min-height: 19px;
                             }
-                        }
-                        textarea {
-                            font-family: 'Roboto', sans-serif;
-                            background-color: #EFEFEF;
-                            border: 1px solid #CECECE;
-                            border-radius: 20px;
-                            font-size: 14px;
-                            line-height: 17px;
-                            padding-left: 16px;
-                            padding: 16px;
-                            max-width: 240px;
-                            &:focus {
-                                border: 1px solid #2CB5FF;
-                                outline: 0;
+
+                            input.variants,
+                            input#offert_valid_to,
+                            select {
+                                font-family: 'Roboto', sans-serif;
+                                background-color: #EFEFEF;
+                                border: 1px solid #CECECE;
+                                border-radius: 20px;
+                                height: 40px;
+                                font-size: 16px;
+                                padding-left: 16px;
+                                padding-right: 16px;
+
+                                &:focus {
+                                    border: 1px solid #2CB5FF;
+                                    outline: 0;
+                                }
                             }
-                        }
-                        .checkbox-slot {
-                            margin-bottom: 10px;
-                        }
-                        &.checkbox {
-                            margin-top: 20px;
+
+                            textarea {
+                                font-family: 'Roboto', sans-serif;
+                                background-color: #EFEFEF;
+                                border: 1px solid #CECECE;
+                                border-radius: 20px;
+                                font-size: 14px;
+                                line-height: 17px;
+                                padding-left: 16px;
+                                padding: 16px;
+                                max-width: 240px;
+
+                                &:focus {
+                                    border: 1px solid #2CB5FF;
+                                    outline: 0;
+                                }
+                            }
+
+                            .checkbox-slot {
+                                margin-bottom: 10px;
+                            }
+
+                            &.checkbox {
+                                margin-top: 20px;
+                            }
                         }
                     }
                 }
             }
-        }
-        .offert_button-container {
-            display: inline-flex;
-            align-items: center;
-            margin-bottom: 0;
-            .subtitle {
+
+            .offert_button-container {
                 display: inline-flex;
-                font-family: "Segoe UI", sans-serif;
-                font-size: 28px;
-                line-height: 37px;
-                font-weight: 400;
-                color: #000000;
-                margin-left: 32px;
-            }
-            .add-address-btn-container {
-                margin-left: 18px;
-                .add-address-btn {
-                    display: inline-flex;
-                    align-items: center;
-                    justify-content: center;
-                    border: 1px solid #2cb5ff;
-                    background-color: #2cb5ff;
-                    border-radius: 16px;
-                    color: #ffffff;
-                    text-decoration: none;
-                    padding: 8px 16px;
-                    width: max-content;
-                    height: 40px;
-                    box-sizing: border-box;
-                    transition: 0.6s;
-                    font-size: 18px;
-                    line-height: 22px;
-                    &:hover {
-                        background-color: #ffffff;
-                        color: #2cb5ff;
-                    }
-                }
-            }
-            .offert-search-container {
-                position: relative;
-                display: flex;
-                justify-content: center;
                 align-items: center;
-                margin-left: 0;
-                #searchQueryInput-offert {
-                    box-sizing: border-box;
-                    width: 250px;
-                    height: 40px;
-                    border: 1px solid #CECECE;
-                    border-radius: 20px;
-                    padding-left: 16px;
-                    background-color: #EFEFEF;
-                    margin-left: 26px;
-                    &:focus {
-                        border: 1px solid #2CB5FF;
-                        outline: 0;
-                    }
+                margin-bottom: 0;
+
+                .subtitle {
+                    display: inline-flex;
+                    font-family: "Segoe UI", sans-serif;
+                    font-size: 28px;
+                    line-height: 37px;
+                    font-weight: 400;
+                    color: #000000;
+                    margin-left: 32px;
                 }
-                #searchQuerySubmit-offert {
-                    position: absolute;
-                    top: -1px;
-                    right: -2px;
-                    width: 40px;
-                    height: 40px;
-                    background-color: unset;
-                    border: unset;
-                    cursor: pointer;
-                    svg {
-                        width: 40px;
-                        height: 40px;
-                    }
-                }
-            }
-        }
-        .offert_table_container {
-            border-collapse: collapse;
-            overflow-x: auto;
-            width: calc(100%);
-            max-width: calc(100%);
-            margin: 0;
-            .addresses-table-row {
-                height: 55px;
-                width: 100%;
-                &.header {
-                    background-color: #cecece !important;
-                    .table-col {
-                        p {
-                            font-weight: 400;
-                            font-family: "Segoe UI", sans-serif;
-                        }
-                    }
-                }
-                &:nth-child(even) {
-                    background-color: #efefef;
-                }
-                .table-col {  
-                    p {
-                        text-align: center;
-                        font-weight: 400;
-                    }
-                    .edit-btn {
-                        display: flex;
+
+                .add-address-btn-container {
+                    margin-left: 18px;
+
+                    .add-address-btn {
+                        display: inline-flex;
                         align-items: center;
                         justify-content: center;
                         border: 1px solid #2cb5ff;
@@ -178,27 +109,297 @@
                         text-decoration: none;
                         padding: 8px 16px;
                         width: max-content;
-                        height: 32px;
+                        height: 40px;
                         box-sizing: border-box;
                         transition: 0.6s;
+                        font-size: 18px;
+                        line-height: 22px;
+
                         &:hover {
                             background-color: #ffffff;
                             color: #2cb5ff;
                         }
                     }
-                    &.short {
-                        width: 120px;
-                        a {
-                            margin: 0 auto;
+                }
+
+                .offert-search-container {
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-left: 0;
+
+                    #searchQueryInput-offert {
+                        box-sizing: border-box;
+                        width: 250px;
+                        height: 40px;
+                        border: 1px solid #CECECE;
+                        border-radius: 20px;
+                        padding-left: 16px;
+                        background-color: #EFEFEF;
+                        margin-left: 26px;
+
+                        &:focus {
+                            border: 1px solid #2CB5FF;
+                            outline: 0;
+                        }
+                    }
+
+                    #searchQuerySubmit-offert {
+                        position: absolute;
+                        top: -1px;
+                        right: -2px;
+                        width: 40px;
+                        height: 40px;
+                        background-color: unset;
+                        border: unset;
+                        cursor: pointer;
+
+                        svg {
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }
+                }
+            }
+
+            .offert_table_container {
+                border-collapse: collapse;
+                overflow-x: auto;
+                width: calc(100%);
+                max-width: calc(100%);
+                margin: 0;
+
+                .addresses-table-row {
+                    height: 55px;
+                    width: 100%;
+
+                    &.header {
+                        background-color: #cecece !important;
+
+                        .table-col {
+                            p {
+                                font-weight: 400;
+                                font-family: "Segoe UI", sans-serif;
+                            }
+                        }
+                    }
+
+                    &:nth-child(even) {
+                        background-color: #efefef;
+                    }
+
+                    .table-col {
+                        p {
+                            text-align: center;
+                            font-weight: 400;
+                        }
+
+                        .edit-btn {
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid #2cb5ff;
+                            background-color: #2cb5ff;
+                            border-radius: 16px;
+                            color: #ffffff;
+                            text-decoration: none;
+                            padding: 8px 16px;
+                            width: max-content;
+                            height: 32px;
+                            box-sizing: border-box;
+                            transition: 0.6s;
+
+                            &:hover {
+                                background-color: #ffffff;
+                                color: #2cb5ff;
+                            }
+                        }
+
+                        &.short {
+                            width: 120px;
+
+                            a {
+                                margin: 0 auto;
+                            }
                         }
                     }
                 }
             }
         }
     }
-  }
 }
 
 @media (max-width: 960px) {
-
+    #offert {
+        &.details_offert_page {
+            .offert_table_container {
+                #tab-contents {
+                    .details_offert {
+                        flex-direction: column;
+                        padding: 10px;
+    
+                        &__column {
+                            margin-right: 0;
+                            width: 100%;
+    
+                            &--slot {
+                                textarea {
+                                    max-width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+    
+                .offert_button-container {
+                    display: inline-flex;
+                    align-items: center;
+                    margin-bottom: 0;
+                    overflow-x: scroll;
+    
+                    .subtitle {
+                        margin-left: 10px;
+                    }
+    
+                    .add-address-btn-container {
+                        margin-left: 18px;
+    
+                        .add-address-btn {
+                            display: inline-flex;
+                            align-items: center;
+                            justify-content: center;
+                            border: 1px solid #2cb5ff;
+                            background-color: #2cb5ff;
+                            border-radius: 16px;
+                            color: #ffffff;
+                            text-decoration: none;
+                            padding: 8px 16px;
+                            width: max-content;
+                            height: 40px;
+                            box-sizing: border-box;
+                            transition: 0.6s;
+                            font-size: 18px;
+                            line-height: 22px;
+    
+                            &:hover {
+                                background-color: #ffffff;
+                                color: #2cb5ff;
+                            }
+                        }
+                    }
+    
+                    .offert-search-container {
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 0;
+    
+                        #searchQueryInput-offert {
+                            box-sizing: border-box;
+                            width: 250px;
+                            height: 40px;
+                            border: 1px solid #CECECE;
+                            border-radius: 20px;
+                            padding-left: 16px;
+                            background-color: #EFEFEF;
+                            margin-left: 26px;
+    
+                            &:focus {
+                                border: 1px solid #2CB5FF;
+                                outline: 0;
+                            }
+                        }
+    
+                        #searchQuerySubmit-offert {
+                            position: absolute;
+                            top: -1px;
+                            right: -2px;
+                            width: 40px;
+                            height: 40px;
+                            background-color: unset;
+                            border: unset;
+                            cursor: pointer;
+    
+                            svg {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+    
+                .offert_table_container {
+                    border-collapse: collapse;
+                    overflow-x: scroll;
+                    width: calc(100%);
+                    max-width: calc(100%);
+                    margin: 0;
+    
+                    .addresses-table-row {
+                        height: 55px;
+                        width: 100%;
+    
+                        &.header {
+                            background-color: #cecece !important;
+    
+                            .table-col {
+                                p {
+                                    font-weight: 400;
+                                    font-family: "Segoe UI", sans-serif;
+                                }
+                            }
+                        }
+    
+                        &:nth-child(even) {
+                            background-color: #efefef;
+                        }
+    
+                        .table-col {
+                            p {
+                                text-align: center;
+                                font-weight: 400;
+                            }
+    
+                            .edit-btn {
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid #2cb5ff;
+                                background-color: #2cb5ff;
+                                border-radius: 16px;
+                                color: #ffffff;
+                                text-decoration: none;
+                                padding: 8px 16px;
+                                width: max-content;
+                                height: 32px;
+                                box-sizing: border-box;
+                                transition: 0.6s;
+    
+                                &:hover {
+                                    background-color: #ffffff;
+                                    color: #2cb5ff;
+                                }
+                            }
+    
+                            &.short {
+                                width: 120px;
+    
+                                a {
+                                    margin: 0 auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } 
+    #offert.details_offert_page .offert_container .offert-btn-container {
+        margin-top: 15px !important;
+    }
+    #offert.details_offert_page .offert_container .offert_table_container #tab-contents .tab-contents.active {
+        overflow-x: scroll !important
+    }
 }
