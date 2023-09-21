@@ -6,6 +6,9 @@
                     .products-list_container-slot {
                         height: 100px;
                         .product-title-img {
+                            &[rowspan] {
+                                vertical-align: baseline;
+                            }
                             width: 120px;
                             text-align: center;
                             img {
@@ -26,6 +29,9 @@
                             }
                         }
                        .products-list-slot {
+                            &[rowspan] {
+                                vertical-align: baseline;
+                            }
                             .lock-container {
                                 display: flex;
                                 justify-content: center;

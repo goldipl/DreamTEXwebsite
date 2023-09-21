@@ -1,0 +1,17 @@
+#offert {
+    &.descriptions_offert_page {
+        .offert_table_container {
+            .products-list-table {
+                .products-list_container-slots {
+                    .products-list_container-slot {
+                        height: 100px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+
+}
