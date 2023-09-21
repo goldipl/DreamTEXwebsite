@@ -7645,8 +7645,38 @@ body {
   text-align: right;
 }
 
-#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot {
-  height: 100px;
+#offert.descriptions_offert_page .offert_table_container #tab-contents {
+  border-bottom: 0;
+  margin-bottom: 0;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img {
+  width: 100px;
+  text-align: center;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot textarea {
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #707070;
+  background: #EFEFEF;
+  border: 1px solid #707070;
+  border-radius: 20px;
+  margin: 20px 0;
+  padding: 15px;
+  font-size: 14px;
+  line-height: 17px;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot textarea:focus {
+  border: 1px solid #2CB5FF;
+  outline: 0;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot textarea.textarea-wide {
+  min-width: 572px;
+  max-width: 572px;
+  min-height: 100px;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot textarea.textarea-short {
+  min-width: 356px;
+  max-width: 356px;
+  min-height: 100px;
 }
 
 #offerts.orders .offerts_container .color-breadcrumbs {

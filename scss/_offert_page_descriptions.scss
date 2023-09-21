@@ -1,10 +1,44 @@
 #offert {
     &.descriptions_offert_page {
         .offert_table_container {
+            #tab-contents {
+                border-bottom: 0;
+                margin-bottom: 0;
+            }
             .products-list-table {
                 .products-list_container-slots {
                     .products-list_container-slot {
-                        height: 100px;
+                        .product-title-img {
+                            width: 100px;
+                            text-align: center;
+                        }
+                        .products-list-slot {
+                            textarea {
+                                font-family: 'Roboto', sans-serif;
+                                border: 1px solid #707070;
+                                background: #EFEFEF;;
+                                border: 1px solid #707070;
+                                border-radius: 20px;
+                                margin: 20px 0;
+                                padding: 15px;
+                                font-size: 14px;
+                                line-height: 17px;
+                                &:focus {
+                                    border: 1px solid #2CB5FF;
+                                    outline: 0;
+                                }
+                                &.textarea-wide {
+                                    min-width: 572px;
+                                    max-width: 572px;
+                                    min-height: 100px;
+                                }
+                                &.textarea-short {
+                                    min-width: 356px;
+                                    max-width: 356px;
+                                    min-height: 100px;
+                                }
+                            }
+                        }
                     }
                 }
             }
