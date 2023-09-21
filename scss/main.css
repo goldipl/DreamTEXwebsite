@@ -8257,6 +8257,17 @@ body {
     color: #FFFFFF;
   }
 }
+#compare {
+  margin-top: 37px;
+}
+#compare .compare_container {
+  width: 100%;
+  height: auto;
+  padding: 40px 15px 15px 15px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  margin-bottom: 80px;
+}
+
 #register {
   margin-top: 37px;
 }
