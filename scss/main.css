@@ -7338,6 +7338,63 @@ body {
     align-items: center;
   }
 }
+#offert {
+  margin-top: 40px;
+  margin-bottom: 84px;
+}
+#offert.no_products_offert_page .offert_container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+}
+#offert.no_products_offert_page .offert_container .offert_table_container {
+  margin-top: 33px;
+  margin-left: -20px;
+  margin-right: -20px;
+  width: calc(100% + 40px);
+}
+#offert.no_products_offert_page .offert_container .offert_table_container #tab-contents {
+  border-bottom: 0;
+}
+#offert.no_products_offert_page .offert_container .offert_table_container #tabs {
+  list-style-type: none;
+  margin-left: 27px;
+  margin-right: 27px;
+}
+#offert.no_products_offert_page .offert_container .offert_table_container #tabs li {
+  display: inline-block;
+  margin-bottom: 0;
+  width: 180px;
+  height: 40px;
+  background-color: #CECECE;
+  box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px 20px 0px 0px;
+  pointer-events: none;
+}
+#offert.no_products_offert_page .offert_container .offert_table_container #tabs li a {
+  display: block;
+  height: 100%;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0px -3px 4px rgba(0, 0, 0, 0.1607843137);
+  border-radius: 20px 20px 0px 0px;
+  text-decoration: none;
+  color: #3E3E3E;
+}
+#offert.no_products_offert_page .offert_container .offert_table_container #tabs li:hover a, #offert.no_products_offert_page .offert_container .offert_table_container #tabs li.active a {
+  background-color: #2CB5FF;
+  color: #FFFFFF;
+}
+#offert.no_products_offert_page .offert_container .offert_table_container .products-list_container-slot {
+  height: 200px;
+}
+#offert.no_products_offert_page .offert_container .offert_table_container .products-list_container-slot .product-wide p {
+  font-weight: 400;
+}
+
 #offert.branding_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot {
   border-bottom: 2px solid rgba(196, 196, 196, 0.8705882353);
 }
