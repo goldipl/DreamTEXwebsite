@@ -7797,7 +7797,7 @@ body {
 #offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container #searchQueryInput-offert {
   box-sizing: border-box;
   width: 250px;
-  height: 36px;
+  height: 40px;
   border: 1px solid #CECECE;
   border-radius: 20px;
   padding-left: 16px;
@@ -7811,12 +7811,16 @@ body {
 #offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container #searchQuerySubmit-offert {
   position: absolute;
   top: -1px;
-  right: 0;
-  width: 36px;
-  height: 36px;
+  right: -2px;
+  width: 40px;
+  height: 40px;
   background-color: unset;
   border: unset;
   cursor: pointer;
+}
+#offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container #searchQuerySubmit-offert svg {
+  width: 40px;
+  height: 40px;
 }
 #offert.details_offert_page .offert_table_container .offert_table_container {
   border-collapse: collapse;
