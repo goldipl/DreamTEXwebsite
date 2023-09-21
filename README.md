@@ -45,18 +45,14 @@ This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License
 :large_orange_diamond: Cart (empty) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/cart-empty  
 
 :large_orange_diamond: Products Card Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/products-card    
-
-:large_orange_diamond: Offerts (offerts) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts-offerts     
-
-:large_orange_diamond: Offerts (suggestions) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts-suggestions     
-
-:large_orange_diamond: Offerts (orders) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts-orders      
-
+    
 :large_orange_diamond: News Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/news       
 
 :large_orange_diamond: Article Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/article       
 
 :large_orange_diamond: Register Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register      
+
+:large_orange_diamond: Offerts Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offerts    
 
 :large_orange_diamond: Orders Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/orders      
 
