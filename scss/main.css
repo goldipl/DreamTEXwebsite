@@ -504,6 +504,18 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
 }
+#nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item.accessories_foils::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 4px;
+  left: 12px;
+  background: url("./../assets/icons/accessories_foils.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
 #nav .bottom-nav .bottom-nav-container .left-bottom-nav ul.bottom-nav-elements-container li.bottom-nav-links .bottom-nav-sublist ul.sublist-items li.sublist-item.boots::before {
   position: absolute;
   content: "";
@@ -1528,6 +1540,18 @@ body {
   top: 0;
   left: 0;
   background: url("./../assets/icons/accessories.svg");
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+#mobile-nav .mobile-nav-menu-items .mobile-nav-list .mobile-nav-list-items-icons .mobile-nav-list-item-icon.active .mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon.accessories_foils::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 0;
+  left: 0;
+  background: url("./../assets/icons/accessories_foils.svg");
   width: 32px;
   height: 32px;
   background-repeat: no-repeat;
