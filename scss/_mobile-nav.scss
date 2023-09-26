@@ -485,6 +485,18 @@
                                     background-repeat: no-repeat;
                                     background-size: contain;
                                 }
+                                &.accessories_foils::before {
+                                    position: absolute;
+                                    content: "";
+                                    display: block;
+                                    top: 0;
+                                    left: 0;
+                                    background: url('./../assets/icons/accessories_foils.svg');
+                                    width: 32px;
+                                    height: 32px;
+                                    background-repeat: no-repeat;
+                                    background-size: contain;
+                                }
                                 &.boots::before {
                                     position: absolute;
                                     content: "";
