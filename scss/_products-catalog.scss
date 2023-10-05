@@ -904,7 +904,7 @@
                             right: 2%;
                         }
                     }
-                    .filters-title {
+                    .filters-title:not(.price) {
                         display: none;
                     }
                 }

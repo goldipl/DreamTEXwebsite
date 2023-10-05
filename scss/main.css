@@ -4485,7 +4485,7 @@ body {
   #products-catalog .products_catalog_container .filters_container .filters_column .searchbar-container #searchbar-submit {
     right: 2%;
   }
-  #products-catalog .products_catalog_container .filters_container .filters_column .filters-title {
+  #products-catalog .products_catalog_container .filters_container .filters_column .filters-title:not(.price) {
     display: none;
   }
   #products-catalog .products_catalog_container .filters_container .filters_products {
