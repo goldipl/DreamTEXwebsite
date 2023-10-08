@@ -56,6 +56,8 @@ This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License
 
 :large_orange_diamond: Orders Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/orders      
 
+:large_orange_diamond: Order Preview Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/order-preview      
+
 :large_orange_diamond: Profile Admin Data Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-your-data  
 
 :large_orange_diamond: Profile Admin Company Data Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-company-data     
@@ -78,7 +80,21 @@ This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License
 
 :large_orange_diamond: Favorites (List view) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/favorite-list   
 
-:large_orange_diamond: Clients Panel Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/clients-panel      
+:large_orange_diamond: Clients Panel Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/clients-panel     
+
+:large_orange_diamond: Offert Page Products :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-products.html   
+
+:large_orange_diamond: Offert Page Branding :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-branding.html  
+
+:large_orange_diamond: Offert Page Set Prices :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-set-prices.html
+
+:large_orange_diamond: Offert Page Descriptions :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-descriptions.html
+
+:large_orange_diamond: Offert Page Details :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-details.html
+
+:large_orange_diamond: Offert Page Summary :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-summary.html  
+
+:large_orange_diamond: Compare Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/compare.html
 
 ## Screenshots
 * Desktop version :desktop_computer:   
