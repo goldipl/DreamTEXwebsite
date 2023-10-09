@@ -1,4 +1,17 @@
 #nav {
+  background-color: #FFFFFF;
+  position: relative;
+  &::after {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 100vw;
+    height: 60px;
+    top: 0;
+    left: calc(((100vw - 1170px)/2)*(-1));
+    background-color: #FFFFFF;
+    z-index: -1;
+  }
     .top-nav {
       display: flex;
       justify-content: space-between;

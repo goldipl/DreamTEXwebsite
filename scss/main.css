@@ -12,6 +12,21 @@ body {
   overflow-x: hidden;
 }
 
+#nav {
+  background-color: #FFFFFF;
+  position: relative;
+}
+#nav::after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 100vw;
+  height: 60px;
+  top: 0;
+  left: calc((100vw - 1170px) / 2 * -1);
+  background-color: #FFFFFF;
+  z-index: -1;
+}
 #nav .top-nav {
   display: flex;
   justify-content: space-between;
@@ -1866,6 +1881,9 @@ body {
   #mobile-nav {
     display: flex;
   }
+}
+#swiper {
+  background-color: #FBFBFB;
 }
 #swiper .swiper {
   position: relative;
@@ -11742,6 +11760,7 @@ body {
   width: 1170px;
   margin: 0 auto;
   color: #3E3E3E;
+  background-color: #FBFBFB;
 }
 body .menu-hover.active {
   position: absolute;
@@ -11805,6 +11824,7 @@ body .messenger .messenger-x-icon {
 }
 
 section {
+  background-color: #FFFFFF;
   margin-bottom: 37px;
 }
 section h1.title {
@@ -11814,6 +11834,7 @@ section h1.title {
   color: #707070;
   margin-bottom: 10px;
   margin-top: 0;
+  background-color: #FBFBFB;
 }
 
 #news-layout footer {
