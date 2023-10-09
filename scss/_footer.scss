@@ -335,8 +335,9 @@ footer {
 
 @media (max-width: 960px) {
     footer {
+        margin-top: 80px;
         .footer-arrow-up {
-            display: none;
+            top: -68px;
         }
     }
 }

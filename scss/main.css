@@ -11729,8 +11729,11 @@ footer .footer_container .footer_container_bottom p img {
   }
 }
 @media (max-width: 960px) {
+  footer {
+    margin-top: 80px;
+  }
   footer .footer-arrow-up {
-    display: none;
+    top: -68px;
   }
 }
 body {
