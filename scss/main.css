@@ -11833,8 +11833,9 @@ section h1.title {
   line-height: 43px;
   font-weight: 300;
   color: #707070;
-  margin-bottom: 10px;
+  margin-bottom: 0;
   margin-top: 0;
+  padding-bottom: 10px;
   background-color: #FBFBFB;
 }
 
@@ -11878,6 +11879,6 @@ section h1.title {
   body section h1.title {
     font-size: 25px;
     line-height: 30px;
-    margin-bottom: 4px;
+    padding-bottom: 4px;
   }
 }/*# sourceMappingURL=main.css.map */
