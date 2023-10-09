@@ -2741,6 +2741,7 @@ body {
   text-transform: uppercase;
   margin: 16px 0 0 0;
   text-align: center;
+  background-color: unset;
 }
 #newsletter .newsletter_container .desc {
   font-size: 26px;
