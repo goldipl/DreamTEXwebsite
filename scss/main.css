@@ -11785,6 +11785,7 @@ body .messenger .messenger-chat-icon::after {
   border-radius: 5px;
   padding: 2px;
   width: 82px;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 body .messenger .messenger-x-icon {
   position: relative;
