@@ -11901,6 +11901,7 @@ body {
   margin: 0 auto;
   color: #3E3E3E;
   background-color: #FBFBFB;
+  accent-color: #2CB5FF;
 }
 body .menu-hover.active {
   position: absolute;
