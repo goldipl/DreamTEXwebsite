@@ -2181,7 +2181,7 @@ body {
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image {
   margin: auto;
-  padding: 16px;
+  padding: 10px;
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
@@ -4046,7 +4046,7 @@ body {
 }
 .products-slot .products-slot-top-container .products-slot-image {
   margin: auto;
-  padding: 16px;
+  padding: 10px;
 }
 .products-slot .products-slot-top-container .products-slot-image img {
   -o-object-fit: contain;
@@ -5304,7 +5304,7 @@ body {
 }
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container .products_cart_products-slot-image {
   margin: auto;
-  padding: 16px;
+  padding: 10px;
   display: flex;
   justify-content: center;
 }
