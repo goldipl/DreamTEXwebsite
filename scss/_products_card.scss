@@ -646,14 +646,15 @@
             .products_cart_products-slot-top-container {
                 display: flex;
                 flex-direction: column;
-                padding: 15px 15px 0 15px;
+                padding: 15px 15px 32px 15px;
                 .products_cart_products-slot-image {
-                    margin-left: 16px;
-                    margin-right: 16px;
+                    margin: auto;
+                    padding: 16px;
                     display: flex;
                     justify-content: center;
                     img {
                         object-fit: contain;
+                        width: 160px;
                     }
                     a {
                         img {
@@ -806,10 +807,11 @@
                     .products_cart_products-slot-desc-bottom {
                         display: flex;
                         justify-content: center;
+                        transform: translate(-50%, 0%);
+                        position: absolute;
+                        bottom: 0;
+                        left: 50%;
                         &.active {
-                            position: absolute;
-                            bottom: 0;
-                            left: 50%;
                             transform: translateX(-50%) rotate(180deg);
                         }
                         .products_cart_products-slot-arrows-down {
@@ -825,6 +827,7 @@
                 &.show {
                     display: flex;
                     flex-direction: column;
+                    margin-top: -32px;
                 }
                 .products_cart_products-slot-add-to-compare {
                     position: relative;
@@ -1274,19 +1277,6 @@
                                         margin-left: 4px;
                                     }
                                 }
-                            }
-                        }
-                        .products_cart_products-slot-desc-bottom {
-                            display: flex;
-                            justify-content: center;
-                            &.active {
-                                position: absolute;
-                                bottom: 0;
-                                left: 50%;
-                                transform: translateX(-50%) rotate(180deg);
-                            }
-                            .products_cart_products-slot-arrows-down {
-                                cursor: pointer;
                             }
                         }
                     }
