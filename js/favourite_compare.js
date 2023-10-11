@@ -18,3 +18,24 @@ add_to_favourite.addEventListener('click', () => {
         add_to_favourite.innerHTML = 'dodaj do ulubionych';
     }
 });
+
+const add_to_compare_bottom = document.querySelectorAll('#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-compare');
+const add_to_favourite_bottom = document.querySelectorAll('#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite');
+
+add_to_compare_bottom.forEach(e => e.addEventListener('click', () => {
+    e.classList.toggle('active');
+    if (e.classList.contains('active')) {
+        e.innerHTML = 'usuń z porównania';
+    } else {
+        e.innerHTML = 'dodaj do porównania';
+    }
+}));
+
+add_to_favourite_bottom.forEach(f => f.addEventListener('click', () => {
+    f.classList.toggle('active');
+    if (f.classList.contains('active')) {
+        f.innerHTML = 'usuń z ulubionych';
+    } else {
+        f.innerHTML = 'dodaj do ulubionych';
+    }
+}));

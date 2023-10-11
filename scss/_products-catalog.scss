@@ -523,51 +523,83 @@
                     }
                 }
                 .products-slot-add-to-compare {
-                    color: #3E3E3E;
-                    text-decoration: none;
-                    p {
-                        position: relative;
-                        font-size: 12px;
-                        line-height: 14px;  
-                        margin: 8px 0; 
-                        padding-left: 24px;
-                        cursor: pointer;
+                    position: relative;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin: 4px 0;
+                    padding-left: 20px;
+                    cursor: pointer;
+                    user-select: none;
+                    margin-top: -4px;
+                    &.active {
+                        color: #000000;
                         &::before {
                             position: absolute;
-                            content: "";
                             display: block;
-                            top: 0;
-                            left: 4px;
-                            background: url('./../assets/icons/compare_add.svg');
-                            width: 12px;
+                            content: "";
+                            top: 3px;
+                            left: 2px;
+                            background: url("./../assets/icons/compare_delete.svg");
                             height: 12px;
+                            width: 12px;
+                            background-size: cover;
                             background-repeat: no-repeat;
-                            background-size: contain;
                         }
+                    }
+                    &:hover {
+                        color: #2CB5FF;
+                    }
+                    &::before {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        top: 3px;
+                        left: 2px;
+                        background: url("./../assets/icons/compare_add.svg");
+                        height: 12px;
+                        width: 12px;
+                        background-size: cover;
+                        background-repeat: no-repeat;
                     }
                 }
                 .products-slot-add-to-favorite {
-                    color: #3E3E3E;
-                    text-decoration: none;
-                    p {
-                        position: relative;
-                        font-size: 12px;
-                        line-height: 14px;  
-                        margin: 8px 0; 
-                        padding-left: 24px;
-                        cursor: pointer;
+                    position: relative;
+                    font-size: 12px;
+                    line-height: 18px;
+                    margin: 4px 0;
+                    padding-left: 20px;
+                    cursor: pointer;
+                    user-select: none;
+                    margin-bottom: 8px;
+                    &.active {
+                        color: #000000;
                         &::before {
                             position: absolute;
-                            content: "";
                             display: block;
-                            top: 0;
-                            left: 4px;
-                            background: url('./../assets/icons/favorite-black-heart.svg');
-                            width: 12px;
+                            content: "";
+                            top: 3px;
+                            left: 2px;
+                            background: url("./../assets/icons/favorite-red-heart-delete.svg");
                             height: 12px;
-                            background-repeat: no-repeat;
+                            width: 12px;
                             background-size: contain;
+                            background-repeat: no-repeat;
                         }
+                    }
+                    &:hover {
+                        color: #2CB5FF;
+                    }
+                    &::before {
+                        position: absolute;
+                        display: block;
+                        content: "";
+                        top: 3px;
+                            left: 2px;
+                        background: url("./../assets/icons/favorite-black-heart.svg");
+                        height: 12px;
+                        width: 12px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
                     }
                 }
                 .products-slot-colors {
