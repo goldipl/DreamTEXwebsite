@@ -407,7 +407,7 @@
                             & > p.empty-cart-info {
                                 height: auto;
                                 font-size: 14px;
-                                line-height: 17px;
+                                line-height: 15px;
                             }
                             .cart_items_container-slot-left {
                                 display: flex;
@@ -465,7 +465,8 @@
                             }
                         }
                         .cart-search-container {
-                            width: 85%;
+                            width: 99%;
+                            margin-right: 8px;
                             #searchQueryInput-cart {
                                 width: 100%;
                             }
@@ -477,6 +478,7 @@
                         height: 0;
                     }
                     .cart_right_container {
+                        margin: 0;
                         .total_price_without_delivery {
                             .total_price_value {
                                 p {
@@ -493,5 +495,11 @@
                 }
             }
         }
+    }
+    body.empty-cart .cart-clean-search-container .cart-clean-button-container {
+        display: none !important;
+    }
+    body.empty-cart .cart_container .cart_items_container .cart_items_container-left {
+        flex-direction: column-reverse !important;
     }
 }
