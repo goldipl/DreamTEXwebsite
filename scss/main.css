@@ -6760,7 +6760,7 @@ body {
   display: flex;
   flex-direction: column;
   width: 23%;
-  margin-left: 30px;
+  margin-left: 15px;
   min-width: 59px;
 }
 #offerts .offerts_container .offerts-filters .form-slot label {
@@ -6777,7 +6777,7 @@ body {
   border-radius: 20px;
   height: 40px;
   font-size: 16px;
-  padding-left: 16px;
+  padding: 0 16px;
 }
 #offerts .offerts_container .offerts-filters .form-slot input:focus {
   border: 1px solid #2CB5FF;
@@ -6790,7 +6790,7 @@ body {
   border-radius: 20px;
   height: 40px;
   font-size: 16px;
-  padding-left: 16px;
+  padding: 0 16px;
   cursor: pointer;
 }
 #offerts .offerts_container .offerts-filters .form-slot select#status-options:focus {
@@ -6811,8 +6811,7 @@ body {
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: -moz-max-content;
-  width: max-content;
+  width: 100px;
   height: 40px;
   padding: 0 16px;
   box-sizing: border-box;
@@ -6829,18 +6828,27 @@ body {
 }
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .filter_btn:hover a,
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .clean_btn:hover a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   color: #2CB5FF;
 }
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .filter_btn a,
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .clean_btn a {
   display: flex;
   align-items: center;
+  justify-content: center;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
   color: #FFFFFF;
   text-decoration: none;
   padding: 0;
+  text-align: center;
+}
+#offerts .offerts_container .offerts-filters .form-slot .slot.second .clean_btn {
+  width: 134px;
+  margin-right: 0;
 }
 #offerts .offerts_container .filters_options_container {
   display: flex;
@@ -6947,7 +6955,7 @@ body {
 #offerts .offerts_container .offerts-filters-table.offerts .table-col:nth-child(6),
 #offerts .offerts_container .offerts-filters-table.offerts .table-col:nth-child(7),
 #offerts .offerts_container .offerts-filters-table.offerts .table-col:nth-child(8) {
-  width: 50px;
+  width: 72px;
 }
 #offerts .offerts_container .offerts-filters-table.orders .offerts-filters-table-row .table-col:nth-child(2) p {
   font-family: "Segoe UI", sans-serif;
@@ -6968,7 +6976,7 @@ body {
 }
 #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col {
   height: 55px;
-  width: 15%;
+  width: 16%;
   text-align: center;
 }
 #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col p {
@@ -7086,8 +7094,37 @@ body {
     text-transform: uppercase;
     padding: 0;
   }
+  #offerts .offerts_container .filter-show-btn {
+    display: inline-flex !important;
+    background-color: #2CB5FF;
+    justify-content: center;
+    align-items: center;
+    height: 32px;
+    width: 90px;
+    padding: 16px;
+    border-radius: 32px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  #offerts .offerts_container .filter-show-btn .arrow {
+    display: flex;
+    background: url("./../assets/icons/white_chevron_left.svg") no-repeat;
+    background-size: contain;
+    width: 15px;
+    height: 15px;
+    transform: rotate(270deg) translate(3px);
+    margin-left: 8px;
+    transition: 0.6s;
+  }
+  #offerts .offerts_container .filter-show-btn .arrow.rotate {
+    transform: rotate(90deg) translate(3px);
+  }
   #offerts .offerts_container .offerts-filters {
+    display: none;
     flex-direction: column;
+  }
+  #offerts .offerts_container .offerts-filters.active {
+    display: flex;
   }
   #offerts .offerts_container .offerts-filters .form-slot {
     display: flex;
@@ -7137,9 +7174,6 @@ body {
   #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col p {
     font-weight: 400;
     font-family: "Segoe UI", sans-serif;
-  }
-  #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row:nth-child(odd) {
-    background-color: #EFEFEF;
   }
   #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col {
     display: flex;
