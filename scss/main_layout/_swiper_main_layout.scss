@@ -60,6 +60,16 @@
     }
 }
 
+@media (min-width: 1921px) { 
+    #swiper {
+        .swiper {
+            .swiper-pagination {
+                bottom: 16px;           
+            }
+        }
+    }
+}
+
 @media (max-width: 1920px) { 
     #swiper {
         .swiper {
