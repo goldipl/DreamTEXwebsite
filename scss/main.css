@@ -1884,6 +1884,7 @@ body {
 }
 #swiper {
   background-color: #FBFBFB;
+  margin-bottom: -40px;
 }
 #swiper .swiper {
   position: relative;
@@ -1929,6 +1930,7 @@ body {
   left: 0;
   bottom: 0;
   padding-bottom: 16px;
+  margin-bottom: -40px;
 }
 #swiper .swiper .swiper-pagination .swiper-pagination-bullet {
   box-sizing: border-box;
@@ -1943,6 +1945,11 @@ body {
   border: 2px solid #2CB5FF;
 }
 
+@media (min-width: 1921px) {
+  #swiper .swiper .swiper-pagination {
+    bottom: 16px;
+  }
+}
 @media (max-width: 1920px) {
   #swiper .swiper {
     width: 100vw;
@@ -1965,6 +1972,9 @@ body {
   }
 }
 @media (max-width: 960px) {
+  #swiper {
+    margin-bottom: 0;
+  }
   #swiper .swiper {
     height: auto;
   }

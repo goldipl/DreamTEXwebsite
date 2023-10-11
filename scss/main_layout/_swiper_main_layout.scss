@@ -1,5 +1,6 @@
 #swiper {
     background-color: #FBFBFB;
+    margin-bottom: -40px;
     .swiper {
         position: relative;
         left: calc(((100vw - 1170px)/2)*(-1));
@@ -44,6 +45,7 @@
             left: 0;
             bottom: 0;
             padding-bottom: 16px;
+            margin-bottom: -40px;
             .swiper-pagination-bullet {
                 box-sizing: border-box;
                 width: 12px;
@@ -99,6 +101,7 @@
 
 @media (max-width: 960px) { 
     #swiper {
+        margin-bottom: 0;
         .swiper {
             height: auto;
             .swiper-wrapper {
