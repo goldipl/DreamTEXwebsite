@@ -11318,9 +11318,8 @@ body {
     overflow-x: scroll;
     margin-bottom: 110px;
     justify-content: flex-start;
-    margin-bottom: 0;
     height: 260px;
-    margin-top: -24px;
+    margin: -24px 30px 0 30px;
   }
   #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container.payment-method {
     margin-bottom: 36px;
