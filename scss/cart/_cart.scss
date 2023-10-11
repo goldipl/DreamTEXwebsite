@@ -71,6 +71,8 @@
                                 align-items: center;
                                 width: 206px;
                                 margin-top: 11px;
+                                max-height: 180px;
+                                min-height: 100px;
                                 .product-title-desc {
                                     text-align: center;
                                     margin-top: 8px;
@@ -80,6 +82,10 @@
                                         line-height: 17px;
                                         margin: 0;
                                     }
+                                }
+                                img {
+                                    max-height: 100px;
+                                    width: auto;
                                 }
                             }
                         }
@@ -110,6 +116,11 @@
                                             width: 59px;
                                             height: 27px;
                                             text-align: center;
+                                            font-size: 16px;
+                                            &::-webkit-inner-spin-button,
+                                            &::-webkit-outer-spin-button {  
+                                                opacity: 1;
+                                            }
                                         }
                                     }
                                     .product-delete {
@@ -428,6 +439,7 @@
                                         .product-quantity {
                                             input {
                                                 width: 59px;
+                                                font-size: 14px;
                                             }
                                         }
                                         .product-price {

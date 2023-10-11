@@ -137,7 +137,7 @@
                     display: flex;
                     flex-direction: column;
                     align-items: center;
-                    justify-content: space-between;
+                    justify-content: center;
                     height: 248px;
                     padding: 30px 15px;
                     box-shadow: 0px 3px 15px #00000033;
@@ -163,7 +163,7 @@
                         }
                     }
                     &.text {
-                        justify-content: flex-start;
+                        justify-content: center;
                     }
                     .text-top {
                         font-size: 16px;
@@ -394,6 +394,15 @@
                             font-weight: 400;
                             box-sizing: border-box;
                         }
+                        .addresses-table-row:nth-child(even) {
+                            background-color: #EFEFEF;
+                        }
+                        .addresses-table-row {
+                            .table-col:nth-child(5),
+                            .table-col:nth-child(6) {
+                                width: 100px;
+                            }
+                        }
                     }
                 }
             }
@@ -527,8 +536,9 @@
                     .cart_data_container {
                         form {
                             flex-direction: column;
+                            margin: 20px;
                             .form-slot {
-                                width: 95%;
+                                width: 100% !important;
                                 margin-left: 0;
                             }
                         }
@@ -538,7 +548,9 @@
                     overflow-x: scroll;
                     margin-bottom: 110px;
                     justify-content: flex-start;
-                    margin-bottom: 20px;
+                    margin-bottom: 0;
+                    height: 260px;
+                    margin-top: -24px;
                     &.payment-method {
                         margin-bottom: 36px;
                     }
@@ -567,9 +579,8 @@
         }
     }
     .courier_address_container {
-        overflow-x: scroll !important;
         margin: 0 10px 10px 10px !important;
-        .table_container {
+        .table-tab-container {
             overflow-x: scroll !important;
         }
     }
@@ -598,5 +609,8 @@
     #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .addresses_button-container .subtitle {
         font-size: 22px;
         line-height: 28px;
+    }
+    #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot form {
+        margin: -20px 30px 30px 30px !important;
     }
 }
