@@ -352,6 +352,10 @@
                         }
                     }
                     .product-swiper-bottom-right-desc {
+                        .swiper-desc-title {
+                            display: inline-block;
+                            margin-bottom: 16px;
+                        }
                         p {
                             margin: 0;
                         }

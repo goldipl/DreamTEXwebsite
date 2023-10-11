@@ -2514,6 +2514,10 @@ body {
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-bottom-container .product-swiper-bottom-left-desc ul {
   padding-left: 18px;
 }
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-bottom-container .product-swiper-bottom-right-desc .swiper-desc-title {
+  display: inline-block;
+  margin-bottom: 16px;
+}
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-bottom-container .product-swiper-bottom-right-desc p {
   margin: 0;
 }
