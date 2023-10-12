@@ -4427,6 +4427,7 @@ body {
   text-align: center;
 }
 #products-catalog.list .products_catalog_container .products-list-table .products-list_container-slots .products-list_container-header .products-list-slot p {
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
   color: #3E3E3E;
@@ -4434,6 +4435,9 @@ body {
 #products-catalog.list .products_catalog_container .products-list-table .products-list_container-slots .products-list_container-header .product-title-img {
   width: 64px;
   margin-left: 12px;
+}
+#products-catalog.list .products_catalog_container .products-list-table .products-list_container-slots .products-list_container-header .product-title-img p {
+  font-weight: 400;
 }
 #products-catalog.list .products_catalog_container .products-list-table .products-list_container-slots > .products-list_container-header + .products-list_container-slot {
   border-top: 0;

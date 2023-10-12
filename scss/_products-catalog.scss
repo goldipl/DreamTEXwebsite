@@ -760,6 +760,7 @@
                     .products-list-slot {
                         text-align: center;
                         p {
+                            font-weight: 400;
                             font-size: 14px;
                             line-height: 17px;
                             color: #3E3E3E;
@@ -768,6 +769,9 @@
                     .product-title-img {
                         width: 64px;
                         margin-left: 12px;
+                        p {
+                            font-weight: 400;
+                        }
                     }
                 }
                 & > .products-list_container-header + .products-list_container-slot {
