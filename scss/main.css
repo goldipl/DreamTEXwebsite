@@ -7332,6 +7332,8 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   width: calc(100% + 40px);
 }
 #offert .offert_container .offert_table_container #tabs {
+  display: flex;
+  flex-wrap: nowrap;
   list-style-type: none;
   margin-left: 27px;
   margin-right: 27px;
@@ -7617,6 +7619,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 }
 
 @media (max-width: 960px) {
+  #offert .offert_container .offert_table_container #tabs {
+    flex-wrap: wrap;
+  }
   #offert .offert_container .offert_table_container #tabs li {
     width: 100%;
   }
@@ -7638,6 +7643,11 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   }
   #offert .offert-search-btn-container {
     flex-direction: column !important;
+  }
+  #offert .offert-search-btn-container .offert-searchbar-container {
+    margin-top: 15px;
+    margin-right: 0;
+    width: 99%;
   }
   #offert .offert-search-btn-container .offert-searchbar-container #offertSearchQueryInput {
     margin-bottom: 10px;
