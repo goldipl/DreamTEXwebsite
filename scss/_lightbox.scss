@@ -138,6 +138,7 @@
     height: 70%;
     margin: 5% auto;
     max-width: 40vw;
+    background-color: #FFFFFF;
 }
 .lightbox-content img {
     width: 100%;
@@ -178,6 +179,29 @@
 .lightbox-next:hover {
     opacity: .8;
 }
+.lightbox-close {
+    position: absolute;
+    color: #fff;
+    padding: 12px;
+    cursor: pointer;
+    font-size: 0 !important;
+    width: 20px;
+    height: 20px;
+    background: url(./../assets/icons/close_discount_modal.svg);
+    background-size: contain;
+    background-repeat: none;
+    top: 5px;
+    right: 5px;
+}
+
+@media (min-width: 961px) {
+    .lightbox-prev {
+        left: -56px;
+    }
+    .lightbox-next {
+        right: -56px;
+    }
+}
 
 @media (max-width: 960px) {
     .gallery-container .gallery-container-small {
@@ -207,10 +231,10 @@
     }
     .lightbox {
         .lightbox-content {
-            width: 100%;
+            width: calc(100% - 20px);
             height: 60%;
             margin: 15vh auto;
-            max-width: 80vw;
+            max-width: calc(100vw - 20px);
         }
     }
 }

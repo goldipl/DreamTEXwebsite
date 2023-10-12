@@ -6353,7 +6353,7 @@ body {
   justify-content: center;
   height: 180px;
   padding: 30px 15px;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
   border-radius: 20px;
   background-color: #FFFFFF;
   width: 25%;
@@ -6432,7 +6432,7 @@ body {
     margin-bottom: 67px;
   }
   #products_cart .marking_table_container.show {
-    width: 95%;
+    width: 100%;
   }
   #products_cart .marking_table_container .marking_table_container-slot .cart_square_container {
     flex-direction: column;
@@ -6697,6 +6697,7 @@ body {
   height: 70%;
   margin: 5% auto;
   max-width: 40vw;
+  background-color: #FFFFFF;
 }
 
 .lightbox-content img {
@@ -6745,6 +6746,29 @@ body {
   opacity: 0.8;
 }
 
+.lightbox-close {
+  position: absolute;
+  color: #fff;
+  padding: 12px;
+  cursor: pointer;
+  font-size: 0 !important;
+  width: 20px;
+  height: 20px;
+  background: url(./../assets/icons/close_discount_modal.svg);
+  background-size: contain;
+  background-repeat: none;
+  top: 5px;
+  right: 5px;
+}
+
+@media (min-width: 961px) {
+  .lightbox-prev {
+    left: -56px;
+  }
+  .lightbox-next {
+    right: -56px;
+  }
+}
 @media (max-width: 960px) {
   .gallery-container .gallery-container-small {
     display: none;
@@ -6769,10 +6793,10 @@ body {
     margin-bottom: 3px;
   }
   .lightbox .lightbox-content {
-    width: 100%;
+    width: calc(100% - 20px);
     height: 60%;
     margin: 15vh auto;
-    max-width: 80vw;
+    max-width: calc(100vw - 20px);
   }
 }
 /* /==== LIGHTBOX ==== */

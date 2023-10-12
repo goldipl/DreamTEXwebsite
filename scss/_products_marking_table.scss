@@ -247,7 +247,7 @@
                     justify-content: center;
                     height: 180px;
                     padding: 30px 15px;
-                    box-shadow: 0px 3px 15px #00000033;
+                    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
                     border-radius: 20px;
                     background-color: #FFFFFF;
                     width: 25%;
@@ -330,7 +330,7 @@
         .marking_table_container {
             display: none;
             &.show {
-                width: 95%;
+                width: 100%;
             }
             margin-bottom: 67px;
             .marking_table_container-slot {
