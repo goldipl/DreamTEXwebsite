@@ -61,6 +61,7 @@
             height: 100%;
             .filters_column {
                 width: 160px;
+                min-width: 160px;
                 margin-right: 36px;
                 .filters-title {
                     font-size: 16px;
@@ -75,7 +76,7 @@
                         line-height: 19px;
                         font-weight: 400;
                         color: #707070;
-                        border-radius: 20px 20px 0 0;
+                        border-radius: 10px 10px 0 0;
                         cursor: pointer;
                         padding: 8px 12px;
                         width: 100%;
@@ -97,7 +98,7 @@
                     line-height: 19px;
                     font-weight: 400;
                     color: #707070;
-                    border-radius: 20px 20px 0 0;
+                    border-radius: 10px 10px 0 0;
                     cursor: pointer;
                     padding: 8px 12px;
                     width: 100%;
@@ -201,7 +202,7 @@
                 }
 
                 .slot {
-                    padding: 0px 2px;
+                    padding: 0px 10px;
                     margin-top: -8px;
                     display: none;
                     background-color: rgb(255, 255, 255);
@@ -241,6 +242,7 @@
                     }
                     .filters-colors {
                         margin-bottom: 14px;
+                        margin-top: 2px;
                         .color {
                             display: inline-flex;
                             justify-content: center;
@@ -252,8 +254,6 @@
                             line-height: 14px;
                             border-radius: 100%;
                             padding: 1px;
-                            margin-right: 1px;
-                            margin-top: 1px;
                             box-sizing: border-box;
                             cursor: pointer;
                             &.red {
