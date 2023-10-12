@@ -1026,6 +1026,14 @@
     }
 }
 
+@media (min-width: 961px) {
+    .favorite-products-body #products-catalog .products_catalog_container .filters_container .filters_products {
+        margin-top: 24px;
+    }
+    .favorite-products-body #products-catalog .products_catalog_container .products_view_filter {
+        top: -12px;
+    }
+}
 
 @media (max-width: 960px) {
     body.products-list-view .products_catalog_container {
