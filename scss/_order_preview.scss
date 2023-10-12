@@ -73,6 +73,14 @@
                                     width: 477px;
                                     flex-direction: row;
                                     justify-content: space-evenly;
+                                    .product-title-img {
+                                        width: 40%;
+                                        text-align: center;
+                                    }
+                                    .product-title-desc {
+                                        width: 60%;
+                                        text-align: center;
+                                    }
                                 }
                             }
                             .cart_items_container-slot-right {
