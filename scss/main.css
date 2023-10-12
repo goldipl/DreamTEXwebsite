@@ -9005,6 +9005,7 @@ body {
   font-weight: 400;
   text-align: center;
   margin-bottom: 43px;
+  margin-top: 3px;
 }
 #register .register_container .cart_square_container {
   display: flex;
@@ -9056,7 +9057,7 @@ body {
   color: #FFFFFF;
 }
 #register .register_container .cart_square_container .cart_square_container-slot.checked {
-  border: 3px solid #707070;
+  border: 2px solid #707070;
 }
 #register .register_container .cart_square_container .cart_square_container-slot.checked::after {
   position: absolute;
@@ -9168,6 +9169,19 @@ body {
 }
 
 @media (max-width: 960px) {
+  body.register #register .register_container {
+    display: flex;
+    flex-direction: column;
+  }
+  body.register #register .register_container .desc {
+    order: 0;
+  }
+  body.register #register .register_container .cart_square_container {
+    order: 2;
+  }
+  body.register #register .register_container .check_container {
+    order: 1;
+  }
   #register {
     margin-top: 16px;
     margin-left: 0 !important;
@@ -9181,7 +9195,7 @@ body {
     padding: 13px 20px 20px 20px;
   }
   #register .register_container .desc {
-    font-weight: 500;
+    font-weight: 400;
     width: calc(100% - 58px);
     margin: 0 auto 20px auto;
   }
@@ -9190,7 +9204,7 @@ body {
     margin-bottom: -15px;
   }
   #register .register_container .cart_square_container.active {
-    margin-bottom: 165px;
+    margin-bottom: 0px;
   }
   #register .register_container .cart_square_container .cart_square_container-slot {
     flex-direction: column;
@@ -9208,7 +9222,8 @@ body {
     width: 100% !important;
   }
   #register .register_container .check_container {
-    margin-bottom: unset;
+    margin-top: -15px;
+    margin-bottom: 20px;
   }
   #register .register_container .check_container .check_nip_container {
     flex-direction: column;

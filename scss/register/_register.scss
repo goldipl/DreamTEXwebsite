@@ -12,6 +12,7 @@
             font-weight: 400;
             text-align: center;
             margin-bottom: 43px;
+            margin-top: 3px;
         }
         .cart_square_container {
             display: flex;
@@ -59,7 +60,7 @@
                     }
                 }
                 &.checked {
-                    border: 3px solid #707070;
+                    border: 2px solid #707070;
                     &::after {
                         position: absolute;
                         content: "";
@@ -171,6 +172,23 @@
 }
 
 @media (max-width: 960px) {
+    body.register {
+        #register { 
+            .register_container {
+                display: flex;
+                flex-direction: column;
+                .desc {
+                    order: 0;
+                }
+                .cart_square_container {
+                    order: 2;
+                }
+                .check_container {
+                    order: 1;
+                }
+            }
+        }
+    }
     #register {
         margin-top: 16px;
         margin-left: 0 !important;
@@ -182,7 +200,7 @@
             margin-bottom: 67px;
             padding: 13px 20px 20px 20px;
             .desc {
-                font-weight: 500;
+                font-weight: 400;
                 width: calc(100% - 58px);
                 margin: 0 auto 20px auto;
             }
@@ -190,7 +208,7 @@
                 flex-direction: column;
                 margin-bottom: -15px;
                 &.active {
-                    margin-bottom: 165px;
+                    margin-bottom: 0px;
                 }
                 .cart_square_container-slot {
                     flex-direction: column;
@@ -209,7 +227,8 @@
                 }
             }
             .check_container {
-                margin-bottom: unset;
+                margin-top: -15px;
+                margin-bottom: 20px;
                 .check_nip_container {
                     flex-direction: column;
                     align-items: center;
