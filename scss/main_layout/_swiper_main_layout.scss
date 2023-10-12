@@ -64,9 +64,11 @@
 
 @media (min-width: 1921px) { 
     #swiper {
+        margin-bottom: 0;
         .swiper {
             .swiper-pagination {
-                bottom: 16px;           
+                bottom: -16px;  
+                margin-bottom: 0;         
             }
         }
     }
