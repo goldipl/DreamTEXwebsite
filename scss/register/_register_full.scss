@@ -242,8 +242,9 @@
             .input-container {
                 flex-direction: column;
                 margin-bottom: 24px;
+                width: 100%;
                 .input-slot {
-                    width: 97%;
+                    width: 100%;
                     margin-right: 0;
                     label {
                         margin-top: 12px;
@@ -256,6 +257,7 @@
                 .save-btn {
                     height: 40px;
                     margin-top: 16px;
+                    margin-left: 0;
                 }
             }
         }

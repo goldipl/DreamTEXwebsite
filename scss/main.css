@@ -9481,9 +9481,10 @@ body {
   #register_full .register_full_container .input-container {
     flex-direction: column;
     margin-bottom: 24px;
+    width: 100%;
   }
   #register_full .register_full_container .input-container .input-slot {
-    width: 97%;
+    width: 100%;
     margin-right: 0;
   }
   #register_full .register_full_container .input-container .input-slot label {
@@ -9496,6 +9497,7 @@ body {
   #register_full .register_full_container .save-btn-container .save-btn {
     height: 40px;
     margin-top: 16px;
+    margin-left: 0;
   }
 }
 #register_retail {
