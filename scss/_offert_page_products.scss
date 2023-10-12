@@ -316,12 +316,12 @@
     }
 }
 
-body.offert-page #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list-slot:nth-child(7),
-body.offert-page #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list-slot:nth-child(8) {
+body.offert-page.products #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list-slot:nth-child(7),
+body.offert-page.products #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list-slot:nth-child(8) {
     width: 90px !important;
 }
 
-body.offert-page #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list-slot:nth-child(8) {
+body.offert-page.products #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list-slot:nth-child(8) {
     padding-right: 20px !important;
 }
 
