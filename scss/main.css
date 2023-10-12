@@ -9962,7 +9962,7 @@ body {
   body.company-data #your_profile .your_profile_container .input-container .input-slot label {
     margin-top: 0;
   }
-  body.company-data #your_profile .your_profile_container .save-btn-container .save-btn {
+  #your_profile .your_profile_container .save-btn-container .save-btn {
     margin-right: 0;
   }
 }
@@ -11479,13 +11479,13 @@ body {
     padding: 20px 51px 26px 51px;
   }
   #cart_summary .cart_summary_container .title {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 8px;
   }
   #cart_summary .cart_summary_container .desc {
-    font-weight: 500;
+    font-weight: 400;
     font-size: 12px;
     line-height: 14px;
   }
