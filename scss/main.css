@@ -2161,6 +2161,7 @@ body {
   width: 46% !important;
   margin-right: 1%;
   margin-left: 3%;
+  height: auto;
 }
 #bestsellers .swiper-products .swiper-slide:nth-child(even) {
   margin-left: 1%;
