@@ -994,7 +994,38 @@
     body.products-list-view .products_catalog_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot p {
         line-height: 5px !important;
     }
+    body.products-list-view .products_catalog_container .filters_container {
+        height: 100% !important;
+        position: relative !important;
+    }
+    body.products-list-view #products-catalog .products_catalog_container .filters_container .filters_products .btn-container {
+        display: flex !important;
+        height: 100% !important;
+        justify-content: flex-end !important;
+        align-items: flex-end !important;
+        position: absolute !important;
+        bottom: 0 !important;
+        right: 0 !important;
+        a {
+            display: inline-flex !important;
+            background-color: #2CB5FF;
+            justify-content: center;
+            align-items: center;
+            height: 40px;
+            width: 124px;
+            text-align: center;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-size: 20px;
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
+    }
 }
+
 
 @media (max-width: 960px) {
     body.products-list-view .products_catalog_container {
@@ -1002,5 +1033,29 @@
     }
     #products-catalog .products_catalog_container .filters_container .filters_products {
         margin-top: 24px !important;
+    }
+    body.products-list-view #products-catalog .products_catalog_container .filters_container .filters_products .btn-container {
+        display: flex !important;
+        height: 100% !important;
+        justify-content: flex-end !important;
+        align-items: flex-end !important;
+        margin-top: 10px !important;
+        a {
+            display: inline-flex !important;
+            background-color: #2CB5FF;
+            justify-content: center;
+            align-items: center;
+            height: 32px;
+            width: 108px;
+            text-align: center;
+            border-radius: 30px;
+            text-decoration: none;
+            color: #FFFFFF;
+            text-transform: uppercase;
+            font-size: 16px;
+            &:hover {
+                filter: brightness(1.1);
+            }
+        }
     }
 }
