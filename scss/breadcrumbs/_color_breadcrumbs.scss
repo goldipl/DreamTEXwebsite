@@ -52,6 +52,11 @@
     }
 }
 
+body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
+    width: 101%;
+    margin-left: -15px;
+}
+
 @media (max-width: 960px) {
     .color-breadcrumbs {
         .color-breadcrumbs-list {
@@ -64,4 +69,8 @@
             }
         }
     } 
+    body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
+        width: 100%;
+        margin-left: 0;
+    }
 }

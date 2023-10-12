@@ -3037,6 +3037,11 @@ body {
   height: 100%;
 }
 
+body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
+  width: 101%;
+  margin-left: -15px;
+}
+
 @media (max-width: 960px) {
   .color-breadcrumbs .color-breadcrumbs-list {
     margin-left: 0;
@@ -3044,6 +3049,10 @@ body {
   .color-breadcrumbs .color-breadcrumbs-list .color-breadcrumb-item a {
     font-size: 14px;
     line-height: 16px;
+  }
+  body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
+    width: 100%;
+    margin-left: 0;
   }
 }
 .blue_white-breadcrumbs {
