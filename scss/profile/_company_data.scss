@@ -62,6 +62,11 @@
 
 @media (max-width: 960px) {
     #your_profile.company_data {
+        .add_logo_container {
+            .add_logo_box {
+                margin-top: 15px;
+            }
+        }
         .input-container {
             .input-slot {
                 margin-top: 16px;
@@ -83,6 +88,22 @@
                     }
                 }
             }
+        }
+    }
+    body.company-data {
+        #your_profile {
+            .your_profile_container {
+                .input-container {
+                    .input-slot {
+                        label {
+                            margin-top: 0;
+                        }
+                    }
+                }
+            } 
+        }
+        #your_profile .your_profile_container .save-btn-container .save-btn {
+            margin-right: 0;
         }
     }
 }

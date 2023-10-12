@@ -9936,6 +9936,9 @@ body {
 }
 
 @media (max-width: 960px) {
+  #your_profile.company_data .add_logo_container .add_logo_box {
+    margin-top: 15px;
+  }
   #your_profile.company_data .input-container .input-slot {
     margin-top: 16px;
     width: 100%;
@@ -9955,6 +9958,12 @@ body {
   #your_profile.company_data .input-container .input-slot.row .slot:nth-child(2) {
     margin-top: 16px;
     width: 100%;
+  }
+  body.company-data #your_profile .your_profile_container .input-container .input-slot label {
+    margin-top: 0;
+  }
+  body.company-data #your_profile .your_profile_container .save-btn-container .save-btn {
+    margin-right: 0;
   }
 }
 #your_profile.addresses .subtitle_button-container,
@@ -10007,7 +10016,7 @@ body {
   display: block;
   width: calc(100% + 42px);
   max-width: calc(100% + 42px);
-  margin: 0px -30px 47px -30px;
+  margin: 0px -30px 25px -30px;
 }
 #your_profile.addresses .table_container .addresses-table-row,
 #your_profile.employees .table_container .addresses-table-row {
@@ -10110,7 +10119,7 @@ body {
   display: block;
   width: calc(100% + 42px);
   max-width: calc(100% + 42px);
-  margin: 0px -30px 47px -30px;
+  margin: 0px -30px 25px -30px;
 }
 #your_profile.addresses .table_container .addresses-table-row,
 #your_profile.employees .table_container .addresses-table-row {
@@ -10263,10 +10272,10 @@ body {
     justify-content: center;
     border: 1px solid #2CB5FF;
     background-color: #2CB5FF;
-    border-radius: 16px;
+    border-radius: 25px;
     color: #FFFFFF;
     text-decoration: none;
-    padding: 8px 16px;
+    padding: 8px 18px;
     width: -moz-max-content;
     width: max-content;
     height: 40px;
