@@ -3061,8 +3061,11 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 .blue_white-breadcrumbs.two-slots .blue_white-breadcrumbs-list .blue_white-breadcrumb-item {
   width: 50%;
 }
+.blue_white-breadcrumbs.three-slots {
+  margin-left: 12px;
+}
 .blue_white-breadcrumbs.three-slots .blue_white-breadcrumbs-list .blue_white-breadcrumb-item {
-  width: 33%;
+  width: 35%;
 }
 .blue_white-breadcrumbs .blue_white-breadcrumbs-list {
   display: inline-flex;
