@@ -8125,6 +8125,9 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
 #offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-button-next::after {
   display: none;
 }
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-slide {
+  background-color: #FFFFFF;
+}
 #offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-slide a.green-checked::after {
   position: absolute;
   content: "";
