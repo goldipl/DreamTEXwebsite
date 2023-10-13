@@ -12271,9 +12271,11 @@ body {
   color: #3E3E3E;
   background-color: #FBFBFB;
   accent-color: #2CB5FF;
+}
+body.fixed-header {
   padding-top: 107px;
 }
-body header {
+body header.active {
   position: fixed;
   top: 0;
   z-index: 999999999999;
@@ -12373,10 +12375,12 @@ section h1.title {
 }
 @media (max-width: 960px) {
   body {
-    padding-top: 116px;
     margin-bottom: 62px;
   }
-  body header {
+  body.fixed-header {
+    padding-top: 116px;
+  }
+  body header.active {
     width: 100%;
   }
   body .menu-hover.active {

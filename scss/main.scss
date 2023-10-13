@@ -54,12 +54,16 @@ body {
     color: #3E3E3E;
     background-color: #FBFBFB;
     accent-color: #2CB5FF;
-    padding-top: 107px;
+    &.fixed-header {
+        padding-top: 107px;
+    }
     header {
-        position: fixed;
-        top: 0;
-        z-index: 999999999999;
-        width: 1170px;
+        &.active {
+            position: fixed;
+            top: 0;
+            z-index: 999999999999;
+            width: 1170px;
+        }
     }
     .menu-hover.active {
         position: absolute;
@@ -158,9 +162,13 @@ section {
 
 @media (max-width: 960px) {
     body {
-        padding-top: 116px;
+        &.fixed-header {
+            padding-top: 116px;
+        }
         header {
-            width: 100%;
+            &.active {
+                width: 100%;
+            }
         }
         margin-bottom: 62px;
         .menu-hover.active {
