@@ -9,7 +9,7 @@
                     display: flex;
                     flex-direction: row;
                     justify-content: flex-start;
-                    padding: 18px 30px 30px 30px;
+                    padding: 15px;
 
                     &__column {
                         display: flex;
@@ -21,6 +21,38 @@
                             margin-right: 0;
                         }
 
+                        .add-logo-btn-container {
+                            display: flex;
+                            justify-content: flex-end;
+                            align-items: flex-end;
+                            margin-left: auto;
+        
+                            .add-logo-btn {
+                                display: inline-flex;
+                                align-items: center;
+                                justify-content: center;
+                                border: 1px solid #2cb5ff;
+                                background-color: #2cb5ff;
+                                border-radius: 30px;
+                                color: #ffffff;
+                                text-decoration: none;
+                                padding: 8px 16px;
+                                width: max-content;
+                                height: 40px;
+                                box-sizing: border-box;
+                                transition: 0.6s;
+                                font-size: 18px;
+                                line-height: 22px;
+                                margin-top: 35px;
+        
+                                &:hover {
+                                    background-color: #ffffff;
+                                    color: #2cb5ff;
+                                }
+                            }
+                        }
+
+
                         &--slot {
                             display: flex;
                             flex-direction: column;
@@ -31,6 +63,7 @@
                                 font-size: 16px;
                                 line-height: 19px;
                                 min-height: 19px;
+                                white-space: pre;
                             }
 
                             input.variants,
@@ -60,7 +93,7 @@
                                 line-height: 17px;
                                 padding-left: 16px;
                                 padding: 16px;
-                                max-width: 240px;
+                                max-width: 260px;
 
                                 &:focus {
                                     border: 1px solid #2CB5FF;
@@ -69,12 +102,23 @@
                             }
 
                             .checkbox-slot {
+                                display: inline-flex;
                                 margin-bottom: 10px;
+                                align-items: center;
+                                label {
+                                    margin: 0;
+                                    margin-left: 2px;
+                                }
+                                input {
+                                    margin: 0;
+                                    margin-right: 4px;
+                                }
                             }
 
                             &.checkbox {
                                 margin-top: 20px;
                             }
+
                         }
                     }
                 }
@@ -104,7 +148,7 @@
                         justify-content: center;
                         border: 1px solid #2cb5ff;
                         background-color: #2cb5ff;
-                        border-radius: 16px;
+                        border-radius: 30px;
                         color: #ffffff;
                         text-decoration: none;
                         padding: 8px 16px;
@@ -114,6 +158,7 @@
                         transition: 0.6s;
                         font-size: 18px;
                         line-height: 22px;
+                        margin-right: 0;
 
                         &:hover {
                             background-color: #ffffff;
