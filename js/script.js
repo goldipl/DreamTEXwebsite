@@ -143,3 +143,19 @@ function addActiveClassOnScrollUp() {
 }
 
 window.addEventListener('scroll', addActiveClassOnScrollUp);
+
+// Add class 'long-page' to body to long webistes pages
+function addClassIfWebsiteHeightExceedsWindow() {
+
+    const websiteHeight = document.documentElement.scrollHeight;
+    const windowHeight = window.innerHeight;
+  
+    if (websiteHeight > windowHeight) {
+      document.body.classList.add('long-page');
+    } else {
+      document.body.classList.remove('long-page');
+    }
+}
+  
+window.addEventListener('load', addClassIfWebsiteHeightExceedsWindow);
+window.addEventListener('resize', addClassIfWebsiteHeightExceedsWindow);
