@@ -8368,32 +8368,32 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   width: 40px;
   height: 40px;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container {
+#offert.details_offert_page .offert_table_container .offert_table_container_table {
   border-collapse: collapse;
   overflow-x: auto;
   width: 100%;
   max-width: 100%;
   margin: 0;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row {
   height: 55px;
   width: 100%;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row.header {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row.header {
   background-color: #cecece !important;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row.header .table-col p {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row.header .table-col p {
   font-weight: 400;
   font-family: "Segoe UI", sans-serif;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row:nth-child(even) {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row:nth-child(even) {
   background-color: #efefef;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col p {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row .table-col p {
   text-align: center;
   font-weight: 400;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col .edit-btn {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row .table-col .edit-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8409,14 +8409,14 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   box-sizing: border-box;
   transition: 0.6s;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col .edit-btn:hover {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row .table-col .edit-btn:hover {
   background-color: #ffffff;
   color: #2cb5ff;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col.short {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row .table-col.short {
   width: 120px;
 }
-#offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col.short a {
+#offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row .table-col.short a {
   margin: 0 auto;
 }
 
@@ -8435,36 +8435,16 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   #offert.details_offert_page .offert_table_container .offert_button-container {
     display: inline-flex;
     align-items: center;
-    margin-bottom: 0;
+    margin-bottom: 15px;
     overflow-x: scroll;
+    overflow-y: hidden;
+    flex-wrap: wrap;
   }
   #offert.details_offert_page .offert_table_container .offert_button-container .subtitle {
     margin-left: 10px;
   }
   #offert.details_offert_page .offert_table_container .offert_button-container .add-address-btn-container {
     margin-left: 18px;
-  }
-  #offert.details_offert_page .offert_table_container .offert_button-container .add-address-btn-container .add-address-btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid #2cb5ff;
-    background-color: #2cb5ff;
-    border-radius: 16px;
-    color: #ffffff;
-    text-decoration: none;
-    padding: 8px 16px;
-    width: -moz-max-content;
-    width: max-content;
-    height: 40px;
-    box-sizing: border-box;
-    transition: 0.6s;
-    font-size: 18px;
-    line-height: 22px;
-  }
-  #offert.details_offert_page .offert_table_container .offert_button-container .add-address-btn-container .add-address-btn:hover {
-    background-color: #ffffff;
-    color: #2cb5ff;
   }
   #offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container {
     position: relative;
@@ -8501,32 +8481,35 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     width: 40px;
     height: 40px;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container {
-    border-collapse: collapse;
+  #offert.details_offert_page .offert_table_container .table-offert-details {
     overflow-x: scroll;
+  }
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table {
+    border-collapse: collapse;
     width: 100%;
     max-width: 100%;
     margin: 0;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row {
     height: 55px;
     width: 100%;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row.header {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row.header {
     background-color: #cecece !important;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row.header .table-col p {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row.header .table-col p {
     font-weight: 400;
     font-family: "Segoe UI", sans-serif;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row:nth-child(even) {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row:nth-child(even) {
     background-color: #efefef;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col p {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row .table-col p {
     text-align: center;
     font-weight: 400;
+    margin: 0 16px;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col .edit-btn {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row .table-col .edit-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8541,15 +8524,17 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     height: 32px;
     box-sizing: border-box;
     transition: 0.6s;
+    margin: 0 16px;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col .edit-btn:hover {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row .table-col .edit-btn:hover {
     background-color: #ffffff;
     color: #2cb5ff;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col.short {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row .table-col.short {
     width: 120px;
+    padding: 0 8px;
   }
-  #offert.details_offert_page .offert_table_container .offert_table_container .addresses-table-row .table-col.short a {
+  #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row .table-col.short a {
     margin: 0 auto;
   }
   #offert.details_offert_page .offert_container .offert-btn-container {

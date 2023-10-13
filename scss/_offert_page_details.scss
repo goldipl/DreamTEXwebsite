@@ -208,7 +208,7 @@
                 }
             }
 
-            .offert_table_container {
+            .offert_table_container_table {
                 border-collapse: collapse;
                 overflow-x: auto;
                 width: calc(100%);
@@ -300,8 +300,10 @@
                 .offert_button-container {
                     display: inline-flex;
                     align-items: center;
-                    margin-bottom: 0;
+                    margin-bottom: 15px;
                     overflow-x: scroll;
+                    overflow-y: hidden;
+                    flex-wrap: wrap;
     
                     .subtitle {
                         margin-left: 10px;
@@ -309,29 +311,6 @@
     
                     .add-address-btn-container {
                         margin-left: 18px;
-    
-                        .add-address-btn {
-                            display: inline-flex;
-                            align-items: center;
-                            justify-content: center;
-                            border: 1px solid #2cb5ff;
-                            background-color: #2cb5ff;
-                            border-radius: 16px;
-                            color: #ffffff;
-                            text-decoration: none;
-                            padding: 8px 16px;
-                            width: max-content;
-                            height: 40px;
-                            box-sizing: border-box;
-                            transition: 0.6s;
-                            font-size: 18px;
-                            line-height: 22px;
-    
-                            &:hover {
-                                background-color: #ffffff;
-                                color: #2cb5ff;
-                            }
-                        }
                     }
     
                     .offert-search-container {
@@ -375,64 +354,70 @@
                     }
                 }
     
-                .offert_table_container {
-                    border-collapse: collapse;
+                .table-offert-details {
                     overflow-x: scroll;
-                    width: calc(100%);
-                    max-width: calc(100%);
-                    margin: 0;
-    
-                    .addresses-table-row {
-                        height: 55px;
+                    .offert_table_container_table {
+                        border-collapse: collapse;
                         width: 100%;
-    
-                        &.header {
-                            background-color: #cecece !important;
-    
+                        max-width: 100%;
+                        margin: 0;
+        
+                        .addresses-table-row {
+                            height: 55px;
+                            width: 100%;
+        
+                            &.header {
+                                background-color: #cecece !important;
+        
+                                .table-col {
+                                    p {
+                                        font-weight: 400;
+                                        font-family: "Segoe UI", sans-serif;
+                                    }
+                                }
+                            }
+        
+                            &:nth-child(even) {
+                                background-color: #efefef;
+                            }
+        
                             .table-col {
+                                
                                 p {
+                                    text-align: center;
                                     font-weight: 400;
-                                    font-family: "Segoe UI", sans-serif;
+                                    margin: 0 16px;
                                 }
-                            }
-                        }
-    
-                        &:nth-child(even) {
-                            background-color: #efefef;
-                        }
-    
-                        .table-col {
-                            p {
-                                text-align: center;
-                                font-weight: 400;
-                            }
-    
-                            .edit-btn {
-                                display: flex;
-                                align-items: center;
-                                justify-content: center;
-                                border: 1px solid #2cb5ff;
-                                background-color: #2cb5ff;
-                                border-radius: 16px;
-                                color: #ffffff;
-                                text-decoration: none;
-                                padding: 8px 16px;
-                                width: max-content;
-                                height: 32px;
-                                box-sizing: border-box;
-                                transition: 0.6s;
-    
-                                &:hover {
-                                    background-color: #ffffff;
-                                    color: #2cb5ff;
+        
+                                .edit-btn {
+                                    display: flex;
+                                    align-items: center;
+                                    justify-content: center;
+                                    border: 1px solid #2cb5ff;
+                                    background-color: #2cb5ff;
+                                    border-radius: 16px;
+                                    color: #ffffff;
+                                    text-decoration: none;
+                                    padding: 8px 16px;
+                                    width: max-content;
+                                    height: 32px;
+                                    box-sizing: border-box;
+                                    transition: 0.6s;
+                                    margin: 0 16px;
+
+                                    &:hover {
+                                        background-color: #ffffff;
+                                        color: #2cb5ff;
+                                    }
                                 }
-                            }
-    
-                            &.short {
-                                width: 120px;
-    
-                                a {
-                                    margin: 0 auto;
+        
+                                &.short {
+                                    width: 120px;
+                                    padding: 0 8px;
+        
+                                    a {
+                                        margin: 0 auto;
+                                    }
                                 }
                             }
                         }
