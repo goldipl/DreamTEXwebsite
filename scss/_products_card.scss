@@ -1120,20 +1120,13 @@
             }
         }
         .products_cart_container_list {
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: auto;
-            box-shadow: 0px 3px 15px #00000033;
-            margin-bottom: 24px;
+            padding-left: 8px;
+            flex-direction: column;
             .products_cart_list {
-                display: flex;
-                flex-direction: column;
-                width: 50%;
+                width: 100%;
                 li {
-                    font-size: 18px;
-                line-height: 22px;
-                    margin: 16px 0;
+                    margin-top: 0;
+                    margin-bottom: 16px;
                 }
             }
         }

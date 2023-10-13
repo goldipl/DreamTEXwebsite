@@ -5868,22 +5868,15 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
     padding: 0;
   }
   #products_cart .products_cart_container_list {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: auto;
-    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-    margin-bottom: 24px;
+    padding-left: 8px;
+    flex-direction: column;
   }
   #products_cart .products_cart_container_list .products_cart_list {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+    width: 100%;
   }
   #products_cart .products_cart_container_list .products_cart_list li {
-    font-size: 18px;
-    line-height: 22px;
-    margin: 16px 0;
+    margin-top: 0;
+    margin-bottom: 16px;
   }
   #products_cart .products_cart_container_description {
     display: flex;
