@@ -5,6 +5,10 @@
                 .products-list-table {
                     .products-list_container-slots {
                         .products-list_container-slot {
+                            &.pack {
+                                border-top: 1px solid #707070;
+                                border-bottom: 1px solid #707070;
+                            }
                             .products-list-slot {
                                 .sizes-container {
                                     border: 1px solid #707070;
@@ -43,6 +47,8 @@
 
         .offert-summary-container {
             margin-bottom: 20px;
+            font-size: 20px;
+            line-height: 20px;
 
             strong {
                 display: flex;
@@ -145,6 +151,9 @@
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
+                    .offert-btn-container--save {
+                        margin: 15px 0;
+                    }
                 }
             }
         }
