@@ -16,43 +16,63 @@
                             user-select: none;
                             margin: 20px 0;
                             height: auto;
-                            .swiper-desc-product {
-                                margin-top: -20px;
-                                .swiper-button-prev {
-                                    left: 0;
-                                }
-                                .swiper-button-next {
-                                    right: 0;
-                                }
-                                .swiper-slide {
-                                    a {
-                                        &.green-checked {
-                                            &::after {
-                                                position: absolute;
-                                                content: "";
-                                                display: block;
-                                                bottom: calc(50% - 10px);
-                                                right: calc(50% - 10px);
-                                                background: url(./../assets/icons/cart_green_approve.svg);
-                                                width: 21px;
-                                                height: 21px;
-                                                box-sizing: border-box;
-                                                background-repeat: no-repeat;
-                                                background-size: contain;
-                                                cursor: pointer;
-                                                z-index: 1;
-                                            }
+                            #swiper {
+                                margin-bottom: -20px;
+                                .swiper-desc-product {
+                                    margin-top: -20px;
+                                    .swiper-button-prev {
+                                        left: 8px;
+                                        background: url(./../assets/icons/dark-gray-arrow-right.svg);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 17px;
+                                        height: 30px;
+                                        transform: rotate(180deg);
+                                        &::after {
+                                            display: none;
                                         }
                                     }
-                                    .desc-close-icon {
-                                        display: none;
-                                        position: absolute;
-                                        top: 0;
-                                        right: 40px;
-                                        z-index: 20;
+                                    .swiper-button-next {
+                                        right: 8px;
+                                        background: url(./../assets/icons/dark-gray-arrow-right.svg);
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                        width: 17px;
+                                        height: 30px;
+                                        &::after {
+                                            display: none;
+                                        }
                                     }
-                                    &:hover .desc-close-icon {
-                                        display: block;
+                                    .swiper-slide {
+                                        a {
+                                            &.green-checked {
+                                                &::after {
+                                                    position: absolute;
+                                                    content: "";
+                                                    display: block;
+                                                    bottom: calc(50% - 10px);
+                                                    right: calc(50% - 10px);
+                                                    background: url(./../assets/icons/cart_green_approve.svg);
+                                                    width: 21px;
+                                                    height: 21px;
+                                                    box-sizing: border-box;
+                                                    background-repeat: no-repeat;
+                                                    background-size: contain;
+                                                    cursor: pointer;
+                                                    z-index: 1;
+                                                }
+                                            }
+                                        }
+                                        .desc-close-icon {
+                                            display: none;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 40px;
+                                            z-index: 20;
+                                        }
+                                        &:hover .desc-close-icon {
+                                            display: block;
+                                        }
                                     }
                                 }
                             }

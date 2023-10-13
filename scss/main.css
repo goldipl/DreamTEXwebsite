@@ -8096,16 +8096,36 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   margin: 20px 0;
   height: auto;
 }
-#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img .swiper-desc-product {
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper {
+  margin-bottom: -20px;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product {
   margin-top: -20px;
 }
-#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img .swiper-desc-product .swiper-button-prev {
-  left: 0;
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-button-prev {
+  left: 8px;
+  background: url(./../assets/icons/dark-gray-arrow-right.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 30px;
+  transform: rotate(180deg);
 }
-#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img .swiper-desc-product .swiper-button-next {
-  right: 0;
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-button-prev::after {
+  display: none;
 }
-#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img .swiper-desc-product .swiper-slide a.green-checked::after {
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-button-next {
+  right: 8px;
+  background: url(./../assets/icons/dark-gray-arrow-right.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 17px;
+  height: 30px;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-button-next::after {
+  display: none;
+}
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-slide a.green-checked::after {
   position: absolute;
   content: "";
   display: block;
@@ -8120,14 +8140,14 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   cursor: pointer;
   z-index: 1;
 }
-#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img .swiper-desc-product .swiper-slide .desc-close-icon {
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-slide .desc-close-icon {
   display: none;
   position: absolute;
   top: 0;
   right: 40px;
   z-index: 20;
 }
-#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img .swiper-desc-product .swiper-slide:hover .desc-close-icon {
+#offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img #swiper .swiper-desc-product .swiper-slide:hover .desc-close-icon {
   display: block;
 }
 #offert.descriptions_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot textarea {
