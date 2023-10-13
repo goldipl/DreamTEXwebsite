@@ -7854,6 +7854,8 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
 }
 #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot.strong td p, #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot.strong td span, #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot.strong th p, #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot.strong th span {
   font-weight: bold !important;
+  font-size: 18px !important;
+  line-height: 20px !important;
 }
 #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot[rowspan] {
   vertical-align: baseline;
@@ -7871,6 +7873,10 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   width: 50px;
   height: 30px;
 }
+#offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot .lock-container .profit-margin::-webkit-outer-spin-button, #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot .lock-container .profit-margin::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot .lock-container .lock-icon {
   margin: 0 4px;
   width: 15px;
@@ -7881,8 +7887,18 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   height: 30px;
   padding: 4px;
 }
+#offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot .lock-container .client-price::-webkit-outer-spin-button, #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot .lock-container .client-price::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 #offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot.green p {
   color: #1FBC59;
+}
+#offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-header .products-list-slot:nth-child(5) {
+  width: 180px;
+}
+#offert.set_prices_offert_page .offert_table_container .products-list-table .products-list_container-slots .products-list_container-header .products-list-slot:nth-child(7) {
+  width: 120px;
 }
 #offert.set_prices_offert_page .offert-options-container {
   display: flex;
@@ -7945,8 +7961,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -moz-max-content;
-  width: max-content;
+  width: 348px;
   height: 40px;
   box-sizing: border-box;
   background-color: #2CB5FF;
@@ -7996,8 +8011,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   display: flex;
   justify-content: center;
   align-items: center;
-  width: -moz-max-content;
-  width: max-content;
+  width: 348px;
   height: 40px;
   box-sizing: border-box;
   background-color: #2CB5FF;
@@ -8056,6 +8070,14 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container,
   #offert.set_prices_offert_page .offert-options-container--left .second-line input {
     margin: 10px 0 !important;
+  }
+  #offert.set_prices_offert_page .offert-options-container--left .first-line .btn-container,
+  #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container {
+    width: 100% !important;
+  }
+  #offert.set_prices_offert_page .offert-options-container--left .first-line .btn-container a,
+  #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container a {
+    font-size: 15px !important;
   }
 }
 #offert.descriptions_offert_page .offert_table_container #tab-contents {

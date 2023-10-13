@@ -25,6 +25,8 @@
                             td, th {
                                 p, span {
                                     font-weight: bold !important;
+                                    font-size: 18px !important;
+                                    line-height: 20px !important;
                                 }
                             }
                         }
@@ -43,6 +45,11 @@
                                 .profit-margin {
                                     width: 50px;
                                     height: 30px;
+                                    &::-webkit-outer-spin-button,
+                                    &::-webkit-inner-spin-button {
+                                      -webkit-appearance: none;
+                                      margin: 0;
+                                    }
                                 }
                                 .lock-icon {
                                     margin: 0 4px;
@@ -53,6 +60,11 @@
                                     width: 80px;
                                     height: 30px;
                                     padding: 4px;
+                                    &::-webkit-outer-spin-button,
+                                    &::-webkit-inner-spin-button {
+                                      -webkit-appearance: none;
+                                      margin: 0;
+                                    }
                                 }
                             }
                             &.green {
@@ -61,6 +73,16 @@
                                 }
                             }
                        }
+                    }
+                    .products-list_container-header {
+                        .products-list-slot {
+                            &:nth-child(5) {
+                                width: 180px;
+                            }
+                            &:nth-child(7) {
+                                width: 120px;
+                            }
+                        }
                     }
                 }
             }
@@ -124,7 +146,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: max-content;
+                        width: 348px;
                         height: 40px;
                         box-sizing: border-box;
                         background-color: #2CB5FF;
@@ -174,7 +196,7 @@
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        width: max-content;
+                        width: 348px;
                         height: 40px;
                         box-sizing: border-box;
                         background-color: #2CB5FF;
@@ -242,5 +264,13 @@
     #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container,
     #offert.set_prices_offert_page .offert-options-container--left .second-line input {
         margin: 10px 0 !important;
+    }
+    #offert.set_prices_offert_page .offert-options-container--left .first-line .btn-container,
+    #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container {
+        width: 100% !important;
+    }
+    #offert.set_prices_offert_page .offert-options-container--left .first-line .btn-container a,
+    #offert.set_prices_offert_page .offert-options-container--left .second-line .btn-container a {
+        font-size: 15px !important;
     }
 }
