@@ -127,25 +127,19 @@ clients_panel_desktop_icon.addEventListener('click', () => {
 })
 
 // Scroll up fixed header
-let lastScrollPosition = window.scrollY; // Initialize the last scroll position
+let lastScrollPosition = window.scrollY; 
 
 function addActiveClassOnScrollUp() {
   const currentScrollPosition = window.scrollY;
 
   if (currentScrollPosition === 0) {
-    // Remove the "active" class when at the top of the page
     document.querySelector('header').classList.remove('active');
   } else if (currentScrollPosition < lastScrollPosition) {
-    // Add the "active" class when scrolling up
     document.querySelector('header').classList.add('active');
   } else {
-    // Remove the "active" class if not scrolling up and not at the top
     document.querySelector('header').classList.remove('active');
   }
-
-  // Update the last scroll position
   lastScrollPosition = currentScrollPosition;
 }
 
-// Call the function when the page is scrolled
 window.addEventListener('scroll', addActiveClassOnScrollUp);
