@@ -131,10 +131,11 @@ let lastScrollPosition = window.scrollY;
 
 function addActiveClassOnScrollUp() {
   const currentScrollPosition = window.scrollY;
+  const mobileMenuOn = document.querySelector('body .menu-hover');
 
   if (currentScrollPosition === 0) {
     document.querySelector('header').classList.remove('active');
-  } else if (currentScrollPosition < lastScrollPosition) {
+  } else if ((currentScrollPosition < lastScrollPosition) && !mobileMenuOn.classList.contains('active')) {
     document.querySelector('header').classList.add('active');
   } else {
     document.querySelector('header').classList.remove('active');
