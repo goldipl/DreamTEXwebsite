@@ -54,6 +54,13 @@ body {
     color: #3E3E3E;
     background-color: #FBFBFB;
     accent-color: #2CB5FF;
+    &:not(.long-page) {
+        footer {
+            .footer-arrow-up {
+                display: none !important;
+            }
+        }
+    }
     &.fixed-header {
         padding-top: 107px;
     }

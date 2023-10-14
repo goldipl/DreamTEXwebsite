@@ -2942,6 +2942,9 @@ body {
   #article .article_container {
     padding: 10px;
   }
+  #article .article_container .hero-img {
+    margin: 23px -10px;
+  }
   #article .article_container .photo-text-container .left-photo-container {
     margin-bottom: 8px;
   }
@@ -12184,6 +12187,9 @@ body {
   color: #3E3E3E;
   background-color: #FBFBFB;
   accent-color: #2CB5FF;
+}
+body:not(.long-page) footer .footer-arrow-up {
+  display: none !important;
 }
 body.fixed-header {
   padding-top: 107px;
