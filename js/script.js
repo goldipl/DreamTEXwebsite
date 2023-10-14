@@ -149,19 +149,22 @@ window.addEventListener('scroll', addActiveClassOnScrollUp);
 
 // Add class 'long-page' to body to long webistes pages
 function addClassIfWebsiteHeightExceedsWindow() {
+    const footer = document.querySelector('footer');
 
     const websiteHeight = document.documentElement.scrollHeight;
     const windowHeight = window.innerHeight;
     if (window.matchMedia("(max-width: 960px)").matches) {
         if (websiteHeight > 1.75 * windowHeight) {
         document.body.classList.add('long-page');
+        footer.style.marginTop = "80px";
         } else {
         document.body.classList.remove('long-page');
         }
     } else {
         if (websiteHeight > windowHeight) {
             document.body.classList.add('long-page');
-            } else {
+            footer.style.marginTop = "80px";
+        } else {
             document.body.classList.remove('long-page');
         }  
     }
