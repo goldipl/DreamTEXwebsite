@@ -3240,8 +3240,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   margin-right: -35px;
 }
 #login .login-container .login-container-middle form .login_input-slot input.button:hover {
-  background-color: #1C2F82;
-  border: 1px solid #1C2F82;
+  filter: brightness(1.1);
 }
 #login .login-container .login-container-middle form .login_input-slot .password_remember {
   color: #2CB5FF;
@@ -3286,8 +3285,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.8s;
 }
 #login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-btn-container:hover {
-  background-color: #1C2F82;
-  border: 1px solid #1C2F82;
+  filter: brightness(1.1);
 }
 #login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-btn-container .create-account-btn {
   font-size: 20px;
@@ -3386,8 +3384,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
     margin-bottom: 8px;
   }
   #login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-btn-container:hover {
-    background-color: #FFFFFF;
-    border: 1px solid #2CB5FF;
+    filter: brightness(1.1);
   }
   #login .login-container .login-container-bottom .login-text-btn-bottom-container .login-bottom-btn-container .create-account-btn {
     font-size: 20px;
@@ -3610,7 +3607,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.5s;
 }
 #contact .contact_container .contact_container-message-form form .form_contact_container .form_contact_container-short .form_name_button-slot input.button:hover {
-  background-color: #296bc8;
+  filter: brightness(1.1);
 }
 #contact .contact_container .contact_container-message-form form .form_contact_container .form_contact_container-wide {
   width: calc(75% - 40px);
@@ -3834,9 +3831,6 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 #products-catalog .products_catalog_container .filters_container .filters_column .active {
   background-color: #FFFFFF;
 }
-#products-catalog .products_catalog_container .filters_container .filters_column .accordion:hover {
-  color: #1C2F82;
-}
 #products-catalog .products_catalog_container .filters_container .filters_column .searchbar-container {
   position: relative;
   display: flex;
@@ -3881,7 +3875,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.8s;
 }
 #products-catalog .products_catalog_container .filters_container .filters_column .next-arrow-container:hover {
-  background-color: #1C2F82;
+  filter: brightness(1.1);
 }
 #products-catalog .products_catalog_container .filters_container .filters_column .next-arrow-container .arrow {
   display: flex;
@@ -4514,11 +4508,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   margin-right: 8px;
 }
 #products-catalog.list .products_catalog_container .products-list-table .products-list_container-slots .cart-clean-button-container .cart-clean-button:hover {
-  background-color: #2CB5FF;
-  color: #FFFFFF;
-}
-#products-catalog.list .products_catalog_container .products-list-table .products-list_container-slots .cart-clean-button-container .cart-clean-button:hover svg path {
-  fill: #FFFFFF;
+  filter: brightness(1.1);
 }
 
 @media (max-width: 1170px) {
@@ -4874,8 +4864,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.8s;
 }
 #products_cart #discount_table.active .discount_table_container .quantity_counter .search_quantity #quantity_counter-submit:hover {
-  background-color: #FFFFFF;
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #products_cart #discount_table.active .discount_table_container .quantity_counter #result {
   display: none;
@@ -4917,10 +4906,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   text-decoration: none;
 }
 #products_cart #discount_table.active .discount_table_container .buttons_container .button:hover {
-  background-color: #FFFFFF;
-}
-#products_cart #discount_table.active .discount_table_container .buttons_container .button:hover .btn_link {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #products_cart .products_cart_container {
   display: flex;
@@ -4954,13 +4940,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   cursor: pointer;
 }
 #products_cart .products_cart_container .btn_breadcrumbs_container .back_btn:hover {
-  background-color: #FFFFFF;
-}
-#products_cart .products_cart_container .btn_breadcrumbs_container .back_btn:hover a {
-  color: #2CB5FF;
-}
-#products_cart .products_cart_container .btn_breadcrumbs_container .back_btn:hover a svg path {
-  fill: #2CB5FF;
+  filter: brightness(1.1);
 }
 #products_cart .products_cart_container .btn_breadcrumbs_container .back_btn a {
   font-size: 16px;
@@ -5224,8 +5204,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.8s;
 }
 #products_cart .products_cart_container .product_description_container .products-price .price .calculate:hover {
-  background-color: #FFFFFF;
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #products_cart .products_cart_container .product_description_container .products-sizes-table {
   display: flex;
@@ -5291,10 +5270,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   cursor: pointer;
 }
 #products_cart .products_cart_container .btns_bottom_product .signing_btn:hover {
-  background-color: #FFFFFF;
-}
-#products_cart .products_cart_container .btns_bottom_product .signing_btn:hover a, #products_cart .products_cart_container .btns_bottom_product .signing_btn:hover::before {
-  color: #1FBC59;
+  filter: brightness(1.1);
 }
 #products_cart .products_cart_container .btns_bottom_product .signing_btn::before {
   content: "+";
@@ -5333,10 +5309,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   cursor: pointer;
 }
 #products_cart .products_cart_container .btns_bottom_product .add_to_cart_btn:hover {
-  background-color: #FFFFFF;
-}
-#products_cart .products_cart_container .btns_bottom_product .add_to_cart_btn:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #products_cart .products_cart_container .btns_bottom_product .add_to_cart_btn a {
   display: flex;
@@ -6296,10 +6269,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   cursor: pointer;
 }
 #products_cart .marking_table_container .marking_table_container-slot .data_container .data_right .marking_table-button-right-gray:hover {
-  background-color: #FFFFFF;
-}
-#products_cart .marking_table_container .marking_table_container-slot .data_container .data_right .marking_table-button-right-gray:hover a {
-  color: #707070;
+  filter: brightness(1.1);
 }
 #products_cart .marking_table_container .marking_table_container-slot .data_container .data_right .marking_table-button-right-gray a {
   display: flex;
@@ -6855,10 +6825,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   cursor: pointer;
 }
 #offerts .offerts_container .btn_blueplus_container .blueplus_btn:hover {
-  background-color: #FFFFFF;
-}
-#offerts .offerts_container .btn_blueplus_container .blueplus_btn:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #offerts .offerts_container .btn_blueplus_container .blueplus_btn a {
   display: flex;
@@ -6950,14 +6917,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 }
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .filter_btn:hover,
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .clean_btn:hover {
-  background-color: #FFFFFF;
-}
-#offerts .offerts_container .offerts-filters .form-slot .slot.second .filter_btn:hover a,
-#offerts .offerts_container .offerts-filters .form-slot .slot.second .clean_btn:hover a {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .filter_btn a,
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .clean_btn a {
@@ -7044,11 +7004,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 }
 #offerts .offerts_container .filters_options_container .filters_filter-btn:hover,
 #offerts .offerts_container .filters_options_container .filters_clean-btn:hover {
-  background-color: #FFFFFF;
-}
-#offerts .offerts_container .filters_options_container .filters_filter-btn:hover a,
-#offerts .offerts_container .filters_options_container .filters_clean-btn:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #offerts .offerts_container .filters_options_container .filters_filter-btn a,
 #offerts .offerts_container .filters_options_container .filters_clean-btn a {
@@ -7202,11 +7158,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   }
   #offerts .offerts_container .filters_options_container .filters_filter-btn:hover,
   #offerts .offerts_container .filters_options_container .filters_clean-btn:hover {
-    background-color: #FFFFFF;
-  }
-  #offerts .offerts_container .filters_options_container .filters_filter-btn:hover a,
-  #offerts .offerts_container .filters_options_container .filters_clean-btn:hover a {
-    color: #2CB5FF;
+    filter: brightness(1.1);
   }
   #offerts .offerts_container .filters_options_container .filters_filter-btn a,
   #offerts .offerts_container .filters_options_container .filters_clean-btn a {
@@ -7470,11 +7422,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   margin-right: 8px;
 }
 #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .cart-clean-button-container .cart-clean-button:hover {
-  background-color: #2CB5FF;
-  color: #FFFFFF;
-}
-#offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .cart-clean-button-container .cart-clean-button:hover svg path {
-  fill: #FFFFFF;
+  filter: brightness(1.1);
 }
 #offert .offert_container .offert-search-btn-container {
   display: flex;
@@ -7526,7 +7474,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.6s;
 }
 #offert .offert_container .offert-search-btn-container .offert-btn-container--add-own-product:hover {
-  background-color: #1C2F82;
+  filter: brightness(1.1);
 }
 #offert .offert_container .offert-search-btn-container .offert-btn-container--add-own-product .button {
   color: #FFFFFF;
@@ -7563,10 +7511,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.6s;
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--back:hover {
-  background-color: #2CB5FF;
-}
-#offert .offert_container .offert-btn-container .offert-btn-container--back:hover .back-button {
-  color: #FFFFFF;
+  filter: brightness(1.1);
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--back .back-button {
   display: flex;
@@ -7597,7 +7542,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   transition: 0.6s;
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--next:hover {
-  background-color: #1C2F82;
+  filter: brightness(1.1);
 }
 #offert .offert_container .offert-btn-container .offert-btn-container--next .next-button {
   display: flex;
@@ -8228,8 +8173,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   margin-top: 35px;
 }
 #offert.details_offert_page .offert_table_container #tab-contents .details_offert__column .add-logo-btn-container .add-logo-btn:hover {
-  background-color: #ffffff;
-  color: #2cb5ff;
+  filter: brightness(1.1);
 }
 #offert.details_offert_page .offert_table_container #tab-contents .details_offert__column--slot {
   display: flex;
@@ -8329,8 +8273,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   margin-right: 0;
 }
 #offert.details_offert_page .offert_table_container .offert_button-container .add-address-btn-container .add-address-btn:hover {
-  background-color: #ffffff;
-  color: #2cb5ff;
+  filter: brightness(1.1);
 }
 #offert.details_offert_page .offert_table_container .offert_button-container .offert-search-container {
   position: relative;
@@ -8409,8 +8352,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   transition: 0.6s;
 }
 #offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row .table-col .edit-btn:hover {
-  background-color: #ffffff;
-  color: #2cb5ff;
+  filter: brightness(1.1);
 }
 #offert.details_offert_page .offert_table_container .offert_table_container_table .addresses-table-row .table-col.short {
   width: 120px;
@@ -8526,8 +8468,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     margin: 0 16px;
   }
   #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row .table-col .edit-btn:hover {
-    background-color: #ffffff;
-    color: #2cb5ff;
+    filter: brightness(1.1);
   }
   #offert.details_offert_page .offert_table_container .table-offert-details .offert_table_container_table .addresses-table-row .table-col.short {
     width: 120px;
@@ -8595,7 +8536,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   transition: 0.6s;
 }
 #offert.summary_offert_page .offert-btn-container .offert-right-btns .offert-btn-container--save:hover {
-  background-color: #1C2F82;
+  filter: brightness(1.1);
 }
 #offert.summary_offert_page .offert-btn-container .offert-right-btns .offert-btn-container--save .save-button {
   display: flex;
@@ -8628,10 +8569,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   margin-left: 16px;
 }
 #offert.summary_offert_page .offert-btn-container .offert-right-btns .offert-btn-container--create:hover {
-  background-color: #2a6e51;
-}
-#offert.summary_offert_page .offert-btn-container .offert-right-btns .offert-btn-container--create:hover .create-button {
-  color: #FFFFFF;
+  filter: brightness(1.1);
 }
 #offert.summary_offert_page .offert-btn-container .offert-right-btns .offert-btn-container--create .create-button {
   display: flex;
@@ -8877,14 +8815,11 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     cursor: pointer;
   }
   #clients_panel .clients_panel_container .button_container .logout_btn:hover {
-    background-color: #2CB5FF;
+    filter: brightness(1.1);
   }
   #clients_panel .clients_panel_container .button_container .logout_btn a {
     font-size: 20px;
     line-height: 20px;
-  }
-  #clients_panel .clients_panel_container .button_container .logout_btn a:hover {
-    color: #FFFFFF;
   }
 }
 #compare {
@@ -9068,10 +9003,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   cursor: pointer;
 }
 #compare .compare_container .clean-btn-container .clean-btn:hover {
-  background-color: #FFFFFF;
-}
-#compare .compare_container .clean-btn-container .clean-btn:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #compare .compare_container .clean-btn-container .clean-btn a {
   display: inline-flex;
@@ -9129,10 +9061,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     cursor: pointer;
   }
   #compare .compare_container .compare-table .clean-btn-container .clean-btn:hover {
-    background-color: #FFFFFF;
-  }
-  #compare .compare_container .compare-table .clean-btn-container .clean-btn:hover a {
-    color: #2CB5FF;
+    filter: brightness(1.1);
   }
   #compare .compare_container .compare-table .clean-btn-container .clean-btn a {
     display: inline-flex;
@@ -9565,10 +9494,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   cursor: pointer;
 }
 #register_full .register_full_container .save-btn-container .save-btn:hover {
-  background-color: #FFFFFF;
-}
-#register_full .register_full_container .save-btn-container .save-btn:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #register_full .register_full_container .save-btn-container .save-btn a {
   display: inline-flex;
@@ -9741,10 +9667,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   cursor: pointer;
 }
 #register_retail .register_retail_container .save-btn-container .save-btn:hover {
-  background-color: #FFFFFF;
-}
-#register_retail .register_retail_container .save-btn-container .save-btn:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #register_retail .register_retail_container .save-btn-container .save-btn a {
   display: inline-flex;
@@ -10097,10 +10020,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   cursor: pointer;
 }
 #your_profile .your_profile_container .save-btn-container .save-btn:hover {
-  background-color: #FFFFFF;
-}
-#your_profile .your_profile_container .save-btn-container .save-btn:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #your_profile .your_profile_container .save-btn-container .save-btn a {
   display: inline-flex;
@@ -10296,8 +10216,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
 }
 #your_profile.addresses .subtitle_button-container .add-address-btn-container .add-address-btn:hover,
 #your_profile.employees .subtitle_button-container .add-address-btn-container .add-address-btn:hover {
-  background-color: #FFFFFF;
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #your_profile.addresses .table_container,
 #your_profile.employees .table_container {
@@ -10354,8 +10273,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
 }
 #your_profile.addresses .table_container .addresses-table-row .table-col .edit-btn:hover,
 #your_profile.employees .table_container .addresses-table-row .table-col .edit-btn:hover {
-  background-color: #FFFFFF;
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 
 #your_profile.addresses .subtitle_button-container,
@@ -10399,8 +10317,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
 }
 #your_profile.addresses .subtitle_button-container .add-address-btn-container .add-address-btn:hover,
 #your_profile.employees .subtitle_button-container .add-address-btn-container .add-address-btn:hover {
-  background-color: #FFFFFF;
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #your_profile.addresses .table_container,
 #your_profile.employees .table_container {
@@ -10464,8 +10381,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
 }
 #your_profile.addresses .table_container .addresses-table-row .table-col .edit-btn:hover,
 #your_profile.employees .table_container .addresses-table-row .table-col .edit-btn:hover {
-  background-color: #FFFFFF;
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 
 #your_profile.employees .table_container .addresses-table-row.header .table-col:nth-child(1) {
@@ -10576,8 +10492,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   }
   #your_profile.addresses .subtitle_button-container .add-address-btn-container .add-address-btn:hover,
   #your_profile.employees .subtitle_button-container .add-address-btn-container .add-address-btn:hover {
-    background-color: #FFFFFF;
-    color: #2CB5FF;
+    filter: brightness(1.1);
   }
   #your_profile.addresses .table_container .addresses-table-row,
   #your_profile.employees .table_container .addresses-table-row {
@@ -10622,8 +10537,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   }
   #your_profile.addresses .table_container .addresses-table-row .table-col .edit-btn:hover,
   #your_profile.employees .table_container .addresses-table-row .table-col .edit-btn:hover {
-    background-color: #FFFFFF;
-    color: #2CB5FF;
+    filter: brightness(1.1);
   }
   #your_profile.employees .table_container .addresses-table-row.header .table-col:nth-child(1) {
     width: 1%;

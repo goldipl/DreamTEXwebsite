@@ -46,8 +46,7 @@
                                 margin-top: 35px;
         
                                 &:hover {
-                                    background-color: #ffffff;
-                                    color: #2cb5ff;
+                                    filter: brightness(1.10);
                                 }
                             }
                         }
@@ -161,8 +160,7 @@
                         margin-right: 0;
 
                         &:hover {
-                            background-color: #ffffff;
-                            color: #2cb5ff;
+                            filter: brightness(1.10);
                         }
                     }
                 }
@@ -256,8 +254,7 @@
                             transition: 0.6s;
 
                             &:hover {
-                                background-color: #ffffff;
-                                color: #2cb5ff;
+                                filter: brightness(1.10);
                             }
                         }
 
@@ -406,8 +403,7 @@
                                     margin: 0 16px;
 
                                     &:hover {
-                                        background-color: #ffffff;
-                                        color: #2cb5ff;
+                                        filter: brightness(1.10);
                                     }
                                 }
         

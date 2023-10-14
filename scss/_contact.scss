@@ -204,7 +204,7 @@
                                 cursor: pointer;
                                 transition: 0.5s;
                                 &:hover {
-                                    background-color: #296bc8;
+                                    filter: brightness(1.10);
                                 }
                             }
                         }

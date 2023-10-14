@@ -158,13 +158,7 @@
                                     margin-right: 8px;
                                 }
                                 &:hover {
-                                    background-color: #2CB5FF;
-                                    color: #FFFFFF;
-                                    svg {
-                                        path {
-                                            fill: #FFFFFF;
-                                        }
-                                    }
+                                    filter: brightness(1.10);
                                 }
                             }
                         }
@@ -221,7 +215,7 @@
                 border-radius: 30px;
                 transition: 0.6s;
                 &:hover {
-                    background-color: #1C2F82;
+                    filter: brightness(1.10);
                 }
                 .button {
                     color: #FFFFFF;
@@ -258,10 +252,7 @@
                 border-radius: 30px;
                 transition: 0.6s;
                 &:hover {
-                    background-color: #2CB5FF;
-                    .back-button {
-                        color: #FFFFFF;
-                    }
+                    filter: brightness(1.10);
                 }
                 .back-button {
                     display: flex;
@@ -292,7 +283,7 @@
                 border-radius: 30px;
                 transition: 0.6s;
                 &:hover {
-                    background-color: #1C2F82;
+                    filter: brightness(1.10);
                 }
                 .next-button {
                     display: flex;

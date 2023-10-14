@@ -174,14 +174,11 @@
                     margin-left: 20px;
                     cursor: pointer;
                     &:hover {
-                        background-color: #2CB5FF;
+                        filter: brightness(1.10);
                     }
                     a {
                         font-size: 20px;
                         line-height: 20px;
-                        &:hover {
-                            color: #FFFFFF;
-                        }
                     }
                 }
             }

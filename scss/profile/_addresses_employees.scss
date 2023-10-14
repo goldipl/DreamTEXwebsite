@@ -32,8 +32,7 @@
                 line-height: 22px;
 
                 &:hover {
-                    background-color: #FFFFFF;
-                    color: #2CB5FF;
+                    filter: brightness(1.10);
                 }
             }
         }
@@ -81,8 +80,7 @@
                     box-sizing: border-box;
                     transition: 0.6s;
                     &:hover {
-                        background-color: #FFFFFF;
-                        color: #2CB5FF;
+                        filter: brightness(1.10);
                     }
                 }
             }
@@ -125,8 +123,7 @@
                 border-radius: 20px;
 
                 &:hover {
-                    background-color: #FFFFFF;
-                    color: #2CB5FF;
+                    filter: brightness(1.10);
                 }
             }
         }
@@ -180,8 +177,7 @@
                     transition: 0.6s;
                     margin: 0 auto;
                     &:hover {
-                        background-color: #FFFFFF;
-                        color: #2CB5FF;
+                        filter: brightness(1.10);
                     }
                 }
             }
@@ -307,8 +303,7 @@
                     line-height: 22px;
 
                     &:hover {
-                        background-color: #FFFFFF;
-                        color: #2CB5FF;
+                        filter: brightness(1.10);
                     }
                 }
             }
@@ -350,8 +345,7 @@
                         box-sizing: border-box;
                         transition: 0.6s;
                         &:hover {
-                            background-color: #FFFFFF;
-                            color: #2CB5FF;
+                            filter: brightness(1.10);
                         }
                     }
                 }

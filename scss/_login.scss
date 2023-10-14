@@ -87,8 +87,7 @@
                             transition: 0.8s;
                             margin-right: -35px;
                             &:hover {
-                                background-color: #1C2F82;
-                                border: 1px solid #1C2F82;
+                                filter: brightness(1.10);
                             }
                         }
                     }
@@ -134,8 +133,7 @@
                     border-radius: 20px;
                     transition: 0.8s;
                     &:hover {
-                        background-color: #1C2F82;
-                        border: 1px solid #1C2F82;
+                        filter: brightness(1.10);
                     }
                     .create-account-btn {
                         font-size: 20px;
@@ -233,8 +231,7 @@
                         transition: 0.8s;
                         margin-bottom: 8px;
                         &:hover {
-                            background-color: #FFFFFF;
-                            border: 1px solid #2CB5FF;
+                            filter: brightness(1.10);
                         }
                         .create-account-btn {
                             font-size: 20px;

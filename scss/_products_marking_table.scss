@@ -170,10 +170,7 @@
                         transition: 0.8s;
                         cursor: pointer;
                         &:hover {
-                            background-color: #FFFFFF;
-                            a {
-                                color: #707070;
-                            }
+                            filter: brightness(1.10);
                         }
                         a {
                             display: flex;

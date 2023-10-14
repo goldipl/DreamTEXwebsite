@@ -73,7 +73,7 @@
                     transition: 0.6s;
 
                     &:hover {
-                        background-color: #1C2F82;
+                        filter: brightness(1.10);
                     }
 
                     .save-button {
@@ -110,11 +110,7 @@
                     margin-left: 16px;
 
                     &:hover {
-                        background-color: #2a6e51;
-
-                        .create-button {
-                            color: #FFFFFF;
-                        }
+                        filter: brightness(1.10);
                     }
 
                     .create-button {

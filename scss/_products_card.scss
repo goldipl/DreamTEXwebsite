@@ -105,8 +105,7 @@
                             cursor: pointer;
                             transition: 0.8s;
                             &:hover {
-                                background-color: #FFFFFF;
-                                color: #2CB5FF;
+                                filter: brightness(1.10);
                             }
                         }
                     }
@@ -148,10 +147,7 @@
                             text-decoration: none;
                         }
                         &:hover {
-                            background-color: #FFFFFF;
-                            .btn_link {
-                                color: #2CB5FF;
-                            }
+                            filter: brightness(1.10);
                         }
                     }
                 }
@@ -187,15 +183,7 @@
                 margin-right: 12px;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFFFFF;
-                    a {
-                        color: #2CB5FF;
-                        svg {
-                            path {
-                                fill: #2CB5FF;
-                            }
-                        }
-                    }
+                    filter: brightness(1.10);
                 }
                 a {
                     font-size: 16px;
@@ -457,8 +445,7 @@
                         margin-left: 8px;
                         transition: 0.8s;
                         &:hover {
-                            background-color: #FFFFFF;
-                            color: #2CB5FF;
+                            filter: brightness(1.10);
                         }
                     }
                 }
@@ -526,11 +513,7 @@
                 transition: 0.8s;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFFFFF;
-                    a,
-                    &::before {
-                        color: #1FBC59;
-                    }
+                    filter: brightness(1.10);
                 }
                 &::before {
                     content: '+';
@@ -569,10 +552,7 @@
                 margin-left: 10px;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFFFFF;
-                    a {
-                        color: #2CB5FF;
-                    }
+                    filter: brightness(1.10);
                 }
                 a {
                     display: flex;

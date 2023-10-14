@@ -140,10 +140,6 @@
                     background-color: #FFFFFF;
                 }
 
-                .accordion:hover {
-                    color: #1C2F82;
-                }
-
                 .searchbar-container {
                     position: relative;
                     display: flex;
@@ -188,7 +184,7 @@
                     cursor: pointer;
                     transition: 0.8s;
                     &:hover {
-                        background-color: #1C2F82;
+                        filter: brightness(1.10);
                     }
                     .arrow {
                         display: flex;
@@ -838,13 +834,7 @@
                             margin-right: 8px;
                         }
                         &:hover {
-                            background-color: #2CB5FF;
-                            color: #FFFFFF;
-                            svg {
-                                path {
-                                    fill: #FFFFFF;
-                                }
-                            }
+                            filter: brightness(1.10);
                         }
                     }
                 }
@@ -1020,7 +1010,7 @@
             text-transform: uppercase;
             font-size: 20px;
             &:hover {
-                filter: brightness(1.1);
+                filter: brightness(1.10);
             }
         }
     }
@@ -1065,7 +1055,7 @@
             text-transform: uppercase;
             font-size: 16px;
             &:hover {
-                filter: brightness(1.1);
+                filter: brightness(1.10);
             }
         }
     }

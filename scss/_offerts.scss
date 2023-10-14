@@ -32,10 +32,7 @@
                 transition: 0.8s;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFFFFF;
-                    a {
-                        color: #2CB5FF;
-                    }
+                    filter: brightness(1.10);
                 }
                 a {
                     display: flex;
@@ -124,13 +121,7 @@
                         margin-right: 30px;
                         cursor: pointer;
                         &:hover {
-                            background-color: #FFFFFF;
-                            a {
-                                display: inline-flex;
-                                justify-content: center;
-                                align-items: center;
-                                color: #2CB5FF;
-                            }
+                            filter: brightness(1.10);
                         }
                         a {
                             display: flex;
@@ -210,10 +201,7 @@
                 margin-right: 34px;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFFFFF;
-                    a {
-                        color: #2CB5FF;
-                    }
+                    filter: brightness(1.10);
                 }
                 a {
                     display: flex;
@@ -370,10 +358,7 @@
                     margin-right: 18px;
                     cursor: pointer;
                     &:hover {
-                        background-color: #FFFFFF;
-                        a {
-                            color: #2CB5FF;
-                        }
+                        filter: brightness(1.10);
                     }
                     a {
                         display: flex;

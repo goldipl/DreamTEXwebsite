@@ -69,10 +69,7 @@
                 margin-right: 18px;
                 cursor: pointer;
                 &:hover {
-                    background-color: #FFFFFF;
-                    a {
-                        color: #2CB5FF;
-                    }
+                    filter: brightness(1.10);
                 }
                 a {
                     display: inline-flex;
