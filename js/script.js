@@ -121,10 +121,12 @@ menu_hover.addEventListener('click', () => {
 
 const clients_panel_desktop_icon = document.querySelector('#nav .top-nav .searchbar-right-container .logo-text-header-container a.logo-text-header-link.clients-panel-icon');
 
-clients_panel_desktop_icon.addEventListener('click', () => {
-    clients_panel_desktop_icon.nextElementSibling.classList.toggle('active');
-    clients_panel_desktop_icon.classList.toggle('active');
-})
+if (!!clients_panel_desktop_icon) {
+    clients_panel_desktop_icon.addEventListener('click', () => {
+        clients_panel_desktop_icon.nextElementSibling.classList.toggle('active');
+        clients_panel_desktop_icon.classList.toggle('active');
+    });
+};
 
 // Scroll up fixed header
 let lastScrollPosition = window.scrollY; 
