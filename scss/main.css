@@ -10898,6 +10898,8 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   height: 100%;
 }
 #cart .cart_container .cart_items_container .cart_items_container-right .cart_right_container .delivery_payment_button a svg {
+  margin-top: -8px;
+  margin-left: 4px;
   width: 24px;
   height: 24px;
   transform: translateY(3px) rotate(180deg);
