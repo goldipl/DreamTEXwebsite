@@ -93,6 +93,8 @@ This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License
 
 :large_orange_diamond: Offert Page Set Prices :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-set-prices.html
 
+:large_orange_diamond: Offert Page Set Prices - Admin Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-set-prices-admin.html
+
 :large_orange_diamond: Offert Page Descriptions :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-descriptions.html
 
 :large_orange_diamond: Offert Page Details :arrow_right: https://goldipl.github.io/DreamTEXwebsite/offert-page-details.html
