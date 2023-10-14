@@ -152,11 +152,18 @@ function addClassIfWebsiteHeightExceedsWindow() {
 
     const websiteHeight = document.documentElement.scrollHeight;
     const windowHeight = window.innerHeight;
-  
-    if (websiteHeight > windowHeight) {
-      document.body.classList.add('long-page');
+    if (window.matchMedia("(max-width: 960px)").matches) {
+        if (websiteHeight > 1.75 * windowHeight) {
+        document.body.classList.add('long-page');
+        } else {
+        document.body.classList.remove('long-page');
+        }
     } else {
-      document.body.classList.remove('long-page');
+        if (websiteHeight > windowHeight) {
+            document.body.classList.add('long-page');
+            } else {
+            document.body.classList.remove('long-page');
+        }  
     }
 }
   
