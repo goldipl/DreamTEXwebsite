@@ -77,6 +77,11 @@
                 .left-photo-container {
                    margin-bottom: 8px;
                 }
+                &:nth-child(odd) {
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    width: calc(100% + 20px);
+                }
             }
         }
     }

@@ -2948,6 +2948,11 @@ body {
   #article .article_container .photo-text-container .left-photo-container {
     margin-bottom: 8px;
   }
+  #article .article_container .photo-text-container:nth-child(odd) {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
 }
 .breadcrumbs.favorite .breadcrumbs-list {
   margin-top: 0;
