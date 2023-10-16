@@ -31,9 +31,9 @@
                             }
                         }
                        .products-list-slot {
-                            &[rowspan] {
-                                vertical-align: baseline;
-                            }
+                            // &[rowspan] {
+                            //     vertical-align: baseline;
+                            // }
                             .lock-container {
                                 display: flex;
                                 justify-content: center;

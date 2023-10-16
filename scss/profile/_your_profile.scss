@@ -49,6 +49,22 @@
                         outline: 0;
                     }
                 }
+                select {
+                    font-family: 'Roboto', sans-serif;
+                    background-color: #EFEFEF;
+                    border: 1px solid #CECECE;
+                    border-radius: 20px;
+                    height: 40px;
+                    width: 70px;
+                    font-size: 16px;
+                    padding-left: 16px;
+                    box-sizing: border-box;
+                    width: 100%;
+                    &:focus {
+                        border: 1px solid #2CB5FF;
+                        outline: 0;
+                    }
+                }
             }
         }
         .save-btn-container {

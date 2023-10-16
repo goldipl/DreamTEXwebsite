@@ -25,6 +25,7 @@
 @import 'offert_page_no_products';
 @import 'offert_page_branding';
 @import 'offert_page_set_prices';
+@import 'offert_page_set_prices_admin';
 @import 'offert_page_descriptions';
 @import 'offert_page_details';
 @import 'offert_page_summary';
@@ -39,7 +40,10 @@
 @import './register/remind_password';
 @import './profile/your_profile';
 @import './profile/company_data';
-@import './profile/_addresses_employees';
+@import './profile/addresses_employees';
+@import './profile/clients_new_client';
+@import './profile/addresses_new';
+@import './profile/change_password';
 @import './cart/cart';
 @import './cart/cart_delivery_payment';
 @import './cart/cart_summary';

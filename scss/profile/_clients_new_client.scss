@@ -1,0 +1,67 @@
+body.clients-new-client {
+    .clients-new-container {
+        display: flex;
+        flex-direction: row;
+        &-slot {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            .input-container {
+                margin-top: -20px !important;
+                display: flex;
+                flex-direction: column !important;
+                .input-slot {
+                    width: 96% !important;
+                    label {
+                        margin-top: 20px !important;
+                    }
+                    &.short {
+                        flex-direction: row !important;
+                        .short-slot {
+                            display: flex;
+                            flex-direction: column !important;
+                            &.city {
+                                width: 70% !important;
+                                margin-right: 75px;
+                            }
+                            &.zip {
+                                width: 25% !important;
+                                min-width: 135px !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    body.clients-new-client {
+        .clients-new-container {
+            flex-direction: column;
+            &-slot {
+                width: 100%;
+                .input-container {
+                    margin-top: 0 !important;
+                    .input-slot {
+                        width: 100% !important;
+                        &.short {
+                            flex-direction: column !important;
+                            .short-slot {
+                                flex-direction: column !important;
+                                &.city {
+                                    width: 100% !important;
+                                    margin-right: 0;
+                                }
+                                &.zip {
+                                    width: 100% !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

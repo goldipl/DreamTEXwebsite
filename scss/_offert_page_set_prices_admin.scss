@@ -3,8 +3,115 @@
         .offert_table_container {
             .products-list-table {
                 .products-list_container-slots {
- 
-
+                    .products-list_container-header {
+                        .products-list-slot {
+                            &:nth-child(1) {
+                                padding-left: 15px;
+                            }
+                            &:nth-child(3) {
+                                width: 120px;
+                            }
+                            &:nth-child(4),
+                            &:nth-child(4),
+                            &:nth-child(5),
+                            &:nth-child(6),
+                            &:nth-child(7) {
+                                width: 100px;
+                            }
+                            &:nth-child(6) {
+                                p {
+                                    margin: 0 16px;
+                                }
+                            }
+                        }
+                    }
+                    .products-list_container-slot {
+                        .products-list-slot {
+                            text-align: center;
+                            &:nth-child(1) {
+                                padding-left: 15px;
+                            }
+                            &:nth-child(3) {
+                                width: 120px;
+                            }
+                            &:nth-child(3),
+                            &:nth-child(4),
+                            &:nth-child(5),
+                            &:nth-child(6),
+                            &:nth-child(7) {
+                                width: 100px;
+                                input {
+                                    width: 59px;
+                                    height: 27px;
+                                    text-align: center;
+                                }
+                            }
+                            .price-table {
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                input {
+                                    margin: 6px 0;
+                                    text-align: center;
+                                }
+                                .reset {
+                                    font-size: 12px;
+                                    line-height: 14px;
+                                    color: #2C79FF;
+                                    text-decoration: underline;
+                                }
+                            }
+                            .price-list {
+                                border: 1px solid #707070;
+                                padding: 4px;
+                                width: 64px;
+                                border-radius: 10px;  
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: center;
+                                align-items: center;
+                                margin: 0 auto;
+                                .price-list-slot {
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    margin-bottom: 2px;
+                                    .slot-letter {
+                                        font-size: 14px;
+                                        box-sizing: border-box;
+                                        border-radius: 100%;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        width: 17px;
+                                        height: 17px;
+                                        border: 1px solid #3E3E3E;
+                                        margin-right: 5px;
+                                        &.yellow {
+                                            color: #000000;
+                                            background-color: #FFFF00;
+                                        }
+                                        &.red {
+                                            color: #FFFFFF;
+                                            background-color: #FF0000;
+                                        }
+                                        &.green {
+                                            color: #FFFFFF;
+                                            background-color: #00BF06;
+                                        }
+                                        &.blue {
+                                            color: #FFFFFF;
+                                            background-color: #0019FF;
+                                        }
+                                    }
+                                    .slot-number {
+                                        font-size: 14px;
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

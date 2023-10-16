@@ -5,11 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/favicon.ico" type="image/x-icon">
-    <title>Dreamtex - Ofertownik - Ustal ceny - Admin</title>
-    <link rel="stylesheet" href="./css/swiper-bundle.css"/>
+    <title>Dreamtex - Twój profil - Admin - Adresy - Nowe</title>
     <link rel="stylesheet" href="./scss/main.css">
 </head>
-<body class="offert-page">
+<body class="main new-addresses">
     <div class="menu-hover" style="display: none;"></div>
     <header>
         <nav id="nav">
@@ -57,7 +56,7 @@
                         </a>
                     </div>
                     <div class="logo-text-header-container">
-                        <a class="logo-text-header-link clients-panel-icon">
+                            <a class="logo-text-header-link clients-panel-icon">
                             <div class="header-icon">
                                 <img src="./assets/icons/client_panel.svg" alt="client panel">
                             </div>
@@ -1492,402 +1491,55 @@
             <div class="messenger-x-icon"></div>
         </div>
     
-        <section id="offert" class="set_prices_offert_page set-prices-admin">
-            <h1 class="title">Oferta</h1>
-            <div class="offert_container">
-                <div class="color-breadcrumbs">
-                    <ul class="color-breadcrumbs-list">
-                        <li class="color-breadcrumb-item active">
-                            <a href="./offerts.html">Oferty</a>
+        <section id="your_profile" class="addresses">
+            <h1 class="title">Twój profil</h1>
+            <div class="your_profile_container">
+                <h1 class="title">Witaj <span>Paweł Ogonowski</span> (admin)</h1>
+                <div class="blue_white-breadcrumbs">
+                    <ul class="blue_white-breadcrumbs-list">
+                        <li class="blue_white-breadcrumb-item" style="z-index: 0;">
+                            <a href="./your-profile-admin-your-data.html">Twoje dane</a>
                         </li>
-                        <li class="color-breadcrumb-item">
-                            <a href="./orders.html">Zamówienia</a>
+                        <li class="blue_white-breadcrumb-item" style="z-index: 1;">
+                            <a href="./your-profile-admin-company-data.html">Dane firmy</a>
+                        </li>
+                        <li class="blue_white-breadcrumb-item" style="z-index: 2;">
+                            <a href="./your-profile-admin-clients-new-client.html">Klienci</a>
+                        </li>
+                        <li class="blue_white-breadcrumb-item active">
+                            <a href="./your-profile-admin-addresses-new.html">Adresy</a>
+                        </li>
+                        <li class="blue_white-breadcrumb-item" style="z-index: 0;">
+                            <a href="./your-profile-admin-employees-list.html">Lista pracowników</a>
                         </li>
                     </ul>
                 </div>
-                <div class="offert_table_container">
-                    <nav id="tabs">
-                        <li><a href="./offert-page-products.html">Produkty</a></li>
-                        <li><a href="./offert-page-branding.html">Znakowanie</a></li>
-                        <li class="active"><a href="./offert-page-set-prices.html">Ustal ceny</a></li>
-                        <li><a href="./offert-page-descriptions.html">Opisy</a></li>
-                        <li><a href="./offert-page-details.html">Szczegóły</a></li>
-                        <li><a href="./offert-page-summary.html">Podsumowanie</a></li>
-                    </nav>
-                    
-                    <section id="tab-contents">
-                      <div id="tab1" class="tab-contents active">
-                        <div class="products-list-table">
-                            <table class="products-list_container-slots">
-                                <thead>
-                                    <tr class="products-list_container-header">
-                                        <th class="products-list-slot">
-                                            <p>L.p.</p>
-                                        </th>
-                                        <th class="product-title-img">
-                                            <p>Zdjęcie</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Nazwa</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Ilość</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Rabat producenta</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Cena zakupu</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Cennik podgląd</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Marża %</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Cena klienta</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Udzielony rabat</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Wartość sprzedaży</p>
-                                        </th>
-                                        <th class="products-list-slot">
-                                            <p>Zysk</p>
-                                        </th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="products-list_container-slot">
-                                        <td class="products-list-slot" rowspan="3">
-                                            <p>1</p>
-                                        </td>
-                                        <td class="product-title-img" rowspan="3">
-                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>Promostars Heavy<br>21172-30</p>
-                                        </td>
-                                        <td class="products-list-slot quantity">
-                                            <input type="number" min="0" value="3">
-                                        </td>
-                                        <td class="products-list-slot discount">
-                                            <input type="number" min="0" value="">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="buy-price">
-                                                <p>5,00</p>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="price-list">
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter yellow">A</span>
-                                                    <span class="slot-number">8,88</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter red">B</span>
-                                                    <span class="slot-number">7,55</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter green">C</span>
-                                                    <span class="slot-number">5,95</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter blue">D</span>
-                                                    <span class="slot-number">8,96</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot" colspan="2">
-                                            <div class="lock-container">
-                                                <input class="profit-margin" type="number" min="0" value="">
-                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
-                                                <input class="client-price" type="number" min="0" value="">
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>5,00%</p>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p><span>50,88</span> PLN</p>
-                                        </td>
-                                        <td class="products-list-slot green">
-                                            <p><span>5,97</span> PLN</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="products-list_container-slot">
-                                        <td class="products-list-slot">
-                                            <p>Haft/środek Logo Sokołów</p>
-                                        </td>
-                                        <td class="products-list-slot quantity">
-                                            <p>3</p>
-                                        </td>
-                                        <td class="products-list-slot discount">
-                                            <input type="number" min="0" value="">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="price-table">
-                                                <img src="./assets/icons/exclamation-mark.svg" alt="exclamation-mark" width="16" height="16">
-                                                <input type="number" min="0" value="">
-                                                <a class="reset" href="">Resetuj</a>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>-</p>
-                                        </td>
-                                        <td class="products-list-slot" colspan="2">
-                                            <div class="lock-container">
-                                                <input class="profit-margin" type="number" min="0" value="">
-                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
-                                                <input class="client-price" type="number" min="0" value="">
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>5,00%</p>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p><span>50,88</span> PLN</p>
-                                        </td>
-                                        <td class="products-list-slot green">
-                                            <p><span>5,97</span> PLN</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="products-list_container-slot">
-                                        <td class="products-list-slot">
-                                            <p>Haft/środek Logo Sokołów</p>
-                                        </td>
-                                        <td class="products-list-slot quantity">
-                                            <p>3</p>
-                                        </td>
-                                        <td class="products-list-slot discount">
-                                            <input type="number" min="0" value="">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="price-table">
-                                                <img src="./assets/icons/exclamation-mark.svg" alt="exclamation-mark" width="16" height="16">
-                                                <input type="number" min="0" value="">
-                                                <a class="reset" href="">Resetuj</a>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>-</p>
-                                        </td>
-                                        <td class="products-list-slot" colspan="2">
-                                            <div class="lock-container">
-                                                <input class="profit-margin" type="number" min="0" value="">
-                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
-                                                <input class="client-price" type="number" min="0" value="">
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>5,00%</p>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p><span>50,88</span> PLN</p>
-                                        </td>
-                                        <td class="products-list-slot green">
-                                            <p><span>5,97</span> PLN</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="products-list_container-slot strong">
-                                        <td class="products-list-slot">
-                                            <p></p>
-                                        </td>
-                                        <td class="products-list-slot quantity">
-                                            <p></p>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p></p>
-                                        </td>
-                                        <td class="products-list-slot" colspan="7">
-                                          
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p><span>150</span> PLN</p>
-                                        </td>
-                                        <td class="products-list-slot green">
-                                            <p><span>15</span> PLN</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="products-list_container-slot pack">
-                                        <td class="products-list-slot" rowspan="1">
-                                            <p>2</p>
-                                        </td>
-                                        <td class="product-title-img" rowspan="1">
-                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>Promostars Heavy<br>21172-30</p>
-                                        </td>
-                                        <td class="products-list-slot quantity">
-                                            <input type="number" min="0" value="3">
-                                        </td>
-                                        <td class="products-list-slot discount">
-                                            <input type="number" min="0" value="">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="buy-price">
-                                                <p>5,00</p>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="price-list">
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter yellow">A</span>
-                                                    <span class="slot-number">8,88</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter red">B</span>
-                                                    <span class="slot-number">7,55</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter green">C</span>
-                                                    <span class="slot-number">5,95</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter blue">D</span>
-                                                    <span class="slot-number">8,96</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot" colspan="2">
-                                            <div class="lock-container">
-                                                <input class="profit-margin" type="number" min="0" value="">
-                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
-                                                <input class="client-price" type="number" min="0" value="">
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>5,00%</p>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p><span>50,88</span> PLN</p>
-                                        </td>
-                                        <td class="products-list-slot green">
-                                            <p><span>5,97</span> PLN</p>
-                                        </td>
-                                    </tr>
-                                    <tr class="products-list_container-slot pack">
-                                        <td class="products-list-slot" rowspan="1">
-                                            <p>3</p>
-                                        </td>
-                                        <td class="product-title-img" rowspan="1">
-                                            <img src="./assets/img/sample_images/model_white_t_shirt.jpg" alt="colors image" width="53" height="100">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>Promostars Heavy<br>21172-30</p>
-                                        </td>
-                                        <td class="products-list-slot quantity">
-                                            <input type="number" min="0" value="3">
-                                        </td>
-                                        <td class="products-list-slot discount">
-                                            <input type="number" min="0" value="">
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="buy-price">
-                                                <p>5,00</p>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <div class="price-list">
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter yellow">A</span>
-                                                    <span class="slot-number">8,88</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter red">B</span>
-                                                    <span class="slot-number">7,55</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter green">C</span>
-                                                    <span class="slot-number">5,95</span>
-                                                </div>
-                                                <div class="price-list-slot">
-                                                    <span class="slot-letter blue">D</span>
-                                                    <span class="slot-number">8,96</span>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot" colspan="2">
-                                            <div class="lock-container">
-                                                <input class="profit-margin" type="number" min="0" value="">
-                                                <img class="lock-icon" src="./assets/icons/lock.svg" alt="lock" width="15" height="15">
-                                                <input class="client-price" type="number" min="0" value="">
-                                            </div>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p>5,00%</p>
-                                        </td>
-                                        <td class="products-list-slot">
-                                            <p><span>50,88</span> PLN</p>
-                                        </td>
-                                        <td class="products-list-slot green">
-                                            <p><span>5,97</span> PLN</p>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                <div class="new-address-container">
+                    <h2 class="subtitle">Dane adresowe</h2>
+                    <div class="input-container">
+                        <div class="input-slot">
+                            <label class="name" for="name">Nazwa</label>
+                            <input type="text" id="name" required="">
                         </div>
-                      </div>
-                      <div id="tab2" class="tab-contents">
-                        <p>These are the contents of tab 2.</p>
-                      </div>
-                      <div id="tab3" class="tab-contents">
-                        <p>These are the contents of tab 3.</p>
-                      </div>
-                      <div id="tab4" class="tab-contents">
-                        <p>These are the contents of tab 4.</p>
-                      </div>
-                      <div id="tab5" class="tab-contents">
-                        <p>These are the contents of tab 5.</p>
-                      </div>
-                      <div id="tab6" class="tab-contents">
-                        <p>These are the contents of tab 6.</p>
-                      </div>
-                    </section>
+                        <div class="input-slot">
+                            <label class="address" for="address">Adres</label>
+                            <input type="text" id="address" required="">
+                        </div>
+                        <div class="input-slot short">
+                            <div class="short-slot city">
+                                <label class="city" for="city">Miasto</label>
+                                <input type="text" id="city" required="">
+                            </div>
+                            <div class="short-slot zip">
+                                <label class="zipcode" for="zipcode">Kod pocztowy</label>
+                                <input type="text" id="zipcode" required="">
+                            </div>
+                        </div>
+                    </div>   
                 </div>
-                <div class="offert-options-container">
-                    <div class="offert-options-container--left">
-                        <div class="first-line">
-                            <div class="currency-select">
-                                <label class="currency" for="currency">Waluta</label>
-                                <select name="currency" id="currency">
-                                    <option value="Option1">PLN</option>
-                                    <option value="Option2">EUR</option>
-                                    <option value="Option3">USD</option>
-                                    <option value="Option4">CHF</option>
-                                </select>
-                            </div>
-                            <div class="btn-container">
-                                <a class="next-button" href="">Wpisz marżę do wszystkich produktów <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#FFFFFF"/></svg></a>
-                            </div>
-                            <input class="quantity" type="text">
-                        </div>
-                        <div class="second-line">
-                            <div class="btn-container">
-                                <a class="next-button" href="">Wpisz marżę do wszystkich znakowań <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#FFFFFF"/></svg></a>
-                            </div>
-                            <input class="quantity" type="text">
-                        </div>
-                    </div>
-                    <div class="offert-options-container--right">
-                        <div class="first-line">
-                            <p>Suma: <span>250</span> PLN</p>
-                        </div>
-                        <div class="second-line">
-                            <p>Zysk: <span>25</span> PLN</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="offert-btn-container">
-                    <div class="offert-btn-container--back">
-                        <a class="back-button" href="./offert-page-branding.html"><svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#3E3E3E"/></svg> WRÓĆ</a>
-                    </div>
-                    <div class="offert-btn-container--next">
-                        <a class="next-button" href="./offert-page-descriptions.html">DALEJ <svg width="15px" height="15px" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M31.8839 8.36612C32.372 8.85427 32.372 9.64573 31.8839 10.1339L18.0178 24L31.8839 37.8661C32.372 38.3543 32.372 39.1457 31.8839 39.6339C31.3957 40.122 30.6043 40.122 30.1161 39.6339L15.3661 24.8839C14.878 24.3957 14.878 23.6043 15.3661 23.1161L30.1161 8.36612C30.6043 7.87796 31.3957 7.87796 31.8839 8.36612Z" fill="#FFFFFF"/></svg></a>
+                <div class="save-btn-container">
+                    <div class="save-btn">
+                        <a href="#">Zapisz</a>
                     </div>
                 </div>
             </div>
@@ -1947,6 +1599,5 @@
         </footer>
     </div>
     <script src="./js/script.js"></script>
-    <script src="./js/offert_green_checked.js"></script>
 </body>
 </html>
