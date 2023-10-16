@@ -69,11 +69,25 @@ This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License
 
 :large_orange_diamond: Profile Admin Employees List Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-employees-list    
 
-:large_orange_diamond: Profile Admin Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-addresses     
+:large_orange_diamond: Profile Admin Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-addresses   
+
+:large_orange_diamond: Profile Admin New Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-addresses-new    
+
+:large_orange_diamond: Profile Admin Change Password Employee Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-change-password-employee   
+
+:large_orange_diamond: Profile Admin Change Password Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-change-password      
+
+:large_orange_diamond: Profile Admin New Client Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-clients-new-client   
 
 :large_orange_diamond: Profile User Data Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-your-data      
 
+:large_orange_diamond: Profile User Clients Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-clients 
+
+:large_orange_diamond: Profile User New Client Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-clients-new-client 
+
 :large_orange_diamond: Profile User Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-addresses     
+
+:large_orange_diamond: Profile User New Addresses Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-addresses-new  
 
 :large_orange_diamond: Register (full) Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/register-full      
 
