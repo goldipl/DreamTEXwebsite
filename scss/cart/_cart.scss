@@ -491,4 +491,8 @@
     body.empty-cart .cart_container .cart_items_container .cart_items_container-left {
         flex-direction: column-reverse !important;
     }
+    body.cart-page #cart .cart_container .cart_items_container .cart_items_container-left .cart-clean-search-container .cart-search-container {
+        margin-top: 0 !important;
+        margin-bottom: 15px !important;
+    }
 }
