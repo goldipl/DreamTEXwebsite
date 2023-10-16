@@ -154,7 +154,7 @@ function addClassIfWebsiteHeightExceedsWindow() {
     const websiteHeight = document.documentElement.scrollHeight;
     const windowHeight = window.innerHeight;
     if (window.matchMedia("(max-width: 960px)").matches) {
-        if (websiteHeight > 1.75 * windowHeight) {
+        if (websiteHeight > 2 * windowHeight) {
         document.body.classList.add('long-page');
         footer.style.marginTop = "80px";
         } else {
