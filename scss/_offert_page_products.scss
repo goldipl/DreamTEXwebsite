@@ -100,8 +100,6 @@
                             .product-title-img {
                                 position: relative;
                                 cursor: pointer;
-                                margin: 0 auto;
-                                display: block;
                                 &:empty {
                                     background-color: #FFFFFF;
                                 }
