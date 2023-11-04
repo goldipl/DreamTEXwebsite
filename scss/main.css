@@ -5441,6 +5441,10 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   border-radius: 20px;
   width: 25%;
   margin-right: 1%;
+  height: 530px;
+}
+#products_cart .products_cart_products-slots .products_cart_products-slot.show {
+  height: auto;
 }
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-top-container {
   display: flex;

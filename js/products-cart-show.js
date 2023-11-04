@@ -2,6 +2,7 @@ const cart_product_arrows = document.querySelectorAll('#products_cart .products_
 
 cart_product_arrows.forEach(e => {
     e.addEventListener('click', () => {
+        e.parentElement.parentElement.parentElement.parentElement.classList.toggle('show');
         e.parentElement.parentElement.parentElement.nextElementSibling.classList.toggle('show');
         e.parentElement.classList.toggle('active');
     });
