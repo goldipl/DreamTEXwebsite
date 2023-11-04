@@ -13,28 +13,30 @@
                         }
                         &.branding-info-text {
                             th {
-                                position: relative;
-                                font-size: 16px;
-                                line-height: 19px;
-                                font-weight: 400;
-                                color: #3E3E3E;
                                 text-align: left;
-                                padding: 10px 0 10px 42px;
-                                cursor: pointer;
-                                text-align: left;
-                                &::after {
-                                    position: absolute;
-                                    content: "";
-                                    display: block;
-                                    bottom: calc(50% - 6px);
-                                    right: calc(50% - 12px);
-                                    background: url(./../assets/icons/close.svg);
-                                    width: 16px;
-                                    height: 16px;
-                                    box-sizing: border-box;
-                                    background-repeat: no-repeat;
-                                    background-size: contain;
+                                span {
+                                    position: relative;
+                                    font-size: 16px;
+                                    line-height: 32px;
+                                    font-weight: 400;
+                                    color: #3E3E3E;
+                                    padding: 10px 0 10px 24px;
                                     cursor: pointer;
+                                    text-align: left;
+                                    &::after {
+                                        position: absolute;
+                                        content: "";
+                                        display: block;
+                                        bottom: calc(50% - 6px);
+                                        right: -24px;
+                                        background: url(./../assets/icons/close.svg);
+                                        width: 16px;
+                                        height: 16px;
+                                        box-sizing: border-box;
+                                        background-repeat: no-repeat;
+                                        background-size: contain;
+                                        cursor: pointer;
+                                    }
                                 }
                             }
                         }
@@ -105,7 +107,24 @@
 }
 
 @media (max-width: 960px) {
-    #offert.branding_offert_page .offert-btn-container {
-        margin-top: 10px !important;
+    #offert {
+        &.branding_offert_page {
+            .offert_table_container {
+                .products-list-table {
+                    .products-list_container-slots {
+                        .products-list_container-slot {
+                            .btn-container {
+                                &.grey {
+                                    margin-left: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .offert-btn-container {
+                margin-top: 10px;
+            }
+        }
     }
 }
