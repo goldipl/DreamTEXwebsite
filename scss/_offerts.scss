@@ -1,6 +1,7 @@
 #offerts {
     margin-top: 40px;
     margin-bottom: 84px;
+    background-color: unset;
     .pagination {
         margin-top: 10px;
     }
@@ -11,6 +12,7 @@
         height: auto;
         padding: 15px;
         box-shadow: 0px 3px 15px #00000033;
+        background-color: #FFFFFF;
         .btn_blueplus_container {
             display: flex;
             flex-direction: row;
@@ -104,7 +106,7 @@
                 .slot.second {
                     display: flex;
                     flex-direction: row;
-                    margin-top: 25px;
+                    margin-top: 29px;
                     .filter_btn,
                     .clean_btn {
                         display: inline-flex;
@@ -284,7 +286,18 @@
     }
 }
 
+body.offerts_page {
+    #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col {
+        width: 15% !important;
+    }
+}
+
 @media (max-width: 960px) {
+    body.offerts_page #offerts .offerts_container .offerts-filters-table {
+        margin-left: -10px;
+        margin-right: -10px;
+        width: calc(100% + 20px);
+    }
     #offerts {
         margin-top: 16px;
         margin-bottom: 67px;

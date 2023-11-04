@@ -6887,6 +6887,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 #offerts {
   margin-top: 40px;
   margin-bottom: 84px;
+  background-color: unset;
 }
 #offerts .pagination {
   margin-top: 10px;
@@ -6898,6 +6899,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   height: auto;
   padding: 15px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
 }
 #offerts .offerts_container .btn_blueplus_container {
   display: flex;
@@ -6995,7 +6997,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 #offerts .offerts_container .offerts-filters .form-slot .slot.second {
   display: flex;
   flex-direction: row;
-  margin-top: 25px;
+  margin-top: 29px;
 }
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .filter_btn,
 #offerts .offerts_container .offerts-filters .form-slot .slot.second .clean_btn {
@@ -7170,7 +7172,16 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   align-items: center;
 }
 
+body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col {
+  width: 15% !important;
+}
+
 @media (max-width: 960px) {
+  body.offerts_page #offerts .offerts_container .offerts-filters-table {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
   #offerts {
     margin-top: 16px;
     margin-bottom: 67px;
