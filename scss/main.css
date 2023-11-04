@@ -11450,6 +11450,9 @@ body.change-password .input-container:nth-of-type(2) {
     margin-left: -10px;
     margin-right: -10px;
   }
+  body.empty-cart .cart-clean-search-container {
+    margin-top: -15px !important;
+  }
 }
 #cart_delivery_payment {
   margin-top: 37px;
