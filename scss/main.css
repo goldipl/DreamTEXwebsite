@@ -6257,6 +6257,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   align-items: center;
   font-size: 28px;
   width: 46px;
+  min-width: 46px;
   height: 46px;
   border-radius: 100%;
   box-sizing: border-box;
