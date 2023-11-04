@@ -508,7 +508,11 @@
         border-bottom: 0;
     }
     body.cart-page .cart_container {
-        padding: 0 10px !important;
-        border-radius: 20px 20px 0 0  !important;
+        padding: 0 10px 10px 10px !important;
+        border-radius: 20px 20px 0 0;
+    }
+    body.cart-page #cart .cart_container .cart_items_container .cart_items_container-left .cart_items_container-slots {
+        margin-left: -10px;
+        margin-right: -10px;
     }
 }
