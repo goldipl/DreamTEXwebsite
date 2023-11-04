@@ -12,7 +12,10 @@
             font-weight: 400;
             color: #3E3E3E;
             margin: 0;
+            padding-bottom: 0;
+            margin-bottom: 41px;
             text-align: left;
+            background-color: #FFFFFF;
         }
         .cart_square_container {
             display: flex;
@@ -112,6 +115,7 @@
             .title {
                 font-size: 27px;
                 line-height: 33px;
+                margin-bottom: 13px;
             }
             .cart_square_container {
                 display: flex;
