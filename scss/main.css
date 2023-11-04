@@ -2379,8 +2379,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-compare:hover {
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-compare:not(.active):hover {
   color: #2CB5FF;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-compare:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/compare.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-compare::before {
   position: absolute;
@@ -2415,14 +2423,22 @@ body {
   content: "";
   top: 3px;
   left: 2px;
-  background: url("./../assets/icons/favorite-red-heart-delete.svg");
+  background: url("./../assets/icons/favorite-red-heart.svg");
   height: 12px;
   width: 12px;
   background-size: contain;
   background-repeat: no-repeat;
 }
-#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-favorite:hover {
-  color: #2CB5FF;
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-favorite:not(.active):hover {
+  color: #FF0000;
+}
+#bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-favorite:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/favorite-red-heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-top .product-swiper-add-to-favorite::before {
   position: absolute;
@@ -4241,8 +4257,16 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   background-size: cover;
   background-repeat: no-repeat;
 }
-.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-compare:hover {
+.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-compare:not(.active):hover {
   color: #2CB5FF;
+}
+.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-compare:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/compare.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-compare::before {
   position: absolute;
@@ -4277,14 +4301,22 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   content: "";
   top: 3px;
   left: 2px;
-  background: url("./../assets/icons/favorite-red-heart-delete.svg");
+  background: url("./../assets/icons/favorite-red-heart.svg");
   height: 12px;
   width: 12px;
   background-size: contain;
   background-repeat: no-repeat;
 }
-.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-favorite:hover {
-  color: #2CB5FF;
+.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-favorite:not(.active):hover {
+  color: #FF0000;
+}
+.products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-favorite:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/favorite-red-heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 .products-slot .products-slot-top-container .products-slot-desc .products-slot-desc-top .products-slot-add-to-favorite::before {
   position: absolute;
@@ -4765,6 +4797,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 
 #products_cart {
   margin-top: 13px;
+  background-color: unset;
 }
 #products_cart.show_discount_table::before {
   position: fixed;
@@ -4929,6 +4962,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   padding: 15px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 24px;
+  background-color: #FFFFFF;
 }
 #products_cart .products_cart_container .btn_breadcrumbs_container {
   display: flex;
@@ -5025,8 +5059,16 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#products_cart .products_cart_container .product_description_container .products-description .description .add-to-compare:hover {
+#products_cart .products_cart_container .product_description_container .products-description .description .add-to-compare:not(.active):hover {
   color: #2CB5FF;
+}
+#products_cart .products_cart_container .product_description_container .products-description .description .add-to-compare:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/compare.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #products_cart .products_cart_container .product_description_container .products-description .description .add-to-compare::before {
   position: absolute;
@@ -5060,14 +5102,22 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   content: "";
   top: 0px;
   left: 0px;
-  background: url("./../assets/icons/favorite-red-heart-delete.svg");
+  background: url("./../assets/icons/favorite-red-heart.svg");
   height: 17px;
   width: 17px;
   background-size: contain;
   background-repeat: no-repeat;
 }
-#products_cart .products_cart_container .product_description_container .products-description .description .add-to-favorite:hover {
-  color: #2CB5FF;
+#products_cart .products_cart_container .product_description_container .products-description .description .add-to-favorite:not(.active):hover {
+  color: #FF0000;
+}
+#products_cart .products_cart_container .product_description_container .products-description .description .add-to-favorite:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/favorite-red-heart.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 #products_cart .products_cart_container .product_description_container .products-description .description .add-to-favorite::before {
   position: absolute;
@@ -5157,7 +5207,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 }
 #products_cart .products_cart_container .product_description_container .products-colors .color.active {
   border: 1px solid #FFFFFF;
-  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
 }
 #products_cart .products_cart_container .product_description_container .products-colors .color.color20 {
   border: 1px solid #707070;
@@ -5598,8 +5648,16 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-compare:hover {
+#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-compare:not(.active):hover {
   color: #2CB5FF;
+}
+#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-compare:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/compare.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-compare::before {
   position: absolute;
@@ -5634,14 +5692,11 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   content: "";
   top: 3px;
   left: 2px;
-  background: url("./../assets/icons/favorite-red-heart-delete.svg");
+  background: url("./../assets/icons/favorite-red-heart.svg");
   height: 12px;
   width: 12px;
   background-size: contain;
   background-repeat: no-repeat;
-}
-#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite:hover {
-  color: #2CB5FF;
 }
 #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite::before {
   position: absolute;
@@ -5652,6 +5707,17 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   background: url("./../assets/icons/favorite-black-heart.svg");
   height: 12px;
   width: 12px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite:not(.active):hover {
+  color: #FF0000;
+}
+#products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite:not(.active):hover::before {
+  position: absolute;
+  display: block;
+  content: "";
+  background: url("./../assets/icons/favorite-red-heart.svg");
   background-size: contain;
   background-repeat: no-repeat;
 }

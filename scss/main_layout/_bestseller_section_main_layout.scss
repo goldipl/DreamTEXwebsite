@@ -215,8 +215,16 @@
                                         background-repeat: no-repeat;
                                     }
                                 }
-                                &:hover {
+                                &:not(.active):hover {
                                     color: #2CB5FF;
+                                    &::before {
+                                        position: absolute;
+                                        display: block;
+                                        content: "";
+                                        background: url("./../assets/icons/compare.svg");
+                                        background-size: cover;
+                                        background-repeat: no-repeat;
+                                    }
                                 }
                                 &::before {
                                     position: absolute;
@@ -248,15 +256,23 @@
                                         content: "";
                                         top: 3px;
                                         left: 2px;
-                                        background: url("./../assets/icons/favorite-red-heart-delete.svg");
+                                        background: url("./../assets/icons/favorite-red-heart.svg");
                                         height: 12px;
                                         width: 12px;
                                         background-size: contain;
                                         background-repeat: no-repeat;
                                     }
                                 }
-                                &:hover {
-                                    color: #2CB5FF;
+                                &:not(.active):hover {
+                                    color: #FF0000;
+                                    &::before {
+                                        position: absolute;
+                                        display: block;
+                                        content: "";
+                                        background: url("./../assets/icons/favorite-red-heart.svg");
+                                        background-size: contain;
+                                        background-repeat: no-repeat;
+                                    }
                                 }
                                 &::before {
                                     position: absolute;

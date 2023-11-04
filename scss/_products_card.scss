@@ -1,6 +1,7 @@
 @charset "utf-8";
 #products_cart {
     margin-top: 13px;
+    background-color: unset;
     &.show_discount_table::before {
         position: fixed;
         top: 0;
@@ -162,6 +163,7 @@
         padding: 15px;
         box-shadow: 0px 3px 15px #00000033;
         margin-bottom: 24px;
+        background-color: #FFFFFF;
         .btn_breadcrumbs_container {
             display: flex;
             flex-direction: row;
@@ -253,8 +255,16 @@
                                 background-repeat: no-repeat;
                             }
                         }
-                        &:hover {
+                        &:not(.active):hover {
                             color: #2CB5FF;
+                            &::before {
+                                position: absolute;
+                                display: block;
+                                content: "";
+                                background: url("./../assets/icons/compare.svg");
+                                background-size: cover;
+                                background-repeat: no-repeat;
+                            }
                         }
                         &::before {
                             position: absolute;
@@ -285,15 +295,23 @@
                                 content: "";
                                 top: 0px;
                                 left: 0px;
-                                background: url("./../assets/icons/favorite-red-heart-delete.svg");
+                                background: url("./../assets/icons/favorite-red-heart.svg");
                                 height: 17px;
                                 width: 17px;
                                 background-size: contain;
                                 background-repeat: no-repeat;
                             }
                         }
-                        &:hover {
-                            color: #2CB5FF;
+                        &:not(.active):hover {
+                            color: #FF0000;
+                            &::before {
+                                position: absolute;
+                                display: block;
+                                content: "";
+                                background: url("./../assets/icons/favorite-red-heart.svg");
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                            }
                         }
                         &::before {
                             position: absolute;
@@ -384,7 +402,7 @@
                     cursor: pointer;
                     &.active {
                         border: 1px solid #FFFFFF;
-                        box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+                        box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.4);
                     }
                     &.color20 {
                         border: 1px solid #707070;
@@ -834,8 +852,16 @@
                             background-repeat: no-repeat;
                         }
                     }
-                    &:hover {
+                    &:not(.active):hover {
                         color: #2CB5FF;
+                        &::before {
+                            position: absolute;
+                            display: block;
+                            content: "";
+                            background: url("./../assets/icons/compare.svg");
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                        }
                     }
                     &::before {
                         position: absolute;
@@ -867,27 +893,35 @@
                             content: "";
                             top: 3px;
                             left: 2px;
-                            background: url("./../assets/icons/favorite-red-heart-delete.svg");
+                            background: url("./../assets/icons/favorite-red-heart.svg");
                             height: 12px;
                             width: 12px;
                             background-size: contain;
                             background-repeat: no-repeat;
                         }
                     }
-                    &:hover {
-                        color: #2CB5FF;
-                    }
                     &::before {
                         position: absolute;
                         display: block;
                         content: "";
                         top: 3px;
-                            left: 2px;
+                        left: 2px;
                         background: url("./../assets/icons/favorite-black-heart.svg");
                         height: 12px;
                         width: 12px;
                         background-size: contain;
                         background-repeat: no-repeat;
+                    }
+                    &:not(.active):hover {
+                        color: #FF0000;
+                        &::before {
+                            position: absolute;
+                            display: block;
+                            content: "";
+                            background: url("./../assets/icons/favorite-red-heart.svg");
+                            background-size: contain;
+                            background-repeat: no-repeat;
+                        }
                     }
                 }
                 .products_cart_products-slot-colors {
