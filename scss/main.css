@@ -12689,8 +12689,12 @@ section h1.title {
   padding-bottom: 10px;
   background-color: #FBFBFB;
 }
-section [class$=-container],
-section [class$=_container] {
+
+body.main-page-layout #main-wrapper .photo-text-container,
+body.main-page-layout #main-wrapper .product-swiper-container,
+body.main-page-layout #main-wrapper .about_company_container,
+body.main-page-layout #main-wrapper .hero_image_container,
+body.main-page-layout #main-wrapper .newsletter_container {
   background-color: #FFFFFF;
 }
 

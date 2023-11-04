@@ -150,11 +150,18 @@ section {
         padding-bottom: 10px;
         background-color: #FBFBFB;
     }
-    [class$="-container"], 
-    [class$="_container"] {
+}
+
+body.main-page-layout #main-wrapper {
+    .photo-text-container,
+    .product-swiper-container,
+    .about_company_container,
+    .hero_image_container,
+    .newsletter_container {
         background-color: #FFFFFF;
     }
 }
+
 #news-layout {
     footer {
         margin-top: 80px;
