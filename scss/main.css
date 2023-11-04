@@ -7344,6 +7344,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-header .products-list-slot {
   text-align: center;
 }
+#offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-header .products-list-slot.summary-grey {
+  background-color: #EFEFEF;
+}
 #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-header .products-list-slot p {
   font-size: 16px;
   line-height: 19px;
@@ -7377,6 +7380,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   position: relative;
   cursor: pointer;
 }
+#offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img:empty {
+  background-color: #FFFFFF;
+}
 #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-slot .product-title-img.green-checked::after {
   position: absolute;
   content: "";
@@ -7394,6 +7400,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 }
 #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot {
   text-align: center;
+}
+#offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot:empty {
+  background-color: #FFFFFF;
 }
 #offert .offert_container .offert_table_container #tab-contents .tab-contents .products-list-table .products-list_container-slots .products-list_container-slot .products-list-slot p {
   font-weight: 400;

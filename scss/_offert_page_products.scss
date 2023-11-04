@@ -62,6 +62,9 @@
                             height: 44px;
                             .products-list-slot {
                                 text-align: center;
+                                &.summary-grey {
+                                    background-color: #EFEFEF;
+                                }
                                 p {
                                     font-size: 16px;
                                     line-height: 19px;
@@ -97,6 +100,9 @@
                             .product-title-img {
                                 position: relative;
                                 cursor: pointer;
+                                &:empty {
+                                    background-color: #FFFFFF;
+                                }
                                 &.green-checked {
                                     &::after {
                                         position: absolute;
@@ -117,6 +123,9 @@
                             }
                             .products-list-slot {
                                 text-align: center;
+                                &:empty {
+                                    background-color: #FFFFFF;
+                                }
                                 p {
                                     font-weight: 400;
                                     font-size: 14px;
