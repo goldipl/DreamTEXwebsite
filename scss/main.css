@@ -6595,10 +6595,23 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   padding-left: 20px;
   padding-right: 20px;
 }
+#products_cart .marking_projects_container .projects_table .table-row.header p {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  cursor: default;
+}
+#products_cart .marking_projects_container .projects_table .table-row.header p:hover {
+  color: unset;
+}
 #products_cart .marking_projects_container .projects_table .table-row p {
   font-size: 16px;
   line-height: 19px;
   margin: 0;
+  cursor: pointer;
+}
+#products_cart .marking_projects_container .projects_table .table-row p:hover {
+  color: #2CB5FF;
 }
 #products_cart .marking_projects_container .projects_table .table-row.header {
   background-color: #CECECE !important;
@@ -6615,7 +6628,7 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
     top: 2vh;
     left: 50vw;
     transform: translateX(-50vw);
-    width: 95%;
+    width: 100%;
     height: auto;
     padding: 10px;
   }
