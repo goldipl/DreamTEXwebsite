@@ -286,17 +286,36 @@
     }
 }
 
-body.offerts_page {
+body.orders_page {
     #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col {
         width: 15% !important;
     }
 }
 
 @media (max-width: 960px) {
+    body.orders_page #offerts .offerts_container .offerts-filters-table, 
     body.offerts_page #offerts .offerts_container .offerts-filters-table {
         margin-left: -10px;
         margin-right: -10px;
         width: calc(100% + 20px);
+    }
+    body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col:first-of-type p,
+    body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col:nth-of-type(n+2) p {
+        width: 150px;
+        padding-left: 40px;
+    }
+    body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col:nth-of-type(n+6) p {
+        padding-left: 30px;
+    }
+    body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col p {
+        width: 150px;
+        text-align: center;
+    }
+    body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col:nth-of-type(n+2) p {
+        padding-left: 40px;
+    }
+    body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col:nth-of-type(n+6) a {
+        padding-left: 40px;
     }
     #offerts {
         margin-top: 16px;
