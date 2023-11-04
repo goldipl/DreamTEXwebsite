@@ -216,3 +216,9 @@ body.main-page-layout #main-wrapper {
         }
     }
 }
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: 24px !important; 
+  width: 24px !important; 
+}

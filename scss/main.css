@@ -12747,4 +12747,9 @@ body.main-page-layout #main-wrapper .newsletter_container {
     line-height: 30px;
     padding-bottom: 4px;
   }
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  height: 24px !important;
+  width: 24px !important;
 }/*# sourceMappingURL=main.css.map */
