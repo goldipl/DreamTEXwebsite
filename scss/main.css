@@ -11442,6 +11442,10 @@ body.change-password .input-container:nth-of-type(2) {
     border-radius: 0 0 20px 20px;
     border-bottom: 0;
   }
+  body.cart-page .cart_container {
+    padding: 0 10px !important;
+    border-radius: 20px 20px 0 0 !important;
+  }
 }
 #cart_delivery_payment {
   margin-top: 37px;
