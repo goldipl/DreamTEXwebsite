@@ -299,6 +299,20 @@ body.orders_page {
         margin-right: -10px;
         width: calc(100% + 20px);
     }
+    body.orders_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col:nth-of-type(n+6) p,
+    body.orders_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col:nth-of-type(n+6) p {
+        width: 80px;
+    }
+    body.orders_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col:nth-of-type(n+6) a { 
+        padding-left: 20px;
+    }
+    body.orders_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col p,
+    body.orders_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row .table-col p {
+        width: 150px;
+    }
+    body.orders_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row th:first-of-type, #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row td:first-of-type {
+        padding-left: 0;
+    }
     body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col:first-of-type p,
     body.offerts_page #offerts .offerts_container .offerts-filters-table .offerts-filters-table-row.header .table-col:nth-of-type(n+2) p {
         width: 150px;
