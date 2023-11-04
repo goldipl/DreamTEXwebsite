@@ -139,7 +139,6 @@ body {
 }
 
 section {
-    background-color: #FFFFFF;
     margin-bottom: 37px;
     h1.title {
         font-size: 36px;
@@ -151,6 +150,10 @@ section {
         padding-bottom: 10px;
         background-color: #FBFBFB;
     }
+    [class$="-container"], 
+    [class$="_container"] {
+        background-color: #FFFFFF;
+    }
 }
 #news-layout {
     footer {
@@ -161,7 +164,7 @@ section {
 @media (max-width: 1170px) {
     body {
         width: 100%;
-        section:not(#swiper) {
+        section:not(#swiper, #hero_image, #newsletter) {
             margin-left: 10px;
             margin-right: 10px;
         }

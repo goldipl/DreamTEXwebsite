@@ -2183,6 +2183,7 @@ body {
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container {
   display: flex;
   flex-direction: row;
+  border-radius: 20px;
 }
 #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image {
   margin: auto;
@@ -12676,7 +12677,6 @@ body .messenger .messenger-x-icon {
 }
 
 section {
-  background-color: #FFFFFF;
   margin-bottom: 37px;
 }
 section h1.title {
@@ -12689,6 +12689,10 @@ section h1.title {
   padding-bottom: 10px;
   background-color: #FBFBFB;
 }
+section [class$=-container],
+section [class$=_container] {
+  background-color: #FFFFFF;
+}
 
 #news-layout footer {
   margin-top: 80px;
@@ -12698,7 +12702,7 @@ section h1.title {
   body {
     width: 100%;
   }
-  body section:not(#swiper) {
+  body section:not(#swiper, #hero_image, #newsletter) {
     margin-left: 10px;
     margin-right: 10px;
   }
