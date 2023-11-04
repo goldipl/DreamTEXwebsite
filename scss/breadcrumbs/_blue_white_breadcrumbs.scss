@@ -76,6 +76,9 @@
 
 @media (max-width: 960px) {
     .blue_white-breadcrumbs {
+        &.three-slots {
+            margin-left: 0;
+        }
         .blue_white-breadcrumbs-list {
             flex-direction: column;
             flex-wrap: wrap;

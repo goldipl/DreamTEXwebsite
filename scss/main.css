@@ -3134,6 +3134,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
 }
 
 @media (max-width: 960px) {
+  .blue_white-breadcrumbs.three-slots {
+    margin-left: 0;
+  }
   .blue_white-breadcrumbs .blue_white-breadcrumbs-list {
     flex-direction: column;
     flex-wrap: wrap;
@@ -10060,6 +10063,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   font-weight: 400;
   color: #3E3E3E;
   margin-bottom: 0;
+  background-color: #FFFFFF;
 }
 #your_profile .your_profile_container .subtitle {
   font-size: 28px;
