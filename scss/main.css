@@ -10525,6 +10525,10 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   width: 2%;
 }
 
+table .header p {
+  font-weight: bold !important;
+}
+
 .table_container.short67 .table-col.short a {
   margin: 0 16px !important;
 }
