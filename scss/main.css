@@ -8488,9 +8488,8 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     display: inline-flex;
     align-items: center;
     margin-bottom: 15px;
-    overflow-x: scroll;
-    overflow-y: hidden;
     flex-wrap: wrap;
+    width: 100%;
   }
   #offert.details_offert_page .offert_table_container .offert_button-container .subtitle {
     margin-left: 10px;

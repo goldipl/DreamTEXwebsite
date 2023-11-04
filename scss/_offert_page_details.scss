@@ -298,9 +298,8 @@
                     display: inline-flex;
                     align-items: center;
                     margin-bottom: 15px;
-                    overflow-x: scroll;
-                    overflow-y: hidden;
                     flex-wrap: wrap;
+                    width: 100%;
     
                     .subtitle {
                         margin-left: 10px;
