@@ -11633,6 +11633,7 @@ body.change-password .input-container:nth-of-type(2) {
 }
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot img {
   margin: 16px 0;
+  width: 100%;
 }
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .only-text .text-bottom {
   font-size: 20px;
@@ -11666,7 +11667,8 @@ body.change-password .input-container:nth-of-type(2) {
   background-size: contain;
 }
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .cart_square_container .cart_square-slot .only-text.center-text .text-bottom {
-  margin-top: 30%;
+  margin-top: 25%;
+  margin-bottom: 28px;
 }
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .title-checkbox {
   display: inline-flex;
@@ -11823,6 +11825,9 @@ body.change-password .input-container:nth-of-type(2) {
   background-color: unset;
   border: unset;
   cursor: pointer;
+}
+#cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .table_container {
+  width: 100%;
 }
 #cart_delivery_payment .cart_delivery_payment_container .cart_delivery_payment_container-slot .courier_address_container.active .table_container .header {
   background-color: #CECECE;
