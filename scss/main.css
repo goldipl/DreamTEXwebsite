@@ -10057,10 +10057,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   cursor: pointer;
 }
 #register_success .register_success_container .blue_btn_container .blue_btn.success:hover {
-  background-color: #FFFFFF;
-}
-#register_success .register_success_container .blue_btn_container .blue_btn.success:hover a {
-  color: #2CB5FF;
+  filter: brightness(1.1);
 }
 #register_success .register_success_container .blue_btn_container .blue_btn.success a {
   display: inline-flex;
