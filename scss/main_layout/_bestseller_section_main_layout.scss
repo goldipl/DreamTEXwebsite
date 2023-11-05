@@ -483,6 +483,10 @@
     #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom {
         transform: translate(-50%, 0%);
     }
+    .product-swiper-add-to-favorite:not(.active):hover,
+    .product-swiper-add-to-compare:not(.active):hover {
+	    color: #000000 !important;
+    }
 }
 
 @media (max-width: 600px) {

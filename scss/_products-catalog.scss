@@ -988,6 +988,10 @@
     #products-catalog.list .products_catalog_container .breadcrumbs_searchbar_container .products_list_searchbar {
         margin-left: 6px !important;
     }
+    .products-slot-add-to-favorite:not(.active):hover,
+    .products-slot-add-to-compare:not(.active):hover {
+	    color: #000000 !important;
+    }
 }
 
 

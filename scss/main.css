@@ -2640,6 +2640,10 @@ body {
   #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-desc .product-swiper-desc-bottom {
     transform: translate(-50%, 0%);
   }
+  .product-swiper-add-to-favorite:not(.active):hover,
+  .product-swiper-add-to-compare:not(.active):hover {
+    color: #000000 !important;
+  }
 }
 @media (max-width: 600px) {
   #bestsellers .swiper-products .swiper-slide .product-swiper-container .product-swiper-top-container .product-swiper-image img {
@@ -4677,6 +4681,10 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   #products-catalog.list .products_catalog_container .breadcrumbs_searchbar_container .products_list_searchbar {
     margin-left: 6px !important;
   }
+  .products-slot-add-to-favorite:not(.active):hover,
+  .products-slot-add-to-compare:not(.active):hover {
+    color: #000000 !important;
+  }
 }
 @media (min-width: 961px) {
   body.products-list-view .breadcrumbs .breadcrumbs-list {
@@ -6087,6 +6095,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
     color: #3E3E3E;
     text-decoration: none;
   }
+  #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-compare:not(.active):hover {
+    color: #000000;
+  }
   #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-compare p {
     position: relative;
     font-size: 12px;
@@ -6110,6 +6121,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite {
     color: #3E3E3E;
     text-decoration: none;
+  }
+  #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite:not(.active):hover {
+    color: #000000;
   }
   #products_cart .products_cart_products-slots .products_cart_products-slot .products_cart_products-slot-bottom-container .products_cart_products-slot-add-to-favorite p {
     position: relative;

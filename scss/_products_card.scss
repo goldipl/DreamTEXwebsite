@@ -1304,6 +1304,9 @@
                     .products_cart_products-slot-add-to-compare {
                         color: #3E3E3E;
                         text-decoration: none;
+                        &:not(.active):hover {
+                            color: #000000;
+                        }
                         p {
                             position: relative;
                             font-size: 12px;
@@ -1328,6 +1331,9 @@
                     .products_cart_products-slot-add-to-favorite {
                         color: #3E3E3E;
                         text-decoration: none;
+                        &:not(.active):hover {
+                            color: #000000;
+                        }
                         p {
                             position: relative;
                             font-size: 12px;
