@@ -1,14 +1,21 @@
 ## Table of contents
-* [Gif website presentation](#gif-website-presentation)
+* [Gif desktop website presentation](#gif-desktop-website-presentation)
+* [Gif mobile website presentation](#gif-mobile-website-presentation)
 * [General info](#general-info)
 * [Technologies](#technologies)
 * [License](#license)
 * [Live](#live-star2)
 * [Screenshots](#screenshots)
 
-## Gif website presentation
+## Gif desktop website presentation
+### wait until the gif file loads (47,3mb)
 
-![gif](./gif/dreamtex.gif)
+![gif](./gif/dreamtex-desktop.gif)
+
+## Gif mobile website presentation
+### wait until the gif file loads (49,2mb)
+
+![gif](./gif/dreamtex-mobile.gif)
 
 ## General info
 DreamTex :arrow_right: E-commerce static website written using HTML5, SCSS, Vanilla Javascript with SwiperJS and also LightboxJS. Website contains products page, cart page, login & register page, news, article, favorites and profile admin pages.
