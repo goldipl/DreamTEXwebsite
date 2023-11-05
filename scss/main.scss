@@ -184,12 +184,16 @@ body.main-page-layout #main-wrapper {
 
 @media (max-width: 960px) {
     body {
-        &.fixed-header {
-            padding-top: 116px;
+        &.sticked-menu  {
+          padding-top: 116px;
         }
         header {
-            &.active {
+            #nav.active {
                 width: 100%;
+                position: fixed;
+                top: 0;
+                z-index: 999999999999;
+                animation: smooth-header 0.3s linear;
             }
         }
         margin-bottom: 62px;

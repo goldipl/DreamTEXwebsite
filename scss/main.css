@@ -12758,11 +12758,15 @@ body.main-page-layout #main-wrapper .newsletter_container {
   body {
     margin-bottom: 62px;
   }
-  body.fixed-header {
+  body.sticked-menu {
     padding-top: 116px;
   }
-  body header.active {
+  body header #nav.active {
     width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 999999999999;
+    animation: smooth-header 0.3s linear;
   }
   body .menu-hover.active {
     position: absolute;
