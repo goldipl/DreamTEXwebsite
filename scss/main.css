@@ -12633,6 +12633,7 @@ body header.active {
   top: 0;
   z-index: 999999999999;
   width: 1170px;
+  animation: smooth-header 0.3s linear;
 }
 body .menu-hover.active {
   position: absolute;
@@ -12770,4 +12771,13 @@ input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   height: 24px !important;
   width: 24px !important;
+}
+
+@keyframes smooth-header {
+  0% {
+    transform: translateY(-116px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }/*# sourceMappingURL=main.css.map */
