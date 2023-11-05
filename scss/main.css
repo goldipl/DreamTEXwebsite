@@ -9021,6 +9021,9 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   text-transform: uppercase;
   padding: 0;
 }
+#clients_panel .clients_panel_container .button_container .logout_btn:hover {
+  filter: brightness(1.1);
+}
 
 @media (max-width: 960px) {
   #clients_panel {

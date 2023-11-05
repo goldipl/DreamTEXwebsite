@@ -102,6 +102,9 @@
                     text-transform: uppercase;
                     padding: 0;
                 }
+                &:hover {
+                    filter: brightness(1.1);
+                }
             }
         }
     }
