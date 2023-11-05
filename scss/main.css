@@ -8908,6 +8908,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   padding: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 150px;
+  background-color: #FFFFFF;
 }
 #clients_panel .clients_panel_container .title {
   font-size: 32px;
@@ -9609,6 +9610,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   padding: 30px 30px 9px 34px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 80px;
+  background-color: #FFFFFF;
 }
 #register_full .register_full_container .register-fill-info {
   display: flex;
@@ -9868,6 +9870,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   padding: 30px 30px 10px 30px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
+  background-color: #FFFFFF;
 }
 #register_retail .register_retail_container .title {
   font-size: 36px;
@@ -10000,6 +10003,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   padding: 30px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 100px;
+  background-color: #FFFFFF;
 }
 #register_success .register_success_container .title {
   font-size: 36px;
@@ -10008,6 +10012,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   color: #707070;
   margin: 0;
   text-align: center;
+  background-color: #FFFFFF;
 }
 #register_success .register_success_container .desc {
   font-size: 18px;
