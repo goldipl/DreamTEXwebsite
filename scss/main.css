@@ -7433,6 +7433,7 @@ body.orders_page #offerts .offerts_container .offerts-filters-table .offerts-fil
   height: auto;
   padding: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
 }
 #offert .offert_container .offert_table_container {
   margin-top: 33px;
@@ -7791,6 +7792,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   height: auto;
   padding: 20px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
+  background-color: #FFFFFF;
 }
 #offert.no_products_offert_page .offert_container .offert_table_container {
   margin-top: 33px;
@@ -9101,6 +9103,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   padding: 30px 30px 20px 30px;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   margin-bottom: 80px;
+  background-color: #FFFFFF;
 }
 #compare .compare_container .blue_white-breadcrumbs .blue_white-breadcrumbs-list {
   width: 102.5%;
