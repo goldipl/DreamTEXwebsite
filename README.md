@@ -82,9 +82,7 @@ This work is licensed under a Creative Commons Non-Commercial (CC BY-NC) License
 
 :large_orange_diamond: Profile Admin Change Password Employee Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-change-password-employee   
 
-:large_orange_diamond: Profile Admin Change Password Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-change-password      
-
-:large_orange_diamond: Profile Admin New Client Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-clients-new-client   
+:large_orange_diamond: Profile Admin Change Password Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-admin-change-password       
 
 :large_orange_diamond: Profile User Data Page :arrow_right: https://goldipl.github.io/DreamTEXwebsite/your-profile-user-your-data      
 
