@@ -9775,24 +9775,30 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   width: max-content;
   height: 50px;
   box-sizing: border-box;
-  background-color: #2CB5FF;
-  border: 1px solid #2CB5FF;
   padding: 8px 16px;
   border-radius: 30px;
   transition: 0.8s;
   margin-left: 20px;
   margin-right: 0;
   cursor: pointer;
+  background-color: #2CB5FF;
+  border: 1px solid #2CB5FF;
 }
 #register_full .register_full_container .save-btn-container .save-btn:hover {
   filter: brightness(1.1);
 }
-#register_full .register_full_container .save-btn-container .save-btn a {
+#register_full .register_full_container .save-btn-container .save-btn button {
+  height: 50px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background-color: #2CB5FF;
+  border: 1px solid #2CB5FF;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: -moz-max-content;
+  width: max-content;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
@@ -9800,6 +9806,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   text-decoration: none;
   text-transform: uppercase;
   padding: 0;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -9872,7 +9879,6 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     flex-direction: column;
   }
   #register_full .register_full_container .save-btn-container .save-btn {
-    height: 40px;
     margin-top: 16px;
     margin-left: 0;
   }
@@ -9949,24 +9955,30 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   width: max-content;
   height: 50px;
   box-sizing: border-box;
-  background-color: #2CB5FF;
-  border: 1px solid #2CB5FF;
   padding: 8px 16px;
   border-radius: 30px;
   transition: 0.8s;
   margin-left: 20px;
   margin-right: 0;
   cursor: pointer;
+  background-color: #2CB5FF;
+  border: 1px solid #2CB5FF;
 }
 #register_retail .register_retail_container .save-btn-container .save-btn:hover {
   filter: brightness(1.1);
 }
-#register_retail .register_retail_container .save-btn-container .save-btn a {
+#register_retail .register_retail_container .save-btn-container .save-btn button {
+  height: 50px;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  border-radius: 30px;
+  background-color: #2CB5FF;
+  border: 1px solid #2CB5FF;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: -moz-max-content;
+  width: max-content;
   font-size: 20px;
   line-height: 24px;
   font-weight: 400;
@@ -9974,6 +9986,7 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
   text-decoration: none;
   text-transform: uppercase;
   padding: 0;
+  cursor: pointer;
 }
 
 @media (max-width: 960px) {
@@ -10000,7 +10013,6 @@ body.offert-page.products #offert .offert_container .offert_table_container #tab
     justify-content: center;
   }
   #register_retail .register_retail_container .save-btn-container .save-btn {
-    height: 40px;
     margin-top: 16px;
     margin-bottom: 20px;
   }

@@ -66,23 +66,28 @@
                 width: max-content;
                 height: 50px;
                 box-sizing: border-box;
-                background-color: #2CB5FF;
-                border: 1px solid #2CB5FF;
                 padding: 8px 16px;
                 border-radius: 30px;
                 transition: 0.8s;
                 margin-left: 20px;
                 margin-right: 0;
                 cursor: pointer;
+                background-color: #2CB5FF;
+                border: 1px solid #2CB5FF;
                 &:hover {
                     filter: brightness(1.10);
                 }
-                a {
+                button {
+                    height: 50px;
+                    box-sizing: border-box;
+                    padding: 8px 16px;
+                    border-radius: 30px;
+                    background-color: #2CB5FF;
+                    border: 1px solid #2CB5FF;
                     display: inline-flex;
                     justify-content: center;
                     align-items: center;
-                    width: 100%;
-                    height: 100%;
+                    width: max-content;
                     font-size: 20px;
                     line-height: 24px;
                     font-weight: 400;
@@ -90,6 +95,7 @@
                     text-decoration: none;
                     text-transform: uppercase;
                     padding: 0;
+                    cursor: pointer;
                 }
             }
         }
@@ -119,7 +125,6 @@
                 flex-direction: column;
                 justify-content: center;
                 .save-btn {
-                    height: 40px;
                     margin-top: 16px;
                     margin-bottom: 20px;
                 }
