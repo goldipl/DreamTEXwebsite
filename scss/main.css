@@ -3259,6 +3259,10 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   background: #EFEFEF;
   padding-left: 16px;
 }
+#login .login-container .login-container-middle form .login_input-slot input:focus {
+  border: 1px solid #2cb5ff;
+  outline: 0;
+}
 #login .login-container .login-container-middle form .login_input-slot input.button {
   width: -moz-max-content;
   width: max-content;

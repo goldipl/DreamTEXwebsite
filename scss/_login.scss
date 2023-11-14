@@ -74,6 +74,10 @@
                         border-radius: 20px;
                         background: #EFEFEF;
                         padding-left: 16px;
+                        &:focus {
+                            border: 1px solid #2cb5ff;
+                            outline: 0;
+                        }
                         &.button {
                             width: max-content;
                             margin-top: 23px;
