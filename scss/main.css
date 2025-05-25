@@ -3594,6 +3594,9 @@ body.offert-page .color-breadcrumbs .color-breadcrumbs-list {
   line-height: 14px;
   margin-left: 4px;
   margin-top: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 #contact .contact_container-top .form_contact_container .form_contact_container-wide .checkbox-box label a {
   color: #2cb5ff;
