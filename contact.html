@@ -2565,40 +2565,65 @@
                 <h1 class="title">Kontakt</h1>
                 <div class="contact_container">
                     <div class="contact_container-top">
-                        <div class="description">
-                            <h2 class="title">Szybki kontakt</h2>
-                            <p>Nie wiesz do kogo zadzwonić?</p>
-                            <p>Zadzwoń lub napisz a my przekierujemy Cię do odpowiedniej osoby</p>
-                            <p>pon-pt. 9:00 - 17:00</p>
+                        <div class="contact-info-text">
+                            <div class="description">
+                                <h2 class="title">Dreamtex Sp. z o.o.</h2>
+                                <p>Szyszkowa 32</p>
+                                <p>02-285 Warszawa</p>
+                                <p>NIP: 5210000948</p>
+                                <p>REGON: 010366503</p>
+                                <p>KRS: 010366503</p>
+                            </div>
+                            <div class="description">
+                                <p>Godziny otwarcia:</p>
+                                <p>poniedziałek – piątek 09:00 - 17:00</p>
+                            </div>
+                            <div class="description">
+                                <p>Tel.: <a class="gtm-phone" href="tel:+48 22 857 45 20">(22) 857 45 20</a>, <a class="gtm-phone" href="tel:+48 22 857 90 32">(22) 857 90 32</a></p>
+                                <p>E-mail: <a class="gtm-mail" href="mailto:sklep@dreamtex.pl">sklep@dreamtex.pl</a></p>
+                            </div>
                         </div>
                         <form class="form_contact_container">
                             <div class="contact_container-message-form">
-                                <h2 class="title">Masz jakieś pytanie? Napisz do nas!</h2>
+                                <h2 class="title">Formularz kontaktowy</h2>
+                                <p class="form-desc">Wypełnij i wyślij formularz kontaktowy, a nasz zespół Obsługi Klienta skontaktuje się z Tobą najszybciej jak to możliwe.</p>
                                 <form>
-                                    <div class="form_contact_container">
+                                    <div class="form_contact_box">
                                         <div class="form_contact_container-short">
-                                            <div class="form-slot">
-                                                <label class="name" for="name">Imię i nazwisko</label>
-                                                <input type="text" id="name" required>
+                                            <div class="form-slot-row">
+                                                <div class="form-slot">
+                                                    <label class="name" for="name">Imię i nazwisko*</label>
+                                                    <input type="text" id="name" required>
+                                                </div>
+                                                <div class="form-slot">
+                                                    <label class="company" for="company">Firma</label>
+                                                    <input type="text" id="company">
+                                                </div>
                                             </div>
-                                            <div class="form-slot">
-                                                <label class="company" for="company">Nazwa firmy</label>
-                                                <input type="text" id="company">
-                                            </div>
-                                            <div class="form-slot">
-                                                <label class="telephone" for="telephone">Telefon</label>
-                                                <input type="number" id="telephone" required>
-                                            </div>
-                                            <div class="form-slot">
-                                                <label class="email" for="email">Email</label>
-                                                <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
-                                            </div>
-                                            <div class="form_name_button-slot">
-                                                <input class="button" type="submit" value="WYŚLIJ">
+                                            <div class="form-slot-row">
+                                                <div class="form-slot">
+                                                    <label class="telephone" for="telephone">Telefon</label>
+                                                    <input type="number" id="telephone">
+                                                </div>
+                                                <div class="form-slot">
+                                                    <label class="email" for="email">Email*</label>
+                                                    <input type="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form_contact_container-wide">
-                                            <textarea name="textarea" id="textarea" rows="18" required></textarea>
+                                            <label class="email" for="textarea">Wiadomość*</label>
+                                            <textarea name="textarea" id="textarea" rows="18" required></textarea> 
+                                            <div class="checkbox-box">
+                                                <input type="checkbox" id="accept-rule" name="accept-rules" value="* Zapoznałem się z Regulaminem i Polityką prywatności i akceptuję ich treść." required>
+                                                <label for="accept-rule"> * Zapoznałem się z <a href="">Regulaminem</a> i <a href="">Polityką prywatności</a> i akceptuję ich treść.</label>
+                                            </div>
+                                            <div class="form_name_button-slot">
+                                                <input class="button" type="submit" value="Wyślij">
+                                            </div>
+                                            <div class="form-info-text">
+                                                <p>*) Pola wymagane.</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </form>
@@ -2623,7 +2648,7 @@
                                     <div class="staff-card-description">
                                         <strong>Tomasz Jankowski</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48603626264">603 62 62 64</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl">t.jankowski@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl" class="gtm-mail">t.jankowski@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2631,7 +2656,7 @@
                                     <div class="staff-card-description">
                                         <strong>Maciej Wítak</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48605055201">605 055 201</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:m.witak@dreamtex.pl">m.witak@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:m.witak@dreamtex.pl" class="gtm-mail">m.witak@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2639,7 +2664,7 @@
                                     <div class="staff-card-description">
                                         <strong>Magdalena Ceran</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48605031343">605 031 343</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:m.ceran@dreamtex.pl">m.ceran@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:m.ceran@dreamtex.pl" class="gtm-mail">m.ceran@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2647,7 +2672,7 @@
                                     <div class="staff-card-description">
                                         <strong>Paweł Ogonowski</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48601233933">601 23 39 33</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:p.ogonowski@dreamtex.pl">p.ogonowski@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:p.ogonowski@dreamtex.pl" class="gtm-mail">p.ogonowski@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2655,7 +2680,7 @@
                                     <div class="staff-card-description">
                                         <strong>Krzysztof Hołowacz</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48502440690">502 440 690</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:k.holowacz@dreamtex.pl">k.holowacz@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:k.holowacz@dreamtex.pl" class="gtm-mail">k.holowacz@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2670,7 +2695,7 @@
                                     <div class="staff-card-description">
                                         <strong>Tomasz Jankowski</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48603626264">603 62 62 64</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl">t.jankowski@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl" class="gtm-mail">t.jankowski@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2678,7 +2703,7 @@
                                     <div class="staff-card-description">
                                         <strong>Maciej Wítak</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48605055201">605 055 201</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:m.witak@dreamtex.pl">m.witak@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:m.witak@dreamtex.pl" class="gtm-mail">m.witak@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2693,7 +2718,7 @@
                                     <div class="staff-card-description">
                                         <strong>Tomasz Jankowski</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48603626264">603 62 62 64</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl">t.jankowski@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl" class="gtm-mail">t.jankowski@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2701,7 +2726,7 @@
                                     <div class="staff-card-description">
                                         <strong>Maciej Wítak</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48605055201">605 055 201</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:m.witak@dreamtex.pl">m.witak@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:m.witak@dreamtex.pl" class="gtm-mail">m.witak@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2709,7 +2734,7 @@
                                     <div class="staff-card-description">
                                         <strong>Magdalena Ceran</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48605031343">605 031 343</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:m.ceran@dreamtex.pl">m.ceran@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:m.ceran@dreamtex.pl" class="gtm-mail">m.ceran@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2724,7 +2749,7 @@
                                     <div class="staff-card-description">
                                         <strong>Tomasz Jankowski</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48603626264">603 62 62 64</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl">t.jankowski@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:t.jankowski@dreamtex.pl" class="gtm-mail">t.jankowski@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                                 <div class="staff-card">
@@ -2732,7 +2757,7 @@
                                     <div class="staff-card-description">
                                         <strong>Magdalena Ceran</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48605031343">605 031 343</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:m.ceran@dreamtex.pl">m.ceran@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:m.ceran@dreamtex.pl" class="gtm-mail">m.ceran@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                             </div>
@@ -2747,7 +2772,7 @@
                                     <div class="staff-card-description">
                                         <strong>Paweł Ogonowski</strong>
                                         <p class="staff-info-line">gsm: <a href="tel:+48601233933">601 23 39 33</a></p>
-                                        <p class="staff-info-line">e-mail: <a href="mailto:p.ogonowski@dreamtex.pl">p.ogonowski@dreamtex.pl</a></p>
+                                        <p class="staff-info-line">e-mail: <a href="mailto:p.ogonowski@dreamtex.pl" class="gtm-mail">p.ogonowski@dreamtex.pl</a></p>
                                     </div>
                                 </div>
                             </div>
