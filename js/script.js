@@ -185,3 +185,11 @@ function addClassIfWebsiteHeightExceedsWindow() {
   
 window.addEventListener('load', addClassIfWebsiteHeightExceedsWindow);
 window.addEventListener('resize', addClassIfWebsiteHeightExceedsWindow);
+
+document.querySelectorAll('.mobile-nav-sublist .mobile-nav-sublist-items-icon .mobile-nav-list-item-icon a').forEach(item => {
+    item.addEventListener('click', function() {
+        document.querySelector('.mobile-nav-menu-items.open').classList.remove('open');
+        document.querySelector('.hamburger-container.active').classList.remove('active');
+        document.querySelector('div.menu-hover.active').classList.remove('active');
+    });
+});
